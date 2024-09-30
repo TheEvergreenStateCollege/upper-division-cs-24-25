@@ -51,8 +51,8 @@ USER root
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir ~/scripts
-COPY ./scripts/.shrc /home/gitpod/.shrc
+#RUN mkdir ~/scripts
+#COPY ./scripts/.shrc /home/gitpod/.shrc
 
 RUN ssh-keyscan github.com
 
