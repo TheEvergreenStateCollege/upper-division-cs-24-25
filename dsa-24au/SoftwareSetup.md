@@ -81,7 +81,9 @@ You can adjust your answers to suit your preferences, it won't affect your devel
 ### 4. Create a Workspace
 
 Since this is probably your first time using GitPod for this class,
-click on "New workspace" and copy and paste the private repo you created above.
+click on "New workspace" and copy and paste the class monorepo
+
+https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25
 
 Occasionally, when the Dockerfile has been changed,
 GitPod will need to build the image from the last layer changed.
@@ -221,9 +223,3 @@ typically one-sentence message summarizing the changes you made.
 ```
 git push
 ```
-
-
-// This is also Jon. I enrolled in this class to better my programming and design skills. 
-// A little bit about, I am a Senior at evergreen going for a Bachelors in Science and looking to get my Cybersecurity Cerftificate.
-//Im Looking forward to working with everyone this quarter.
-// One little fun fact about me is that I am currently working on an Unreal Project with my friend over in Las Vegas.
