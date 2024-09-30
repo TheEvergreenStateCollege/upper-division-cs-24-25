@@ -24,7 +24,7 @@ or "Login" if you already have an account.
 Verify with your phone number.
 
 ### 2. Request to be added to class monorepo
-Go to https://github.com/TheEvergreenStateCollege/upper-division-cs/issues
+Go to https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25/issues
 
 Click the "New issue" green button and create a new issue with the title
 "Add <your-username> as maintainer" and with the label `admin`.
