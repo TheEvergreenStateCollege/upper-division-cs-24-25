@@ -1,13 +1,13 @@
 # Core DSA, Week 01
 
-## Short
+## Assignment 1a
 Assigned Monday, Sep 30th
 Due Tuesday, Oct 1st (Tomorrow)
 
 * zyBooks 1.1-1.3
   * Reading, Participation Activities, Challenges
 
-## Long
+## Assignment 1b
 Assigned Tuesday, October 1st
 Due following Monday, Oct 1st (Tomorrow!)
 
