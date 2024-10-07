@@ -25,9 +25,11 @@ The decimal number 2 (in binary 10) -> has a complement of 1 (in binary 01)
 
 https://leetcode.com/problems/number-complement/description/
 ## Converting Roman Numerals to Int
-
-We use a *sorted map*, which is a data structure that we will discuss in class on Monday.
+(Acceptance Percentage 62.8%)
 
 https://leetcode.com/problems/roman-to-integer/description/
 
-## 
+If you complete this problem with $O(nd)$ time and $O(d)$ space, where `n` is the number of input Roman numeral digits and `d` is the number of different kinds of Roman digits, try optimizing your solution to use $O(n)$ time only, still with $O(d)$ space allowed.
+## Choose Your Own
+From the list of problems sorted by decreasing acceptance rate (increasing difficulty) choose two problems that you think will take you one hour each. Use your experience with the first TPS homework and the above two problems to calibrate your problem choice.
+
