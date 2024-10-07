@@ -1,1 +1,6 @@
+#!/bin/bash
+
 # Add any startup directives here to fix up the path
+
+export PATH=/workspace/upper-division-cs-24-25/scripts:${PATH}
+export PATH=${HOME}/.cargo/bin:${HOME}/.local/bin:$(npm get prefix)/bin:${PATH}
