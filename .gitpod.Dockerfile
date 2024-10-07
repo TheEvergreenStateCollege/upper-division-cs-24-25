@@ -51,8 +51,9 @@ USER root
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-#RUN mkdir ~/scripts
-#COPY ./scripts/.shrc /home/gitpod/.shrc
+RUN mkdir ~/scripts
+COPY ./scripts/dl-graalvm.sh /root/scripts/dl-graalvm.sh
+COPY ./scripts/.shrc /root/.shrc
 
 RUN ssh-keyscan github.com
 
