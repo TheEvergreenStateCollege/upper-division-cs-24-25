@@ -1,6 +1,5 @@
 #!/bin/bash
 
 # Add any startup directives here to fix up the path
-
-export PATH=/workspace/upper-division-cs-24-25/scripts:${PATH}
-export PATH=${HOME}/.cargo/bin:${HOME}/.local/bin:$(npm get prefix)/bin:${PATH}
+export PATH=/opt/graalvm-community-openjdk-20.0.2+9.1/bin:/workspace/upper-division-cs/scripts:${PATH}
+export PATH=/home/gitpod/.local/bin:${PATH}
