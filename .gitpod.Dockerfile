@@ -51,8 +51,15 @@ USER root
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-#RUN mkdir ~/scripts
-#COPY ./scripts/.shrc /home/gitpod/.shrc
+RUN mkdir ~/scripts
+COPY ./scripts/dl-graalvm.sh /root/scripts/dl-graalvm.sh
+COPY ./scripts/.shrc /root/.shrc
+
+
+# Download the right GraalVM for the given architecture
+RUN . /root/scripts/dl-graalvm.sh
+RUN . /root/.shrc; gu install nodejs
+RUN . /root/.shrc; gu install python
 
 RUN ssh-keyscan github.com
 
