@@ -34,6 +34,8 @@ ENV PATH=${PATH}:/home/gitpod/.local/bin
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 USER gitpod
 WORKDIR /home/gitpod
+# Copy this as GitPod user, .gitpod.yml task sources it on startup
+COPY ./scripts/.shrc /home/gitpod/.shrc
 
 USER root
 
@@ -41,7 +43,6 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir ~/scripts
 COPY ./scripts/dl-graalvm.sh /root/scripts/dl-graalvm.sh
-COPY ./scripts/.shrc /root/.shrc
 
 
 # Download the right GraalVM for the given architecture
