@@ -30,3 +30,20 @@ Learning outcomes
   * be able to ask for hints at the right time, with right level of specificity
 * Understand pseudocode
 * Cultivate a desire for discomfort, solve unseen problems, and risk being unable to do them.
+
+## Topic List
+### Week 01
+* Depth-first search, mob programming
+* Longest substring problems introduction
+	* Longest common prefix
+* Technical interview process
+
+### Week 02
+* Longest substring problems 
+	* Longest non-repeating characters substring
+* Final project discussion
+* Trees refresher, topics of b-trees, balancing them
+
+### Week 03
+
+### Week 04

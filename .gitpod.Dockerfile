@@ -34,6 +34,7 @@ ENV PATH=${PATH}:/home/gitpod/.local/bin
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 USER gitpod
 WORKDIR /home/gitpod
+COPY ./scripts/.shrc /home/gitpod/.shrc
 
 USER root
 
@@ -41,13 +42,15 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir ~/scripts
 COPY ./scripts/dl-graalvm.sh /root/scripts/dl-graalvm.sh
-COPY ./scripts/.shrc /root/.shrc
+# COPY ./scripts/.shrc /root/.shrc
 
 
 # Download the right GraalVM for the given architecture
 RUN . /root/scripts/dl-graalvm.sh
-RUN . /root/.shrc; gu install nodejs
-RUN . /root/.shrc; gu install python
+
+# Add these back later if we need cross-language support
+# RUN . /root/.shrc; gu install nodejs
+# RUN . /root/.shrc; gu install python
 
 RUN ssh-keyscan github.com
 
