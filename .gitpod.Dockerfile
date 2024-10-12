@@ -30,11 +30,13 @@ RUN apt-get install -yqq telnet
 RUN apt-get install -yqq net-tools
 
 ENV PATH=${PATH}:/home/gitpod/.local/bin
-# add gitpod user
+# Add gitpod user
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 USER gitpod
 WORKDIR /home/gitpod
 COPY ./scripts/.shrc /home/gitpod/.shrc
+# Add source line to .bashrc so .shrc is loaded on login
+RUN echo "source /home/gitpod/.shrc" >> ~/.bashrc
 
 USER root
 
