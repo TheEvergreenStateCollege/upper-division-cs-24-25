@@ -41,9 +41,15 @@ Learning outcomes
 ### Week 02
 * Longest substring problems 
 	* Longest non-repeating characters substring
-* Final project discussion
-* Trees refresher, topics of b-trees, balancing them
 
 ### Week 03
+* Longest substring problems 
+	* longest repeating substring
+* Final project discussion
 
 ### Week 04
+* 1D Dynamic programming for longest substring and subsequence problems
+* Trees refresher, topics of b-trees, balancing them
+
+### Week 04
+* Trees refresher, topics of b-trees, balancing them
