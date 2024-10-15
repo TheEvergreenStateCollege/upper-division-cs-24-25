@@ -106,3 +106,13 @@ ls -lh
 ```
 ## Step 6: Configure JAVA_HOME
 
+Open Settings with the cogwheel icon.
+![image](https://github.com/user-attachments/assets/28321342-5fc9-4d54-8d9b-e8744e90bf35)
+
+Open the file `settings.json` (instructions to follow on how to find this)
+
+Search for "java.configuration"
+Choose "Installed JDKs",
+Find and click "edit settings.json"
+
+https://canvas.evergreen.edu/courses/6729/assignments/126587
