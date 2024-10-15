@@ -115,4 +115,16 @@ Search for "java.configuration"
 Choose "Installed JDKs",
 Find and click "edit settings.json"
 
-https://canvas.evergreen.edu/courses/6729/assignments/126587
+Add a key for `"java.home"` with this value.
+
+```
+ "java.home": "/opt/graalvm-community-openjdk-20.0.2+9.1",
+```
+
+The trailing comma is important.
+
+Close the `settings.json`, hard refresh (hold down shift key and refresh website in your browser).
+
+Click on `CounterDemo.java` and wait for it to say "Java: Ready" at bottom of your vscode status bar.
+
+Then you're ready to debug.
