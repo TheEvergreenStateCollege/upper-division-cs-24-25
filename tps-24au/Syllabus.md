@@ -52,4 +52,4 @@ Learning outcomes
 * Trees refresher, topics of b-trees, balancing them
 
 ### Week 04
-* Trees refresher, topics of b-trees, balancing them
+* Review binary search trees, topics of b-trees, balancing them
