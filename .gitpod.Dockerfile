@@ -56,4 +56,8 @@ RUN . /root/scripts/dl-graalvm.sh
 
 RUN ssh-keyscan github.com
 
+# Run this last with new packages so we don't have to rebuild docker image from first layer
+RUN apt install -y mpich 
+RUN pip3 install mpi4py
+
 WORKDIR "${HOME}"
