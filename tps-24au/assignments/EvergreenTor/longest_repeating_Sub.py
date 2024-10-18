@@ -1,15 +1,24 @@
 
-def LongestRepeatingSubstring(s):
-    if s == "":
+def LongestRepeatingSubstring(string):
+
+    if string == "":
         return 0
-    best_so_far = ""
+
+    repeating_substrings = []
+
+    for i in range(len(string)):
+        for j in range(i+1,len(string) + 1):
+            substring = string[i:j + 1] 
+            repeating_substrings += (j,substring) 
+    return repeating_substrings
     
-    for c in s:
-        c += best_so_far
-    return best_so_far
+    #
+        
+            
+
+print(LongestRepeatingSubstring("banana"))   
     
-    
-print(LongestRepeatingSubstring("Banana"))
+
     
         
         
