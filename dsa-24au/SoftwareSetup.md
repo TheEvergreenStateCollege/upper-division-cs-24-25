@@ -116,26 +116,8 @@ Next to the "GitHub" integration, click on the three dots and choose "Manager th
 
 <img width="655" alt="image" src="https://github.com/TheEvergreenStateCollege/upper-division-cs/assets/148553/b7f844af-3fc0-404c-b663-14c5f5fed97f">
 
-### 7. Set your Git Config Email
 
-Go to your `gitpod.io` environment variable settings at https://gitpod.io/user/variables.
-On this page add two new variables with the keys being
-`GIT_AUTHOR_EMAIL` and `GIT_COMMITER_EMAIL` and value being your github privacy email address. You will need to set a scope for this environment variables.
-`*/*` can be used if you want these emails to be applied to all workspaces opened in gitpod,or they could be set to `TheEvergreenStateCollege/upper-division-cs`. 
-
-### 8. Make sure you have tools in your $PATH
-
-```
-$ which java
-/opt/graalvm-community-openjdk-20.0.2+9.1/bin/java
-$ which mvn
-/opt/apache-maven-3.9.4/bin/mvn
-```
-```
-source ./scripts/.shrc
-```
-
-### 9. Go to your GitHub settings
+### 7. Get your GitHub privacy email address
 
 In your GitHub email settings:
 https://github.com/settings/emails
@@ -148,78 +130,18 @@ It will look similar to mine, which is
 
 Copy this and save it for the next step.
 
-### 10. Create a configuration script
+### 8. Set your Git Config Email
 
-You'll run this script the first time you start up GitPod using this repository (below).
+Go to your `gitpod.io` environment variable settings at https://gitpod.io/user/variables.
+On this page add two new variables with the keys being
+`GIT_AUTHOR_EMAIL` and `GIT_COMMITER_EMAIL` and value being your github privacy email address. You will need to set a scope for this environment variables.
+`*/*` can be used if you want these emails to be applied to all workspaces opened in gitpod,or they could be set to `TheEvergreenStateCollege/upper-division-cs`. 
 
-In GitPod, create a new file in the path `/workspace/upper-division-cs/dsa-23au/scripts/git-config.sh`
-which you can do by clicking the file icon with a plus sign show in the screenshot below
-
-<img width="447" alt="image" src="https://github.com/TheEvergreenStateCollege/upper-division-cs/assets/148553/07fac582-5576-47e9-8a64-b089f8a440bb">
-
-<img width="1000" alt="image" src="https://github.com/TheEvergreenStateCollege/upper-division-cs/assets/148553/2c97e315-ba12-46cf-9631-70d97e121895">
-
-Add these contents to the file, being sure to replace your private email address 
-```
-#!/bin/sh
-
-# Enable us to push, through email privacy features
-git config --global user.email 148553+learner-long-life@users.noreply.github.com
-```
-
-Don't worry, this is not a real email address, and this is a private repo, so you are not revealing anything
-unsafe by saving it here.
-
-### 11. Update this Document
-
-Test that everything works by making a change to these instructions, adding
-any corrections, insights, jokes, comments, or memes that you think will help future students.
-
-If you are looking for a beginner-friendly change to make,
-check out [any open Issues for this GitHub repository](https://github.com/TheEvergreenStateCollege/upper-division-cs/issues).
-
-The file is located at
+### 9. Make sure you have tools in your $PATH
 
 ```
-./dsa-23au/SoftwareSetup.md
-```
-
-Right-click the tab in GitPod and choose "Open Preview"
-
-All documentation in this class is written using Markdown, a simplified formatting language that is
-meant to be plaintext and human-readable.
-
-You can read more about [using Markdown here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### 12. Add, Commit, Push
-
-After making your changes, you will perform the `version control dance` of hackers everywhere.
-
-First you will *stage your changes for commit*. This helps separate changes that are ready
-and others which you may still be working on. In our case, we want to stage our changes to
-`SoftwareSetup.md`, since we want others to receive changes and corrections,
-but we will ignore our changes to `git-config.sh`, since it contains a no-reply email address
-that is specific to just us.
-
-```
-git add SoftwareSetup.md
-```
-
-Next, you will *check the status* to see that only the files you meant to stage are going to be committed.
-You will probably see two files to change.
-
-```
-git status
-```
-
-Then you'll commit the file that is staged.
-```
-git commit
-```
-
-This will bring up a temporary text editor pane in VSCode where you can type a brief,
-typically one-sentence message summarizing the changes you made.
-
-```
-git push
+$ which java
+/opt/graalvm-community-openjdk-20.0.2+9.1/bin/java
+$ which mvn
+/opt/apache-maven-3.9.4/bin/mvn
 ```

@@ -28,32 +28,39 @@ RUN apt-get install -yqq tcpdump
 RUN apt-get install -yqq netcat
 RUN apt-get install -yqq telnet
 RUN apt-get install -yqq net-tools
-RUN apt-get install -yqq nodejs
-RUN apt-get install -yqq npm
-
-# For pdf2text
-RUN apt-get install -yqq poppler-utils
-RUN apt-get install -yqq pkg-config
-
-# For AI assignments
-RUN pip3 install html2text
-RUN pip3 install tiktoken
-RUN pip3 install torch
-RUN pip3 install numpy
 
 ENV PATH=${PATH}:/home/gitpod/.local/bin
-# add gitpod user
+# Add gitpod user
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 USER gitpod
 WORKDIR /home/gitpod
+COPY ./scripts/.shrc /home/gitpod/.shrc
+# Add source line to .bashrc so .shrc is loaded on login
+RUN echo "source /home/gitpod/.shrc" >> ~/.bashrc
 
 USER root
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-#RUN mkdir ~/scripts
-#COPY ./scripts/.shrc /home/gitpod/.shrc
+RUN mkdir ~/scripts
+COPY ./scripts/dl-graalvm.sh /root/scripts/dl-graalvm.sh
+# COPY ./scripts/.shrc /root/.shrc
+
+
+# Download the right GraalVM for the given architecture
+RUN . /root/scripts/dl-graalvm.sh
+
+# Add these back later if we need cross-language support
+# RUN . /root/.shrc; gu install nodejs
+# RUN . /root/.shrc; gu install python
 
 RUN ssh-keyscan github.com
+
+# Run this last with new packages so we don't have to rebuild docker image from first layer
+# Thus we have to apt update again
+RUN apt update
+RUN apt install -y mpich
+
+RUN pip3 install mpi4py
 
 WORKDIR "${HOME}"
