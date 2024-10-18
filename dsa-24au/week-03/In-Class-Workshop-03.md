@@ -106,3 +106,4 @@ ls -lh
 ```
 ## Step 6: Configure JAVA_HOME
 
+![[Pasted image 20241015093915.png]]
