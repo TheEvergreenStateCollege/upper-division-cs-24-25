@@ -2,37 +2,58 @@
 #include <vector>
 using namespace std;
 
+//either get time limit exceeded error or memory error. I do not know a good way to check for repeats in the repeated
+//string list without exceeding allotted time
+
 int main(void) {
     string input;
     vector<string> substrings;
-    vector<string> repeatedsubs;
     string lrs = "";
+    string foundstrings = "";
     cin >> input;
+    int len = input.length();
     
-    for (int i = 0; i < input.length(); i++)
+    for (int i = 0; i < len; i++)
     {
-        for (int j = 1; j <= input.length(); j++)
+        for (int j = 1; j <= len; j++)
         {
-            if ((i + j) > input.length())
+            if ((i + j) > len)
             {
                 break;
-            } else 
+            } 
+            string candidate = input.substr(i,j);
+            if (input.find(candidate) != input.rfind(candidate))
             {
-                substrings.emplace_back(input.substr(i, j));
+                if (foundstrings.find(candidate) != string::npos)
+                {
+                    continue;
+                } else 
+                {
+                    substrings.emplace_back(candidate);
+                    foundstrings += candidate + ",";
+                }
             }
         }
     }
 
-    for (int i = 0; i < substrings.size(); i++)
+    lrs = substrings[0];
+    for (int i = 1; i < substrings.size(); i++)
     {
-        for (int j = i + 1; j < substrings.size(); j++)
+        int compareval = lrs.compare(substrings[i]);
+        if (compareval == 0)
         {
-            if ((substrings[i].compare(substrings[j]) == 0) && (substrings[i].length() > lrs.length()))
-            {
-                lrs = substrings[i];
-            }
+            continue;
+        }
+        if (substrings[i].length() > lrs.length())
+        {
+            lrs = substrings[i];
+        }
+        else if ((compareval > 0) && (substrings[i].length() == lrs.length())) {
+            lrs = substrings[i];
         }
     }
     cout << lrs << endl;
     substrings.clear();
+    lrs.clear();
+    input.clear();
 }
