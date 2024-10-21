@@ -55,7 +55,8 @@ void update_square(int row, int col) {
 void update_board() {
   int r, c;
   for (r=0; r<size; r++) {
-    update_square[r][c];
+    for (c=0; c<size; c++) {
+    update_square(r, c);
   }
   return;
 }
