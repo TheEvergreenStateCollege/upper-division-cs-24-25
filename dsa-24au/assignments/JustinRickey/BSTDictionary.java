@@ -10,14 +10,9 @@ public class BSTDictionary implements Dictionary {
 
     List array;
 
-<<<<<<< HEAD
-    public BSTDictionary() {
-        //this.array = new ArrayList<>; //might need to add capacity to ArrayList
-=======
     public BSTDictionary(int capacity) {
         this.array = new ArrayList<>(capacity);
 >>>>>>> 5fffd0a8ae5614f2f8b490aad75f84d3f5e25cab
->>>>>>> 349d2abae5e57afe8c94487d465bf2be7bd189a9
     }
 
     public void add(String term, String definition) {
