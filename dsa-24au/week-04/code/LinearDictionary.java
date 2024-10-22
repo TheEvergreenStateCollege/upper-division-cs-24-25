@@ -12,20 +12,22 @@ public class LinearDictionary implements Dictionary {
     }
 
     public void add(String term, String definition) {
+        assert(this.checkInvariant());
         if (term == null || term.isBlank()) {
             return;
         }
 
-        List<String> definitions = lookup(term);
+        // List<String> definitions = lookup(term);
 
-        if (definitions.contains(definition)) {
+        // if (definitions.contains(definition)) {
             // We already contain this definition for this term
-            return;
-        }
+        //    return;
+        // }
 
         // This is a new term-definition association, add it to our lists.
         this.terms.add(term);
-        this.terms.add(definition);
+        this.definitions.add(definition);
+        assert(this.checkInvariant());
     }
 
     public void remove(String term, String definition) {
@@ -61,6 +63,7 @@ public class LinearDictionary implements Dictionary {
         List<String> result = new ArrayList<>();
 
         for (int i = 0; i < this.terms.size(); i += 1) {
+            System.out.println(terms.get(i));
             if (terms.get(i) == term) {
                 result.add(definitions.get(i));
             }
