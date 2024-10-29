@@ -17,29 +17,17 @@ public class LinearDictionary implements Dictionary {
             return;
         }
 
-<<<<<<< HEAD
-        /*List<String> definitions = lookup(term);
-=======
         // List<String> definitions = lookup(term);
->>>>>>> 349d2abae5e57afe8c94487d465bf2be7bd189a9
 
         // if (definitions.contains(definition)) {
             // We already contain this definition for this term
-<<<<<<< HEAD
-            return;
-        }*/
-=======
         //    return;
         // }
->>>>>>> 349d2abae5e57afe8c94487d465bf2be7bd189a9
 
         // This is a new term-definition association, add it to our lists.
         this.terms.add(term);
         this.definitions.add(definition);
-<<<<<<< HEAD
-=======
         assert(this.checkInvariant());
->>>>>>> 349d2abae5e57afe8c94487d465bf2be7bd189a9
     }
 
     public void remove(String term, String definition) {

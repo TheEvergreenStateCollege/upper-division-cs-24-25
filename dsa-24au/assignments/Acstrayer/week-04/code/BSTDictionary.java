@@ -1,45 +1,31 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class LinearDictionary implements Dictionary {
+public class BSTDictionary implements Dictionary {
 
     List<String> terms;
     List<String> definitions;
 
-    public LinearDictionary() {
+    public BSTDictionary() {
         this.terms = new ArrayList<>();
         this.definitions = new ArrayList<>();
     }
 
     public void add(String term, String definition) {
-        assert(this.checkInvariant());
         if (term == null || term.isBlank()) {
             return;
         }
 
-<<<<<<< HEAD
-        /*List<String> definitions = lookup(term);
-=======
-        // List<String> definitions = lookup(term);
->>>>>>> 349d2abae5e57afe8c94487d465bf2be7bd189a9
+        List<String> definitions = lookup(term);
 
-        // if (definitions.contains(definition)) {
+        if (definitions.contains(definition)) {
             // We already contain this definition for this term
-<<<<<<< HEAD
             return;
-        }*/
-=======
-        //    return;
-        // }
->>>>>>> 349d2abae5e57afe8c94487d465bf2be7bd189a9
+        }
 
         // This is a new term-definition association, add it to our lists.
         this.terms.add(term);
         this.definitions.add(definition);
-<<<<<<< HEAD
-=======
-        assert(this.checkInvariant());
->>>>>>> 349d2abae5e57afe8c94487d465bf2be7bd189a9
     }
 
     public void remove(String term, String definition) {
@@ -66,6 +52,7 @@ public class LinearDictionary implements Dictionary {
     }
 
     public List<String> lookup(String term) {
+
         if (term == null || term.isBlank()) {
             // return empty list
             return List.of();
@@ -74,18 +61,28 @@ public class LinearDictionary implements Dictionary {
 
         List<String> result = new ArrayList<>();
 
-        for (int i = 0; i < this.terms.size(); i += 1) {
-            System.out.println(terms.get(i));
-            if (terms.get(i) == term) {
-                result.add(definitions.get(i));
+        int low = 0;
+        int high = this.terms.size() - 1;
+
+        while (high >= low) {
+            int mid = low + (high - low) / 2;
+
+            if (this.terms.get(mid).equals(term)) {
+                System.out.println("SUCCESS!!" + terms.get(mid));
+                result.add(definitions.get(mid));
+            } else if (this.terms.get(mid).compareTo(term) < 0) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
 
+       
         return result;
 
     }
 
     public String toString() {
-        return String.format("Linear dictionary with {} term-definition pairs.", Integer.toString(this.terms.size()));
+        return String.format("BST dictionary with {} term-definition pairs.", Integer.toString(this.terms.size()));
     }
 }

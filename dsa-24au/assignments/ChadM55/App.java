@@ -21,7 +21,7 @@ public class App {
     private static Dictionary loadDictionaryHelper() {
         Charset charset = StandardCharsets.UTF_8;
 
-        Dictionary d = new BSTDictionary();
+        Dictionary d = new LinearDictionary();
 
         try {
             List<String> lines = Files.readAllLines(PATH, charset);
@@ -66,12 +66,12 @@ public class App {
         Dictionary d = loadDictionary();        
 
         long start2 = System.currentTimeMillis();
-        // List<String> found = d.lookup(searchTerm);
+        List<String> found = d.lookup("BATHYSPHERE");
         long elapsed2 = System.currentTimeMillis() - start2;
         System.out.println(String.format("Dictionary load time {}", Long.toString(elapsed2)));
 
-        System.out.println(String.format("Definitions of {}", searchTerm));
-        //System.out.println(found);
+        System.out.println("Definitions of BATHYSPHERE");
+        System.out.println(found);
     }
 
 }

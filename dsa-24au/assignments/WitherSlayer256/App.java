@@ -21,7 +21,7 @@ public class App {
     private static Dictionary loadDictionaryHelper() {
         Charset charset = StandardCharsets.UTF_8;
 
-        Dictionary d = new BSTDictionary();
+        Dictionary d = new LinearDictionary();
 
         try {
             List<String> lines = Files.readAllLines(PATH, charset);

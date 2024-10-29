@@ -35,8 +35,8 @@ public class App {
                         defMode = false;
                         if (term != null) {
                             d.add(term, defn.toString());
-                            System.out.println(term);
-                            System.out.println(i);
+                            //System.out.println(term);
+                            //System.out.println(i);
                             term = null;
                             defn = null;
                         }
@@ -66,12 +66,15 @@ public class App {
         Dictionary d = loadDictionary();        
 
         long start2 = System.currentTimeMillis();
-        // List<String> found = d.lookup(searchTerm);
+        List<String> found = d.lookup(searchTerm);
         long elapsed2 = System.currentTimeMillis() - start2;
         System.out.println(String.format("Dictionary load time {}", Long.toString(elapsed2)));
 
-        System.out.println(String.format("Definitions of {}", searchTerm));
-        //System.out.println(found);
+        System.out.printf("Definitions of %s\n", searchTerm);
+        System.out.println(found);
+        for (int i = 0; i < found.size()-1; i++) {
+            System.out.println(found.get(i));
+        }
     }
 
 }
