@@ -63,7 +63,7 @@ public class BSTDictionary implements Dictionary {
         int low = 0;
         int high = this.terms.size() - 1;
         System.out.println(term);
-/*
+
         while (high >= low) {
           int mid = low + (high - low) / 2;
           String temp = this.terms.get(mid);
@@ -75,7 +75,7 @@ public class BSTDictionary implements Dictionary {
             low = mid + 1;
           }
         }
-        */
+        
         return result;
 
     }
