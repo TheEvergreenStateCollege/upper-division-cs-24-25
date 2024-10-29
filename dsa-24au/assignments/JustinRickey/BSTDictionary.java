@@ -27,9 +27,39 @@ public class BSTDictionary implements Dictionary {
     }
 
     public List<String> lookup(String term) {
-
+        Dictionary d;
+        int low = 0;
+        int high - d.length -1;
+        int mid = low + (low + high)/2;
         
-        return List.of();
+        char firsT = term.charAt(0);
+
+      // exlist = [0, 1, 2, 3, 4]
+      // key = 4;
+        
+
+        if(high == low){
+            return List[low];
+        }
+        if(d[mid] == term){
+            return term;
+        }
+        else{
+            if(firsT > d[mid].charAt(0)){
+
+            }
+            else if(firsT < d[mid].charAt(0)){
+
+            }
+            else if(firsT == d[mid].charAt(0)){
+
+
+            }
+
+
+
+        }
+        return list.of();
 
    }
 
