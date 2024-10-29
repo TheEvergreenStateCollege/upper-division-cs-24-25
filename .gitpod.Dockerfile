@@ -60,6 +60,7 @@ RUN ssh-keyscan github.com
 # Thus we have to apt update again
 RUN apt update
 RUN apt install -y mpich
+RUN apt install -y libomp-dev
 
 RUN pip3 install mpi4py
 
