@@ -1,11 +1,16 @@
 ### In-Class Activity
 
-We'll pause here. Pair up with the person next to you, draw a grid that looks like the hash sign `#` with enough space to write `X`
-and `O`, and take turns drawing your symbols.
+## Part I
 
-[Here are rules how to play.](https://en.wikipedia.org/wiki/Tic-tac-toe)
+Graph (draw) the following seven functions on an $n$ vs. $y = f(n)$ axis.
 
-We'll play tic-tac-toe on an ASCII grid that can be stored in plaintext like this, that you and your partner will commit, pull to merge any changes from other games, and push to GitHub.
+You are free to use the Desmos online graphing calculator or ask Wolfram alpha the following questions.
+
+Submit an image of your drawing as an image to the Canvas workshop.
+
+## Part II
+
+Pair up with the person next to you. Copy the grid below into your computer's clipboard, and paste into a text editor (VS Code, whatever you edit code with).
 
 ```
 |_|_|_|1
@@ -13,6 +18,11 @@ We'll play tic-tac-toe on an ASCII grid that can be stored in plaintext like thi
 |_|_|_|3
  1 2 3
 ```
+
+[Here are rules how to play.](https://en.wikipedia.org/wiki/Tic-tac-toe)
+
+We'll play tic-tac-toe on an ASCII grid that can be stored in plaintext like this, that you and your partner will commit, pull to merge any changes from other games, and push to GitHub.
+
 
 [Graphs in Game Theory](https://medium.com/@jshreyas12/graphs-in-game-theory-8c6c09fa5d45)
 
@@ -226,6 +236,4 @@ play the game to the (bitter?) end to show that its outcome is indeed different 
 
 Then merge your `redo` branch into `main` locally, resolve any conflicts, add, commit, push, merge, and close the Pull Request.
 
-This follows our [standard Git Workflow](https://github.com/TheEvergreenStateCollege/upper-division-cs/wiki/GitWorkflow) that we've been developing and following for the past two quarters,
-and that is very common in industry.
-
+Copy the URL of your git commit and submit it to the canvas workshop, along with your image of graphs above.
