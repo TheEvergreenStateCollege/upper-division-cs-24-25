@@ -7,53 +7,31 @@ using namespace std;
 
 int main(void) {
     string input;
-    vector<string> substrings;
     string lrs = "";
-    string foundstrings = "";
     cin >> input;
     int len = input.length();
     
     for (int i = 0; i < len; i++)
     {
+        string candidate = "";
+        int iterator = i;
         for (int j = 1; j <= len; j++)
         {
-            if ((i + j) > len)
-            {
-                break;
-            } 
-            string candidate = input.substr(i,j);
-            if (input.find(candidate) != input.rfind(candidate))
-            {
-                if (foundstrings.find(candidate) != string::npos)
-                {
-                    continue;
-                } else 
-                {
-                    substrings.emplace_back(candidate);
-                    foundstrings += candidate + ",";
+            if (input[iterator] == input[j]){
+                candidate += input[j];
+                iterator++;
+            } else {
+                if (candidate.length() > lrs.length()){
+                    lrs = candidate;
+                } else if ((candidate.length() == lrs.length()) && (lrs.compare(candidate) > 0)) {
+                    lrs = candidate;
                 }
+                iterator = i;
+                candidate = "";
             }
         }
     }
-
-    lrs = substrings[0];
-    for (int i = 1; i < substrings.size(); i++)
-    {
-        int compareval = lrs.compare(substrings[i]);
-        if (compareval == 0)
-        {
-            continue;
-        }
-        if (substrings[i].length() > lrs.length())
-        {
-            lrs = substrings[i];
-        }
-        else if ((compareval > 0) && (substrings[i].length() == lrs.length())) {
-            lrs = substrings[i];
-        }
-    }
     cout << lrs << endl;
-    substrings.clear();
     lrs.clear();
     input.clear();
 }
