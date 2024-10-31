@@ -10,7 +10,7 @@ int main () {
 	{
 		#pragma omp single
 		{
-			for (i = 0; i < 10; i++) {
+			for (i = 0; i < 17; i++) {
 				#pragma omp task
 				printf("%d! = %d\n", i, factorial(i));
 			}
