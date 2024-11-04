@@ -4,6 +4,9 @@ Pair up with another person in the class who is not sitting next to you. One of 
 
 You will practice pair programming according to the reading On Pair Programming that you did in Week 01.
 
+With a partner, play tic-tac-toe by pulling, editing a text file, committing, and pushing to the class mono-repo following these instructions and submitting the URL of your final git commit.
+
+Since you will take turns "driving", you can discuss your moves. Don't worry about who wins, but for our workshop today, it's better not to reach a draw. Once either X or O wins, use `git checkout <commit>` to rewind your time machine to past moves. 
 ## Create the Board
 
 Open your favorite development environment that has `git` installed, whether it's GitPod, GitHub Codespaces, your own laptop, or the school lab computer.
