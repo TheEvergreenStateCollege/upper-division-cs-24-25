@@ -1,0 +1,1001 @@
+id,bun,patty
+1,potato,pork
+2,whole wheat,beef
+3,brioche,veggie
+4,sesame,chicken
+5,brioche,fish
+6,pretzel,fish
+7,whole wheat,pork
+8,brioche,fish
+9,sesame,beef
+10,sesame,chicken
+11,sesame,beef
+12,sesame,turkey
+13,brioche,pork
+14,sesame,turkey
+15,potato,veggie
+16,potato,beef
+17,pretzel,turkey
+18,pretzel,beef
+19,brioche,fish
+20,sesame,fish
+21,potato,beef
+22,pretzel,pork
+23,pretzel,veggie
+24,pretzel,turkey
+25,whole wheat,turkey
+26,brioche,chicken
+27,whole wheat,veggie
+28,whole wheat,fish
+29,pretzel,chicken
+30,pretzel,pork
+31,sesame,fish
+32,pretzel,fish
+33,pretzel,turkey
+34,potato,veggie
+35,potato,fish
+36,potato,veggie
+37,whole wheat,beef
+38,brioche,pork
+39,sesame,beef
+40,pretzel,veggie
+41,brioche,veggie
+42,potato,turkey
+43,sesame,fish
+44,potato,beef
+45,pretzel,veggie
+46,whole wheat,veggie
+47,pretzel,veggie
+48,potato,beef
+49,pretzel,fish
+50,potato,pork
+51,pretzel,chicken
+52,pretzel,fish
+53,brioche,turkey
+54,sesame,veggie
+55,whole wheat,chicken
+56,whole wheat,veggie
+57,brioche,chicken
+58,whole wheat,pork
+59,potato,turkey
+60,brioche,turkey
+61,pretzel,veggie
+62,brioche,veggie
+63,whole wheat,pork
+64,whole wheat,turkey
+65,potato,veggie
+66,whole wheat,beef
+67,sesame,beef
+68,brioche,pork
+69,sesame,beef
+70,whole wheat,veggie
+71,whole wheat,fish
+72,sesame,chicken
+73,brioche,pork
+74,whole wheat,veggie
+75,sesame,chicken
+76,potato,beef
+77,brioche,turkey
+78,pretzel,pork
+79,sesame,chicken
+80,potato,turkey
+81,pretzel,beef
+82,brioche,chicken
+83,sesame,pork
+84,pretzel,fish
+85,whole wheat,fish
+86,brioche,turkey
+87,potato,veggie
+88,sesame,chicken
+89,pretzel,pork
+90,potato,chicken
+91,pretzel,chicken
+92,potato,pork
+93,sesame,veggie
+94,potato,beef
+95,brioche,veggie
+96,whole wheat,chicken
+97,potato,chicken
+98,potato,chicken
+99,brioche,fish
+100,potato,chicken
+101,sesame,fish
+102,brioche,pork
+103,whole wheat,chicken
+104,pretzel,fish
+105,pretzel,pork
+106,pretzel,pork
+107,brioche,pork
+108,potato,fish
+109,pretzel,chicken
+110,pretzel,pork
+111,potato,turkey
+112,sesame,veggie
+113,potato,turkey
+114,potato,fish
+115,brioche,veggie
+116,sesame,beef
+117,brioche,veggie
+118,whole wheat,pork
+119,pretzel,pork
+120,sesame,fish
+121,pretzel,fish
+122,potato,turkey
+123,brioche,beef
+124,brioche,fish
+125,sesame,chicken
+126,brioche,chicken
+127,sesame,beef
+128,whole wheat,beef
+129,brioche,veggie
+130,sesame,chicken
+131,pretzel,pork
+132,sesame,chicken
+133,sesame,beef
+134,potato,chicken
+135,whole wheat,turkey
+136,whole wheat,fish
+137,potato,pork
+138,pretzel,pork
+139,brioche,pork
+140,potato,fish
+141,sesame,turkey
+142,sesame,beef
+143,pretzel,fish
+144,pretzel,beef
+145,potato,beef
+146,sesame,turkey
+147,brioche,veggie
+148,potato,fish
+149,whole wheat,turkey
+150,sesame,veggie
+151,brioche,chicken
+152,brioche,beef
+153,whole wheat,veggie
+154,brioche,pork
+155,brioche,chicken
+156,whole wheat,fish
+157,potato,veggie
+158,sesame,turkey
+159,pretzel,fish
+160,whole wheat,pork
+161,pretzel,beef
+162,pretzel,veggie
+163,whole wheat,chicken
+164,brioche,chicken
+165,whole wheat,veggie
+166,sesame,chicken
+167,potato,veggie
+168,sesame,veggie
+169,pretzel,pork
+170,potato,turkey
+171,pretzel,turkey
+172,potato,beef
+173,sesame,chicken
+174,sesame,beef
+175,brioche,veggie
+176,sesame,turkey
+177,pretzel,veggie
+178,potato,pork
+179,brioche,chicken
+180,brioche,pork
+181,pretzel,pork
+182,potato,chicken
+183,brioche,chicken
+184,potato,turkey
+185,whole wheat,fish
+186,pretzel,beef
+187,brioche,chicken
+188,brioche,pork
+189,sesame,turkey
+190,whole wheat,veggie
+191,sesame,beef
+192,brioche,chicken
+193,whole wheat,fish
+194,potato,veggie
+195,pretzel,turkey
+196,brioche,turkey
+197,potato,turkey
+198,potato,pork
+199,whole wheat,turkey
+200,sesame,turkey
+201,whole wheat,beef
+202,pretzel,fish
+203,sesame,fish
+204,sesame,veggie
+205,brioche,veggie
+206,sesame,veggie
+207,whole wheat,pork
+208,pretzel,veggie
+209,whole wheat,chicken
+210,brioche,fish
+211,potato,veggie
+212,sesame,veggie
+213,pretzel,pork
+214,pretzel,veggie
+215,brioche,fish
+216,potato,beef
+217,potato,turkey
+218,pretzel,chicken
+219,brioche,beef
+220,sesame,chicken
+221,brioche,beef
+222,pretzel,veggie
+223,brioche,beef
+224,pretzel,veggie
+225,potato,fish
+226,sesame,chicken
+227,whole wheat,pork
+228,pretzel,fish
+229,potato,veggie
+230,potato,pork
+231,potato,veggie
+232,brioche,chicken
+233,pretzel,chicken
+234,sesame,turkey
+235,whole wheat,beef
+236,brioche,chicken
+237,pretzel,beef
+238,brioche,beef
+239,whole wheat,turkey
+240,potato,veggie
+241,sesame,pork
+242,brioche,chicken
+243,sesame,veggie
+244,potato,fish
+245,whole wheat,pork
+246,sesame,veggie
+247,brioche,chicken
+248,sesame,veggie
+249,pretzel,beef
+250,whole wheat,turkey
+251,sesame,turkey
+252,brioche,fish
+253,whole wheat,pork
+254,whole wheat,veggie
+255,potato,beef
+256,brioche,fish
+257,potato,beef
+258,brioche,fish
+259,brioche,beef
+260,whole wheat,beef
+261,sesame,veggie
+262,sesame,chicken
+263,sesame,turkey
+264,potato,turkey
+265,whole wheat,pork
+266,sesame,beef
+267,pretzel,beef
+268,whole wheat,fish
+269,potato,pork
+270,pretzel,beef
+271,pretzel,fish
+272,sesame,beef
+273,whole wheat,veggie
+274,sesame,beef
+275,whole wheat,beef
+276,sesame,pork
+277,brioche,chicken
+278,whole wheat,beef
+279,potato,fish
+280,sesame,turkey
+281,potato,chicken
+282,brioche,veggie
+283,brioche,veggie
+284,pretzel,turkey
+285,pretzel,turkey
+286,potato,beef
+287,whole wheat,fish
+288,sesame,beef
+289,potato,chicken
+290,sesame,chicken
+291,brioche,chicken
+292,brioche,beef
+293,pretzel,beef
+294,brioche,veggie
+295,potato,pork
+296,potato,pork
+297,sesame,turkey
+298,pretzel,pork
+299,sesame,turkey
+300,sesame,pork
+301,sesame,veggie
+302,pretzel,chicken
+303,pretzel,beef
+304,potato,turkey
+305,potato,chicken
+306,whole wheat,pork
+307,pretzel,turkey
+308,brioche,veggie
+309,whole wheat,chicken
+310,potato,pork
+311,sesame,veggie
+312,sesame,beef
+313,sesame,beef
+314,brioche,pork
+315,whole wheat,fish
+316,brioche,beef
+317,brioche,veggie
+318,potato,fish
+319,whole wheat,veggie
+320,sesame,beef
+321,pretzel,chicken
+322,brioche,turkey
+323,sesame,veggie
+324,brioche,veggie
+325,pretzel,chicken
+326,brioche,chicken
+327,potato,veggie
+328,sesame,pork
+329,potato,veggie
+330,potato,pork
+331,sesame,veggie
+332,sesame,fish
+333,sesame,pork
+334,sesame,beef
+335,whole wheat,fish
+336,pretzel,veggie
+337,brioche,veggie
+338,brioche,pork
+339,sesame,veggie
+340,brioche,fish
+341,whole wheat,chicken
+342,brioche,chicken
+343,potato,beef
+344,potato,fish
+345,sesame,beef
+346,sesame,beef
+347,sesame,turkey
+348,pretzel,turkey
+349,sesame,fish
+350,pretzel,fish
+351,brioche,beef
+352,pretzel,veggie
+353,pretzel,chicken
+354,pretzel,veggie
+355,whole wheat,beef
+356,brioche,beef
+357,sesame,fish
+358,potato,chicken
+359,potato,veggie
+360,whole wheat,fish
+361,potato,beef
+362,brioche,fish
+363,potato,fish
+364,whole wheat,veggie
+365,brioche,chicken
+366,whole wheat,chicken
+367,brioche,veggie
+368,brioche,veggie
+369,whole wheat,pork
+370,sesame,turkey
+371,pretzel,veggie
+372,pretzel,veggie
+373,whole wheat,beef
+374,brioche,fish
+375,pretzel,turkey
+376,brioche,chicken
+377,pretzel,turkey
+378,brioche,veggie
+379,sesame,veggie
+380,potato,pork
+381,sesame,turkey
+382,sesame,pork
+383,brioche,beef
+384,sesame,fish
+385,potato,turkey
+386,brioche,turkey
+387,brioche,fish
+388,pretzel,fish
+389,pretzel,veggie
+390,potato,fish
+391,potato,fish
+392,brioche,veggie
+393,pretzel,chicken
+394,brioche,veggie
+395,sesame,veggie
+396,potato,fish
+397,potato,beef
+398,sesame,beef
+399,sesame,veggie
+400,brioche,chicken
+401,brioche,pork
+402,brioche,chicken
+403,brioche,fish
+404,whole wheat,pork
+405,potato,turkey
+406,pretzel,chicken
+407,pretzel,pork
+408,brioche,fish
+409,potato,pork
+410,potato,veggie
+411,potato,pork
+412,sesame,beef
+413,sesame,pork
+414,sesame,beef
+415,potato,turkey
+416,whole wheat,chicken
+417,potato,fish
+418,sesame,pork
+419,brioche,chicken
+420,pretzel,chicken
+421,brioche,veggie
+422,whole wheat,veggie
+423,potato,turkey
+424,brioche,fish
+425,sesame,chicken
+426,brioche,fish
+427,potato,beef
+428,whole wheat,veggie
+429,potato,pork
+430,potato,chicken
+431,whole wheat,pork
+432,whole wheat,chicken
+433,sesame,chicken
+434,whole wheat,veggie
+435,sesame,veggie
+436,brioche,fish
+437,potato,turkey
+438,pretzel,pork
+439,brioche,chicken
+440,potato,turkey
+441,sesame,turkey
+442,pretzel,beef
+443,potato,beef
+444,potato,fish
+445,potato,fish
+446,potato,turkey
+447,pretzel,fish
+448,sesame,turkey
+449,whole wheat,turkey
+450,sesame,pork
+451,potato,chicken
+452,potato,pork
+453,potato,chicken
+454,whole wheat,chicken
+455,potato,pork
+456,brioche,veggie
+457,potato,veggie
+458,potato,turkey
+459,pretzel,fish
+460,pretzel,fish
+461,sesame,beef
+462,whole wheat,pork
+463,potato,fish
+464,potato,chicken
+465,potato,veggie
+466,whole wheat,turkey
+467,whole wheat,turkey
+468,pretzel,chicken
+469,pretzel,chicken
+470,potato,chicken
+471,sesame,veggie
+472,potato,fish
+473,brioche,turkey
+474,sesame,fish
+475,pretzel,pork
+476,whole wheat,veggie
+477,brioche,pork
+478,brioche,beef
+479,brioche,fish
+480,sesame,fish
+481,sesame,chicken
+482,sesame,veggie
+483,pretzel,chicken
+484,whole wheat,beef
+485,brioche,beef
+486,pretzel,veggie
+487,pretzel,veggie
+488,whole wheat,chicken
+489,potato,turkey
+490,whole wheat,veggie
+491,sesame,fish
+492,brioche,turkey
+493,brioche,turkey
+494,pretzel,veggie
+495,sesame,chicken
+496,potato,fish
+497,sesame,chicken
+498,whole wheat,chicken
+499,brioche,turkey
+500,pretzel,turkey
+501,brioche,chicken
+502,pretzel,fish
+503,sesame,veggie
+504,brioche,turkey
+505,sesame,fish
+506,brioche,chicken
+507,sesame,pork
+508,pretzel,beef
+509,sesame,pork
+510,brioche,chicken
+511,sesame,beef
+512,whole wheat,fish
+513,potato,veggie
+514,potato,pork
+515,pretzel,pork
+516,brioche,chicken
+517,potato,beef
+518,pretzel,veggie
+519,pretzel,turkey
+520,whole wheat,chicken
+521,sesame,veggie
+522,brioche,pork
+523,whole wheat,fish
+524,potato,turkey
+525,potato,turkey
+526,whole wheat,fish
+527,potato,pork
+528,sesame,chicken
+529,brioche,beef
+530,brioche,chicken
+531,pretzel,fish
+532,potato,beef
+533,sesame,fish
+534,sesame,turkey
+535,whole wheat,beef
+536,pretzel,pork
+537,whole wheat,chicken
+538,brioche,beef
+539,whole wheat,fish
+540,pretzel,pork
+541,whole wheat,veggie
+542,whole wheat,chicken
+543,pretzel,turkey
+544,pretzel,pork
+545,potato,beef
+546,potato,chicken
+547,sesame,pork
+548,potato,turkey
+549,pretzel,veggie
+550,potato,pork
+551,sesame,chicken
+552,pretzel,beef
+553,potato,chicken
+554,brioche,fish
+555,sesame,beef
+556,sesame,turkey
+557,brioche,turkey
+558,whole wheat,turkey
+559,whole wheat,turkey
+560,brioche,turkey
+561,pretzel,fish
+562,potato,veggie
+563,whole wheat,turkey
+564,sesame,pork
+565,brioche,turkey
+566,pretzel,chicken
+567,brioche,chicken
+568,sesame,pork
+569,pretzel,chicken
+570,whole wheat,veggie
+571,whole wheat,pork
+572,whole wheat,pork
+573,whole wheat,beef
+574,pretzel,veggie
+575,brioche,turkey
+576,brioche,turkey
+577,pretzel,veggie
+578,whole wheat,veggie
+579,brioche,turkey
+580,sesame,pork
+581,whole wheat,fish
+582,brioche,pork
+583,brioche,chicken
+584,whole wheat,beef
+585,whole wheat,turkey
+586,sesame,fish
+587,sesame,veggie
+588,brioche,beef
+589,potato,fish
+590,potato,chicken
+591,brioche,turkey
+592,potato,chicken
+593,sesame,pork
+594,brioche,chicken
+595,potato,turkey
+596,pretzel,veggie
+597,whole wheat,fish
+598,pretzel,beef
+599,sesame,pork
+600,whole wheat,turkey
+601,brioche,fish
+602,pretzel,turkey
+603,sesame,veggie
+604,pretzel,turkey
+605,potato,beef
+606,potato,pork
+607,brioche,pork
+608,brioche,turkey
+609,sesame,turkey
+610,sesame,beef
+611,pretzel,veggie
+612,whole wheat,pork
+613,sesame,turkey
+614,sesame,beef
+615,potato,beef
+616,sesame,veggie
+617,brioche,fish
+618,brioche,beef
+619,potato,turkey
+620,potato,turkey
+621,pretzel,turkey
+622,brioche,fish
+623,pretzel,turkey
+624,pretzel,fish
+625,potato,chicken
+626,whole wheat,beef
+627,brioche,chicken
+628,sesame,chicken
+629,brioche,pork
+630,sesame,beef
+631,brioche,chicken
+632,brioche,chicken
+633,sesame,turkey
+634,whole wheat,chicken
+635,brioche,veggie
+636,brioche,fish
+637,brioche,beef
+638,brioche,beef
+639,whole wheat,turkey
+640,whole wheat,turkey
+641,brioche,fish
+642,pretzel,veggie
+643,pretzel,fish
+644,whole wheat,fish
+645,potato,fish
+646,sesame,beef
+647,pretzel,pork
+648,pretzel,fish
+649,brioche,fish
+650,sesame,chicken
+651,pretzel,veggie
+652,brioche,chicken
+653,pretzel,fish
+654,sesame,beef
+655,potato,pork
+656,potato,pork
+657,brioche,beef
+658,brioche,turkey
+659,pretzel,turkey
+660,potato,pork
+661,potato,turkey
+662,brioche,veggie
+663,sesame,pork
+664,pretzel,turkey
+665,potato,beef
+666,brioche,veggie
+667,brioche,chicken
+668,sesame,veggie
+669,sesame,fish
+670,potato,veggie
+671,potato,veggie
+672,pretzel,beef
+673,pretzel,beef
+674,sesame,chicken
+675,potato,beef
+676,sesame,chicken
+677,sesame,pork
+678,sesame,beef
+679,sesame,chicken
+680,sesame,chicken
+681,brioche,pork
+682,potato,pork
+683,pretzel,turkey
+684,potato,veggie
+685,brioche,beef
+686,brioche,veggie
+687,brioche,veggie
+688,potato,turkey
+689,pretzel,veggie
+690,pretzel,turkey
+691,potato,pork
+692,whole wheat,veggie
+693,whole wheat,veggie
+694,sesame,pork
+695,brioche,turkey
+696,sesame,chicken
+697,sesame,pork
+698,potato,chicken
+699,potato,veggie
+700,sesame,fish
+701,potato,pork
+702,potato,turkey
+703,brioche,pork
+704,sesame,chicken
+705,whole wheat,pork
+706,sesame,veggie
+707,sesame,chicken
+708,brioche,pork
+709,brioche,beef
+710,whole wheat,turkey
+711,brioche,turkey
+712,whole wheat,fish
+713,whole wheat,pork
+714,sesame,fish
+715,potato,veggie
+716,whole wheat,fish
+717,pretzel,fish
+718,whole wheat,chicken
+719,potato,veggie
+720,pretzel,fish
+721,potato,chicken
+722,sesame,veggie
+723,whole wheat,turkey
+724,brioche,beef
+725,potato,veggie
+726,sesame,veggie
+727,brioche,chicken
+728,whole wheat,turkey
+729,sesame,fish
+730,brioche,pork
+731,potato,turkey
+732,whole wheat,veggie
+733,sesame,beef
+734,whole wheat,chicken
+735,sesame,pork
+736,sesame,turkey
+737,brioche,turkey
+738,pretzel,beef
+739,pretzel,turkey
+740,whole wheat,fish
+741,sesame,pork
+742,brioche,beef
+743,pretzel,chicken
+744,pretzel,turkey
+745,sesame,pork
+746,whole wheat,pork
+747,sesame,fish
+748,pretzel,fish
+749,potato,pork
+750,whole wheat,pork
+751,whole wheat,beef
+752,potato,pork
+753,potato,pork
+754,whole wheat,beef
+755,potato,turkey
+756,brioche,veggie
+757,sesame,beef
+758,brioche,turkey
+759,potato,turkey
+760,sesame,turkey
+761,potato,pork
+762,whole wheat,beef
+763,potato,veggie
+764,brioche,pork
+765,brioche,chicken
+766,pretzel,chicken
+767,sesame,turkey
+768,whole wheat,turkey
+769,sesame,chicken
+770,whole wheat,turkey
+771,potato,beef
+772,pretzel,turkey
+773,sesame,fish
+774,potato,pork
+775,potato,chicken
+776,sesame,fish
+777,sesame,chicken
+778,sesame,veggie
+779,brioche,veggie
+780,sesame,fish
+781,brioche,fish
+782,pretzel,beef
+783,pretzel,veggie
+784,potato,beef
+785,potato,turkey
+786,brioche,veggie
+787,pretzel,veggie
+788,pretzel,beef
+789,potato,veggie
+790,sesame,veggie
+791,potato,veggie
+792,brioche,turkey
+793,whole wheat,chicken
+794,pretzel,turkey
+795,brioche,pork
+796,brioche,pork
+797,brioche,turkey
+798,brioche,fish
+799,potato,chicken
+800,brioche,pork
+801,potato,pork
+802,brioche,turkey
+803,whole wheat,chicken
+804,whole wheat,beef
+805,sesame,pork
+806,sesame,pork
+807,sesame,beef
+808,pretzel,veggie
+809,whole wheat,fish
+810,brioche,chicken
+811,potato,fish
+812,sesame,turkey
+813,pretzel,chicken
+814,sesame,beef
+815,pretzel,chicken
+816,whole wheat,veggie
+817,sesame,veggie
+818,potato,veggie
+819,whole wheat,pork
+820,sesame,veggie
+821,pretzel,turkey
+822,potato,fish
+823,sesame,beef
+824,potato,beef
+825,sesame,turkey
+826,pretzel,veggie
+827,sesame,beef
+828,sesame,pork
+829,brioche,fish
+830,potato,beef
+831,whole wheat,turkey
+832,sesame,pork
+833,whole wheat,turkey
+834,potato,beef
+835,pretzel,beef
+836,sesame,fish
+837,whole wheat,beef
+838,brioche,chicken
+839,whole wheat,pork
+840,sesame,beef
+841,brioche,beef
+842,whole wheat,pork
+843,potato,chicken
+844,potato,fish
+845,potato,veggie
+846,brioche,chicken
+847,whole wheat,fish
+848,brioche,turkey
+849,sesame,chicken
+850,pretzel,beef
+851,potato,turkey
+852,pretzel,turkey
+853,potato,veggie
+854,potato,pork
+855,brioche,fish
+856,potato,pork
+857,sesame,beef
+858,brioche,veggie
+859,sesame,chicken
+860,pretzel,veggie
+861,potato,fish
+862,sesame,beef
+863,pretzel,beef
+864,pretzel,pork
+865,potato,turkey
+866,sesame,beef
+867,potato,pork
+868,brioche,turkey
+869,pretzel,veggie
+870,pretzel,turkey
+871,brioche,chicken
+872,potato,fish
+873,sesame,pork
+874,potato,beef
+875,whole wheat,beef
+876,whole wheat,turkey
+877,sesame,chicken
+878,potato,beef
+879,whole wheat,chicken
+880,sesame,fish
+881,brioche,veggie
+882,potato,fish
+883,pretzel,fish
+884,sesame,chicken
+885,sesame,pork
+886,pretzel,pork
+887,whole wheat,turkey
+888,brioche,beef
+889,brioche,veggie
+890,brioche,chicken
+891,pretzel,beef
+892,whole wheat,chicken
+893,pretzel,veggie
+894,brioche,fish
+895,sesame,fish
+896,brioche,chicken
+897,brioche,veggie
+898,pretzel,fish
+899,potato,turkey
+900,whole wheat,veggie
+901,whole wheat,chicken
+902,sesame,fish
+903,brioche,chicken
+904,pretzel,turkey
+905,brioche,veggie
+906,pretzel,chicken
+907,potato,chicken
+908,sesame,fish
+909,whole wheat,turkey
+910,pretzel,beef
+911,brioche,pork
+912,whole wheat,chicken
+913,whole wheat,pork
+914,whole wheat,pork
+915,whole wheat,pork
+916,pretzel,turkey
+917,sesame,chicken
+918,pretzel,fish
+919,pretzel,veggie
+920,pretzel,chicken
+921,whole wheat,turkey
+922,brioche,chicken
+923,whole wheat,fish
+924,whole wheat,beef
+925,brioche,turkey
+926,sesame,beef
+927,sesame,turkey
+928,sesame,turkey
+929,pretzel,beef
+930,whole wheat,turkey
+931,sesame,veggie
+932,pretzel,veggie
+933,sesame,veggie
+934,pretzel,veggie
+935,pretzel,chicken
+936,whole wheat,turkey
+937,pretzel,veggie
+938,brioche,chicken
+939,brioche,turkey
+940,pretzel,beef
+941,whole wheat,fish
+942,brioche,fish
+943,sesame,chicken
+944,pretzel,beef
+945,pretzel,pork
+946,pretzel,turkey
+947,pretzel,fish
+948,potato,beef
+949,sesame,beef
+950,sesame,fish
+951,whole wheat,pork
+952,pretzel,pork
+953,pretzel,pork
+954,pretzel,veggie
+955,potato,pork
+956,potato,pork
+957,pretzel,turkey
+958,brioche,chicken
+959,brioche,turkey
+960,sesame,pork
+961,potato,chicken
+962,pretzel,chicken
+963,pretzel,chicken
+964,whole wheat,turkey
+965,pretzel,fish
+966,pretzel,chicken
+967,pretzel,veggie
+968,brioche,fish
+969,whole wheat,fish
+970,whole wheat,beef
+971,whole wheat,chicken
+972,brioche,fish
+973,pretzel,beef
+974,pretzel,fish
+975,brioche,turkey
+976,potato,turkey
+977,potato,beef
+978,brioche,fish
+979,sesame,beef
+980,sesame,turkey
+981,whole wheat,turkey
+982,pretzel,fish
+983,pretzel,pork
+984,brioche,beef
+985,sesame,chicken
+986,whole wheat,turkey
+987,pretzel,fish
+988,whole wheat,fish
+989,brioche,fish
+990,sesame,chicken
+991,brioche,turkey
+992,pretzel,veggie
+993,brioche,chicken
+994,pretzel,veggie
+995,potato,pork
+996,potato,chicken
+997,sesame,turkey
+998,potato,pork
+999,potato,turkey
+1000,brioche,turkey
