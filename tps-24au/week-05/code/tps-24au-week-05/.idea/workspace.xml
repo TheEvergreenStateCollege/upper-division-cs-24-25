@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="33bb5594-93d1-460b-bb8a-eb033b88e5e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../dsa-24au/week-06/data/sandwich_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dsa-24au/week-04/NumberList.Java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dsa-24au/week-04/NumberList.Java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/de02E/PrefixTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../assignments/de02E/PrefixTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2024-11-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../2024-11-01.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrefixTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrefixTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tps-24au-week-05/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tps-24au-week-05/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tps-24au-week-05/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tps-24au-week-05/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tps-24au-week-05/tps-24au-week-05.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tps-24au-week-05.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2oESQYWEsEPXLhihuqIu9JaJh75" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33bb5594-93d1-460b-bb8a-eb033b88e5e4" name="Changes" comment="" />
+      <created>1730433226613</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730433226613</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+import sys
+
 def longestRepeatingSubstring(s):
     if s == "":
         return ""
@@ -21,8 +24,9 @@ def longestRepeatingSubstring(s):
     return best_so_far
 
 def main():
-    stringVal = input("Enter the string: ")
-    print(longestRepeatingSubstring(stringVal))
+    for line in sys.stdin:
+        #stringVal = input("Enter the string: ")
+        print(longestRepeatingSubstring(line))
 
 
 # Using the special variable 
