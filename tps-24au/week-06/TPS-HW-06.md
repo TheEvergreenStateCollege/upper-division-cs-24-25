@@ -5,3 +5,5 @@ You may adapt the Java implementation from Week 05, or write your own from scrat
 Provide a sketch or argument in English why your solution is $O(n^2)$ , especially if you believe yours is $o(n^2)$ , such as linear time or $O(n \log n)$.
 
 Commit and push your solution into GitHub.
+
+Submit the URL of your commit in Canvas, and a screenshot of your Kattis submission showing any progress from last time for LRS.
