@@ -9,7 +9,7 @@ Please read the details for each opportunity you are interested in.
 Deadlines for Summer 2025 internships are typically in Autumn 2024 (right now). Please be pro-active
 in applying or asking for support from CS faculty and staff.
 
-Luis Apolaya Torres is our dedicated staff member in the internships office to help you with every step of
+Luis Apolaya Torres is our Assistant Director in the College Internships office to help you with every step of
 the process (finding opportunities, resume preparation, interview preparation).
 
 Please email him (autocomplete in your Evergreen outlook account) for questions or [schedule a time to meet](https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2Fd73452274ea64fd7a9e62cad623b893a%40evergreen.edu%3Fanonymous%26ep%3Dplink&data=05%7C02%7CPaul.Pham%40evergreen.edu%7Caafbb0d5a6314d641ba308dcff632dd4%7C22adcff7c06f49a68f2050711c40ddaa%7C0%7C0%7C638666048663875191%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=7itFvZmhGKuIZzrR51pK2TUIMmzlo6TovUOtgPZOZUw%3D&reserved=0).
