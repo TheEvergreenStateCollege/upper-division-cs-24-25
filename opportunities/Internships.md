@@ -17,3 +17,13 @@ Please email him (autocomplete in your Evergreen outlook account) for questions 
 * [Live Updating Internship Spreadsheet](https://evergreen0-my.sharepoint.com/:x:/g/personal/luis_apolaya_torres_evergreen_edu/EcARCzILp61MhhBi44ekkggBMbLDZYwj-eFK8WD-wy48pg?e=4gQpcs&CID=d215b316-4b8a-9cdc-735d-8014742311e7&clickParams=eyJYLUFwcE5hbWUiOiJNaWNyb3NvZnQgT3V0bG9vayBXZWIgQXBwIiwiWC1BcHBWZXJzaW9uIjoiMjAyNDEwMjUwMDMuMzQiLCJPUyI6Ik1hYyBPUyBYIHVuZGVmaW5lZCJ9)
 * [Will Lapenta Internship at NOAA](https://vlab.noaa.gov/web/lapenta-internship-program/home) (focused on marine science and metereology, but computer science students have done it as well):
 * [Software Development Internship at ESRI](https://app.ripplematch.com/v2/public/job/ef1945dc/details?from_page=tracking_link&tl=b96b5944)
+
+## Guest Speakers
+
+Evergreen alumna Codi Noedel was our guest speaker in DSA, Autumn 2023, on "How to Apply for CS Jobs"
+
+https://youtu.be/vANyBEsHSKQ
+
+The accompanying slides are:
+
+https://docs.google.com/presentation/d/18-m7w04qsoX5ET5CQeEE-UXlqCL9mLlmedn9yZsQIHg/edit#slide=id.p
