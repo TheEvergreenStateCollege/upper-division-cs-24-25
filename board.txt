@@ -1,0 +1,12 @@
+// Donna Quach 
+// Workshop 06A
+// Was assigned to Paul as partner for this workshop assignment 
+
+
+|O|_|_|1
+|_|_|_|2
+|_|_|_|3
+ 1 2 3
+
+
+
