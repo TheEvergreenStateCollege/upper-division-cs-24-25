@@ -13,7 +13,7 @@ public class Main {
         String  longestSoFar = "";
 
         for (int i = 0; i < input.length(); i += 1) {
-            for (int j = i + 1; j < input.length(); j += 1) {
+            for (int j = i + longestSoFar.length() + 1; j < input.length(); j += 1) {
                 String slice = input.substring(i, j);
                 insertSuccess = pt.lookupAndInsert(slice); 
                 if ((!insertSuccess) && (slice.length() > longestSoFar.length())) {
