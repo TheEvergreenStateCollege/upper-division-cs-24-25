@@ -25,11 +25,18 @@ For full credits in Technical Problem-Solving, over the 10 weeks of the quarter:
   * Arduino
   * other single-board computer brought to class
 
-Learning outcomes
 * Describe your thought process out loud with confidence
   * be able to ask for hints at the right time, with right level of specificity
 * Understand pseudocode
 * Cultivate a desire for discomfort, solve unseen problems, and risk being unable to do them.
+
+## Final Project Requirements
+
+* 400-500 lines of code in the programming language you've been solving technical problems in, committed to git
+* 3 to 4 unit tests
+* uses at least 2 data structures and 2 algorithms
+  * beyond arrays and linked lists, and beyond what you used in DSA last year
+* a dataset with at least 10,000 items
 
 ## Topic List
 ### Week 01
@@ -53,3 +60,5 @@ Learning outcomes
 
 ### Week 04
 * Review binary search trees, topics of b-trees, balancing them
+
+### Week 05
