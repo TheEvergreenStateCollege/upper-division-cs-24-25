@@ -45,10 +45,10 @@ public class PrefixTree {
             } else {
                 n = new Node(this);
                 children.put(c, n);
-                n.insertChild(suffix.substring(1));
-                inserted = true;
+                inserted = n.insertChild(suffix.substring(1));
+                
             }
-            return inserted || n.insertChild(suffix.substring(1));
+            return inserted;
         }
     }
 
