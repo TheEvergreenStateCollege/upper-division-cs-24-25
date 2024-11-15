@@ -1,74 +1,23 @@
-import java.util.HashMap;
-import java.util.Map;
-
 // This prefix tree is hardcoded to support characters and strings
 public class PrefixTree {
 
-    public static class Node {
-
-        // Traverse
-        Node parent;
-
-        Map<Character,Node> children = new HashMap<>();
-
-        public Node(Node parent) {
-            if (parent == null) {
-                throw new RuntimeException("Node parent cannot be null.");
-            }
-            this.parent = parent;
-        }
-
-        // We only allow our RootNode subclass to instantiate us this way
-        protected Node() {
-            this.parent = null;
-        }
-
-        public Node getChild(char c) {
-            return this.children.get(c);
-        }
-
-        /**
-         *
-         * @param suffix remaining substring to insert starting from this node, after this node's incoming edge letter
-         * @return true if inserting this suffix string resulted in any new nodes being inserted into the subtree rooted at this node.
-         */
-        public boolean insertChild(String suffix) {
-            if (suffix.length() == 0) {
-                return false;
-            }
-            char c = suffix.charAt(0);
-
-            boolean inserted = false;
-            Node n;
-            if (children.containsKey(c)) {
-                n = children.get(c);
-            } else {
-                n = new Node(this);
-                children.put(c, n);
-                inserted = n.insertChild(suffix.substring(1));
-                
-            }
-            return inserted;
-        }
-    }
-
     /**
-     * The root is a special singleton subclass of Node
+     * The root is a special singleton subclass of PrefixTreeNode
      * with no edge letter, representing the empty string.
      */
-    public static class RootNode extends Node {
+    public static class RootNode extends PrefixTreeNode {
 
         public RootNode() {
             super();
-            // Root node is the only one allowed
+            // Root PrefixTreePrefixTreeNode is the only one allowed
         }
 
     }
 
-    Node root;
+    PrefixTreeNode root;
 
     public PrefixTree() {
-        this.root = new RootNode();
+        this.root = new PrefixTreeNode();
     }
 
     /**
@@ -78,7 +27,7 @@ public class PrefixTree {
      * where first character is zero
      */
     public int lookup(String s) {
-        Node curr = this.root;
+        PrefixTreeNode curr = this.root;
         for (int i = 0; (i < s.length()) && (curr != null); i += 1) {
             curr = curr.getChild(s.charAt(i));
             if (curr == null) {
@@ -99,7 +48,7 @@ public class PrefixTree {
     }
 
     public String toString() {
-        throw new RuntimeException("Not yet implemented, that's your task");
+        return "PrefixTree: " + this.root.toString();
     }
 
 
