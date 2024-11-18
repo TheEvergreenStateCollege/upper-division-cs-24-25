@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-// import java.io.InputStreamReader;
-// import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.InputStream;
 import java.io.IOException;
 
 public class ReadData {
@@ -45,6 +45,9 @@ public class ReadData {
         String csvFilePath = "../data/sandwich_data.csv";
         //InputStream is = ReadData.class.getClassLoader().getResourceAsStream(csvFilePath);
 
+        //<> are blank cause it can type inference
+        //related types. one references the other.
+        //Supertype is list. Subtype is ArrayList
         List<Sandwich> orderList = new ArrayList<>();
     
         //try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
