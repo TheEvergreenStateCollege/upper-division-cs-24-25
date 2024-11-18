@@ -22,6 +22,8 @@ public class ReadData {
             String line;
             boolean isHeaderSkipped = false;
             ArrayList<Leaderboard> leaderboardList = new ArrayList<>();
+            int i = 0;
+            Leaderboard temp = new Leaderboard();
             while ((line = br.readLine()) != null) 
             {
                 String[] tokens = line.toUpperCase().replace(" ", "_").split(",");
@@ -36,22 +38,25 @@ public class ReadData {
                 }
                 try 
                 {
-                    // assume formating is correct 
-                    int id = Integer.parseInt(tokens[0]);
+                    temp.speedrun_time = tokens[0];
+                    temp.speedrunner_username = tokens[1];
+                    temp.date_time_set = tokens[2];
+                    leaderboardList.set(i, temp);
+                    /* int id = Integer.parseInt(tokens[0]);
                     BunType bun = BunType.valueOf(tokens[1]);
                     PattyType patty = PattyType.valueOf(tokens[2]);
-
                     Sandwich s = new Sandwich(bun, patty);
-                    orderList.add(s);
-
+                    orderList.add(s); */
                 } catch (IndexOutOfBoundsException | NumberFormatException e) 
                 {
                     System.out.println("Error parsing line: " + line);
                     e.printStackTrace();
                 }
+                i++;
         } catch (IOException ioe) 
         {
             System.err.println(ioe.toString());
         }
     }
+}
 }
