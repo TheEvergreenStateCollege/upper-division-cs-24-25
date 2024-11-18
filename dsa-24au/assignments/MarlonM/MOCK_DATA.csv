@@ -1,0 +1,1001 @@
+sandwich_id,bun_type,meat_type,veggies,condiments,calories,price,preparation_time,expiration_date
+1,brioche,roast beef,pickles,mayonnaise,760,9.42,9,9/25/2023
+2,brioche,roast beef,onion,ketchup,760,12.59,16,7/20/2023
+3,brioche,ham,onion,mustard,512,12.86,11,4/24/2023
+4,white,turkey,lettuce,ketchup,539,8.93,7,6/23/2023
+5,whole wheat,ham,tomato,mayonnaise,725,8.01,19,3/20/2023
+6,brioche,roast beef,onion,mayonnaise,505,8.98,18,4/1/2023
+7,whole wheat,roast beef,tomato,mayonnaise,759,11.31,9,12/3/2023
+8,white,ham,tomato,mustard,562,7.2,7,3/27/2023
+9,whole wheat,ham,pickles,mustard,107,11.48,15,3/9/2023
+10,brioche,turkey,lettuce,ketchup,530,11.71,10,10/23/2023
+11,white,ham,onion,mustard,370,6.26,5,1/17/2023
+12,white,turkey,pickles,mustard,692,7.4,6,9/13/2023
+13,white,roast beef,tomato,mustard,290,12.61,8,1/14/2023
+14,brioche,turkey,tomato,mayonnaise,543,12.08,5,6/5/2023
+15,brioche,roast beef,pickles,mayonnaise,309,12.77,7,10/21/2023
+16,whole wheat,roast beef,pickles,ketchup,721,9.2,6,1/1/2023
+17,brioche,ham,onion,ketchup,641,10.09,7,7/22/2023
+18,brioche,ham,onion,ketchup,222,8.45,18,4/27/2023
+19,whole wheat,roast beef,tomato,mustard,429,9.04,7,10/28/2023
+20,brioche,ham,lettuce,mustard,163,12.24,14,3/31/2023
+21,whole wheat,turkey,onion,mustard,666,11.33,17,12/30/2023
+22,whole wheat,ham,tomato,ketchup,796,6.96,5,2/25/2023
+23,white,turkey,onion,mustard,142,11.98,5,7/16/2023
+24,brioche,turkey,pickles,mayonnaise,762,10.78,10,6/6/2023
+25,white,ham,lettuce,mustard,369,8.37,6,5/20/2023
+26,white,turkey,lettuce,mustard,441,6.17,7,5/12/2023
+27,brioche,turkey,onion,mayonnaise,533,8.29,14,8/2/2023
+28,whole wheat,ham,tomato,mayonnaise,764,10.66,8,8/26/2023
+29,whole wheat,turkey,pickles,mayonnaise,494,11.19,14,6/11/2023
+30,whole wheat,roast beef,tomato,ketchup,622,10.41,6,6/24/2023
+31,brioche,roast beef,lettuce,mayonnaise,776,6.01,13,2/16/2023
+32,white,turkey,tomato,mayonnaise,343,12.48,15,10/18/2023
+33,brioche,turkey,onion,mustard,394,9.73,12,5/30/2023
+34,whole wheat,turkey,tomato,ketchup,120,12.11,19,10/3/2023
+35,whole wheat,roast beef,tomato,mayonnaise,127,12.74,18,4/17/2023
+36,brioche,ham,tomato,mayonnaise,405,11.65,10,11/7/2023
+37,brioche,ham,lettuce,ketchup,234,11.21,14,4/4/2023
+38,brioche,turkey,pickles,mustard,671,6.73,9,9/1/2023
+39,whole wheat,ham,pickles,mayonnaise,463,9.8,20,1/18/2023
+40,whole wheat,ham,onion,ketchup,540,11.91,20,1/31/2023
+41,whole wheat,turkey,tomato,ketchup,122,6.39,20,2/27/2023
+42,whole wheat,ham,tomato,mustard,147,7.53,7,5/13/2023
+43,whole wheat,turkey,pickles,mustard,465,6.23,6,1/29/2023
+44,white,roast beef,onion,ketchup,372,7.44,11,12/29/2023
+45,white,roast beef,tomato,mustard,486,8.51,11,6/6/2023
+46,white,turkey,pickles,mayonnaise,384,6.96,7,8/30/2023
+47,brioche,roast beef,tomato,mayonnaise,493,11.86,20,6/15/2023
+48,whole wheat,ham,pickles,mustard,447,10.72,18,9/11/2023
+49,whole wheat,turkey,tomato,mayonnaise,322,8.74,7,10/9/2023
+50,whole wheat,ham,lettuce,mayonnaise,370,9.16,19,1/29/2023
+51,white,ham,tomato,mayonnaise,339,11.61,10,11/2/2023
+52,brioche,ham,onion,mustard,214,6.95,9,1/9/2023
+53,white,ham,tomato,ketchup,489,9.37,19,1/23/2023
+54,white,ham,tomato,mustard,321,12.18,6,2/6/2023
+55,brioche,roast beef,tomato,mayonnaise,357,9.95,11,9/30/2023
+56,whole wheat,turkey,pickles,ketchup,494,6.31,15,1/25/2023
+57,brioche,turkey,onion,mayonnaise,699,11.13,18,1/20/2023
+58,brioche,ham,lettuce,ketchup,684,12.64,17,1/8/2023
+59,white,ham,tomato,ketchup,525,12.64,12,11/30/2023
+60,white,ham,tomato,ketchup,709,11.08,12,12/22/2023
+61,whole wheat,turkey,onion,ketchup,767,8.1,5,2/28/2023
+62,white,ham,lettuce,mustard,648,9.83,20,10/26/2023
+63,whole wheat,ham,tomato,ketchup,572,8.7,18,11/26/2023
+64,whole wheat,turkey,onion,mayonnaise,541,6.97,20,11/19/2023
+65,whole wheat,turkey,lettuce,mustard,581,9.54,9,10/18/2023
+66,whole wheat,ham,lettuce,mayonnaise,771,12.63,17,10/21/2023
+67,whole wheat,ham,onion,ketchup,241,8.72,7,2/7/2023
+68,brioche,roast beef,pickles,mustard,723,12.12,16,7/2/2023
+69,whole wheat,roast beef,lettuce,mayonnaise,612,9.56,10,4/6/2023
+70,white,ham,lettuce,ketchup,783,11.95,12,1/8/2023
+71,white,turkey,lettuce,mustard,409,8.3,8,6/26/2023
+72,brioche,roast beef,lettuce,mayonnaise,452,12.26,15,6/20/2023
+73,white,ham,pickles,ketchup,151,8.42,15,11/16/2023
+74,white,ham,onion,ketchup,457,11.91,14,4/22/2023
+75,whole wheat,ham,pickles,ketchup,191,10.13,6,2/9/2023
+76,whole wheat,ham,onion,ketchup,278,6.37,19,4/23/2023
+77,white,roast beef,onion,mustard,544,7.6,20,9/24/2023
+78,whole wheat,turkey,onion,ketchup,440,11.54,14,10/13/2023
+79,whole wheat,ham,pickles,ketchup,358,10.79,18,7/8/2023
+80,white,roast beef,lettuce,mayonnaise,617,10.72,15,6/26/2023
+81,whole wheat,ham,onion,ketchup,133,8.23,15,12/15/2023
+82,white,turkey,lettuce,mayonnaise,630,10.02,16,1/14/2023
+83,white,turkey,pickles,ketchup,682,12.58,12,3/11/2023
+84,brioche,turkey,lettuce,mustard,416,10.37,10,7/12/2023
+85,brioche,turkey,pickles,mustard,196,8.61,10,5/26/2023
+86,brioche,turkey,pickles,mayonnaise,783,6.12,7,12/8/2023
+87,white,ham,onion,mustard,390,6.62,12,2/5/2023
+88,brioche,turkey,tomato,mayonnaise,288,11.5,19,2/13/2023
+89,brioche,turkey,lettuce,ketchup,439,8.15,14,4/21/2023
+90,brioche,ham,tomato,mayonnaise,520,9.65,15,7/15/2023
+91,brioche,turkey,onion,mustard,778,7.35,15,11/18/2023
+92,white,ham,pickles,ketchup,788,12.18,16,8/15/2023
+93,brioche,ham,lettuce,mustard,622,6.2,19,8/19/2023
+94,white,roast beef,onion,mustard,260,6.2,10,4/9/2023
+95,brioche,ham,onion,mayonnaise,184,9.85,17,6/7/2023
+96,white,turkey,pickles,ketchup,613,10.04,10,6/27/2023
+97,white,roast beef,tomato,ketchup,382,8.68,15,3/17/2023
+98,white,ham,onion,ketchup,667,8.14,11,7/17/2023
+99,white,roast beef,lettuce,mayonnaise,475,9.09,9,5/29/2023
+100,whole wheat,ham,tomato,ketchup,364,12.72,10,2/3/2023
+101,brioche,turkey,pickles,ketchup,193,6.03,7,12/27/2023
+102,brioche,turkey,pickles,mayonnaise,538,10.28,18,3/3/2023
+103,whole wheat,turkey,lettuce,mayonnaise,240,10.71,15,10/12/2023
+104,brioche,turkey,lettuce,mustard,217,10.53,12,4/10/2023
+105,brioche,turkey,pickles,ketchup,448,6.53,5,11/15/2023
+106,white,turkey,pickles,mustard,284,6.84,6,7/16/2023
+107,brioche,turkey,lettuce,ketchup,616,12.94,15,12/18/2023
+108,brioche,turkey,onion,mustard,800,9.5,9,2/13/2023
+109,brioche,ham,pickles,mustard,471,10.25,5,3/8/2023
+110,brioche,turkey,tomato,mustard,488,12.49,13,12/10/2023
+111,whole wheat,turkey,tomato,ketchup,321,9.06,12,8/8/2023
+112,white,ham,lettuce,mayonnaise,572,6.2,16,12/7/2023
+113,whole wheat,roast beef,onion,mustard,131,7.96,16,9/9/2023
+114,white,turkey,pickles,ketchup,700,11.84,10,2/4/2023
+115,whole wheat,ham,lettuce,mustard,400,8.75,19,11/7/2023
+116,white,turkey,tomato,mustard,725,10.15,16,3/29/2023
+117,whole wheat,roast beef,onion,mustard,380,9.81,6,3/11/2023
+118,brioche,turkey,tomato,ketchup,572,8.82,6,6/22/2023
+119,brioche,roast beef,lettuce,mayonnaise,165,11.66,8,3/27/2023
+120,white,roast beef,pickles,ketchup,496,11.62,17,12/14/2023
+121,whole wheat,ham,tomato,ketchup,514,9.88,6,3/11/2023
+122,whole wheat,turkey,pickles,mayonnaise,555,8.99,5,9/8/2023
+123,white,turkey,onion,ketchup,641,10.55,20,10/31/2023
+124,whole wheat,roast beef,pickles,mustard,407,12.72,20,4/9/2023
+125,brioche,roast beef,tomato,mustard,413,8.13,15,6/20/2023
+126,brioche,ham,pickles,ketchup,221,8.41,15,8/22/2023
+127,brioche,ham,lettuce,mustard,543,11.88,15,10/15/2023
+128,brioche,ham,onion,mustard,137,9.51,20,1/4/2023
+129,brioche,ham,pickles,mustard,236,10.34,12,3/29/2023
+130,whole wheat,turkey,pickles,mustard,476,8.38,14,7/23/2023
+131,whole wheat,roast beef,onion,mayonnaise,602,8.82,18,10/12/2023
+132,brioche,ham,pickles,ketchup,261,7.68,12,12/27/2023
+133,brioche,roast beef,pickles,mayonnaise,465,9.25,11,5/23/2023
+134,whole wheat,turkey,lettuce,mayonnaise,765,8.39,10,8/14/2023
+135,brioche,roast beef,lettuce,mayonnaise,762,9.71,14,6/8/2023
+136,white,roast beef,lettuce,mustard,732,9.94,11,1/31/2023
+137,whole wheat,ham,tomato,ketchup,470,6.52,8,3/21/2023
+138,brioche,ham,tomato,ketchup,465,6.66,16,11/1/2023
+139,white,ham,tomato,ketchup,466,11.54,8,6/17/2023
+140,whole wheat,roast beef,pickles,mustard,187,8.34,15,2/6/2023
+141,white,ham,onion,ketchup,657,8.25,18,6/9/2023
+142,white,ham,onion,mustard,681,7.62,11,5/17/2023
+143,white,ham,onion,ketchup,297,11.41,13,3/20/2023
+144,whole wheat,turkey,onion,mayonnaise,721,10.25,7,3/24/2023
+145,whole wheat,turkey,lettuce,ketchup,752,6.88,5,8/27/2023
+146,whole wheat,turkey,onion,mustard,224,8.46,19,2/18/2023
+147,brioche,roast beef,lettuce,mustard,418,8.57,12,6/14/2023
+148,whole wheat,ham,pickles,mustard,724,8.48,16,2/12/2023
+149,brioche,roast beef,onion,ketchup,207,8.23,14,11/21/2023
+150,whole wheat,ham,lettuce,ketchup,600,8.98,15,6/10/2023
+151,white,roast beef,lettuce,ketchup,539,8.46,7,4/9/2023
+152,brioche,roast beef,tomato,mustard,615,7.9,12,1/16/2023
+153,brioche,turkey,lettuce,ketchup,559,6.41,12,11/23/2023
+154,brioche,roast beef,lettuce,ketchup,191,7.77,9,4/21/2023
+155,brioche,roast beef,lettuce,ketchup,586,6.37,16,10/13/2023
+156,brioche,ham,pickles,mustard,625,12.7,19,12/4/2023
+157,white,turkey,onion,ketchup,699,11.73,17,4/30/2023
+158,white,turkey,lettuce,mayonnaise,492,7.62,9,11/13/2023
+159,white,roast beef,onion,mustard,369,7.36,8,12/24/2023
+160,white,roast beef,pickles,ketchup,317,11.04,5,3/7/2023
+161,whole wheat,turkey,pickles,ketchup,204,8.05,8,9/30/2023
+162,white,ham,pickles,ketchup,405,12.15,10,1/25/2023
+163,white,turkey,onion,mustard,507,9.39,8,11/5/2023
+164,white,turkey,pickles,mayonnaise,223,7.72,15,5/27/2023
+165,brioche,turkey,lettuce,mustard,653,6.79,17,11/26/2023
+166,whole wheat,ham,onion,ketchup,202,9.53,10,10/8/2023
+167,brioche,roast beef,tomato,mustard,169,11.98,16,8/22/2023
+168,whole wheat,roast beef,onion,mayonnaise,410,6.06,16,4/6/2023
+169,whole wheat,turkey,tomato,ketchup,748,9.97,7,6/21/2023
+170,white,ham,pickles,mustard,262,12.05,20,1/15/2023
+171,brioche,turkey,onion,mustard,648,6.02,12,6/10/2023
+172,whole wheat,ham,pickles,mustard,609,12.0,7,5/18/2023
+173,white,roast beef,pickles,mustard,641,12.94,11,9/3/2023
+174,whole wheat,roast beef,pickles,ketchup,348,7.92,14,7/24/2023
+175,whole wheat,turkey,tomato,ketchup,270,7.19,10,10/12/2023
+176,whole wheat,turkey,pickles,ketchup,639,12.75,13,6/21/2023
+177,whole wheat,turkey,pickles,ketchup,230,7.76,7,2/20/2023
+178,white,turkey,pickles,ketchup,535,12.05,5,1/19/2023
+179,whole wheat,ham,pickles,mayonnaise,772,9.02,6,10/2/2023
+180,white,ham,lettuce,mustard,156,11.57,18,10/29/2023
+181,white,roast beef,tomato,ketchup,171,7.62,18,6/24/2023
+182,brioche,ham,pickles,mustard,656,12.68,8,11/30/2023
+183,brioche,roast beef,onion,mayonnaise,137,8.55,16,3/27/2023
+184,whole wheat,ham,tomato,ketchup,111,8.33,20,12/2/2023
+185,whole wheat,turkey,lettuce,mayonnaise,762,9.77,14,7/14/2023
+186,brioche,ham,lettuce,ketchup,719,10.79,16,8/18/2023
+187,whole wheat,roast beef,lettuce,mayonnaise,448,7.37,11,9/23/2023
+188,brioche,turkey,lettuce,ketchup,371,8.93,11,8/29/2023
+189,white,turkey,lettuce,mayonnaise,548,11.63,8,1/20/2023
+190,whole wheat,ham,pickles,ketchup,248,11.84,8,8/17/2023
+191,white,roast beef,lettuce,mustard,288,8.36,10,9/30/2023
+192,brioche,turkey,lettuce,mayonnaise,564,6.55,11,5/10/2023
+193,brioche,roast beef,onion,mustard,781,9.4,5,10/17/2023
+194,brioche,roast beef,tomato,mustard,794,8.56,10,9/6/2023
+195,white,roast beef,tomato,ketchup,735,10.21,13,5/27/2023
+196,whole wheat,roast beef,pickles,mustard,699,10.2,10,7/31/2023
+197,whole wheat,roast beef,pickles,ketchup,441,10.72,18,7/18/2023
+198,brioche,roast beef,lettuce,mayonnaise,787,6.55,20,9/15/2023
+199,brioche,turkey,pickles,mustard,603,11.18,17,9/5/2023
+200,white,roast beef,onion,ketchup,724,6.33,15,3/3/2023
+201,white,turkey,tomato,ketchup,520,11.99,20,6/16/2023
+202,brioche,turkey,onion,ketchup,171,8.37,8,10/19/2023
+203,whole wheat,ham,onion,mayonnaise,653,11.52,14,3/5/2023
+204,white,roast beef,lettuce,mayonnaise,128,7.97,14,8/29/2023
+205,white,ham,onion,ketchup,187,6.58,16,10/25/2023
+206,whole wheat,roast beef,tomato,mayonnaise,387,9.74,12,4/4/2023
+207,white,roast beef,pickles,ketchup,164,9.21,16,5/19/2023
+208,whole wheat,roast beef,tomato,mustard,703,10.9,8,2/6/2023
+209,whole wheat,roast beef,pickles,ketchup,543,12.33,15,8/1/2023
+210,whole wheat,ham,tomato,mustard,487,9.38,20,9/12/2023
+211,whole wheat,roast beef,pickles,ketchup,410,11.62,11,8/17/2023
+212,white,roast beef,tomato,mustard,377,11.21,16,7/23/2023
+213,brioche,roast beef,tomato,mustard,612,8.76,5,7/22/2023
+214,whole wheat,ham,pickles,ketchup,361,6.44,11,10/1/2023
+215,white,ham,lettuce,mustard,690,10.4,17,5/5/2023
+216,white,ham,onion,ketchup,533,10.37,12,5/21/2023
+217,white,ham,pickles,mayonnaise,342,10.59,11,2/13/2023
+218,brioche,turkey,onion,mustard,748,8.6,15,10/16/2023
+219,white,ham,onion,ketchup,390,11.76,8,1/22/2023
+220,white,roast beef,pickles,ketchup,738,7.87,17,4/25/2023
+221,brioche,roast beef,onion,mustard,534,9.54,17,4/18/2023
+222,white,roast beef,pickles,mayonnaise,587,12.81,13,8/13/2023
+223,white,turkey,onion,mayonnaise,578,12.79,5,12/4/2023
+224,white,ham,lettuce,ketchup,496,7.11,17,1/23/2023
+225,white,ham,onion,mustard,491,11.94,10,7/17/2023
+226,whole wheat,turkey,tomato,mustard,125,9.3,8,7/12/2023
+227,white,turkey,onion,mustard,372,11.4,6,10/30/2023
+228,whole wheat,ham,onion,ketchup,486,9.31,6,7/29/2023
+229,whole wheat,roast beef,pickles,mayonnaise,708,8.02,10,8/6/2023
+230,white,turkey,tomato,mustard,741,7.64,10,2/13/2023
+231,brioche,roast beef,onion,mustard,727,9.85,17,1/21/2023
+232,whole wheat,ham,onion,mayonnaise,417,12.43,19,10/3/2023
+233,whole wheat,ham,lettuce,mustard,663,9.55,7,10/16/2023
+234,white,turkey,lettuce,ketchup,249,9.31,20,10/16/2023
+235,brioche,turkey,tomato,ketchup,505,9.4,6,3/31/2023
+236,brioche,roast beef,onion,mayonnaise,794,10.84,16,8/3/2023
+237,white,turkey,tomato,mustard,580,10.97,14,9/10/2023
+238,white,turkey,tomato,ketchup,674,11.22,8,1/6/2023
+239,whole wheat,turkey,lettuce,mayonnaise,173,11.1,6,10/22/2023
+240,whole wheat,roast beef,pickles,ketchup,633,6.71,18,8/27/2023
+241,whole wheat,ham,tomato,mayonnaise,623,9.6,11,11/19/2023
+242,whole wheat,roast beef,pickles,mayonnaise,695,6.27,12,2/6/2023
+243,white,turkey,tomato,mustard,608,9.82,9,10/17/2023
+244,whole wheat,turkey,tomato,mustard,732,11.95,13,8/30/2023
+245,brioche,turkey,pickles,mustard,751,9.06,10,6/1/2023
+246,whole wheat,turkey,pickles,mustard,740,10.04,17,7/2/2023
+247,brioche,turkey,pickles,ketchup,479,7.61,6,1/21/2023
+248,whole wheat,roast beef,pickles,ketchup,129,9.38,6,3/15/2023
+249,white,ham,onion,mustard,491,9.85,16,5/27/2023
+250,brioche,turkey,onion,mustard,746,10.37,18,12/4/2023
+251,white,roast beef,lettuce,mustard,244,9.76,5,4/30/2023
+252,whole wheat,turkey,tomato,mayonnaise,383,7.88,8,2/27/2023
+253,whole wheat,roast beef,tomato,mayonnaise,164,9.74,20,10/31/2023
+254,brioche,ham,tomato,ketchup,525,12.63,18,8/15/2023
+255,white,roast beef,pickles,mayonnaise,566,11.25,6,4/17/2023
+256,whole wheat,ham,lettuce,mayonnaise,788,11.53,12,8/4/2023
+257,whole wheat,turkey,onion,mustard,513,9.75,13,10/28/2023
+258,whole wheat,turkey,lettuce,mayonnaise,318,11.66,17,9/29/2023
+259,brioche,ham,onion,ketchup,571,12.23,12,8/20/2023
+260,whole wheat,ham,tomato,ketchup,715,11.77,11,1/7/2023
+261,whole wheat,ham,onion,mayonnaise,149,10.03,17,5/25/2023
+262,whole wheat,roast beef,lettuce,mayonnaise,187,6.0,14,6/24/2023
+263,whole wheat,roast beef,onion,mayonnaise,441,12.37,15,9/9/2023
+264,white,turkey,pickles,mustard,681,8.02,18,1/30/2023
+265,whole wheat,ham,pickles,mayonnaise,307,9.6,15,7/9/2023
+266,brioche,roast beef,pickles,mustard,391,9.76,20,2/1/2023
+267,whole wheat,ham,lettuce,ketchup,616,11.33,20,9/5/2023
+268,white,roast beef,lettuce,mustard,179,11.93,20,12/3/2023
+269,brioche,turkey,tomato,mustard,775,11.64,18,2/7/2023
+270,brioche,roast beef,pickles,mayonnaise,436,11.95,7,6/1/2023
+271,whole wheat,turkey,pickles,ketchup,459,12.98,14,6/25/2023
+272,whole wheat,roast beef,onion,mustard,504,11.7,18,5/20/2023
+273,white,turkey,pickles,mayonnaise,103,7.48,11,11/17/2023
+274,whole wheat,turkey,lettuce,ketchup,628,11.51,12,3/28/2023
+275,white,roast beef,lettuce,mustard,303,8.32,20,7/3/2023
+276,white,roast beef,pickles,ketchup,452,8.4,10,12/21/2023
+277,brioche,ham,onion,ketchup,194,7.5,6,6/24/2023
+278,brioche,roast beef,onion,ketchup,301,7.73,16,5/2/2023
+279,white,roast beef,pickles,mustard,137,12.07,14,10/8/2023
+280,brioche,roast beef,pickles,mayonnaise,730,12.38,8,2/5/2023
+281,whole wheat,ham,onion,mayonnaise,615,8.77,14,8/13/2023
+282,white,turkey,lettuce,mustard,612,6.47,17,6/14/2023
+283,whole wheat,turkey,onion,mustard,133,6.35,11,3/16/2023
+284,white,ham,lettuce,mayonnaise,179,11.17,17,11/11/2023
+285,whole wheat,turkey,tomato,mustard,264,9.86,11,7/4/2023
+286,brioche,turkey,lettuce,ketchup,526,10.75,6,9/22/2023
+287,white,turkey,pickles,mayonnaise,507,9.66,8,2/9/2023
+288,white,turkey,pickles,ketchup,759,10.76,14,9/19/2023
+289,white,roast beef,lettuce,mustard,516,6.65,19,8/7/2023
+290,whole wheat,turkey,tomato,mustard,608,6.9,19,4/17/2023
+291,whole wheat,roast beef,lettuce,ketchup,488,11.09,8,10/29/2023
+292,brioche,roast beef,onion,ketchup,212,8.71,19,9/19/2023
+293,whole wheat,ham,lettuce,mustard,304,6.3,12,2/22/2023
+294,white,roast beef,lettuce,mustard,387,12.28,19,11/18/2023
+295,whole wheat,ham,onion,ketchup,618,12.4,12,8/18/2023
+296,whole wheat,ham,lettuce,mayonnaise,344,12.27,13,3/3/2023
+297,brioche,turkey,tomato,mustard,798,6.51,13,12/13/2023
+298,brioche,ham,tomato,ketchup,375,12.13,8,1/13/2023
+299,whole wheat,turkey,pickles,mayonnaise,455,11.27,11,11/2/2023
+300,white,ham,lettuce,ketchup,794,11.81,5,4/17/2023
+301,white,ham,pickles,mayonnaise,368,10.89,19,8/18/2023
+302,brioche,turkey,pickles,mustard,755,9.42,12,6/8/2023
+303,whole wheat,roast beef,pickles,ketchup,522,10.27,12,11/18/2023
+304,brioche,roast beef,onion,mayonnaise,132,11.94,6,6/22/2023
+305,white,roast beef,lettuce,mayonnaise,703,8.39,12,7/3/2023
+306,whole wheat,roast beef,pickles,ketchup,317,10.4,7,3/29/2023
+307,whole wheat,ham,tomato,mustard,274,8.64,12,12/18/2023
+308,white,turkey,lettuce,mustard,308,11.1,7,2/6/2023
+309,white,roast beef,pickles,mustard,683,11.38,14,6/13/2023
+310,whole wheat,turkey,tomato,mayonnaise,128,10.84,10,4/13/2023
+311,white,turkey,onion,mayonnaise,528,12.22,6,1/13/2023
+312,white,ham,pickles,mayonnaise,215,12.94,18,5/30/2023
+313,white,roast beef,lettuce,mustard,304,12.21,10,1/9/2023
+314,whole wheat,turkey,pickles,mustard,655,10.75,10,10/10/2023
+315,brioche,turkey,lettuce,mayonnaise,725,11.54,18,12/19/2023
+316,whole wheat,roast beef,pickles,ketchup,380,7.38,20,9/19/2023
+317,brioche,turkey,onion,mustard,606,10.62,5,6/14/2023
+318,whole wheat,roast beef,pickles,mayonnaise,555,11.99,18,11/18/2023
+319,white,turkey,pickles,mayonnaise,185,7.44,7,10/21/2023
+320,whole wheat,ham,pickles,mustard,796,10.21,20,6/8/2023
+321,brioche,roast beef,pickles,mayonnaise,219,9.45,5,5/18/2023
+322,white,turkey,tomato,ketchup,750,10.56,7,8/7/2023
+323,white,ham,tomato,ketchup,734,6.26,10,10/15/2023
+324,brioche,ham,pickles,ketchup,635,7.48,11,8/19/2023
+325,white,ham,tomato,mustard,632,6.59,17,1/12/2023
+326,brioche,ham,lettuce,mayonnaise,457,9.87,13,9/22/2023
+327,brioche,turkey,tomato,ketchup,282,11.1,13,8/29/2023
+328,brioche,ham,onion,mayonnaise,646,8.91,15,12/29/2023
+329,white,turkey,pickles,mayonnaise,232,6.18,7,3/26/2023
+330,brioche,turkey,tomato,ketchup,173,8.71,12,10/7/2023
+331,white,roast beef,onion,mayonnaise,510,6.12,13,4/29/2023
+332,brioche,ham,pickles,ketchup,412,12.96,10,2/23/2023
+333,brioche,roast beef,lettuce,mayonnaise,164,12.25,18,2/9/2023
+334,brioche,roast beef,tomato,mustard,786,9.07,5,4/20/2023
+335,whole wheat,turkey,tomato,mustard,480,7.4,9,4/26/2023
+336,brioche,turkey,tomato,mustard,646,9.11,17,10/25/2023
+337,brioche,ham,lettuce,mustard,173,7.55,17,1/18/2023
+338,whole wheat,roast beef,pickles,ketchup,669,9.19,6,9/15/2023
+339,white,turkey,lettuce,mustard,599,11.64,14,12/27/2023
+340,white,roast beef,tomato,mayonnaise,766,7.04,15,2/7/2023
+341,white,roast beef,lettuce,ketchup,365,12.92,11,6/30/2023
+342,whole wheat,roast beef,pickles,mayonnaise,672,7.54,10,2/19/2023
+343,brioche,ham,lettuce,ketchup,224,12.47,17,4/30/2023
+344,white,turkey,lettuce,mayonnaise,312,6.54,19,6/9/2023
+345,whole wheat,turkey,onion,mustard,326,9.53,7,3/10/2023
+346,whole wheat,roast beef,tomato,mustard,783,9.54,10,2/5/2023
+347,white,ham,lettuce,mustard,643,11.3,12,8/27/2023
+348,white,turkey,pickles,mustard,161,9.55,16,2/16/2023
+349,white,turkey,onion,ketchup,377,8.92,19,1/31/2023
+350,white,ham,onion,mustard,712,9.72,12,2/8/2023
+351,white,roast beef,onion,ketchup,433,10.13,8,12/29/2023
+352,white,turkey,lettuce,ketchup,550,7.64,19,8/24/2023
+353,white,ham,lettuce,mustard,498,10.39,6,8/18/2023
+354,brioche,roast beef,tomato,mayonnaise,557,11.5,7,10/26/2023
+355,white,roast beef,onion,ketchup,794,8.37,8,9/7/2023
+356,white,turkey,lettuce,mayonnaise,487,9.47,20,2/4/2023
+357,white,ham,tomato,ketchup,701,11.23,15,7/28/2023
+358,white,turkey,onion,ketchup,284,12.92,11,2/7/2023
+359,white,roast beef,lettuce,ketchup,278,10.28,15,5/8/2023
+360,white,ham,onion,mayonnaise,550,6.0,9,5/13/2023
+361,white,turkey,tomato,mustard,282,10.26,9,6/3/2023
+362,white,ham,tomato,ketchup,334,10.19,9,1/11/2023
+363,brioche,roast beef,tomato,mustard,705,6.69,19,5/7/2023
+364,whole wheat,ham,pickles,ketchup,465,8.6,10,12/24/2023
+365,brioche,ham,onion,mayonnaise,682,8.5,10,7/5/2023
+366,white,roast beef,lettuce,mustard,325,11.68,17,3/8/2023
+367,brioche,turkey,tomato,mayonnaise,406,9.12,16,2/23/2023
+368,whole wheat,roast beef,onion,ketchup,434,10.86,19,2/9/2023
+369,whole wheat,ham,pickles,mayonnaise,603,12.08,10,5/20/2023
+370,brioche,ham,tomato,ketchup,428,12.65,5,2/14/2023
+371,white,ham,tomato,mustard,237,7.85,10,11/18/2023
+372,white,ham,tomato,mayonnaise,760,7.16,8,5/25/2023
+373,brioche,turkey,lettuce,ketchup,730,10.09,8,3/10/2023
+374,brioche,roast beef,onion,mustard,789,9.84,11,2/7/2023
+375,brioche,turkey,lettuce,ketchup,575,11.38,7,7/19/2023
+376,whole wheat,roast beef,onion,mustard,608,11.03,18,5/29/2023
+377,white,roast beef,lettuce,mayonnaise,439,6.91,18,7/11/2023
+378,white,roast beef,pickles,mayonnaise,403,7.28,18,5/27/2023
+379,whole wheat,ham,lettuce,ketchup,294,9.74,6,5/30/2023
+380,brioche,ham,pickles,ketchup,162,7.19,17,9/21/2023
+381,whole wheat,roast beef,onion,mayonnaise,114,7.72,14,11/21/2023
+382,white,turkey,pickles,ketchup,263,12.61,17,5/6/2023
+383,whole wheat,ham,lettuce,ketchup,422,11.14,5,1/20/2023
+384,brioche,turkey,pickles,ketchup,367,8.13,20,12/28/2023
+385,brioche,ham,lettuce,mustard,708,11.2,18,5/23/2023
+386,whole wheat,ham,pickles,mayonnaise,604,9.51,16,10/14/2023
+387,brioche,turkey,tomato,ketchup,526,6.49,13,2/13/2023
+388,brioche,ham,pickles,mayonnaise,633,8.39,19,10/15/2023
+389,brioche,ham,lettuce,ketchup,733,11.83,15,4/23/2023
+390,white,ham,onion,mustard,389,7.38,6,10/26/2023
+391,whole wheat,roast beef,pickles,mayonnaise,520,9.71,17,8/27/2023
+392,white,roast beef,lettuce,mayonnaise,507,10.51,12,1/1/2023
+393,brioche,ham,lettuce,mayonnaise,515,9.64,11,5/2/2023
+394,whole wheat,roast beef,lettuce,ketchup,129,7.42,6,9/11/2023
+395,brioche,roast beef,onion,mustard,622,6.65,9,3/11/2023
+396,white,turkey,lettuce,mustard,457,8.99,16,10/5/2023
+397,white,turkey,onion,ketchup,240,7.05,12,11/16/2023
+398,white,turkey,lettuce,mayonnaise,773,8.8,13,6/20/2023
+399,whole wheat,roast beef,lettuce,mustard,626,11.09,13,1/8/2023
+400,brioche,turkey,tomato,ketchup,550,6.33,9,3/29/2023
+401,brioche,roast beef,lettuce,mayonnaise,771,12.19,13,4/17/2023
+402,whole wheat,roast beef,lettuce,mustard,404,12.54,12,5/17/2023
+403,whole wheat,ham,tomato,mustard,354,7.06,10,10/30/2023
+404,whole wheat,ham,onion,ketchup,691,7.44,16,8/2/2023
+405,brioche,roast beef,pickles,mustard,366,9.02,7,10/5/2023
+406,white,roast beef,pickles,mayonnaise,418,9.9,17,9/19/2023
+407,white,roast beef,pickles,mayonnaise,693,11.09,6,3/6/2023
+408,brioche,turkey,lettuce,mayonnaise,751,10.67,6,9/6/2023
+409,brioche,ham,pickles,ketchup,785,6.07,18,12/25/2023
+410,white,roast beef,pickles,mayonnaise,288,10.82,8,1/6/2023
+411,whole wheat,roast beef,lettuce,ketchup,631,9.94,19,2/13/2023
+412,whole wheat,turkey,lettuce,mayonnaise,627,12.43,14,1/10/2023
+413,white,roast beef,pickles,mustard,733,11.45,11,7/4/2023
+414,whole wheat,ham,onion,ketchup,692,7.35,13,11/20/2023
+415,whole wheat,turkey,lettuce,mayonnaise,344,10.66,17,5/25/2023
+416,brioche,roast beef,onion,ketchup,255,9.18,17,5/26/2023
+417,white,ham,pickles,mustard,359,12.27,16,10/4/2023
+418,brioche,turkey,pickles,ketchup,613,7.96,18,9/26/2023
+419,brioche,turkey,tomato,mayonnaise,436,10.62,13,11/15/2023
+420,whole wheat,roast beef,pickles,mustard,688,7.33,13,4/6/2023
+421,brioche,turkey,onion,ketchup,741,9.2,7,12/9/2023
+422,brioche,ham,tomato,mustard,479,8.44,9,3/3/2023
+423,brioche,roast beef,tomato,mayonnaise,722,6.62,14,9/30/2023
+424,white,ham,lettuce,mayonnaise,103,7.46,16,6/16/2023
+425,whole wheat,turkey,tomato,mustard,261,7.66,16,7/9/2023
+426,whole wheat,roast beef,tomato,mustard,770,12.76,14,11/21/2023
+427,white,roast beef,lettuce,mustard,339,8.32,5,6/12/2023
+428,brioche,ham,onion,mayonnaise,342,7.86,9,11/30/2023
+429,whole wheat,ham,lettuce,ketchup,604,7.22,9,10/25/2023
+430,whole wheat,ham,pickles,mayonnaise,190,10.53,16,3/3/2023
+431,brioche,turkey,pickles,ketchup,496,10.33,20,11/4/2023
+432,whole wheat,ham,pickles,mayonnaise,443,11.73,13,5/28/2023
+433,brioche,ham,pickles,ketchup,646,10.14,18,8/20/2023
+434,white,ham,lettuce,mayonnaise,655,8.1,16,12/17/2023
+435,white,ham,onion,mustard,129,7.94,20,4/18/2023
+436,white,turkey,lettuce,mayonnaise,144,7.64,20,6/2/2023
+437,brioche,roast beef,pickles,ketchup,582,6.29,9,1/31/2023
+438,whole wheat,turkey,pickles,mayonnaise,613,8.74,20,6/7/2023
+439,brioche,ham,pickles,mustard,775,12.21,5,4/3/2023
+440,whole wheat,roast beef,lettuce,mustard,768,11.06,15,11/16/2023
+441,white,roast beef,onion,mayonnaise,648,8.52,11,3/3/2023
+442,whole wheat,roast beef,pickles,mayonnaise,785,9.81,19,7/13/2023
+443,whole wheat,roast beef,tomato,mayonnaise,691,9.0,18,12/18/2023
+444,brioche,ham,pickles,mayonnaise,478,12.25,6,12/26/2023
+445,brioche,turkey,onion,ketchup,341,6.43,14,3/22/2023
+446,white,turkey,onion,mayonnaise,485,9.78,11,8/20/2023
+447,brioche,roast beef,tomato,mustard,103,10.15,17,3/12/2023
+448,brioche,turkey,pickles,mustard,135,7.59,13,4/29/2023
+449,whole wheat,turkey,tomato,mayonnaise,651,9.96,13,10/29/2023
+450,whole wheat,turkey,onion,mustard,162,8.31,13,2/9/2023
+451,white,ham,lettuce,mayonnaise,756,6.7,11,4/30/2023
+452,white,ham,onion,ketchup,360,10.93,12,11/23/2023
+453,white,roast beef,pickles,mustard,730,8.86,10,1/13/2023
+454,whole wheat,turkey,tomato,mayonnaise,700,6.4,15,8/22/2023
+455,brioche,ham,lettuce,mustard,380,12.12,20,11/14/2023
+456,whole wheat,turkey,tomato,ketchup,703,12.3,6,11/23/2023
+457,whole wheat,ham,tomato,mustard,170,6.41,14,7/25/2023
+458,brioche,ham,lettuce,mayonnaise,595,12.0,18,5/4/2023
+459,brioche,turkey,pickles,mustard,370,12.09,6,8/6/2023
+460,whole wheat,ham,onion,mustard,604,7.45,17,1/7/2023
+461,whole wheat,ham,tomato,mustard,514,6.45,6,6/16/2023
+462,white,ham,pickles,mustard,185,7.06,9,3/6/2023
+463,brioche,turkey,onion,ketchup,750,6.84,18,9/22/2023
+464,white,turkey,lettuce,ketchup,415,10.21,17,4/19/2023
+465,brioche,ham,pickles,mayonnaise,354,12.65,15,4/29/2023
+466,whole wheat,turkey,tomato,ketchup,208,12.81,14,11/20/2023
+467,white,turkey,pickles,mayonnaise,676,10.08,11,5/7/2023
+468,brioche,turkey,onion,mayonnaise,667,9.58,10,2/13/2023
+469,brioche,ham,onion,mayonnaise,335,7.82,9,12/10/2023
+470,brioche,turkey,onion,mustard,652,8.33,17,7/23/2023
+471,white,roast beef,tomato,mustard,666,10.35,11,12/13/2023
+472,whole wheat,roast beef,pickles,mayonnaise,746,12.97,15,5/7/2023
+473,white,turkey,pickles,mayonnaise,227,12.65,14,1/15/2023
+474,brioche,turkey,pickles,mayonnaise,736,10.11,9,7/18/2023
+475,brioche,roast beef,lettuce,ketchup,554,10.98,20,7/6/2023
+476,whole wheat,roast beef,onion,mustard,375,12.94,9,12/13/2023
+477,brioche,turkey,lettuce,mustard,240,10.76,12,10/26/2023
+478,brioche,ham,tomato,ketchup,599,7.67,18,9/11/2023
+479,brioche,roast beef,lettuce,ketchup,245,7.85,8,3/22/2023
+480,white,ham,tomato,mayonnaise,597,8.14,15,7/20/2023
+481,whole wheat,ham,tomato,ketchup,700,11.08,14,3/4/2023
+482,brioche,roast beef,pickles,mayonnaise,250,11.65,16,11/23/2023
+483,brioche,ham,lettuce,ketchup,282,9.0,16,7/10/2023
+484,white,roast beef,tomato,mayonnaise,722,8.23,8,1/23/2023
+485,white,roast beef,lettuce,mayonnaise,122,10.76,5,10/3/2023
+486,brioche,turkey,pickles,mayonnaise,423,12.59,13,3/15/2023
+487,white,turkey,pickles,mayonnaise,156,7.29,5,9/7/2023
+488,brioche,roast beef,onion,mayonnaise,215,7.14,6,2/3/2023
+489,brioche,roast beef,lettuce,mustard,701,8.77,19,3/3/2023
+490,white,roast beef,pickles,mustard,204,10.66,10,10/18/2023
+491,white,ham,tomato,ketchup,328,11.55,13,4/1/2023
+492,brioche,roast beef,pickles,mayonnaise,286,6.03,7,9/11/2023
+493,whole wheat,ham,lettuce,mustard,418,10.12,8,3/11/2023
+494,white,ham,pickles,mayonnaise,518,8.32,9,7/3/2023
+495,brioche,turkey,onion,mayonnaise,793,10.71,13,5/25/2023
+496,white,roast beef,onion,mustard,643,6.88,6,11/22/2023
+497,whole wheat,turkey,pickles,mustard,252,8.59,11,6/3/2023
+498,brioche,turkey,tomato,mayonnaise,124,9.8,8,12/27/2023
+499,white,roast beef,tomato,mayonnaise,743,8.07,6,4/8/2023
+500,white,roast beef,pickles,mustard,654,12.91,15,6/9/2023
+501,brioche,roast beef,pickles,mustard,488,7.97,14,6/19/2023
+502,brioche,turkey,onion,mustard,133,10.22,5,11/10/2023
+503,brioche,turkey,pickles,ketchup,178,10.31,13,6/13/2023
+504,whole wheat,ham,lettuce,mustard,112,12.77,18,2/28/2023
+505,white,ham,lettuce,ketchup,409,7.2,8,7/25/2023
+506,whole wheat,ham,tomato,mayonnaise,473,8.01,13,10/22/2023
+507,brioche,turkey,lettuce,ketchup,376,11.99,5,7/13/2023
+508,whole wheat,roast beef,lettuce,ketchup,404,9.78,7,1/19/2023
+509,brioche,turkey,pickles,mustard,528,8.66,5,3/15/2023
+510,whole wheat,ham,lettuce,mayonnaise,155,12.14,8,10/22/2023
+511,white,ham,pickles,mustard,104,10.03,14,8/16/2023
+512,whole wheat,turkey,tomato,ketchup,389,11.41,13,1/23/2023
+513,whole wheat,turkey,pickles,mustard,172,12.42,15,3/22/2023
+514,brioche,turkey,onion,mustard,618,7.47,15,9/11/2023
+515,whole wheat,turkey,tomato,ketchup,733,8.81,7,5/22/2023
+516,white,ham,onion,ketchup,383,10.11,13,2/2/2023
+517,white,roast beef,pickles,mustard,101,12.83,18,7/4/2023
+518,whole wheat,turkey,lettuce,ketchup,406,6.36,5,5/29/2023
+519,whole wheat,turkey,pickles,ketchup,593,7.69,5,4/23/2023
+520,white,turkey,lettuce,mayonnaise,298,6.04,12,3/2/2023
+521,brioche,roast beef,onion,mayonnaise,790,9.56,10,8/8/2023
+522,white,turkey,onion,ketchup,532,10.83,5,11/28/2023
+523,whole wheat,ham,onion,mayonnaise,655,12.7,15,10/31/2023
+524,brioche,roast beef,pickles,mustard,325,7.33,5,8/10/2023
+525,whole wheat,roast beef,tomato,ketchup,183,9.79,15,2/17/2023
+526,brioche,ham,lettuce,ketchup,113,6.64,14,5/29/2023
+527,white,ham,tomato,mayonnaise,331,9.58,19,6/26/2023
+528,white,turkey,onion,mayonnaise,429,6.63,12,12/19/2023
+529,whole wheat,turkey,lettuce,mustard,738,8.65,18,7/12/2023
+530,whole wheat,ham,tomato,ketchup,602,8.03,8,7/5/2023
+531,whole wheat,ham,lettuce,mayonnaise,728,12.49,8,1/6/2023
+532,brioche,roast beef,tomato,mustard,316,10.64,18,2/16/2023
+533,brioche,ham,onion,ketchup,787,12.65,20,6/6/2023
+534,whole wheat,roast beef,tomato,ketchup,568,12.13,18,6/10/2023
+535,whole wheat,roast beef,pickles,mayonnaise,219,10.61,20,10/19/2023
+536,whole wheat,turkey,pickles,mayonnaise,251,12.87,19,2/25/2023
+537,brioche,ham,onion,mustard,211,11.22,5,4/20/2023
+538,whole wheat,roast beef,pickles,mayonnaise,738,9.37,12,11/24/2023
+539,brioche,turkey,lettuce,mayonnaise,791,7.91,16,5/3/2023
+540,white,roast beef,onion,mayonnaise,408,10.5,13,1/11/2023
+541,whole wheat,ham,lettuce,ketchup,449,8.01,11,9/3/2023
+542,brioche,turkey,lettuce,mayonnaise,653,10.17,19,6/1/2023
+543,brioche,roast beef,lettuce,mustard,308,7.36,10,9/3/2023
+544,whole wheat,roast beef,pickles,mayonnaise,477,12.17,11,12/10/2023
+545,white,ham,lettuce,ketchup,682,8.33,10,1/18/2023
+546,white,ham,pickles,mustard,552,11.95,9,6/17/2023
+547,white,ham,tomato,mustard,108,10.42,12,6/11/2023
+548,brioche,ham,onion,mayonnaise,450,10.82,9,7/30/2023
+549,brioche,ham,tomato,mayonnaise,239,8.34,13,4/13/2023
+550,brioche,ham,tomato,mustard,352,12.58,17,8/7/2023
+551,whole wheat,turkey,onion,mustard,243,9.31,19,11/2/2023
+552,whole wheat,turkey,lettuce,mustard,138,12.61,14,10/16/2023
+553,white,roast beef,onion,ketchup,206,8.97,13,7/15/2023
+554,brioche,roast beef,tomato,mustard,124,11.77,19,4/16/2023
+555,whole wheat,ham,tomato,mayonnaise,142,7.84,15,6/30/2023
+556,brioche,roast beef,onion,mustard,537,7.06,6,7/29/2023
+557,whole wheat,roast beef,lettuce,ketchup,792,12.27,17,12/6/2023
+558,white,roast beef,onion,mayonnaise,718,11.64,16,2/18/2023
+559,brioche,roast beef,lettuce,mayonnaise,166,12.81,16,6/5/2023
+560,whole wheat,turkey,lettuce,ketchup,104,7.33,18,2/6/2023
+561,brioche,turkey,tomato,mayonnaise,297,11.88,5,5/23/2023
+562,brioche,roast beef,lettuce,mayonnaise,766,10.81,19,10/24/2023
+563,white,roast beef,lettuce,mustard,427,11.68,17,7/29/2023
+564,white,turkey,onion,ketchup,109,12.74,9,8/7/2023
+565,white,turkey,onion,mayonnaise,302,9.82,18,9/13/2023
+566,white,ham,tomato,mustard,780,6.84,11,10/7/2023
+567,brioche,roast beef,pickles,ketchup,170,8.95,14,3/1/2023
+568,whole wheat,ham,tomato,ketchup,364,6.33,5,1/21/2023
+569,whole wheat,turkey,lettuce,ketchup,677,6.02,9,7/14/2023
+570,brioche,ham,pickles,mustard,349,7.96,16,8/15/2023
+571,brioche,ham,onion,mustard,631,12.52,7,1/17/2023
+572,brioche,ham,pickles,mustard,105,10.57,10,6/3/2023
+573,whole wheat,roast beef,onion,ketchup,119,8.29,12,8/20/2023
+574,white,turkey,onion,mustard,576,7.12,20,8/25/2023
+575,whole wheat,turkey,pickles,ketchup,719,11.91,9,2/4/2023
+576,whole wheat,turkey,tomato,ketchup,637,10.66,7,11/21/2023
+577,brioche,roast beef,lettuce,ketchup,614,10.66,11,1/10/2023
+578,white,ham,lettuce,ketchup,249,9.15,5,10/26/2023
+579,brioche,turkey,onion,ketchup,652,8.76,19,6/29/2023
+580,whole wheat,roast beef,pickles,ketchup,586,8.96,12,10/15/2023
+581,white,turkey,onion,mayonnaise,394,12.07,11,10/4/2023
+582,white,ham,lettuce,ketchup,464,10.23,14,11/24/2023
+583,whole wheat,turkey,onion,ketchup,259,9.3,16,8/29/2023
+584,brioche,turkey,lettuce,ketchup,629,8.69,10,9/7/2023
+585,whole wheat,turkey,pickles,ketchup,618,10.27,19,9/8/2023
+586,white,roast beef,lettuce,mayonnaise,459,11.33,6,8/4/2023
+587,white,turkey,pickles,mayonnaise,526,11.17,17,12/10/2023
+588,white,ham,tomato,mustard,656,7.74,5,3/23/2023
+589,brioche,turkey,pickles,ketchup,126,7.57,10,4/15/2023
+590,whole wheat,turkey,tomato,ketchup,654,9.24,19,1/25/2023
+591,white,turkey,onion,mayonnaise,263,7.31,19,8/12/2023
+592,brioche,ham,onion,mayonnaise,342,9.63,20,3/10/2023
+593,white,turkey,tomato,ketchup,587,10.69,15,11/15/2023
+594,whole wheat,turkey,onion,mustard,434,7.13,19,3/25/2023
+595,brioche,ham,tomato,mustard,394,8.54,12,3/4/2023
+596,whole wheat,roast beef,lettuce,mayonnaise,343,11.81,8,12/16/2023
+597,whole wheat,ham,tomato,mustard,593,9.59,10,7/9/2023
+598,whole wheat,ham,onion,ketchup,220,8.97,13,4/29/2023
+599,whole wheat,ham,pickles,ketchup,744,6.82,19,6/8/2023
+600,whole wheat,turkey,pickles,mustard,325,12.77,19,2/2/2023
+601,brioche,turkey,pickles,mayonnaise,344,12.45,18,4/17/2023
+602,whole wheat,turkey,pickles,mayonnaise,385,7.37,7,10/16/2023
+603,whole wheat,ham,tomato,mayonnaise,794,10.07,20,4/21/2023
+604,white,turkey,onion,mayonnaise,522,8.33,16,4/2/2023
+605,whole wheat,turkey,lettuce,ketchup,407,7.36,14,4/10/2023
+606,whole wheat,ham,onion,ketchup,606,6.49,5,6/22/2023
+607,white,roast beef,tomato,mayonnaise,298,8.55,16,3/20/2023
+608,whole wheat,roast beef,onion,mustard,146,8.11,18,3/29/2023
+609,whole wheat,roast beef,pickles,mustard,785,8.27,5,10/19/2023
+610,white,ham,tomato,ketchup,406,11.07,17,12/3/2023
+611,white,ham,onion,ketchup,602,7.85,18,3/1/2023
+612,brioche,roast beef,lettuce,ketchup,100,9.31,9,5/9/2023
+613,brioche,ham,tomato,mayonnaise,364,9.27,11,1/28/2023
+614,whole wheat,turkey,onion,mayonnaise,725,7.4,15,3/22/2023
+615,white,ham,tomato,mustard,586,12.68,15,9/27/2023
+616,brioche,turkey,pickles,mayonnaise,745,7.79,15,11/21/2023
+617,whole wheat,ham,pickles,mustard,565,11.55,20,11/21/2023
+618,white,ham,onion,ketchup,665,11.06,8,10/21/2023
+619,brioche,turkey,onion,ketchup,785,9.63,19,8/24/2023
+620,brioche,turkey,lettuce,ketchup,280,12.97,16,12/25/2023
+621,white,turkey,pickles,mayonnaise,242,10.76,5,5/18/2023
+622,white,turkey,lettuce,mustard,343,12.63,13,4/14/2023
+623,white,ham,onion,mustard,578,8.47,18,7/23/2023
+624,brioche,roast beef,onion,mustard,448,10.2,19,10/5/2023
+625,brioche,ham,tomato,ketchup,333,8.41,16,10/14/2023
+626,brioche,ham,lettuce,mustard,240,7.68,11,10/27/2023
+627,white,turkey,pickles,ketchup,587,10.96,14,11/10/2023
+628,white,roast beef,pickles,ketchup,628,8.44,10,2/15/2023
+629,whole wheat,roast beef,onion,mayonnaise,340,6.16,5,11/2/2023
+630,whole wheat,turkey,onion,ketchup,116,10.01,5,7/24/2023
+631,white,roast beef,tomato,ketchup,391,9.46,17,7/8/2023
+632,white,roast beef,pickles,ketchup,273,10.1,19,3/3/2023
+633,white,roast beef,lettuce,mayonnaise,706,12.72,8,7/16/2023
+634,brioche,turkey,lettuce,ketchup,652,8.05,20,9/6/2023
+635,white,turkey,onion,mayonnaise,219,8.89,17,7/29/2023
+636,white,turkey,tomato,ketchup,739,9.83,9,10/24/2023
+637,whole wheat,turkey,pickles,mayonnaise,438,11.11,6,4/16/2023
+638,white,turkey,pickles,mustard,262,9.75,7,5/28/2023
+639,whole wheat,ham,lettuce,ketchup,338,7.58,10,1/8/2023
+640,whole wheat,turkey,tomato,mayonnaise,648,10.58,5,7/13/2023
+641,whole wheat,roast beef,pickles,ketchup,110,7.07,14,4/7/2023
+642,brioche,ham,lettuce,ketchup,173,6.11,15,7/8/2023
+643,white,ham,tomato,ketchup,253,6.73,16,10/12/2023
+644,whole wheat,ham,onion,mayonnaise,664,12.23,19,2/18/2023
+645,white,ham,tomato,mayonnaise,758,11.36,11,3/13/2023
+646,brioche,ham,lettuce,mustard,211,10.3,16,12/20/2023
+647,brioche,turkey,pickles,ketchup,434,10.93,15,2/19/2023
+648,brioche,turkey,lettuce,mayonnaise,389,11.41,15,4/8/2023
+649,whole wheat,turkey,tomato,ketchup,167,9.06,11,5/1/2023
+650,whole wheat,roast beef,lettuce,ketchup,425,8.37,16,8/26/2023
+651,white,ham,onion,ketchup,334,11.48,20,11/20/2023
+652,white,roast beef,lettuce,mayonnaise,108,10.41,15,5/22/2023
+653,white,turkey,onion,mayonnaise,571,12.47,6,1/28/2023
+654,white,turkey,lettuce,mustard,586,11.91,20,11/17/2023
+655,white,roast beef,tomato,mustard,406,8.49,13,10/29/2023
+656,whole wheat,roast beef,tomato,mustard,741,7.12,13,5/17/2023
+657,white,ham,pickles,mustard,375,12.51,16,4/19/2023
+658,brioche,roast beef,pickles,mayonnaise,235,10.55,14,5/18/2023
+659,brioche,ham,lettuce,mayonnaise,435,8.54,6,9/20/2023
+660,brioche,turkey,lettuce,mustard,724,9.61,11,3/17/2023
+661,brioche,roast beef,tomato,mayonnaise,335,6.1,13,6/9/2023
+662,whole wheat,roast beef,pickles,mustard,477,8.79,5,11/16/2023
+663,whole wheat,ham,onion,mayonnaise,574,7.23,10,7/21/2023
+664,brioche,ham,pickles,mustard,226,12.32,19,9/24/2023
+665,white,roast beef,lettuce,mayonnaise,447,7.49,17,12/11/2023
+666,whole wheat,turkey,tomato,mustard,570,9.93,8,10/5/2023
+667,brioche,roast beef,pickles,mayonnaise,118,12.94,8,11/19/2023
+668,brioche,turkey,onion,mayonnaise,102,7.75,11,3/21/2023
+669,whole wheat,turkey,pickles,ketchup,431,7.28,16,12/14/2023
+670,whole wheat,turkey,onion,mustard,317,10.76,18,2/9/2023
+671,brioche,ham,tomato,mustard,527,12.25,8,6/5/2023
+672,brioche,ham,onion,mustard,538,7.27,9,5/7/2023
+673,brioche,roast beef,onion,ketchup,167,8.44,16,12/28/2023
+674,white,ham,tomato,ketchup,701,11.69,20,12/23/2023
+675,brioche,turkey,lettuce,ketchup,723,11.54,20,2/6/2023
+676,white,ham,lettuce,mustard,258,12.8,16,9/18/2023
+677,whole wheat,ham,lettuce,mayonnaise,695,6.68,19,12/1/2023
+678,whole wheat,ham,pickles,mustard,695,11.12,9,7/23/2023
+679,whole wheat,ham,tomato,ketchup,324,9.81,18,7/9/2023
+680,brioche,turkey,lettuce,mayonnaise,746,8.57,10,9/25/2023
+681,whole wheat,roast beef,tomato,ketchup,743,12.53,20,2/9/2023
+682,brioche,roast beef,tomato,mayonnaise,565,8.74,12,5/30/2023
+683,whole wheat,ham,lettuce,mayonnaise,626,12.73,18,2/16/2023
+684,brioche,turkey,pickles,mayonnaise,771,12.83,17,10/15/2023
+685,whole wheat,ham,onion,mustard,609,11.3,14,10/13/2023
+686,whole wheat,turkey,tomato,mayonnaise,798,10.85,18,6/4/2023
+687,whole wheat,ham,onion,mayonnaise,234,12.92,17,4/3/2023
+688,white,roast beef,tomato,mustard,229,11.79,18,4/13/2023
+689,brioche,ham,pickles,mayonnaise,551,11.25,12,9/4/2023
+690,whole wheat,ham,pickles,mayonnaise,750,10.54,8,11/9/2023
+691,whole wheat,turkey,onion,ketchup,615,6.85,11,10/30/2023
+692,whole wheat,ham,onion,mustard,719,12.97,11,5/22/2023
+693,brioche,ham,lettuce,ketchup,561,10.51,19,1/3/2023
+694,white,turkey,pickles,mustard,602,12.25,10,2/14/2023
+695,brioche,turkey,tomato,mustard,363,9.28,15,9/2/2023
+696,white,ham,tomato,mustard,525,12.82,9,7/29/2023
+697,whole wheat,ham,lettuce,mayonnaise,412,8.51,9,10/8/2023
+698,whole wheat,ham,tomato,mayonnaise,687,6.6,8,12/6/2023
+699,white,turkey,tomato,mayonnaise,798,12.04,6,4/15/2023
+700,brioche,roast beef,pickles,mayonnaise,292,9.58,7,12/6/2023
+701,white,roast beef,tomato,ketchup,688,9.38,6,3/20/2023
+702,brioche,turkey,pickles,ketchup,215,9.45,6,6/13/2023
+703,white,ham,pickles,mayonnaise,263,9.08,10,10/15/2023
+704,brioche,turkey,onion,mustard,579,8.04,9,7/22/2023
+705,white,turkey,pickles,ketchup,318,8.61,18,6/21/2023
+706,whole wheat,turkey,onion,mayonnaise,696,8.33,17,7/20/2023
+707,brioche,roast beef,lettuce,mustard,620,12.41,15,1/18/2023
+708,whole wheat,ham,tomato,mayonnaise,701,9.54,12,9/10/2023
+709,whole wheat,turkey,tomato,mayonnaise,481,8.16,15,10/29/2023
+710,brioche,turkey,onion,mustard,375,7.14,13,3/18/2023
+711,white,roast beef,tomato,mustard,396,8.01,20,11/23/2023
+712,whole wheat,roast beef,pickles,ketchup,707,9.38,13,8/11/2023
+713,whole wheat,roast beef,onion,ketchup,174,7.2,19,5/7/2023
+714,whole wheat,ham,pickles,ketchup,553,11.62,9,1/26/2023
+715,brioche,turkey,pickles,mayonnaise,226,11.37,9,4/13/2023
+716,whole wheat,roast beef,lettuce,mayonnaise,393,8.33,17,5/28/2023
+717,whole wheat,ham,onion,mayonnaise,278,6.39,5,1/7/2023
+718,brioche,turkey,lettuce,mayonnaise,451,6.86,8,5/15/2023
+719,white,ham,onion,ketchup,415,11.08,5,11/20/2023
+720,white,roast beef,tomato,ketchup,574,6.8,12,3/24/2023
+721,brioche,turkey,onion,mustard,482,12.32,17,11/10/2023
+722,white,ham,lettuce,mustard,562,10.97,19,10/12/2023
+723,whole wheat,turkey,lettuce,mayonnaise,649,7.88,5,2/13/2023
+724,white,ham,onion,ketchup,243,9.12,17,4/5/2023
+725,brioche,ham,tomato,mayonnaise,673,12.96,7,4/25/2023
+726,whole wheat,turkey,lettuce,mustard,279,10.18,19,4/16/2023
+727,white,turkey,lettuce,ketchup,191,8.31,7,5/17/2023
+728,whole wheat,turkey,lettuce,mustard,554,9.43,13,1/6/2023
+729,brioche,ham,tomato,mustard,353,11.2,9,5/4/2023
+730,brioche,ham,pickles,mustard,215,7.86,17,4/1/2023
+731,whole wheat,ham,lettuce,mayonnaise,757,12.71,12,6/27/2023
+732,whole wheat,roast beef,onion,ketchup,432,9.88,19,2/14/2023
+733,whole wheat,turkey,pickles,mayonnaise,223,7.25,20,1/4/2023
+734,white,ham,pickles,mustard,138,11.93,16,6/18/2023
+735,white,roast beef,lettuce,ketchup,358,12.75,8,4/1/2023
+736,white,ham,tomato,mustard,363,11.63,13,9/14/2023
+737,brioche,ham,onion,ketchup,159,7.95,18,1/5/2023
+738,white,roast beef,lettuce,ketchup,427,12.72,9,2/28/2023
+739,white,ham,onion,ketchup,765,8.61,19,12/3/2023
+740,whole wheat,roast beef,lettuce,ketchup,454,8.2,12,9/2/2023
+741,whole wheat,roast beef,onion,ketchup,668,12.41,6,10/29/2023
+742,whole wheat,roast beef,pickles,mayonnaise,582,11.44,20,2/4/2023
+743,whole wheat,ham,pickles,mustard,114,6.3,14,8/7/2023
+744,whole wheat,ham,lettuce,mayonnaise,369,6.94,14,11/1/2023
+745,whole wheat,ham,tomato,ketchup,656,7.52,13,10/25/2023
+746,white,roast beef,tomato,mustard,102,7.21,7,4/16/2023
+747,whole wheat,turkey,tomato,mustard,504,7.67,17,12/3/2023
+748,white,turkey,onion,ketchup,282,12.58,5,11/1/2023
+749,brioche,turkey,lettuce,ketchup,577,9.61,18,3/31/2023
+750,brioche,turkey,tomato,mustard,540,6.53,18,5/31/2023
+751,whole wheat,ham,pickles,mayonnaise,385,6.91,5,11/8/2023
+752,white,ham,pickles,mustard,245,12.18,13,3/24/2023
+753,white,ham,pickles,ketchup,365,9.44,6,9/2/2023
+754,whole wheat,ham,pickles,mayonnaise,204,6.59,18,8/8/2023
+755,white,turkey,pickles,mayonnaise,587,9.9,8,2/3/2023
+756,whole wheat,ham,onion,ketchup,179,7.83,20,2/18/2023
+757,white,roast beef,lettuce,mustard,453,9.45,18,11/6/2023
+758,brioche,roast beef,pickles,ketchup,541,6.44,15,12/16/2023
+759,whole wheat,ham,tomato,mayonnaise,469,7.32,19,1/4/2023
+760,white,ham,onion,mayonnaise,497,8.87,18,4/16/2023
+761,whole wheat,roast beef,pickles,mayonnaise,591,8.98,18,1/21/2023
+762,brioche,turkey,tomato,mayonnaise,207,7.28,14,8/22/2023
+763,white,ham,tomato,mustard,655,11.98,6,6/7/2023
+764,brioche,roast beef,pickles,mayonnaise,453,9.59,7,12/12/2023
+765,white,ham,lettuce,mustard,202,6.19,10,5/7/2023
+766,brioche,ham,lettuce,ketchup,405,8.09,20,6/24/2023
+767,whole wheat,turkey,tomato,mustard,722,7.19,13,5/18/2023
+768,whole wheat,roast beef,onion,mayonnaise,403,6.58,13,7/5/2023
+769,white,ham,onion,ketchup,441,7.91,20,8/23/2023
+770,brioche,turkey,tomato,ketchup,570,7.44,10,7/26/2023
+771,white,ham,tomato,mayonnaise,467,10.5,13,10/17/2023
+772,white,roast beef,tomato,mustard,277,10.95,17,5/22/2023
+773,brioche,ham,pickles,mustard,792,11.55,18,5/13/2023
+774,brioche,roast beef,tomato,ketchup,740,9.3,8,6/20/2023
+775,whole wheat,ham,pickles,ketchup,154,12.43,13,8/6/2023
+776,brioche,turkey,pickles,mayonnaise,117,9.52,16,2/14/2023
+777,whole wheat,ham,onion,mustard,207,12.14,9,5/31/2023
+778,whole wheat,turkey,pickles,mayonnaise,753,8.13,6,9/8/2023
+779,whole wheat,roast beef,lettuce,ketchup,100,11.64,10,10/25/2023
+780,white,roast beef,pickles,ketchup,668,7.89,12,4/11/2023
+781,brioche,roast beef,lettuce,mustard,409,8.02,17,1/4/2023
+782,whole wheat,turkey,lettuce,ketchup,183,9.76,5,7/21/2023
+783,whole wheat,turkey,pickles,mayonnaise,700,7.96,15,8/16/2023
+784,whole wheat,turkey,tomato,mustard,561,7.26,14,12/29/2023
+785,whole wheat,turkey,pickles,ketchup,504,6.4,6,7/13/2023
+786,brioche,turkey,pickles,mayonnaise,420,7.44,19,2/26/2023
+787,white,ham,onion,ketchup,604,6.26,17,12/21/2023
+788,white,ham,onion,mustard,393,7.3,7,8/4/2023
+789,brioche,ham,pickles,ketchup,268,6.82,20,11/17/2023
+790,whole wheat,roast beef,lettuce,mayonnaise,505,10.46,15,11/18/2023
+791,brioche,ham,onion,mustard,592,7.59,5,3/31/2023
+792,white,ham,pickles,mayonnaise,772,6.73,14,10/31/2023
+793,whole wheat,ham,lettuce,mayonnaise,159,6.51,9,3/23/2023
+794,whole wheat,turkey,pickles,ketchup,137,11.33,11,1/10/2023
+795,brioche,turkey,onion,mustard,494,8.61,19,5/10/2023
+796,whole wheat,roast beef,lettuce,mayonnaise,644,12.35,14,5/5/2023
+797,whole wheat,turkey,lettuce,mayonnaise,634,9.9,15,3/2/2023
+798,brioche,ham,lettuce,mayonnaise,263,7.82,20,4/12/2023
+799,whole wheat,roast beef,onion,ketchup,372,9.38,19,4/30/2023
+800,white,turkey,onion,ketchup,219,9.08,7,8/30/2023
+801,brioche,ham,pickles,mustard,203,8.08,20,9/10/2023
+802,whole wheat,roast beef,tomato,mustard,320,11.4,18,1/7/2023
+803,white,roast beef,tomato,mayonnaise,393,6.11,18,10/1/2023
+804,brioche,ham,onion,mustard,167,9.58,6,1/24/2023
+805,white,roast beef,pickles,mustard,486,10.56,11,12/10/2023
+806,brioche,turkey,lettuce,ketchup,226,12.39,12,7/16/2023
+807,white,turkey,pickles,ketchup,774,12.81,16,4/9/2023
+808,whole wheat,ham,pickles,mustard,216,10.93,19,2/8/2023
+809,white,turkey,onion,mayonnaise,323,12.12,15,10/16/2023
+810,brioche,turkey,pickles,mayonnaise,355,9.36,15,2/2/2023
+811,white,roast beef,onion,ketchup,575,7.99,7,1/19/2023
+812,white,roast beef,tomato,mustard,669,10.47,8,3/25/2023
+813,whole wheat,ham,onion,mustard,250,8.5,18,2/22/2023
+814,brioche,roast beef,pickles,mustard,432,9.42,13,5/5/2023
+815,whole wheat,roast beef,lettuce,mayonnaise,323,8.45,11,2/14/2023
+816,brioche,turkey,tomato,mayonnaise,539,11.32,5,7/28/2023
+817,whole wheat,roast beef,pickles,ketchup,111,11.61,16,9/11/2023
+818,brioche,ham,tomato,mayonnaise,191,12.91,13,7/4/2023
+819,whole wheat,roast beef,lettuce,ketchup,412,12.64,16,3/9/2023
+820,whole wheat,roast beef,onion,mustard,618,10.23,11,4/12/2023
+821,brioche,turkey,pickles,mayonnaise,778,7.08,8,2/8/2023
+822,white,turkey,lettuce,ketchup,154,11.87,11,7/14/2023
+823,whole wheat,ham,pickles,mustard,205,7.16,14,7/15/2023
+824,brioche,roast beef,pickles,ketchup,766,8.35,6,8/26/2023
+825,white,turkey,lettuce,ketchup,766,9.84,18,11/14/2023
+826,whole wheat,ham,lettuce,ketchup,722,11.78,17,3/5/2023
+827,whole wheat,ham,tomato,mustard,138,9.49,7,12/18/2023
+828,white,turkey,lettuce,ketchup,305,7.97,10,10/2/2023
+829,white,ham,pickles,mayonnaise,503,9.95,7,12/8/2023
+830,whole wheat,ham,onion,mayonnaise,797,9.18,17,1/2/2023
+831,white,turkey,lettuce,mustard,170,6.98,11,3/26/2023
+832,whole wheat,ham,onion,mustard,624,12.5,7,4/22/2023
+833,white,turkey,onion,ketchup,521,11.56,11,9/23/2023
+834,brioche,roast beef,onion,mustard,381,8.89,12,2/13/2023
+835,brioche,ham,tomato,ketchup,261,11.06,13,10/4/2023
+836,white,turkey,lettuce,mustard,544,9.45,11,12/8/2023
+837,brioche,roast beef,pickles,mayonnaise,716,12.32,17,7/31/2023
+838,brioche,roast beef,lettuce,ketchup,729,9.52,5,1/11/2023
+839,white,roast beef,onion,mayonnaise,177,7.77,19,8/5/2023
+840,whole wheat,roast beef,pickles,ketchup,273,10.88,5,6/9/2023
+841,brioche,turkey,tomato,mayonnaise,193,9.07,7,5/31/2023
+842,brioche,turkey,tomato,ketchup,761,10.53,15,10/29/2023
+843,whole wheat,ham,tomato,mayonnaise,784,6.56,14,2/14/2023
+844,brioche,turkey,pickles,mustard,664,10.46,10,9/8/2023
+845,brioche,roast beef,pickles,mayonnaise,618,7.41,19,4/11/2023
+846,whole wheat,turkey,tomato,mustard,216,11.5,17,5/23/2023
+847,white,roast beef,onion,mustard,764,6.02,14,3/27/2023
+848,brioche,ham,pickles,mustard,426,9.33,10,6/18/2023
+849,brioche,ham,tomato,mayonnaise,519,8.37,9,5/5/2023
+850,brioche,turkey,pickles,ketchup,708,10.09,14,12/14/2023
+851,whole wheat,turkey,onion,mustard,718,7.61,7,3/8/2023
+852,whole wheat,turkey,tomato,mustard,390,11.56,20,5/14/2023
+853,brioche,ham,pickles,mustard,204,10.03,15,12/19/2023
+854,whole wheat,roast beef,onion,mustard,525,9.11,15,10/31/2023
+855,brioche,roast beef,onion,ketchup,476,10.18,17,5/24/2023
+856,whole wheat,roast beef,onion,mayonnaise,406,10.18,9,10/24/2023
+857,white,ham,onion,ketchup,626,6.03,6,10/17/2023
+858,white,turkey,lettuce,ketchup,115,7.92,8,12/25/2023
+859,whole wheat,turkey,lettuce,mustard,277,8.52,18,4/11/2023
+860,white,turkey,onion,ketchup,459,7.65,9,1/3/2023
+861,white,turkey,lettuce,mayonnaise,219,7.32,7,12/3/2023
+862,whole wheat,roast beef,tomato,mayonnaise,164,12.27,10,9/4/2023
+863,whole wheat,ham,onion,ketchup,722,11.41,5,5/20/2023
+864,brioche,turkey,onion,ketchup,764,6.58,6,5/10/2023
+865,white,ham,tomato,ketchup,331,11.56,11,11/15/2023
+866,brioche,ham,lettuce,mayonnaise,790,7.55,10,10/12/2023
+867,whole wheat,turkey,tomato,ketchup,538,8.8,9,9/13/2023
+868,whole wheat,roast beef,onion,mayonnaise,438,8.04,14,1/11/2023
+869,whole wheat,roast beef,tomato,ketchup,318,10.2,16,8/2/2023
+870,white,roast beef,lettuce,mustard,170,6.44,14,9/1/2023
+871,whole wheat,turkey,onion,mustard,213,9.46,8,10/13/2023
+872,brioche,ham,tomato,ketchup,606,11.32,9,5/1/2023
+873,whole wheat,turkey,pickles,mayonnaise,133,6.94,8,4/25/2023
+874,brioche,ham,lettuce,mustard,279,8.05,8,1/4/2023
+875,brioche,roast beef,tomato,mustard,517,8.14,13,3/18/2023
+876,brioche,turkey,tomato,mayonnaise,333,8.71,19,12/12/2023
+877,brioche,ham,tomato,ketchup,193,9.8,17,1/12/2023
+878,white,turkey,lettuce,ketchup,359,8.28,8,12/2/2023
+879,white,ham,onion,ketchup,655,8.19,13,4/24/2023
+880,brioche,roast beef,onion,mustard,721,9.72,9,12/23/2023
+881,white,turkey,pickles,ketchup,639,10.7,9,1/1/2023
+882,white,ham,pickles,mustard,617,6.62,5,4/28/2023
+883,brioche,ham,lettuce,mayonnaise,780,6.78,5,12/16/2023
+884,brioche,turkey,lettuce,ketchup,115,9.44,19,7/17/2023
+885,whole wheat,ham,pickles,mayonnaise,199,10.59,9,5/13/2023
+886,whole wheat,turkey,lettuce,mustard,737,6.66,15,5/22/2023
+887,brioche,turkey,lettuce,ketchup,118,12.19,14,10/11/2023
+888,brioche,turkey,lettuce,mustard,361,6.38,17,3/22/2023
+889,brioche,roast beef,pickles,ketchup,555,9.63,7,4/20/2023
+890,white,turkey,tomato,mustard,148,8.32,12,10/24/2023
+891,brioche,roast beef,lettuce,ketchup,174,9.74,14,3/10/2023
+892,whole wheat,roast beef,pickles,mayonnaise,777,6.62,6,1/31/2023
+893,brioche,ham,lettuce,mustard,792,9.18,20,1/12/2023
+894,brioche,ham,lettuce,mustard,120,8.51,20,10/9/2023
+895,whole wheat,turkey,tomato,mayonnaise,244,9.22,8,6/27/2023
+896,whole wheat,ham,tomato,mustard,479,11.5,19,12/22/2023
+897,brioche,roast beef,onion,mustard,455,11.87,8,9/30/2023
+898,brioche,ham,pickles,ketchup,285,11.01,17,8/19/2023
+899,brioche,roast beef,pickles,mayonnaise,158,6.04,16,12/10/2023
+900,whole wheat,turkey,lettuce,mustard,471,7.16,13,7/3/2023
+901,white,roast beef,lettuce,mayonnaise,388,8.28,10,1/22/2023
+902,white,roast beef,lettuce,mayonnaise,726,6.55,13,12/25/2023
+903,whole wheat,ham,onion,mustard,669,12.89,17,9/21/2023
+904,brioche,turkey,pickles,ketchup,319,6.66,11,7/14/2023
+905,whole wheat,ham,lettuce,mustard,620,8.06,8,7/3/2023
+906,brioche,ham,tomato,mayonnaise,187,6.91,13,4/17/2023
+907,whole wheat,roast beef,lettuce,mayonnaise,162,11.02,13,8/5/2023
+908,whole wheat,roast beef,tomato,mayonnaise,763,11.98,16,2/5/2023
+909,brioche,ham,onion,ketchup,411,8.88,20,1/6/2023
+910,white,ham,pickles,mustard,444,7.34,11,1/8/2023
+911,whole wheat,turkey,onion,mustard,397,12.74,6,10/8/2023
+912,whole wheat,turkey,tomato,ketchup,546,8.2,14,6/20/2023
+913,brioche,roast beef,onion,mayonnaise,195,12.44,8,10/24/2023
+914,white,roast beef,onion,mustard,211,11.31,5,12/25/2023
+915,whole wheat,ham,onion,mustard,452,10.32,8,3/29/2023
+916,brioche,ham,pickles,mayonnaise,488,8.48,19,11/15/2023
+917,whole wheat,ham,tomato,ketchup,452,12.02,7,1/23/2023
+918,brioche,roast beef,lettuce,ketchup,405,11.77,18,4/12/2023
+919,white,turkey,lettuce,mustard,614,12.89,15,10/9/2023
+920,white,roast beef,pickles,mustard,293,8.04,19,5/31/2023
+921,white,ham,pickles,ketchup,558,9.26,11,1/22/2023
+922,brioche,roast beef,pickles,ketchup,614,11.6,5,10/3/2023
+923,whole wheat,roast beef,onion,mayonnaise,547,7.26,19,11/23/2023
+924,brioche,turkey,lettuce,mayonnaise,449,10.27,17,11/18/2023
+925,whole wheat,roast beef,pickles,mayonnaise,117,11.34,5,5/18/2023
+926,brioche,turkey,lettuce,mustard,409,11.91,9,10/18/2023
+927,whole wheat,ham,tomato,ketchup,744,6.56,6,6/20/2023
+928,white,roast beef,tomato,mustard,390,6.21,19,6/15/2023
+929,white,turkey,onion,ketchup,140,7.47,8,10/12/2023
+930,whole wheat,turkey,tomato,mayonnaise,267,9.35,5,1/4/2023
+931,whole wheat,turkey,pickles,ketchup,748,8.01,18,1/7/2023
+932,brioche,turkey,onion,ketchup,794,7.38,20,7/17/2023
+933,brioche,ham,onion,ketchup,177,10.91,20,6/5/2023
+934,white,turkey,pickles,ketchup,249,6.27,17,7/7/2023
+935,whole wheat,turkey,onion,ketchup,266,10.64,19,9/6/2023
+936,whole wheat,roast beef,pickles,ketchup,644,7.65,8,12/22/2023
+937,white,ham,tomato,mustard,635,12.51,5,5/30/2023
+938,whole wheat,ham,tomato,mayonnaise,493,8.96,14,2/7/2023
+939,brioche,turkey,lettuce,mustard,250,11.01,14,10/21/2023
+940,brioche,roast beef,tomato,mustard,138,9.14,16,6/16/2023
+941,white,turkey,onion,mustard,424,9.38,16,1/11/2023
+942,brioche,ham,tomato,ketchup,637,10.53,11,3/3/2023
+943,whole wheat,roast beef,tomato,mustard,517,9.95,15,7/9/2023
+944,brioche,ham,tomato,mayonnaise,204,12.61,17,3/14/2023
+945,brioche,turkey,tomato,ketchup,428,10.06,13,10/19/2023
+946,whole wheat,turkey,pickles,mustard,285,6.64,18,9/28/2023
+947,white,ham,lettuce,mayonnaise,298,8.72,13,10/6/2023
+948,brioche,turkey,pickles,ketchup,451,6.22,15,4/10/2023
+949,whole wheat,ham,onion,mayonnaise,752,12.95,6,3/20/2023
+950,brioche,ham,tomato,mayonnaise,340,11.27,20,4/15/2023
+951,brioche,roast beef,tomato,mayonnaise,393,6.73,10,5/6/2023
+952,brioche,ham,onion,ketchup,496,11.84,9,2/13/2023
+953,white,roast beef,lettuce,mustard,287,9.24,6,6/18/2023
+954,whole wheat,turkey,onion,mayonnaise,404,12.92,17,8/4/2023
+955,whole wheat,roast beef,pickles,mustard,323,11.22,12,9/7/2023
+956,white,roast beef,lettuce,ketchup,285,9.14,10,3/9/2023
+957,whole wheat,turkey,onion,mustard,507,10.53,8,10/2/2023
+958,brioche,turkey,lettuce,ketchup,209,12.27,20,1/17/2023
+959,whole wheat,roast beef,lettuce,ketchup,371,12.75,5,8/1/2023
+960,white,ham,pickles,ketchup,413,9.24,18,3/13/2023
+961,whole wheat,roast beef,onion,mayonnaise,554,9.4,10,9/18/2023
+962,white,ham,onion,mustard,518,6.39,6,8/23/2023
+963,brioche,turkey,pickles,mustard,640,7.51,16,12/8/2023
+964,brioche,turkey,onion,ketchup,561,12.99,18,2/27/2023
+965,whole wheat,ham,tomato,mustard,333,11.21,17,12/14/2023
+966,whole wheat,turkey,onion,mayonnaise,173,9.68,11,2/4/2023
+967,white,ham,tomato,mayonnaise,586,6.78,14,1/5/2023
+968,brioche,roast beef,onion,ketchup,617,9.53,8,7/12/2023
+969,whole wheat,turkey,pickles,mayonnaise,110,12.32,19,7/15/2023
+970,brioche,ham,tomato,mayonnaise,119,7.49,5,7/3/2023
+971,whole wheat,ham,lettuce,mustard,449,11.38,10,10/10/2023
+972,whole wheat,roast beef,tomato,ketchup,460,10.01,8,12/17/2023
+973,whole wheat,ham,pickles,ketchup,264,12.08,5,8/22/2023
+974,brioche,roast beef,tomato,mayonnaise,241,9.16,20,7/9/2023
+975,brioche,roast beef,tomato,mustard,514,9.61,16,6/7/2023
+976,whole wheat,ham,onion,ketchup,680,12.84,19,7/1/2023
+977,whole wheat,roast beef,onion,mustard,799,9.74,17,11/6/2023
+978,whole wheat,turkey,tomato,ketchup,221,9.94,12,12/24/2023
+979,brioche,turkey,onion,mustard,366,9.25,7,1/4/2023
+980,brioche,roast beef,tomato,ketchup,697,11.54,17,2/21/2023
+981,whole wheat,ham,onion,ketchup,167,7.5,7,1/16/2023
+982,whole wheat,ham,tomato,mustard,530,9.15,13,3/16/2023
+983,whole wheat,roast beef,lettuce,ketchup,718,10.16,20,6/18/2023
+984,white,roast beef,lettuce,mustard,547,11.33,11,2/9/2023
+985,brioche,turkey,tomato,ketchup,783,9.04,8,12/23/2023
+986,whole wheat,roast beef,pickles,mayonnaise,668,7.63,15,4/12/2023
+987,whole wheat,roast beef,lettuce,mayonnaise,580,6.13,10,11/22/2023
+988,brioche,turkey,lettuce,mayonnaise,688,7.8,10,2/9/2023
+989,brioche,ham,onion,ketchup,233,8.43,19,8/8/2023
+990,whole wheat,turkey,tomato,ketchup,639,6.66,10,2/4/2023
+991,whole wheat,roast beef,pickles,mustard,578,6.41,5,3/10/2023
+992,white,ham,pickles,mayonnaise,140,11.66,19,1/9/2023
+993,whole wheat,roast beef,onion,mustard,310,6.5,15,9/25/2023
+994,white,ham,lettuce,ketchup,279,11.1,6,6/12/2023
+995,whole wheat,ham,lettuce,mustard,525,8.54,18,8/23/2023
+996,brioche,turkey,onion,mayonnaise,301,11.1,10,4/21/2023
+997,whole wheat,turkey,lettuce,mustard,529,12.31,16,3/12/2023
+998,brioche,roast beef,pickles,mustard,671,8.63,8,10/15/2023
+999,white,ham,pickles,mustard,654,7.8,5,1/12/2023
+1000,brioche,turkey,tomato,ketchup,370,7.87,14,11/25/2023
