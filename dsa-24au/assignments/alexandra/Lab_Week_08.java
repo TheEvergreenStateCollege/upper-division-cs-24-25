@@ -21,7 +21,7 @@ public class ReadData {
         try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
             String line;
             boolean isHeaderSkipped = false;
-            ArrayList<Leaderboard> leaderboardList = new ArrayList<>();
+            ArrayList<Leaderboard> leaderboardList = new ArrayList<>(1000);
             int i = 0;
             Leaderboard temp = new Leaderboard();
             while ((line = br.readLine()) != null) 
@@ -53,10 +53,10 @@ public class ReadData {
                     e.printStackTrace();
                 }
                 i++;
-        } catch (IOException ioe) 
-        {
-            System.err.println(ioe.toString());
+            } catch (IOException ioe) 
+                {
+                System.err.println(ioe.toString());
+                }
         }
     }
-}
 }
