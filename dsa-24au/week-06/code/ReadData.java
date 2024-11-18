@@ -6,38 +6,25 @@ import java.io.IOException;
 
 public class ReadData {
 
-    static class Sandwich {
+    static class Person {
 
-        BunType bottomBun;
-        BunType topBun;
-        PattyType patty;
+        int id;
+        String first_name;
+        String last_name;
+        String email;
+        double salary;
 
-        public Sandwich(BunType bun, PattyType patty) {
-            this.bottomBun = bun;
-            this.topBun = bun;
-            this.patty = patty;
+        public person(String first_name, String last_name, String email, double salary) {
+            this.id = id;
+            this.first_name = first_name;
+            this.last_name = last_name;
+            this.email = email;
+            this.salary = salary;
         }
     }
 
     static class IngredientsInStock {
-
-    }
-  
-    static enum BunType {
-        POTATO,
-        WHOLE_WHEAT,
-        BRIOCHE,
-        SESAME,
-        PRETZEL,
-    }
-
-    static enum PattyType {
-        CHICKEN,
-        VEGGIE,
-        PORK,
-        BEEF,
-        FISH,
-        TURKEY,
+        
     }
 
     public static void main(String[] args){
