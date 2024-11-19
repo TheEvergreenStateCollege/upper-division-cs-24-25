@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  upperdivisioncs2425:
+    image: upperdivisioncs2425
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000

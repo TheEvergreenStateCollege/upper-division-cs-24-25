@@ -1,0 +1,1001 @@
+order_id,bun_type,patty_type,cheese_type,toppings,sauce_type,side_order,drink_type,order_date,order_time
+1,brioche,turkey,cheddar,onion,ketchup,fries,water,8/25/2022,6
+2,pretzel,turkey,pepper jack,pickles,mayo,fries,lemonade,12/30/2022,4
+3,brioche,turkey,swiss,pickles,mustard,salad,lemonade,2/28/2022,12
+4,pretzel,chicken,cheddar,lettuce,BBQ,chips,soda,8/18/2022,2
+5,brioche,chicken,cheddar,lettuce,ketchup,chips,water,7/22/2022,19
+6,brioche,turkey,pepper jack,tomato,ketchup,chips,tea,7/22/2022,8
+7,pretzel,turkey,pepper jack,tomato,mustard,salad,lemonade,5/3/2022,14
+8,brioche,turkey,swiss,tomato,mustard,fries,lemonade,3/22/2022,13
+9,brioche,turkey,swiss,lettuce,mustard,fries,water,12/17/2022,18
+10,brioche,turkey,cheddar,tomato,ketchup,chips,lemonade,12/11/2022,9
+11,brioche,chicken,pepper jack,lettuce,ketchup,salad,soda,2/8/2022,2
+12,pretzel,turkey,pepper jack,onion,BBQ,chips,lemonade,9/7/2022,7
+13,pretzel,turkey,swiss,lettuce,mustard,fries,soda,9/20/2022,8
+14,pretzel,chicken,pepper jack,lettuce,BBQ,salad,soda,8/9/2022,13
+15,brioche,turkey,pepper jack,onion,BBQ,salad,lemonade,4/20/2022,20
+16,pretzel,turkey,swiss,lettuce,mustard,chips,tea,1/20/2022,20
+17,brioche,chicken,pepper jack,pickles,ketchup,chips,water,3/7/2022,2
+18,pretzel,chicken,swiss,onion,BBQ,chips,tea,6/3/2022,20
+19,brioche,turkey,cheddar,onion,mayo,chips,soda,8/15/2022,16
+20,pretzel,turkey,swiss,lettuce,BBQ,salad,tea,8/29/2022,3
+21,brioche,turkey,cheddar,pickles,ketchup,salad,tea,11/24/2022,13
+22,brioche,chicken,pepper jack,pickles,mustard,salad,tea,8/2/2022,16
+23,brioche,chicken,cheddar,onion,BBQ,fries,lemonade,3/29/2022,0
+24,pretzel,chicken,swiss,lettuce,mustard,chips,lemonade,1/8/2022,2
+25,brioche,chicken,pepper jack,pickles,mayo,fries,water,2/13/2022,12
+26,pretzel,chicken,pepper jack,pickles,mustard,fries,lemonade,4/19/2022,2
+27,brioche,turkey,swiss,lettuce,mustard,chips,water,6/12/2022,17
+28,brioche,turkey,cheddar,pickles,mustard,chips,tea,4/5/2022,5
+29,brioche,chicken,cheddar,onion,BBQ,fries,soda,8/30/2022,20
+30,brioche,chicken,cheddar,onion,mustard,salad,soda,3/27/2022,13
+31,brioche,chicken,pepper jack,tomato,mayo,fries,tea,7/13/2022,0
+32,pretzel,turkey,cheddar,tomato,mustard,fries,soda,9/30/2022,10
+33,pretzel,chicken,swiss,pickles,mayo,fries,tea,3/21/2022,11
+34,pretzel,chicken,cheddar,lettuce,mustard,chips,soda,3/16/2022,19
+35,pretzel,chicken,cheddar,lettuce,mustard,salad,tea,3/15/2022,23
+36,brioche,turkey,cheddar,lettuce,mustard,chips,lemonade,12/26/2022,8
+37,pretzel,chicken,pepper jack,pickles,ketchup,salad,lemonade,9/23/2022,3
+38,pretzel,turkey,pepper jack,lettuce,ketchup,salad,lemonade,5/7/2022,11
+39,pretzel,chicken,pepper jack,pickles,BBQ,fries,lemonade,6/5/2022,7
+40,pretzel,turkey,swiss,lettuce,mayo,salad,lemonade,10/5/2022,20
+41,brioche,turkey,cheddar,pickles,ketchup,fries,water,9/12/2022,17
+42,brioche,turkey,cheddar,tomato,mustard,chips,water,6/8/2022,15
+43,pretzel,turkey,pepper jack,pickles,mustard,chips,water,1/23/2022,8
+44,brioche,turkey,pepper jack,pickles,ketchup,fries,soda,9/21/2022,8
+45,brioche,chicken,swiss,onion,BBQ,chips,lemonade,2/17/2022,17
+46,brioche,turkey,swiss,pickles,mayo,salad,soda,9/24/2022,19
+47,brioche,chicken,cheddar,onion,ketchup,chips,tea,6/8/2022,21
+48,pretzel,chicken,swiss,lettuce,ketchup,chips,water,4/1/2022,8
+49,pretzel,chicken,pepper jack,tomato,ketchup,fries,tea,5/18/2022,3
+50,brioche,turkey,cheddar,onion,mayo,fries,tea,6/18/2022,9
+51,pretzel,chicken,swiss,onion,mayo,salad,water,4/14/2022,19
+52,brioche,turkey,swiss,pickles,mustard,fries,soda,11/13/2022,15
+53,brioche,turkey,swiss,onion,mustard,chips,soda,5/11/2022,4
+54,pretzel,chicken,pepper jack,tomato,ketchup,salad,tea,8/17/2022,0
+55,brioche,turkey,swiss,pickles,mustard,fries,soda,6/22/2022,11
+56,pretzel,turkey,swiss,onion,ketchup,chips,soda,2/13/2022,1
+57,pretzel,turkey,cheddar,onion,mustard,chips,soda,5/27/2022,16
+58,brioche,chicken,cheddar,pickles,mayo,salad,tea,8/29/2022,9
+59,brioche,turkey,cheddar,tomato,mayo,fries,soda,7/13/2022,21
+60,brioche,turkey,pepper jack,lettuce,mustard,fries,soda,7/2/2022,6
+61,pretzel,chicken,swiss,onion,ketchup,fries,lemonade,4/30/2022,9
+62,brioche,chicken,pepper jack,pickles,BBQ,fries,lemonade,11/6/2022,12
+63,brioche,chicken,swiss,lettuce,ketchup,salad,soda,10/6/2022,6
+64,pretzel,chicken,pepper jack,tomato,mayo,salad,soda,10/24/2022,12
+65,brioche,turkey,cheddar,lettuce,mayo,fries,lemonade,4/1/2022,11
+66,pretzel,turkey,pepper jack,onion,BBQ,salad,soda,12/27/2022,8
+67,brioche,chicken,cheddar,lettuce,mayo,chips,soda,5/23/2022,5
+68,pretzel,chicken,pepper jack,onion,ketchup,fries,lemonade,2/12/2022,12
+69,pretzel,turkey,cheddar,pickles,BBQ,chips,lemonade,9/11/2022,18
+70,pretzel,turkey,pepper jack,onion,mustard,fries,water,1/12/2022,10
+71,pretzel,turkey,swiss,lettuce,mayo,fries,tea,9/2/2022,16
+72,pretzel,chicken,pepper jack,tomato,mayo,chips,lemonade,4/4/2022,15
+73,brioche,chicken,cheddar,onion,BBQ,salad,soda,9/25/2022,13
+74,pretzel,turkey,pepper jack,lettuce,ketchup,chips,tea,2/10/2022,22
+75,pretzel,chicken,cheddar,tomato,ketchup,fries,lemonade,10/22/2022,22
+76,brioche,chicken,pepper jack,pickles,mayo,chips,lemonade,9/6/2022,16
+77,brioche,turkey,swiss,onion,mustard,fries,water,2/8/2022,20
+78,pretzel,turkey,swiss,tomato,BBQ,fries,water,1/4/2022,8
+79,pretzel,chicken,pepper jack,tomato,mustard,chips,tea,3/15/2022,16
+80,pretzel,chicken,swiss,onion,ketchup,chips,tea,8/8/2022,4
+81,pretzel,turkey,pepper jack,pickles,mustard,fries,tea,3/9/2022,6
+82,pretzel,chicken,pepper jack,tomato,mayo,fries,soda,10/6/2022,15
+83,pretzel,chicken,cheddar,pickles,BBQ,chips,tea,3/10/2022,14
+84,brioche,chicken,swiss,pickles,BBQ,chips,tea,7/14/2022,22
+85,brioche,turkey,cheddar,onion,ketchup,chips,soda,1/10/2022,21
+86,brioche,chicken,pepper jack,pickles,BBQ,salad,water,4/1/2022,11
+87,pretzel,turkey,cheddar,pickles,ketchup,chips,tea,6/6/2022,13
+88,brioche,turkey,pepper jack,onion,mayo,fries,soda,12/19/2022,20
+89,brioche,chicken,cheddar,onion,ketchup,fries,water,11/23/2022,21
+90,brioche,turkey,pepper jack,lettuce,ketchup,fries,soda,6/30/2022,3
+91,pretzel,turkey,cheddar,tomato,ketchup,chips,water,7/12/2022,21
+92,brioche,turkey,cheddar,lettuce,ketchup,fries,tea,3/9/2022,1
+93,brioche,chicken,cheddar,lettuce,mustard,fries,soda,2/9/2022,14
+94,brioche,turkey,cheddar,onion,ketchup,salad,tea,7/27/2022,17
+95,pretzel,turkey,pepper jack,lettuce,mayo,chips,lemonade,6/8/2022,4
+96,pretzel,turkey,swiss,lettuce,mustard,fries,water,6/21/2022,19
+97,pretzel,turkey,swiss,onion,BBQ,salad,lemonade,7/3/2022,20
+98,brioche,chicken,swiss,onion,BBQ,chips,soda,4/12/2022,3
+99,brioche,chicken,pepper jack,tomato,mayo,salad,water,3/24/2022,10
+100,brioche,turkey,pepper jack,onion,ketchup,chips,water,1/22/2022,11
+101,brioche,turkey,cheddar,tomato,mayo,fries,lemonade,8/23/2022,20
+102,pretzel,turkey,swiss,lettuce,mustard,salad,water,3/2/2022,13
+103,pretzel,turkey,cheddar,pickles,mustard,salad,tea,8/12/2022,20
+104,brioche,turkey,pepper jack,tomato,ketchup,salad,tea,2/14/2022,15
+105,brioche,chicken,pepper jack,pickles,BBQ,chips,lemonade,9/30/2022,18
+106,brioche,turkey,cheddar,pickles,mustard,chips,tea,11/18/2022,2
+107,pretzel,turkey,pepper jack,onion,ketchup,fries,water,12/6/2022,7
+108,brioche,turkey,cheddar,onion,ketchup,chips,tea,2/11/2022,23
+109,brioche,chicken,cheddar,onion,ketchup,salad,lemonade,10/4/2022,1
+110,brioche,chicken,pepper jack,lettuce,mayo,fries,water,8/6/2022,14
+111,brioche,chicken,cheddar,lettuce,mustard,salad,soda,3/15/2022,22
+112,brioche,turkey,swiss,pickles,BBQ,chips,soda,5/22/2022,12
+113,pretzel,turkey,swiss,lettuce,mustard,fries,lemonade,5/9/2022,22
+114,brioche,chicken,pepper jack,pickles,BBQ,chips,soda,5/21/2022,15
+115,pretzel,turkey,pepper jack,tomato,mayo,salad,water,10/3/2022,2
+116,pretzel,turkey,swiss,tomato,BBQ,salad,lemonade,2/3/2022,13
+117,pretzel,chicken,swiss,pickles,mustard,salad,tea,9/4/2022,7
+118,brioche,turkey,cheddar,pickles,mayo,chips,lemonade,9/28/2022,18
+119,pretzel,turkey,pepper jack,onion,BBQ,salad,lemonade,2/11/2022,6
+120,brioche,turkey,pepper jack,lettuce,mayo,chips,water,11/6/2022,6
+121,brioche,chicken,swiss,tomato,BBQ,chips,water,1/19/2022,7
+122,brioche,chicken,swiss,lettuce,mayo,chips,lemonade,12/13/2022,18
+123,brioche,chicken,pepper jack,onion,mayo,chips,tea,10/2/2022,9
+124,pretzel,chicken,swiss,pickles,mustard,fries,lemonade,9/9/2022,21
+125,pretzel,turkey,cheddar,pickles,ketchup,fries,lemonade,3/6/2022,4
+126,pretzel,chicken,pepper jack,tomato,BBQ,chips,soda,8/8/2022,17
+127,brioche,chicken,cheddar,tomato,mayo,salad,tea,4/10/2022,4
+128,pretzel,turkey,pepper jack,tomato,mayo,salad,water,4/20/2022,20
+129,brioche,chicken,pepper jack,lettuce,mayo,chips,soda,1/26/2022,11
+130,brioche,chicken,cheddar,pickles,mayo,fries,soda,6/17/2022,6
+131,pretzel,turkey,cheddar,tomato,mayo,salad,tea,10/7/2022,19
+132,brioche,chicken,swiss,pickles,BBQ,fries,soda,12/4/2022,23
+133,brioche,chicken,swiss,onion,ketchup,fries,tea,8/29/2022,4
+134,brioche,chicken,swiss,lettuce,mayo,fries,tea,1/19/2022,14
+135,brioche,chicken,cheddar,tomato,ketchup,fries,tea,7/25/2022,19
+136,brioche,turkey,pepper jack,lettuce,BBQ,chips,lemonade,4/7/2022,18
+137,pretzel,chicken,cheddar,tomato,mayo,chips,lemonade,6/8/2022,9
+138,pretzel,chicken,cheddar,tomato,mayo,chips,tea,2/12/2022,0
+139,brioche,turkey,swiss,pickles,mustard,chips,soda,1/1/2022,4
+140,pretzel,chicken,swiss,onion,BBQ,salad,water,5/20/2022,10
+141,brioche,chicken,cheddar,pickles,mustard,fries,lemonade,11/21/2022,3
+142,pretzel,turkey,cheddar,tomato,BBQ,chips,tea,2/25/2022,18
+143,brioche,turkey,cheddar,lettuce,BBQ,fries,soda,8/15/2022,5
+144,brioche,chicken,pepper jack,pickles,mayo,salad,soda,4/29/2022,17
+145,brioche,turkey,cheddar,lettuce,BBQ,chips,water,6/24/2022,2
+146,brioche,chicken,cheddar,onion,ketchup,chips,soda,3/8/2022,19
+147,pretzel,turkey,swiss,pickles,mayo,chips,soda,3/8/2022,11
+148,pretzel,turkey,swiss,lettuce,mayo,chips,lemonade,9/13/2022,5
+149,pretzel,chicken,pepper jack,tomato,mayo,salad,lemonade,2/26/2022,19
+150,brioche,chicken,pepper jack,tomato,mustard,salad,tea,6/22/2022,6
+151,pretzel,turkey,swiss,pickles,mustard,salad,tea,8/14/2022,14
+152,pretzel,chicken,pepper jack,pickles,BBQ,salad,tea,3/10/2022,4
+153,pretzel,turkey,cheddar,tomato,BBQ,salad,lemonade,3/3/2022,2
+154,pretzel,chicken,swiss,onion,mustard,fries,lemonade,10/22/2022,21
+155,pretzel,chicken,cheddar,tomato,mayo,salad,tea,2/28/2022,22
+156,brioche,turkey,pepper jack,onion,mustard,salad,water,1/7/2022,19
+157,brioche,turkey,cheddar,tomato,ketchup,fries,soda,10/2/2022,2
+158,brioche,chicken,swiss,lettuce,BBQ,salad,water,7/19/2022,6
+159,brioche,chicken,cheddar,tomato,BBQ,salad,soda,3/3/2022,10
+160,pretzel,chicken,swiss,pickles,ketchup,chips,lemonade,9/3/2022,11
+161,pretzel,turkey,swiss,lettuce,ketchup,chips,soda,6/7/2022,22
+162,brioche,chicken,pepper jack,onion,ketchup,chips,tea,10/1/2022,23
+163,brioche,chicken,pepper jack,lettuce,BBQ,salad,lemonade,12/30/2022,16
+164,brioche,turkey,cheddar,lettuce,mustard,salad,tea,8/22/2022,4
+165,brioche,turkey,swiss,pickles,mayo,salad,water,10/17/2022,7
+166,pretzel,chicken,swiss,onion,BBQ,salad,lemonade,12/26/2022,12
+167,brioche,chicken,cheddar,pickles,ketchup,chips,water,4/13/2022,22
+168,pretzel,turkey,cheddar,lettuce,ketchup,salad,lemonade,2/18/2022,20
+169,brioche,chicken,pepper jack,pickles,mustard,fries,soda,6/15/2022,4
+170,brioche,turkey,cheddar,onion,BBQ,fries,water,8/4/2022,2
+171,pretzel,turkey,cheddar,pickles,ketchup,chips,tea,3/15/2022,22
+172,pretzel,turkey,cheddar,onion,mayo,salad,tea,4/17/2022,23
+173,pretzel,turkey,pepper jack,tomato,mustard,fries,lemonade,8/23/2022,8
+174,brioche,chicken,swiss,pickles,BBQ,fries,soda,10/26/2022,18
+175,brioche,turkey,cheddar,onion,BBQ,salad,lemonade,9/5/2022,12
+176,brioche,turkey,pepper jack,pickles,BBQ,chips,tea,11/18/2022,1
+177,pretzel,chicken,cheddar,tomato,mayo,fries,water,7/1/2022,2
+178,brioche,turkey,pepper jack,tomato,mustard,salad,lemonade,12/5/2022,16
+179,pretzel,turkey,cheddar,tomato,BBQ,salad,lemonade,8/6/2022,20
+180,pretzel,chicken,swiss,onion,BBQ,chips,lemonade,6/4/2022,3
+181,brioche,chicken,cheddar,onion,mayo,fries,soda,11/29/2022,8
+182,brioche,turkey,cheddar,lettuce,mayo,salad,water,6/25/2022,9
+183,pretzel,turkey,pepper jack,pickles,ketchup,chips,water,10/19/2022,1
+184,pretzel,turkey,pepper jack,lettuce,BBQ,fries,tea,3/28/2022,17
+185,pretzel,chicken,swiss,lettuce,ketchup,chips,soda,5/1/2022,22
+186,pretzel,turkey,cheddar,onion,mayo,fries,lemonade,10/25/2022,8
+187,brioche,turkey,cheddar,onion,mayo,chips,soda,10/30/2022,9
+188,brioche,turkey,cheddar,onion,mustard,chips,tea,7/21/2022,6
+189,pretzel,turkey,pepper jack,lettuce,mayo,fries,lemonade,1/16/2022,18
+190,pretzel,turkey,cheddar,pickles,mustard,chips,lemonade,3/30/2022,18
+191,pretzel,chicken,swiss,pickles,mayo,salad,tea,9/22/2022,0
+192,brioche,chicken,swiss,pickles,BBQ,chips,soda,4/20/2022,7
+193,brioche,chicken,swiss,onion,BBQ,fries,soda,2/22/2022,0
+194,pretzel,chicken,swiss,tomato,mustard,chips,lemonade,9/8/2022,0
+195,brioche,chicken,pepper jack,lettuce,BBQ,chips,soda,7/19/2022,1
+196,brioche,turkey,swiss,onion,ketchup,chips,tea,1/10/2022,0
+197,brioche,turkey,swiss,lettuce,BBQ,chips,soda,11/18/2022,4
+198,brioche,turkey,cheddar,onion,mustard,salad,water,11/3/2022,22
+199,pretzel,turkey,pepper jack,tomato,mustard,salad,water,11/29/2022,8
+200,pretzel,turkey,cheddar,pickles,ketchup,chips,tea,11/23/2022,5
+201,pretzel,chicken,swiss,onion,mayo,chips,soda,3/4/2022,22
+202,brioche,chicken,pepper jack,tomato,mustard,chips,tea,6/16/2022,6
+203,pretzel,turkey,pepper jack,pickles,BBQ,chips,tea,9/15/2022,8
+204,brioche,chicken,cheddar,pickles,ketchup,chips,tea,3/15/2022,16
+205,pretzel,turkey,pepper jack,onion,mustard,chips,soda,10/2/2022,23
+206,brioche,chicken,cheddar,onion,mayo,fries,water,6/2/2022,16
+207,pretzel,turkey,cheddar,pickles,BBQ,salad,lemonade,7/25/2022,18
+208,pretzel,turkey,swiss,tomato,BBQ,chips,soda,6/25/2022,5
+209,brioche,chicken,pepper jack,lettuce,mayo,chips,water,12/13/2022,2
+210,brioche,turkey,pepper jack,lettuce,ketchup,chips,soda,5/22/2022,14
+211,brioche,chicken,pepper jack,pickles,mayo,salad,soda,2/1/2022,4
+212,brioche,turkey,cheddar,tomato,mayo,chips,water,10/9/2022,7
+213,brioche,turkey,swiss,onion,mayo,fries,water,4/13/2022,22
+214,pretzel,chicken,swiss,lettuce,mustard,fries,water,1/16/2022,3
+215,pretzel,chicken,pepper jack,tomato,BBQ,salad,tea,4/24/2022,2
+216,pretzel,chicken,pepper jack,tomato,ketchup,salad,lemonade,5/15/2022,19
+217,pretzel,chicken,cheddar,onion,mayo,fries,soda,5/12/2022,2
+218,brioche,turkey,cheddar,onion,mayo,fries,lemonade,4/11/2022,19
+219,pretzel,turkey,swiss,pickles,BBQ,salad,lemonade,2/20/2022,15
+220,pretzel,turkey,cheddar,pickles,mustard,fries,soda,9/15/2022,7
+221,pretzel,chicken,swiss,pickles,BBQ,chips,lemonade,9/27/2022,10
+222,brioche,chicken,cheddar,lettuce,mayo,salad,water,1/29/2022,1
+223,pretzel,turkey,swiss,lettuce,ketchup,fries,soda,10/26/2022,4
+224,brioche,turkey,swiss,lettuce,mayo,chips,water,12/10/2022,15
+225,pretzel,turkey,pepper jack,onion,mayo,chips,soda,1/23/2022,9
+226,pretzel,chicken,swiss,pickles,mayo,fries,lemonade,6/10/2022,9
+227,pretzel,turkey,cheddar,pickles,ketchup,fries,water,2/9/2022,9
+228,brioche,turkey,swiss,lettuce,mustard,fries,soda,9/26/2022,17
+229,brioche,turkey,pepper jack,lettuce,mustard,salad,tea,4/9/2022,7
+230,brioche,chicken,pepper jack,tomato,ketchup,salad,lemonade,4/24/2022,20
+231,pretzel,chicken,pepper jack,onion,ketchup,salad,tea,2/14/2022,4
+232,brioche,turkey,pepper jack,tomato,mayo,fries,water,4/10/2022,23
+233,pretzel,turkey,pepper jack,onion,ketchup,chips,tea,6/10/2022,15
+234,pretzel,turkey,swiss,onion,BBQ,fries,soda,1/7/2022,9
+235,pretzel,turkey,pepper jack,pickles,BBQ,chips,water,12/15/2022,20
+236,brioche,chicken,pepper jack,pickles,mayo,salad,tea,6/4/2022,10
+237,brioche,chicken,pepper jack,lettuce,ketchup,fries,lemonade,12/30/2022,10
+238,brioche,chicken,pepper jack,lettuce,mayo,chips,soda,11/30/2022,2
+239,pretzel,turkey,pepper jack,tomato,ketchup,salad,tea,7/16/2022,12
+240,pretzel,turkey,swiss,pickles,ketchup,chips,soda,7/16/2022,0
+241,pretzel,chicken,cheddar,lettuce,mustard,salad,soda,3/1/2022,18
+242,pretzel,turkey,swiss,pickles,mayo,fries,lemonade,6/13/2022,8
+243,brioche,chicken,cheddar,onion,ketchup,salad,tea,10/11/2022,0
+244,pretzel,chicken,pepper jack,tomato,mustard,salad,lemonade,7/13/2022,19
+245,pretzel,turkey,pepper jack,onion,BBQ,chips,water,6/20/2022,17
+246,brioche,turkey,swiss,onion,ketchup,chips,water,5/30/2022,11
+247,pretzel,chicken,pepper jack,onion,ketchup,fries,soda,6/5/2022,22
+248,brioche,turkey,pepper jack,tomato,BBQ,salad,water,8/20/2022,8
+249,pretzel,turkey,pepper jack,lettuce,mayo,salad,soda,4/30/2022,16
+250,brioche,turkey,swiss,lettuce,mayo,chips,soda,8/14/2022,1
+251,pretzel,turkey,pepper jack,lettuce,mayo,fries,soda,3/20/2022,18
+252,pretzel,turkey,pepper jack,pickles,mustard,fries,water,9/11/2022,8
+253,pretzel,turkey,swiss,pickles,ketchup,fries,lemonade,5/31/2022,21
+254,pretzel,turkey,cheddar,tomato,ketchup,salad,water,11/28/2022,20
+255,pretzel,chicken,swiss,lettuce,mayo,salad,lemonade,11/4/2022,12
+256,brioche,chicken,swiss,onion,ketchup,salad,tea,6/6/2022,13
+257,pretzel,chicken,pepper jack,onion,BBQ,fries,water,2/2/2022,3
+258,brioche,turkey,swiss,lettuce,BBQ,chips,lemonade,11/19/2022,2
+259,pretzel,chicken,swiss,pickles,mustard,salad,lemonade,11/4/2022,16
+260,pretzel,turkey,swiss,onion,mayo,salad,lemonade,12/29/2022,18
+261,pretzel,chicken,swiss,lettuce,BBQ,salad,soda,5/3/2022,21
+262,brioche,turkey,swiss,lettuce,ketchup,chips,tea,7/9/2022,12
+263,pretzel,chicken,pepper jack,lettuce,mayo,fries,tea,5/29/2022,2
+264,pretzel,chicken,swiss,pickles,mustard,salad,soda,9/23/2022,9
+265,pretzel,chicken,cheddar,pickles,ketchup,salad,lemonade,5/14/2022,12
+266,brioche,turkey,pepper jack,lettuce,mayo,fries,soda,10/23/2022,0
+267,pretzel,chicken,cheddar,pickles,mustard,fries,water,8/15/2022,5
+268,pretzel,turkey,swiss,onion,mustard,salad,water,5/13/2022,7
+269,brioche,chicken,cheddar,lettuce,mayo,salad,tea,1/17/2022,22
+270,pretzel,chicken,pepper jack,lettuce,mayo,salad,soda,2/19/2022,20
+271,brioche,turkey,swiss,onion,mayo,salad,lemonade,8/27/2022,1
+272,pretzel,turkey,swiss,tomato,BBQ,fries,tea,10/22/2022,5
+273,brioche,turkey,cheddar,tomato,mustard,salad,tea,9/2/2022,1
+274,pretzel,turkey,pepper jack,tomato,BBQ,chips,soda,8/8/2022,18
+275,pretzel,turkey,pepper jack,tomato,mayo,chips,tea,6/23/2022,0
+276,pretzel,turkey,pepper jack,onion,mayo,fries,soda,12/3/2022,6
+277,pretzel,turkey,pepper jack,tomato,mayo,chips,tea,11/6/2022,11
+278,brioche,chicken,pepper jack,onion,ketchup,salad,lemonade,10/1/2022,23
+279,brioche,turkey,swiss,lettuce,BBQ,chips,water,3/4/2022,14
+280,brioche,chicken,pepper jack,tomato,mustard,fries,soda,9/23/2022,8
+281,pretzel,turkey,swiss,lettuce,BBQ,salad,water,12/20/2022,10
+282,brioche,turkey,pepper jack,lettuce,mayo,salad,lemonade,1/11/2022,4
+283,pretzel,chicken,swiss,onion,mayo,chips,tea,11/25/2022,0
+284,pretzel,turkey,swiss,lettuce,mayo,fries,tea,4/8/2022,19
+285,brioche,chicken,pepper jack,onion,ketchup,fries,lemonade,4/2/2022,12
+286,brioche,turkey,swiss,tomato,mustard,salad,soda,1/8/2022,16
+287,brioche,chicken,pepper jack,pickles,BBQ,chips,water,11/5/2022,6
+288,brioche,chicken,pepper jack,tomato,mustard,fries,tea,7/4/2022,15
+289,pretzel,chicken,pepper jack,pickles,mayo,chips,lemonade,6/27/2022,7
+290,brioche,turkey,swiss,pickles,mustard,chips,lemonade,4/26/2022,6
+291,brioche,chicken,cheddar,tomato,mustard,chips,lemonade,12/10/2022,9
+292,pretzel,chicken,swiss,onion,ketchup,chips,lemonade,1/12/2022,2
+293,brioche,chicken,pepper jack,onion,BBQ,salad,tea,11/26/2022,18
+294,brioche,chicken,cheddar,pickles,ketchup,salad,soda,3/20/2022,23
+295,pretzel,chicken,cheddar,pickles,mayo,salad,lemonade,6/8/2022,1
+296,pretzel,chicken,swiss,tomato,BBQ,fries,tea,3/7/2022,15
+297,brioche,turkey,cheddar,lettuce,BBQ,fries,water,1/20/2022,6
+298,brioche,turkey,cheddar,pickles,BBQ,salad,water,5/22/2022,0
+299,brioche,turkey,pepper jack,onion,mayo,chips,soda,3/16/2022,1
+300,brioche,turkey,pepper jack,lettuce,BBQ,fries,soda,5/20/2022,3
+301,brioche,turkey,cheddar,lettuce,ketchup,salad,soda,11/17/2022,8
+302,brioche,chicken,pepper jack,onion,mayo,chips,tea,9/4/2022,19
+303,pretzel,turkey,pepper jack,tomato,BBQ,salad,soda,7/8/2022,11
+304,pretzel,turkey,cheddar,onion,BBQ,fries,lemonade,7/27/2022,18
+305,pretzel,turkey,swiss,lettuce,mayo,salad,tea,4/19/2022,20
+306,pretzel,turkey,cheddar,onion,ketchup,fries,tea,4/27/2022,0
+307,pretzel,chicken,cheddar,pickles,mustard,fries,tea,7/16/2022,23
+308,brioche,chicken,swiss,pickles,BBQ,fries,tea,5/16/2022,3
+309,pretzel,chicken,swiss,lettuce,mustard,salad,lemonade,6/4/2022,5
+310,pretzel,turkey,cheddar,tomato,BBQ,salad,soda,9/1/2022,6
+311,pretzel,turkey,pepper jack,lettuce,BBQ,salad,lemonade,9/24/2022,2
+312,pretzel,chicken,cheddar,lettuce,BBQ,salad,water,8/24/2022,22
+313,brioche,chicken,swiss,onion,mustard,salad,tea,9/6/2022,12
+314,brioche,chicken,pepper jack,onion,mayo,fries,lemonade,5/15/2022,19
+315,brioche,chicken,swiss,tomato,mustard,chips,tea,3/20/2022,13
+316,brioche,chicken,cheddar,lettuce,mustard,salad,water,9/30/2022,23
+317,pretzel,chicken,cheddar,onion,mayo,fries,soda,5/3/2022,7
+318,pretzel,turkey,cheddar,lettuce,mayo,fries,tea,11/21/2022,16
+319,brioche,turkey,pepper jack,tomato,BBQ,salad,water,4/7/2022,23
+320,pretzel,turkey,pepper jack,pickles,mayo,fries,tea,3/24/2022,7
+321,pretzel,chicken,cheddar,onion,ketchup,fries,lemonade,7/6/2022,9
+322,pretzel,chicken,swiss,onion,mustard,salad,soda,9/6/2022,7
+323,pretzel,chicken,swiss,onion,mayo,chips,water,12/27/2022,6
+324,brioche,turkey,cheddar,pickles,BBQ,fries,tea,2/2/2022,2
+325,pretzel,chicken,swiss,onion,BBQ,salad,soda,1/13/2022,1
+326,pretzel,turkey,pepper jack,onion,mayo,chips,soda,7/9/2022,1
+327,pretzel,turkey,swiss,tomato,ketchup,salad,soda,4/9/2022,4
+328,brioche,turkey,cheddar,lettuce,mustard,chips,lemonade,9/1/2022,3
+329,brioche,turkey,cheddar,lettuce,mayo,chips,lemonade,6/5/2022,0
+330,pretzel,turkey,pepper jack,lettuce,ketchup,salad,water,1/1/2022,7
+331,brioche,turkey,pepper jack,pickles,BBQ,chips,soda,8/17/2022,5
+332,pretzel,chicken,pepper jack,lettuce,BBQ,chips,water,3/31/2022,8
+333,pretzel,turkey,swiss,tomato,mayo,chips,tea,3/11/2022,7
+334,pretzel,turkey,pepper jack,tomato,mustard,salad,tea,4/15/2022,5
+335,pretzel,chicken,cheddar,tomato,mustard,fries,soda,5/23/2022,18
+336,brioche,turkey,cheddar,lettuce,BBQ,chips,soda,9/14/2022,23
+337,brioche,chicken,cheddar,tomato,ketchup,chips,water,11/17/2022,19
+338,pretzel,turkey,swiss,tomato,mustard,fries,tea,6/9/2022,19
+339,pretzel,turkey,cheddar,tomato,BBQ,chips,tea,4/22/2022,0
+340,pretzel,turkey,cheddar,onion,mustard,chips,water,6/26/2022,20
+341,brioche,turkey,pepper jack,lettuce,mayo,chips,lemonade,4/17/2022,12
+342,brioche,turkey,cheddar,onion,mayo,fries,soda,4/1/2022,14
+343,brioche,turkey,swiss,tomato,BBQ,chips,soda,6/6/2022,6
+344,brioche,chicken,swiss,tomato,mayo,fries,soda,6/6/2022,18
+345,pretzel,chicken,pepper jack,tomato,ketchup,salad,tea,6/13/2022,2
+346,pretzel,turkey,pepper jack,pickles,mayo,chips,water,6/6/2022,13
+347,brioche,chicken,swiss,pickles,BBQ,salad,lemonade,1/13/2022,20
+348,pretzel,turkey,pepper jack,lettuce,BBQ,fries,lemonade,6/12/2022,21
+349,brioche,chicken,cheddar,tomato,BBQ,salad,lemonade,2/26/2022,8
+350,brioche,chicken,swiss,lettuce,BBQ,fries,soda,8/13/2022,23
+351,brioche,turkey,cheddar,pickles,mustard,fries,lemonade,2/11/2022,18
+352,pretzel,chicken,pepper jack,lettuce,mustard,chips,soda,1/26/2022,7
+353,pretzel,chicken,pepper jack,pickles,mayo,chips,water,2/25/2022,4
+354,pretzel,chicken,swiss,pickles,mayo,salad,tea,7/6/2022,13
+355,brioche,chicken,cheddar,pickles,BBQ,salad,tea,7/29/2022,3
+356,pretzel,turkey,cheddar,onion,BBQ,chips,water,9/29/2022,2
+357,pretzel,chicken,cheddar,onion,BBQ,fries,soda,3/30/2022,0
+358,brioche,chicken,swiss,pickles,ketchup,chips,tea,5/26/2022,4
+359,brioche,turkey,swiss,onion,ketchup,salad,water,4/29/2022,11
+360,brioche,chicken,swiss,pickles,BBQ,chips,water,4/7/2022,8
+361,pretzel,chicken,cheddar,onion,mustard,fries,tea,1/8/2022,6
+362,pretzel,chicken,swiss,lettuce,BBQ,chips,tea,10/19/2022,13
+363,pretzel,turkey,cheddar,tomato,ketchup,salad,soda,10/19/2022,9
+364,pretzel,chicken,cheddar,lettuce,BBQ,fries,lemonade,1/5/2022,18
+365,brioche,turkey,swiss,tomato,BBQ,chips,tea,2/6/2022,7
+366,pretzel,chicken,pepper jack,pickles,mustard,fries,tea,10/7/2022,14
+367,brioche,chicken,pepper jack,onion,ketchup,fries,water,12/13/2022,3
+368,brioche,chicken,swiss,onion,mayo,chips,lemonade,3/27/2022,4
+369,pretzel,turkey,cheddar,pickles,mustard,salad,tea,9/13/2022,10
+370,brioche,chicken,pepper jack,lettuce,mustard,salad,lemonade,8/24/2022,7
+371,brioche,turkey,swiss,pickles,ketchup,chips,water,9/25/2022,4
+372,brioche,turkey,swiss,pickles,mayo,salad,soda,9/2/2022,2
+373,brioche,turkey,pepper jack,onion,mayo,fries,tea,6/15/2022,6
+374,pretzel,chicken,swiss,lettuce,BBQ,salad,lemonade,1/5/2022,23
+375,pretzel,turkey,swiss,pickles,mayo,salad,water,1/17/2022,20
+376,pretzel,turkey,cheddar,onion,ketchup,fries,lemonade,7/11/2022,14
+377,brioche,turkey,swiss,tomato,mustard,chips,tea,4/7/2022,3
+378,pretzel,turkey,pepper jack,pickles,BBQ,salad,water,7/2/2022,11
+379,brioche,turkey,pepper jack,tomato,ketchup,chips,water,8/23/2022,11
+380,pretzel,turkey,cheddar,onion,mustard,chips,lemonade,11/17/2022,10
+381,brioche,chicken,swiss,tomato,mustard,fries,lemonade,5/17/2022,4
+382,brioche,turkey,pepper jack,pickles,mustard,fries,lemonade,4/10/2022,15
+383,brioche,turkey,swiss,onion,BBQ,fries,water,11/2/2022,8
+384,pretzel,turkey,cheddar,lettuce,mayo,fries,water,1/30/2022,13
+385,brioche,turkey,cheddar,onion,mustard,salad,lemonade,2/10/2022,12
+386,brioche,chicken,cheddar,tomato,mayo,chips,lemonade,11/22/2022,12
+387,pretzel,turkey,cheddar,onion,ketchup,chips,lemonade,2/3/2022,20
+388,brioche,turkey,swiss,lettuce,mayo,chips,lemonade,11/10/2022,21
+389,pretzel,chicken,cheddar,onion,BBQ,salad,tea,6/17/2022,13
+390,pretzel,turkey,cheddar,onion,mayo,fries,lemonade,3/26/2022,18
+391,pretzel,chicken,cheddar,pickles,mustard,salad,tea,11/29/2022,9
+392,brioche,turkey,cheddar,onion,BBQ,chips,soda,7/6/2022,20
+393,pretzel,chicken,pepper jack,lettuce,mayo,chips,soda,4/22/2022,9
+394,brioche,turkey,pepper jack,tomato,mayo,fries,lemonade,7/13/2022,7
+395,pretzel,turkey,swiss,lettuce,ketchup,salad,lemonade,6/6/2022,6
+396,pretzel,chicken,pepper jack,onion,mayo,fries,lemonade,11/30/2022,19
+397,brioche,chicken,swiss,lettuce,mayo,salad,tea,6/26/2022,0
+398,brioche,turkey,pepper jack,onion,BBQ,chips,soda,9/4/2022,13
+399,pretzel,turkey,cheddar,tomato,BBQ,fries,tea,7/7/2022,8
+400,pretzel,turkey,swiss,tomato,mayo,fries,lemonade,10/28/2022,13
+401,brioche,chicken,cheddar,tomato,mayo,salad,soda,2/27/2022,10
+402,pretzel,turkey,pepper jack,lettuce,BBQ,chips,lemonade,4/24/2022,16
+403,brioche,turkey,swiss,lettuce,BBQ,chips,water,2/17/2022,13
+404,pretzel,chicken,cheddar,pickles,BBQ,fries,soda,7/20/2022,23
+405,brioche,chicken,cheddar,pickles,BBQ,chips,soda,3/1/2022,14
+406,brioche,turkey,swiss,tomato,BBQ,chips,water,4/3/2022,5
+407,pretzel,turkey,swiss,onion,ketchup,salad,tea,11/11/2022,23
+408,pretzel,chicken,pepper jack,lettuce,ketchup,chips,tea,11/17/2022,8
+409,pretzel,chicken,cheddar,onion,mustard,chips,soda,6/16/2022,11
+410,pretzel,chicken,swiss,pickles,mustard,chips,soda,8/28/2022,15
+411,pretzel,turkey,cheddar,pickles,ketchup,salad,soda,6/1/2022,15
+412,pretzel,chicken,pepper jack,lettuce,BBQ,fries,lemonade,12/10/2022,22
+413,brioche,turkey,pepper jack,onion,ketchup,chips,water,3/19/2022,11
+414,pretzel,chicken,cheddar,onion,ketchup,chips,water,4/9/2022,14
+415,pretzel,turkey,swiss,pickles,BBQ,salad,water,12/13/2022,18
+416,pretzel,chicken,swiss,onion,ketchup,fries,lemonade,10/6/2022,1
+417,brioche,turkey,pepper jack,lettuce,mayo,salad,water,4/13/2022,8
+418,pretzel,turkey,pepper jack,onion,mayo,fries,water,6/7/2022,17
+419,brioche,chicken,swiss,pickles,BBQ,fries,soda,12/27/2022,3
+420,pretzel,chicken,cheddar,onion,ketchup,fries,soda,5/5/2022,18
+421,pretzel,turkey,swiss,onion,mustard,chips,soda,10/22/2022,4
+422,brioche,chicken,swiss,lettuce,mustard,fries,tea,4/6/2022,15
+423,pretzel,turkey,pepper jack,tomato,BBQ,fries,lemonade,12/20/2022,14
+424,pretzel,chicken,pepper jack,pickles,mayo,fries,tea,8/20/2022,22
+425,brioche,turkey,cheddar,pickles,BBQ,salad,tea,8/18/2022,11
+426,pretzel,turkey,swiss,pickles,ketchup,salad,water,3/6/2022,23
+427,pretzel,turkey,cheddar,tomato,mustard,fries,water,5/19/2022,23
+428,brioche,chicken,pepper jack,tomato,ketchup,chips,lemonade,9/28/2022,6
+429,brioche,chicken,swiss,pickles,mayo,chips,tea,5/3/2022,13
+430,pretzel,turkey,cheddar,tomato,mayo,salad,lemonade,4/14/2022,1
+431,brioche,chicken,cheddar,pickles,ketchup,chips,water,5/28/2022,16
+432,brioche,chicken,pepper jack,pickles,mustard,salad,water,11/14/2022,23
+433,pretzel,turkey,pepper jack,lettuce,mustard,fries,lemonade,8/17/2022,4
+434,pretzel,turkey,pepper jack,onion,ketchup,fries,water,8/5/2022,10
+435,brioche,turkey,swiss,pickles,ketchup,salad,soda,8/17/2022,13
+436,brioche,chicken,cheddar,pickles,mayo,chips,tea,4/29/2022,22
+437,brioche,chicken,cheddar,lettuce,mustard,salad,water,4/25/2022,21
+438,brioche,chicken,cheddar,tomato,ketchup,chips,tea,9/5/2022,9
+439,pretzel,turkey,swiss,lettuce,mayo,salad,lemonade,7/27/2022,23
+440,brioche,turkey,swiss,tomato,ketchup,chips,soda,9/25/2022,21
+441,pretzel,turkey,cheddar,lettuce,mayo,fries,water,1/27/2022,22
+442,brioche,chicken,swiss,onion,mustard,salad,lemonade,10/23/2022,0
+443,pretzel,chicken,pepper jack,lettuce,BBQ,salad,soda,12/10/2022,8
+444,brioche,turkey,swiss,onion,mayo,salad,soda,1/27/2022,2
+445,pretzel,chicken,cheddar,tomato,mayo,salad,lemonade,7/29/2022,8
+446,pretzel,turkey,cheddar,lettuce,ketchup,fries,tea,8/20/2022,14
+447,brioche,turkey,pepper jack,tomato,mustard,chips,tea,12/5/2022,8
+448,pretzel,turkey,pepper jack,pickles,BBQ,chips,lemonade,3/20/2022,2
+449,brioche,chicken,swiss,pickles,mayo,chips,tea,4/1/2022,21
+450,pretzel,chicken,cheddar,onion,mayo,fries,water,2/5/2022,20
+451,brioche,turkey,cheddar,pickles,mayo,fries,tea,5/26/2022,16
+452,pretzel,chicken,swiss,tomato,mayo,salad,lemonade,4/25/2022,5
+453,brioche,chicken,pepper jack,tomato,BBQ,chips,soda,3/3/2022,13
+454,brioche,chicken,swiss,onion,BBQ,chips,soda,6/21/2022,3
+455,pretzel,turkey,pepper jack,onion,mustard,salad,soda,10/16/2022,11
+456,pretzel,turkey,cheddar,pickles,BBQ,salad,water,11/11/2022,15
+457,brioche,chicken,cheddar,tomato,mustard,salad,tea,11/22/2022,19
+458,pretzel,chicken,pepper jack,tomato,ketchup,fries,lemonade,6/19/2022,12
+459,pretzel,turkey,swiss,lettuce,mustard,fries,water,4/9/2022,18
+460,brioche,turkey,cheddar,onion,BBQ,fries,water,11/8/2022,19
+461,pretzel,turkey,cheddar,tomato,mayo,fries,lemonade,6/18/2022,18
+462,pretzel,turkey,swiss,tomato,mustard,salad,water,8/18/2022,20
+463,pretzel,chicken,swiss,tomato,mustard,fries,tea,5/10/2022,17
+464,pretzel,turkey,cheddar,pickles,BBQ,salad,lemonade,10/20/2022,6
+465,brioche,chicken,cheddar,lettuce,mustard,salad,lemonade,1/13/2022,20
+466,brioche,turkey,cheddar,onion,BBQ,fries,water,7/17/2022,2
+467,pretzel,turkey,swiss,tomato,mayo,fries,water,5/16/2022,1
+468,brioche,chicken,swiss,pickles,mayo,chips,water,7/13/2022,2
+469,pretzel,chicken,cheddar,pickles,mayo,salad,soda,5/30/2022,19
+470,pretzel,turkey,pepper jack,onion,mayo,salad,lemonade,10/3/2022,23
+471,pretzel,turkey,cheddar,onion,mustard,salad,soda,12/20/2022,11
+472,pretzel,turkey,swiss,tomato,mustard,salad,tea,11/8/2022,3
+473,pretzel,turkey,pepper jack,lettuce,BBQ,fries,soda,10/3/2022,8
+474,brioche,chicken,swiss,onion,ketchup,chips,water,11/25/2022,8
+475,pretzel,chicken,pepper jack,pickles,BBQ,salad,lemonade,10/12/2022,1
+476,brioche,chicken,swiss,pickles,ketchup,chips,lemonade,7/23/2022,20
+477,brioche,chicken,pepper jack,pickles,mustard,chips,tea,6/21/2022,5
+478,pretzel,turkey,pepper jack,tomato,mayo,salad,lemonade,8/21/2022,20
+479,brioche,turkey,pepper jack,onion,mustard,salad,tea,4/25/2022,13
+480,pretzel,turkey,cheddar,lettuce,mayo,chips,soda,1/3/2022,11
+481,brioche,turkey,cheddar,lettuce,BBQ,chips,water,1/1/2022,23
+482,pretzel,turkey,swiss,pickles,mustard,chips,water,12/12/2022,19
+483,brioche,chicken,cheddar,onion,ketchup,fries,soda,12/12/2022,18
+484,pretzel,chicken,cheddar,tomato,BBQ,chips,soda,10/14/2022,16
+485,brioche,chicken,cheddar,tomato,mustard,fries,soda,11/11/2022,10
+486,brioche,turkey,swiss,tomato,ketchup,chips,tea,5/12/2022,4
+487,pretzel,turkey,cheddar,lettuce,BBQ,fries,tea,7/3/2022,4
+488,pretzel,turkey,cheddar,pickles,ketchup,chips,lemonade,5/9/2022,2
+489,pretzel,turkey,pepper jack,onion,ketchup,fries,tea,12/20/2022,18
+490,pretzel,chicken,cheddar,lettuce,mayo,chips,water,9/14/2022,23
+491,brioche,turkey,swiss,tomato,mayo,chips,lemonade,3/18/2022,12
+492,brioche,turkey,swiss,pickles,mayo,fries,lemonade,3/26/2022,2
+493,pretzel,turkey,cheddar,lettuce,mayo,chips,water,11/26/2022,20
+494,brioche,chicken,swiss,onion,ketchup,chips,lemonade,4/18/2022,1
+495,brioche,chicken,cheddar,tomato,mayo,salad,tea,4/3/2022,13
+496,brioche,turkey,pepper jack,onion,ketchup,chips,soda,4/29/2022,22
+497,pretzel,chicken,swiss,pickles,BBQ,fries,tea,3/13/2022,7
+498,brioche,turkey,cheddar,pickles,mustard,chips,soda,12/6/2022,16
+499,pretzel,turkey,swiss,pickles,mustard,chips,lemonade,3/28/2022,0
+500,brioche,turkey,cheddar,tomato,mayo,fries,tea,3/1/2022,15
+501,pretzel,chicken,cheddar,pickles,mustard,salad,tea,8/29/2022,16
+502,pretzel,chicken,pepper jack,onion,ketchup,chips,lemonade,5/17/2022,2
+503,brioche,chicken,swiss,lettuce,mustard,salad,water,11/6/2022,20
+504,pretzel,chicken,swiss,pickles,mustard,chips,soda,3/25/2022,11
+505,brioche,chicken,cheddar,pickles,mayo,fries,water,12/29/2022,16
+506,pretzel,chicken,cheddar,lettuce,ketchup,fries,water,6/10/2022,12
+507,pretzel,chicken,cheddar,pickles,ketchup,fries,tea,10/11/2022,5
+508,pretzel,chicken,cheddar,lettuce,mustard,salad,tea,7/9/2022,9
+509,pretzel,turkey,swiss,pickles,BBQ,chips,tea,8/24/2022,0
+510,pretzel,turkey,swiss,onion,mustard,salad,tea,8/2/2022,0
+511,brioche,turkey,pepper jack,lettuce,ketchup,fries,soda,9/7/2022,3
+512,brioche,turkey,cheddar,onion,mustard,chips,soda,3/18/2022,7
+513,pretzel,chicken,pepper jack,lettuce,ketchup,fries,tea,6/16/2022,14
+514,brioche,chicken,swiss,pickles,mayo,chips,lemonade,12/7/2022,4
+515,pretzel,turkey,swiss,lettuce,mustard,salad,water,4/17/2022,4
+516,brioche,turkey,pepper jack,onion,ketchup,fries,soda,5/7/2022,13
+517,brioche,chicken,swiss,pickles,mustard,salad,tea,1/2/2022,13
+518,brioche,turkey,swiss,onion,ketchup,salad,lemonade,9/16/2022,16
+519,brioche,chicken,pepper jack,tomato,ketchup,fries,tea,1/30/2022,20
+520,brioche,turkey,pepper jack,onion,BBQ,fries,lemonade,11/1/2022,5
+521,brioche,chicken,pepper jack,tomato,BBQ,fries,tea,6/10/2022,19
+522,pretzel,chicken,swiss,onion,BBQ,fries,lemonade,5/6/2022,2
+523,brioche,chicken,cheddar,tomato,ketchup,salad,tea,2/20/2022,18
+524,brioche,turkey,cheddar,lettuce,mustard,salad,tea,5/6/2022,4
+525,pretzel,chicken,cheddar,onion,mayo,fries,tea,1/25/2022,15
+526,brioche,turkey,cheddar,pickles,mustard,salad,water,12/21/2022,17
+527,pretzel,turkey,pepper jack,pickles,ketchup,fries,tea,9/20/2022,23
+528,brioche,turkey,swiss,lettuce,BBQ,chips,lemonade,3/26/2022,3
+529,brioche,turkey,cheddar,onion,mayo,fries,lemonade,1/13/2022,7
+530,pretzel,turkey,swiss,lettuce,mustard,salad,soda,10/16/2022,15
+531,brioche,turkey,cheddar,tomato,ketchup,chips,lemonade,2/6/2022,12
+532,brioche,turkey,cheddar,lettuce,mayo,chips,tea,10/15/2022,18
+533,pretzel,chicken,pepper jack,lettuce,BBQ,fries,lemonade,3/16/2022,13
+534,pretzel,turkey,swiss,tomato,mustard,fries,water,3/13/2022,4
+535,pretzel,turkey,swiss,tomato,BBQ,fries,tea,2/14/2022,16
+536,brioche,turkey,swiss,pickles,mayo,fries,water,6/3/2022,12
+537,brioche,chicken,pepper jack,pickles,ketchup,salad,soda,8/12/2022,19
+538,pretzel,turkey,pepper jack,lettuce,mayo,salad,lemonade,10/26/2022,21
+539,pretzel,turkey,pepper jack,pickles,ketchup,fries,soda,10/14/2022,20
+540,pretzel,turkey,swiss,lettuce,BBQ,chips,tea,9/14/2022,19
+541,brioche,chicken,cheddar,pickles,mayo,fries,water,6/16/2022,5
+542,brioche,turkey,cheddar,lettuce,ketchup,salad,tea,9/16/2022,21
+543,brioche,chicken,pepper jack,pickles,ketchup,chips,lemonade,8/31/2022,18
+544,pretzel,turkey,swiss,tomato,mayo,chips,soda,2/23/2022,3
+545,pretzel,chicken,pepper jack,lettuce,ketchup,fries,soda,11/7/2022,7
+546,brioche,turkey,cheddar,pickles,ketchup,chips,soda,11/26/2022,15
+547,pretzel,chicken,cheddar,tomato,BBQ,fries,tea,3/25/2022,8
+548,pretzel,chicken,swiss,onion,ketchup,chips,lemonade,8/14/2022,13
+549,brioche,chicken,cheddar,onion,ketchup,chips,soda,7/14/2022,6
+550,brioche,turkey,swiss,pickles,BBQ,chips,lemonade,8/3/2022,3
+551,pretzel,turkey,pepper jack,onion,mustard,fries,soda,5/6/2022,4
+552,brioche,turkey,pepper jack,pickles,ketchup,salad,lemonade,4/28/2022,23
+553,pretzel,turkey,cheddar,lettuce,ketchup,salad,soda,1/14/2022,23
+554,brioche,chicken,swiss,lettuce,BBQ,fries,soda,12/19/2022,8
+555,pretzel,turkey,cheddar,pickles,mustard,chips,soda,8/27/2022,5
+556,brioche,turkey,cheddar,tomato,ketchup,chips,tea,12/15/2022,3
+557,brioche,chicken,pepper jack,pickles,BBQ,fries,lemonade,10/9/2022,14
+558,brioche,chicken,cheddar,onion,mayo,salad,tea,4/9/2022,11
+559,pretzel,turkey,pepper jack,onion,mustard,fries,tea,12/3/2022,4
+560,brioche,chicken,swiss,lettuce,mustard,chips,soda,10/10/2022,16
+561,pretzel,turkey,pepper jack,tomato,BBQ,fries,tea,5/27/2022,20
+562,pretzel,turkey,pepper jack,tomato,mustard,chips,tea,3/15/2022,17
+563,pretzel,turkey,cheddar,onion,ketchup,salad,tea,4/30/2022,20
+564,brioche,turkey,swiss,tomato,mayo,fries,soda,7/15/2022,23
+565,pretzel,turkey,cheddar,tomato,BBQ,chips,tea,6/28/2022,6
+566,brioche,chicken,cheddar,pickles,ketchup,salad,tea,12/5/2022,13
+567,pretzel,turkey,pepper jack,onion,mayo,salad,lemonade,6/19/2022,20
+568,brioche,turkey,cheddar,tomato,BBQ,chips,water,10/18/2022,8
+569,pretzel,chicken,cheddar,onion,mustard,chips,lemonade,11/29/2022,18
+570,pretzel,turkey,cheddar,lettuce,mayo,salad,soda,12/2/2022,12
+571,pretzel,chicken,swiss,lettuce,BBQ,salad,water,7/17/2022,23
+572,brioche,turkey,cheddar,tomato,BBQ,chips,water,9/17/2022,3
+573,brioche,turkey,swiss,pickles,mustard,fries,lemonade,12/29/2022,10
+574,brioche,chicken,pepper jack,onion,mustard,fries,lemonade,5/4/2022,11
+575,brioche,chicken,pepper jack,onion,mustard,fries,water,10/31/2022,7
+576,brioche,chicken,pepper jack,tomato,mustard,fries,soda,5/24/2022,18
+577,brioche,turkey,cheddar,pickles,mayo,chips,soda,4/29/2022,9
+578,pretzel,turkey,cheddar,pickles,ketchup,fries,tea,2/12/2022,7
+579,pretzel,chicken,cheddar,lettuce,mustard,chips,lemonade,4/30/2022,12
+580,pretzel,turkey,cheddar,pickles,BBQ,chips,water,7/7/2022,11
+581,pretzel,turkey,pepper jack,pickles,ketchup,salad,lemonade,4/2/2022,1
+582,pretzel,turkey,cheddar,tomato,ketchup,salad,tea,5/7/2022,13
+583,brioche,chicken,cheddar,onion,mustard,fries,soda,5/27/2022,14
+584,brioche,turkey,pepper jack,pickles,mayo,chips,water,6/1/2022,18
+585,brioche,chicken,cheddar,pickles,mayo,salad,lemonade,4/17/2022,18
+586,pretzel,chicken,pepper jack,tomato,ketchup,fries,lemonade,6/19/2022,16
+587,pretzel,chicken,cheddar,lettuce,BBQ,fries,soda,5/2/2022,18
+588,brioche,turkey,cheddar,pickles,ketchup,chips,lemonade,7/29/2022,23
+589,brioche,chicken,pepper jack,tomato,BBQ,fries,water,6/30/2022,12
+590,brioche,turkey,pepper jack,onion,BBQ,salad,lemonade,3/26/2022,23
+591,brioche,turkey,pepper jack,pickles,BBQ,salad,lemonade,6/2/2022,9
+592,pretzel,turkey,pepper jack,lettuce,ketchup,chips,lemonade,8/14/2022,22
+593,brioche,turkey,cheddar,onion,BBQ,salad,soda,11/22/2022,9
+594,brioche,chicken,pepper jack,pickles,mustard,salad,tea,3/25/2022,6
+595,pretzel,turkey,pepper jack,onion,mayo,fries,tea,3/16/2022,21
+596,pretzel,turkey,swiss,tomato,ketchup,salad,water,10/31/2022,12
+597,pretzel,turkey,swiss,tomato,mustard,chips,tea,6/30/2022,5
+598,pretzel,chicken,cheddar,onion,mustard,fries,soda,6/14/2022,16
+599,brioche,turkey,cheddar,onion,BBQ,salad,lemonade,11/6/2022,13
+600,brioche,turkey,swiss,tomato,mayo,chips,lemonade,5/3/2022,22
+601,pretzel,chicken,swiss,tomato,ketchup,fries,soda,4/19/2022,9
+602,pretzel,chicken,cheddar,tomato,BBQ,fries,lemonade,1/22/2022,5
+603,pretzel,turkey,swiss,pickles,ketchup,chips,water,2/12/2022,18
+604,pretzel,chicken,pepper jack,tomato,ketchup,salad,lemonade,6/25/2022,20
+605,brioche,turkey,cheddar,tomato,ketchup,fries,tea,12/19/2022,0
+606,brioche,turkey,swiss,onion,mustard,fries,lemonade,1/19/2022,13
+607,brioche,chicken,swiss,tomato,mayo,fries,tea,8/25/2022,13
+608,brioche,chicken,pepper jack,onion,mayo,salad,water,11/24/2022,12
+609,brioche,chicken,cheddar,onion,mayo,chips,water,8/18/2022,8
+610,pretzel,chicken,pepper jack,pickles,BBQ,salad,lemonade,7/2/2022,0
+611,brioche,turkey,swiss,pickles,BBQ,fries,soda,7/9/2022,10
+612,brioche,chicken,pepper jack,tomato,mustard,salad,soda,12/13/2022,9
+613,brioche,chicken,cheddar,onion,ketchup,fries,lemonade,6/21/2022,21
+614,pretzel,turkey,cheddar,lettuce,BBQ,salad,soda,3/16/2022,21
+615,pretzel,chicken,swiss,lettuce,mustard,chips,lemonade,10/24/2022,8
+616,pretzel,chicken,cheddar,pickles,BBQ,chips,soda,3/6/2022,9
+617,brioche,chicken,cheddar,tomato,ketchup,fries,water,12/21/2022,19
+618,brioche,chicken,cheddar,lettuce,mustard,salad,soda,8/22/2022,4
+619,pretzel,turkey,pepper jack,onion,mayo,chips,soda,1/12/2022,19
+620,pretzel,turkey,swiss,tomato,mayo,fries,lemonade,1/21/2022,5
+621,brioche,chicken,pepper jack,tomato,mayo,fries,water,8/16/2022,14
+622,brioche,turkey,cheddar,onion,mustard,fries,soda,9/12/2022,19
+623,brioche,turkey,cheddar,tomato,ketchup,salad,tea,9/15/2022,13
+624,pretzel,turkey,cheddar,pickles,ketchup,fries,lemonade,10/29/2022,11
+625,brioche,chicken,cheddar,lettuce,mayo,salad,tea,10/31/2022,21
+626,pretzel,turkey,pepper jack,lettuce,mustard,salad,soda,5/31/2022,1
+627,brioche,turkey,swiss,tomato,mayo,chips,lemonade,9/11/2022,21
+628,pretzel,turkey,pepper jack,tomato,mustard,salad,tea,4/12/2022,11
+629,pretzel,turkey,pepper jack,onion,ketchup,fries,tea,11/21/2022,16
+630,brioche,chicken,cheddar,lettuce,ketchup,salad,tea,4/18/2022,4
+631,brioche,chicken,swiss,pickles,ketchup,chips,soda,10/15/2022,11
+632,brioche,chicken,pepper jack,onion,ketchup,salad,water,10/5/2022,9
+633,brioche,turkey,pepper jack,onion,ketchup,fries,water,2/14/2022,13
+634,pretzel,chicken,cheddar,onion,mayo,salad,water,4/18/2022,17
+635,brioche,chicken,pepper jack,pickles,ketchup,chips,water,2/20/2022,19
+636,pretzel,turkey,swiss,onion,mayo,chips,water,4/4/2022,10
+637,brioche,chicken,cheddar,lettuce,BBQ,chips,tea,10/24/2022,4
+638,pretzel,turkey,cheddar,lettuce,ketchup,salad,soda,10/19/2022,8
+639,pretzel,chicken,cheddar,onion,BBQ,fries,soda,5/19/2022,13
+640,brioche,chicken,swiss,lettuce,ketchup,salad,water,9/15/2022,23
+641,brioche,chicken,swiss,pickles,mustard,salad,soda,5/4/2022,12
+642,pretzel,chicken,swiss,lettuce,BBQ,salad,tea,4/17/2022,19
+643,pretzel,chicken,pepper jack,onion,mayo,fries,soda,5/17/2022,9
+644,brioche,turkey,pepper jack,onion,mayo,chips,tea,11/18/2022,5
+645,brioche,turkey,swiss,onion,mustard,fries,soda,8/11/2022,12
+646,brioche,chicken,swiss,tomato,mustard,salad,lemonade,11/26/2022,4
+647,pretzel,chicken,swiss,onion,ketchup,chips,soda,11/1/2022,7
+648,brioche,turkey,pepper jack,pickles,mustard,chips,tea,4/6/2022,13
+649,brioche,chicken,swiss,pickles,mayo,chips,water,10/11/2022,4
+650,brioche,turkey,swiss,pickles,ketchup,salad,lemonade,7/17/2022,9
+651,brioche,turkey,cheddar,tomato,mayo,chips,tea,9/10/2022,8
+652,pretzel,chicken,swiss,lettuce,BBQ,salad,soda,12/23/2022,12
+653,pretzel,turkey,cheddar,onion,mayo,salad,water,6/1/2022,4
+654,pretzel,turkey,cheddar,tomato,mayo,chips,soda,4/1/2022,22
+655,brioche,turkey,pepper jack,pickles,mayo,salad,soda,9/26/2022,3
+656,pretzel,chicken,swiss,lettuce,mayo,chips,tea,6/10/2022,8
+657,pretzel,chicken,swiss,lettuce,ketchup,chips,soda,2/9/2022,10
+658,brioche,chicken,cheddar,lettuce,BBQ,chips,soda,6/23/2022,5
+659,pretzel,turkey,cheddar,tomato,mayo,salad,tea,5/13/2022,4
+660,pretzel,chicken,swiss,lettuce,mustard,chips,water,10/27/2022,0
+661,pretzel,chicken,pepper jack,tomato,BBQ,fries,water,1/28/2022,7
+662,brioche,chicken,swiss,lettuce,ketchup,fries,soda,2/21/2022,7
+663,pretzel,turkey,cheddar,lettuce,mustard,chips,tea,12/14/2022,18
+664,pretzel,turkey,pepper jack,pickles,mayo,fries,water,3/20/2022,2
+665,brioche,chicken,swiss,tomato,BBQ,chips,lemonade,8/23/2022,12
+666,brioche,chicken,cheddar,tomato,mustard,chips,water,1/30/2022,19
+667,pretzel,turkey,pepper jack,onion,BBQ,fries,tea,11/20/2022,4
+668,brioche,chicken,pepper jack,lettuce,BBQ,salad,tea,3/2/2022,0
+669,pretzel,turkey,cheddar,pickles,ketchup,fries,water,2/3/2022,16
+670,pretzel,chicken,pepper jack,lettuce,mayo,chips,water,5/6/2022,11
+671,pretzel,chicken,pepper jack,lettuce,ketchup,fries,tea,11/8/2022,6
+672,brioche,turkey,swiss,onion,BBQ,chips,soda,6/14/2022,2
+673,pretzel,turkey,swiss,pickles,ketchup,salad,tea,10/3/2022,17
+674,brioche,turkey,cheddar,lettuce,BBQ,fries,water,5/26/2022,10
+675,pretzel,chicken,swiss,pickles,mayo,fries,soda,10/23/2022,21
+676,pretzel,turkey,pepper jack,tomato,mayo,fries,lemonade,3/25/2022,13
+677,brioche,chicken,swiss,pickles,mayo,fries,tea,7/12/2022,21
+678,pretzel,turkey,cheddar,onion,mustard,chips,soda,7/12/2022,7
+679,brioche,turkey,swiss,lettuce,mayo,fries,tea,10/2/2022,20
+680,pretzel,chicken,cheddar,pickles,ketchup,chips,water,7/21/2022,13
+681,brioche,turkey,pepper jack,lettuce,mustard,salad,lemonade,6/30/2022,11
+682,brioche,chicken,pepper jack,pickles,ketchup,chips,soda,10/18/2022,23
+683,brioche,turkey,pepper jack,lettuce,mayo,salad,water,11/29/2022,1
+684,pretzel,turkey,cheddar,onion,mayo,chips,water,4/10/2022,2
+685,pretzel,turkey,pepper jack,onion,mayo,fries,lemonade,10/26/2022,2
+686,brioche,chicken,pepper jack,onion,mayo,fries,lemonade,9/10/2022,17
+687,pretzel,chicken,pepper jack,onion,ketchup,salad,soda,10/26/2022,2
+688,pretzel,turkey,swiss,pickles,BBQ,chips,water,6/4/2022,1
+689,pretzel,turkey,cheddar,pickles,mayo,chips,lemonade,12/25/2022,10
+690,brioche,chicken,pepper jack,pickles,BBQ,fries,water,5/25/2022,23
+691,pretzel,turkey,cheddar,tomato,ketchup,salad,tea,3/15/2022,16
+692,pretzel,turkey,cheddar,pickles,mayo,fries,lemonade,8/27/2022,5
+693,brioche,chicken,swiss,tomato,mayo,chips,tea,8/13/2022,5
+694,brioche,chicken,swiss,pickles,mayo,fries,tea,12/12/2022,10
+695,pretzel,turkey,pepper jack,onion,mustard,salad,soda,4/28/2022,1
+696,brioche,chicken,pepper jack,tomato,ketchup,salad,lemonade,11/17/2022,15
+697,pretzel,turkey,swiss,tomato,BBQ,salad,water,9/21/2022,0
+698,brioche,turkey,swiss,pickles,mustard,fries,tea,4/15/2022,16
+699,pretzel,turkey,swiss,pickles,mustard,chips,water,6/30/2022,6
+700,pretzel,chicken,pepper jack,tomato,mustard,salad,lemonade,6/13/2022,2
+701,brioche,turkey,pepper jack,onion,mayo,fries,soda,1/9/2022,5
+702,brioche,turkey,cheddar,pickles,mayo,fries,tea,4/1/2022,10
+703,pretzel,turkey,pepper jack,onion,mayo,chips,tea,4/6/2022,10
+704,pretzel,turkey,pepper jack,tomato,BBQ,salad,soda,11/10/2022,8
+705,pretzel,chicken,swiss,tomato,mustard,chips,lemonade,12/18/2022,22
+706,pretzel,chicken,pepper jack,lettuce,mustard,chips,soda,3/15/2022,20
+707,brioche,turkey,pepper jack,lettuce,BBQ,fries,water,1/3/2022,12
+708,pretzel,chicken,swiss,lettuce,mustard,chips,soda,2/27/2022,17
+709,brioche,turkey,swiss,pickles,BBQ,chips,soda,6/22/2022,3
+710,pretzel,turkey,pepper jack,tomato,ketchup,fries,tea,5/13/2022,15
+711,brioche,turkey,swiss,pickles,BBQ,fries,tea,5/26/2022,23
+712,brioche,turkey,pepper jack,tomato,ketchup,salad,tea,2/11/2022,6
+713,brioche,chicken,pepper jack,onion,BBQ,fries,lemonade,5/12/2022,7
+714,brioche,chicken,cheddar,onion,mustard,salad,tea,3/18/2022,22
+715,brioche,chicken,pepper jack,tomato,ketchup,fries,soda,7/18/2022,17
+716,pretzel,turkey,cheddar,pickles,mustard,fries,water,10/24/2022,19
+717,pretzel,chicken,pepper jack,tomato,mayo,salad,tea,12/3/2022,11
+718,pretzel,chicken,pepper jack,tomato,ketchup,fries,water,3/29/2022,23
+719,brioche,turkey,cheddar,pickles,BBQ,fries,lemonade,6/23/2022,15
+720,pretzel,turkey,pepper jack,pickles,mustard,chips,soda,10/9/2022,20
+721,brioche,chicken,pepper jack,pickles,mayo,salad,water,3/16/2022,19
+722,pretzel,turkey,cheddar,pickles,mayo,chips,soda,10/1/2022,7
+723,pretzel,chicken,swiss,onion,mustard,chips,tea,6/13/2022,16
+724,pretzel,chicken,pepper jack,onion,mayo,chips,soda,10/21/2022,11
+725,pretzel,turkey,swiss,pickles,BBQ,chips,lemonade,6/27/2022,16
+726,pretzel,chicken,pepper jack,tomato,ketchup,fries,water,1/9/2022,16
+727,brioche,turkey,cheddar,lettuce,ketchup,salad,water,5/29/2022,6
+728,pretzel,turkey,cheddar,onion,ketchup,fries,lemonade,12/19/2022,3
+729,brioche,turkey,pepper jack,lettuce,mustard,salad,tea,8/25/2022,22
+730,brioche,chicken,swiss,tomato,BBQ,salad,water,5/31/2022,6
+731,brioche,turkey,cheddar,tomato,ketchup,chips,lemonade,1/17/2022,2
+732,pretzel,turkey,cheddar,pickles,mayo,chips,water,5/20/2022,10
+733,brioche,chicken,pepper jack,lettuce,ketchup,fries,lemonade,8/19/2022,0
+734,brioche,turkey,swiss,lettuce,ketchup,chips,lemonade,9/28/2022,1
+735,pretzel,chicken,cheddar,tomato,BBQ,chips,tea,11/16/2022,9
+736,brioche,turkey,cheddar,onion,mayo,fries,water,2/22/2022,17
+737,pretzel,chicken,swiss,tomato,BBQ,chips,tea,11/18/2022,16
+738,pretzel,turkey,cheddar,tomato,ketchup,chips,tea,9/12/2022,1
+739,pretzel,turkey,pepper jack,tomato,BBQ,salad,tea,11/18/2022,15
+740,pretzel,turkey,cheddar,onion,BBQ,fries,soda,5/28/2022,10
+741,pretzel,turkey,pepper jack,onion,ketchup,chips,lemonade,6/18/2022,22
+742,pretzel,turkey,swiss,pickles,BBQ,fries,water,10/20/2022,12
+743,pretzel,turkey,pepper jack,tomato,ketchup,salad,water,1/7/2022,0
+744,pretzel,chicken,cheddar,lettuce,mayo,fries,water,7/7/2022,3
+745,pretzel,turkey,swiss,onion,ketchup,fries,lemonade,1/11/2022,13
+746,brioche,turkey,cheddar,lettuce,mayo,chips,water,1/11/2022,0
+747,pretzel,chicken,swiss,tomato,mayo,chips,soda,7/23/2022,5
+748,pretzel,turkey,swiss,onion,mayo,fries,soda,5/3/2022,22
+749,pretzel,turkey,swiss,pickles,ketchup,salad,tea,11/1/2022,23
+750,brioche,turkey,swiss,lettuce,mayo,chips,water,6/6/2022,8
+751,brioche,chicken,pepper jack,lettuce,mayo,chips,water,4/12/2022,0
+752,pretzel,turkey,cheddar,pickles,BBQ,fries,soda,10/4/2022,1
+753,brioche,turkey,swiss,lettuce,mustard,salad,water,9/5/2022,17
+754,brioche,chicken,pepper jack,pickles,ketchup,salad,water,12/13/2022,9
+755,pretzel,chicken,cheddar,onion,ketchup,fries,water,8/17/2022,21
+756,brioche,turkey,cheddar,onion,ketchup,salad,lemonade,6/26/2022,8
+757,pretzel,turkey,swiss,onion,ketchup,salad,soda,9/19/2022,2
+758,pretzel,chicken,swiss,onion,mustard,chips,water,11/3/2022,15
+759,brioche,chicken,swiss,onion,mayo,salad,tea,11/8/2022,23
+760,brioche,turkey,pepper jack,pickles,mustard,chips,water,12/11/2022,1
+761,brioche,turkey,cheddar,lettuce,mustard,salad,water,7/22/2022,13
+762,pretzel,chicken,cheddar,pickles,mustard,fries,water,6/21/2022,1
+763,brioche,turkey,swiss,pickles,mustard,chips,water,6/6/2022,14
+764,pretzel,chicken,swiss,pickles,mayo,salad,lemonade,6/5/2022,5
+765,pretzel,chicken,cheddar,lettuce,ketchup,chips,soda,1/4/2022,0
+766,pretzel,chicken,cheddar,tomato,ketchup,fries,tea,11/9/2022,11
+767,pretzel,chicken,cheddar,tomato,mustard,salad,water,9/3/2022,3
+768,brioche,turkey,cheddar,lettuce,mustard,salad,tea,12/15/2022,6
+769,brioche,turkey,cheddar,lettuce,ketchup,fries,soda,8/21/2022,3
+770,pretzel,chicken,swiss,tomato,BBQ,salad,tea,2/12/2022,9
+771,pretzel,turkey,swiss,onion,mayo,chips,water,4/12/2022,19
+772,brioche,chicken,cheddar,lettuce,mustard,fries,lemonade,2/8/2022,19
+773,brioche,turkey,swiss,pickles,BBQ,chips,water,1/28/2022,14
+774,brioche,chicken,swiss,tomato,BBQ,fries,water,9/23/2022,3
+775,pretzel,turkey,cheddar,onion,mustard,fries,soda,4/19/2022,13
+776,pretzel,turkey,swiss,tomato,ketchup,chips,soda,4/30/2022,2
+777,brioche,chicken,pepper jack,pickles,mayo,salad,water,9/21/2022,19
+778,pretzel,turkey,swiss,lettuce,mustard,chips,soda,8/28/2022,5
+779,brioche,turkey,cheddar,lettuce,mustard,salad,tea,1/9/2022,1
+780,brioche,chicken,swiss,onion,mustard,salad,lemonade,5/18/2022,9
+781,pretzel,chicken,pepper jack,pickles,BBQ,salad,tea,12/13/2022,13
+782,pretzel,chicken,swiss,pickles,mayo,fries,tea,5/21/2022,11
+783,brioche,chicken,cheddar,tomato,mustard,chips,tea,12/21/2022,15
+784,pretzel,turkey,cheddar,lettuce,mustard,fries,lemonade,10/23/2022,16
+785,brioche,chicken,pepper jack,onion,BBQ,fries,water,2/25/2022,22
+786,pretzel,turkey,pepper jack,onion,mayo,salad,tea,3/26/2022,2
+787,pretzel,chicken,cheddar,lettuce,mayo,salad,lemonade,12/25/2022,22
+788,brioche,turkey,pepper jack,tomato,ketchup,fries,tea,8/20/2022,2
+789,brioche,chicken,pepper jack,tomato,BBQ,fries,soda,7/25/2022,21
+790,pretzel,turkey,cheddar,onion,BBQ,chips,lemonade,4/23/2022,6
+791,pretzel,turkey,cheddar,pickles,BBQ,salad,water,5/2/2022,12
+792,pretzel,turkey,swiss,lettuce,ketchup,chips,tea,10/2/2022,10
+793,pretzel,chicken,swiss,pickles,BBQ,fries,soda,12/14/2022,2
+794,brioche,turkey,cheddar,tomato,BBQ,salad,lemonade,4/23/2022,13
+795,pretzel,chicken,cheddar,onion,ketchup,chips,tea,1/15/2022,14
+796,pretzel,turkey,swiss,lettuce,mustard,salad,soda,11/10/2022,9
+797,pretzel,turkey,pepper jack,pickles,ketchup,fries,soda,1/7/2022,10
+798,pretzel,chicken,cheddar,pickles,BBQ,chips,tea,3/31/2022,17
+799,brioche,turkey,pepper jack,pickles,BBQ,fries,water,12/2/2022,9
+800,pretzel,chicken,swiss,pickles,ketchup,salad,lemonade,8/1/2022,9
+801,brioche,turkey,pepper jack,tomato,ketchup,salad,soda,1/31/2022,9
+802,brioche,turkey,pepper jack,pickles,mustard,fries,water,3/21/2022,18
+803,pretzel,turkey,cheddar,tomato,mustard,fries,tea,4/3/2022,2
+804,pretzel,turkey,swiss,pickles,mustard,chips,soda,5/19/2022,10
+805,pretzel,turkey,pepper jack,onion,ketchup,salad,water,11/1/2022,7
+806,brioche,chicken,pepper jack,tomato,mustard,fries,water,7/4/2022,9
+807,pretzel,turkey,cheddar,pickles,BBQ,fries,soda,9/7/2022,9
+808,brioche,chicken,swiss,pickles,mayo,chips,soda,3/6/2022,15
+809,pretzel,chicken,swiss,lettuce,mustard,salad,lemonade,11/21/2022,3
+810,pretzel,turkey,cheddar,tomato,mayo,chips,soda,8/13/2022,5
+811,pretzel,turkey,swiss,lettuce,mustard,chips,water,7/2/2022,21
+812,pretzel,turkey,swiss,onion,ketchup,salad,soda,7/14/2022,13
+813,pretzel,turkey,pepper jack,lettuce,mayo,chips,water,11/15/2022,6
+814,brioche,chicken,pepper jack,onion,BBQ,chips,lemonade,1/26/2022,17
+815,brioche,chicken,cheddar,pickles,mayo,fries,water,11/10/2022,13
+816,brioche,turkey,swiss,onion,mustard,fries,water,5/6/2022,18
+817,pretzel,chicken,swiss,tomato,mustard,chips,soda,4/2/2022,1
+818,pretzel,turkey,swiss,lettuce,BBQ,salad,water,9/16/2022,7
+819,brioche,turkey,cheddar,onion,ketchup,chips,lemonade,9/30/2022,12
+820,brioche,chicken,swiss,tomato,ketchup,chips,soda,5/21/2022,23
+821,brioche,turkey,swiss,pickles,ketchup,chips,soda,3/7/2022,7
+822,brioche,chicken,cheddar,pickles,mayo,salad,soda,4/27/2022,11
+823,pretzel,chicken,swiss,tomato,BBQ,salad,soda,2/27/2022,21
+824,brioche,chicken,swiss,tomato,mayo,fries,soda,9/6/2022,16
+825,brioche,turkey,pepper jack,onion,mustard,fries,lemonade,2/2/2022,13
+826,pretzel,turkey,pepper jack,onion,mayo,salad,soda,3/26/2022,16
+827,pretzel,chicken,pepper jack,onion,ketchup,fries,soda,7/9/2022,19
+828,brioche,chicken,pepper jack,pickles,mayo,chips,water,8/14/2022,18
+829,brioche,turkey,pepper jack,lettuce,ketchup,chips,water,10/6/2022,10
+830,brioche,chicken,cheddar,onion,ketchup,chips,lemonade,4/15/2022,22
+831,brioche,chicken,cheddar,onion,mayo,salad,lemonade,4/26/2022,14
+832,brioche,turkey,cheddar,tomato,ketchup,salad,water,12/13/2022,12
+833,brioche,chicken,cheddar,lettuce,ketchup,chips,soda,7/8/2022,20
+834,pretzel,turkey,swiss,tomato,mustard,fries,tea,3/22/2022,1
+835,brioche,chicken,pepper jack,onion,mayo,fries,lemonade,11/30/2022,17
+836,pretzel,chicken,pepper jack,tomato,BBQ,salad,water,10/25/2022,4
+837,pretzel,turkey,swiss,pickles,ketchup,fries,lemonade,8/18/2022,20
+838,brioche,chicken,swiss,onion,mayo,chips,soda,12/20/2022,11
+839,brioche,turkey,cheddar,onion,BBQ,fries,water,4/26/2022,17
+840,brioche,chicken,swiss,tomato,BBQ,chips,lemonade,8/22/2022,16
+841,pretzel,turkey,cheddar,tomato,ketchup,fries,lemonade,8/31/2022,9
+842,pretzel,chicken,cheddar,tomato,ketchup,chips,tea,2/7/2022,11
+843,pretzel,chicken,swiss,lettuce,BBQ,fries,soda,8/2/2022,4
+844,pretzel,turkey,pepper jack,tomato,BBQ,fries,tea,3/31/2022,6
+845,brioche,chicken,cheddar,lettuce,ketchup,salad,tea,10/17/2022,14
+846,pretzel,chicken,pepper jack,pickles,ketchup,fries,water,7/24/2022,18
+847,pretzel,turkey,swiss,onion,ketchup,chips,tea,9/25/2022,4
+848,pretzel,chicken,pepper jack,lettuce,BBQ,chips,soda,10/20/2022,16
+849,pretzel,turkey,pepper jack,lettuce,ketchup,salad,water,4/4/2022,3
+850,pretzel,chicken,pepper jack,tomato,BBQ,chips,tea,2/14/2022,18
+851,brioche,turkey,pepper jack,tomato,mustard,fries,lemonade,7/19/2022,23
+852,brioche,turkey,swiss,onion,mayo,fries,tea,8/27/2022,4
+853,pretzel,turkey,cheddar,tomato,mustard,salad,tea,11/1/2022,21
+854,brioche,chicken,cheddar,pickles,ketchup,salad,lemonade,6/27/2022,10
+855,brioche,chicken,swiss,lettuce,BBQ,salad,lemonade,2/10/2022,0
+856,brioche,turkey,cheddar,lettuce,ketchup,chips,water,5/13/2022,16
+857,brioche,turkey,cheddar,tomato,ketchup,salad,soda,5/1/2022,10
+858,brioche,chicken,cheddar,lettuce,mayo,salad,water,9/22/2022,10
+859,pretzel,chicken,swiss,onion,mustard,chips,soda,2/6/2022,6
+860,pretzel,chicken,swiss,tomato,mayo,fries,tea,10/10/2022,4
+861,pretzel,chicken,cheddar,lettuce,BBQ,salad,soda,7/2/2022,17
+862,pretzel,turkey,swiss,pickles,ketchup,chips,lemonade,8/23/2022,0
+863,pretzel,chicken,pepper jack,pickles,ketchup,salad,water,12/28/2022,0
+864,pretzel,chicken,pepper jack,lettuce,BBQ,salad,lemonade,3/28/2022,0
+865,pretzel,turkey,pepper jack,tomato,BBQ,salad,lemonade,7/13/2022,9
+866,pretzel,chicken,swiss,pickles,mustard,fries,lemonade,4/20/2022,1
+867,pretzel,chicken,swiss,pickles,ketchup,salad,water,9/11/2022,2
+868,brioche,chicken,pepper jack,onion,mayo,fries,tea,12/8/2022,18
+869,pretzel,chicken,cheddar,tomato,ketchup,fries,tea,4/12/2022,9
+870,pretzel,chicken,pepper jack,lettuce,mayo,fries,tea,7/17/2022,13
+871,brioche,chicken,pepper jack,tomato,mustard,salad,lemonade,6/30/2022,7
+872,pretzel,chicken,cheddar,onion,BBQ,chips,soda,3/23/2022,3
+873,brioche,chicken,swiss,onion,mustard,chips,soda,8/30/2022,5
+874,pretzel,chicken,swiss,onion,BBQ,salad,water,3/10/2022,12
+875,pretzel,chicken,swiss,lettuce,mayo,chips,lemonade,9/8/2022,1
+876,pretzel,turkey,swiss,pickles,mustard,fries,lemonade,8/9/2022,1
+877,brioche,chicken,pepper jack,lettuce,mayo,salad,tea,2/9/2022,10
+878,brioche,chicken,swiss,tomato,mayo,fries,tea,12/21/2022,14
+879,pretzel,chicken,cheddar,lettuce,ketchup,chips,lemonade,10/12/2022,3
+880,brioche,chicken,cheddar,pickles,BBQ,salad,water,2/28/2022,4
+881,pretzel,chicken,cheddar,tomato,mayo,fries,tea,12/30/2022,11
+882,pretzel,chicken,cheddar,pickles,mayo,fries,tea,2/3/2022,2
+883,brioche,chicken,swiss,onion,ketchup,salad,soda,6/23/2022,0
+884,pretzel,turkey,cheddar,onion,ketchup,salad,water,1/10/2022,1
+885,brioche,chicken,pepper jack,tomato,ketchup,salad,tea,5/22/2022,1
+886,pretzel,turkey,cheddar,pickles,BBQ,fries,water,8/12/2022,21
+887,brioche,turkey,cheddar,pickles,mustard,salad,tea,12/11/2022,5
+888,pretzel,turkey,pepper jack,tomato,ketchup,chips,water,12/30/2022,22
+889,brioche,chicken,swiss,tomato,mustard,salad,lemonade,8/13/2022,2
+890,brioche,turkey,swiss,pickles,mayo,salad,tea,8/3/2022,5
+891,brioche,turkey,pepper jack,onion,mayo,fries,soda,2/7/2022,3
+892,brioche,chicken,pepper jack,onion,mustard,salad,water,6/16/2022,14
+893,pretzel,turkey,pepper jack,pickles,mustard,chips,water,10/9/2022,4
+894,pretzel,chicken,pepper jack,tomato,BBQ,fries,water,3/17/2022,2
+895,pretzel,chicken,swiss,tomato,mustard,fries,water,7/12/2022,21
+896,pretzel,turkey,cheddar,pickles,BBQ,chips,water,10/8/2022,22
+897,brioche,turkey,swiss,onion,ketchup,fries,water,9/5/2022,16
+898,pretzel,chicken,pepper jack,onion,mustard,fries,tea,3/31/2022,17
+899,pretzel,turkey,cheddar,tomato,BBQ,chips,water,5/13/2022,0
+900,brioche,chicken,cheddar,onion,mustard,fries,tea,4/6/2022,4
+901,brioche,turkey,pepper jack,pickles,mayo,fries,lemonade,4/15/2022,18
+902,pretzel,turkey,cheddar,pickles,BBQ,chips,water,8/21/2022,12
+903,brioche,chicken,pepper jack,onion,mayo,chips,lemonade,2/20/2022,3
+904,pretzel,turkey,swiss,onion,mustard,salad,lemonade,10/21/2022,1
+905,brioche,chicken,pepper jack,lettuce,ketchup,fries,soda,9/15/2022,20
+906,brioche,turkey,pepper jack,pickles,ketchup,fries,tea,7/13/2022,2
+907,pretzel,turkey,pepper jack,lettuce,ketchup,salad,lemonade,2/25/2022,12
+908,brioche,chicken,swiss,onion,ketchup,chips,lemonade,6/4/2022,21
+909,pretzel,chicken,cheddar,tomato,mayo,salad,lemonade,3/4/2022,16
+910,brioche,turkey,cheddar,onion,ketchup,salad,soda,2/13/2022,15
+911,pretzel,chicken,swiss,tomato,mayo,chips,tea,8/5/2022,19
+912,brioche,chicken,swiss,lettuce,mayo,fries,lemonade,9/23/2022,5
+913,brioche,turkey,swiss,pickles,BBQ,salad,lemonade,6/19/2022,1
+914,brioche,chicken,cheddar,onion,BBQ,fries,water,2/1/2022,5
+915,pretzel,chicken,swiss,pickles,mayo,salad,soda,12/16/2022,1
+916,pretzel,chicken,swiss,lettuce,mayo,chips,lemonade,10/22/2022,0
+917,brioche,turkey,pepper jack,tomato,mustard,fries,water,8/23/2022,4
+918,pretzel,chicken,cheddar,lettuce,mayo,salad,lemonade,7/18/2022,14
+919,brioche,chicken,pepper jack,lettuce,ketchup,fries,lemonade,9/9/2022,19
+920,brioche,turkey,pepper jack,onion,ketchup,fries,tea,4/26/2022,10
+921,pretzel,chicken,cheddar,pickles,BBQ,salad,water,4/15/2022,14
+922,brioche,turkey,cheddar,onion,mayo,fries,soda,9/19/2022,1
+923,pretzel,chicken,cheddar,lettuce,mustard,fries,water,4/29/2022,11
+924,brioche,turkey,swiss,tomato,mustard,salad,tea,10/3/2022,12
+925,pretzel,chicken,cheddar,onion,ketchup,salad,soda,10/13/2022,22
+926,brioche,chicken,cheddar,onion,ketchup,fries,water,9/30/2022,5
+927,brioche,chicken,swiss,tomato,mayo,chips,water,8/14/2022,14
+928,brioche,chicken,cheddar,pickles,mayo,salad,tea,9/7/2022,9
+929,brioche,turkey,pepper jack,lettuce,mayo,chips,tea,7/12/2022,19
+930,brioche,chicken,swiss,onion,mustard,salad,water,6/26/2022,17
+931,pretzel,turkey,swiss,onion,ketchup,fries,lemonade,4/3/2022,22
+932,brioche,turkey,cheddar,pickles,BBQ,fries,soda,9/21/2022,11
+933,pretzel,turkey,cheddar,lettuce,mustard,fries,lemonade,10/24/2022,6
+934,pretzel,turkey,pepper jack,pickles,BBQ,chips,water,3/5/2022,13
+935,brioche,turkey,cheddar,tomato,ketchup,fries,tea,10/11/2022,6
+936,pretzel,turkey,swiss,onion,mustard,fries,water,4/24/2022,19
+937,brioche,chicken,swiss,onion,ketchup,fries,soda,6/9/2022,6
+938,brioche,chicken,cheddar,pickles,mayo,chips,soda,4/17/2022,13
+939,pretzel,chicken,pepper jack,onion,mayo,fries,tea,6/26/2022,21
+940,brioche,chicken,swiss,tomato,mustard,chips,water,1/31/2022,15
+941,pretzel,chicken,swiss,tomato,mustard,chips,soda,1/15/2022,6
+942,brioche,chicken,pepper jack,pickles,mayo,salad,tea,3/13/2022,8
+943,brioche,chicken,pepper jack,onion,mayo,fries,soda,1/2/2022,12
+944,pretzel,chicken,cheddar,tomato,mayo,salad,tea,4/6/2022,1
+945,brioche,turkey,swiss,tomato,ketchup,fries,tea,1/11/2022,4
+946,brioche,turkey,pepper jack,onion,ketchup,salad,water,4/28/2022,23
+947,brioche,chicken,swiss,pickles,mayo,chips,lemonade,7/5/2022,4
+948,brioche,chicken,swiss,onion,ketchup,salad,lemonade,3/25/2022,17
+949,pretzel,chicken,cheddar,pickles,ketchup,salad,tea,1/21/2022,17
+950,brioche,chicken,cheddar,lettuce,ketchup,fries,soda,11/2/2022,11
+951,brioche,turkey,pepper jack,tomato,mustard,salad,soda,11/19/2022,7
+952,pretzel,turkey,pepper jack,pickles,ketchup,chips,tea,12/11/2022,4
+953,brioche,chicken,swiss,pickles,mustard,chips,lemonade,6/18/2022,22
+954,pretzel,turkey,cheddar,pickles,ketchup,fries,water,4/20/2022,17
+955,pretzel,chicken,pepper jack,lettuce,BBQ,chips,lemonade,11/26/2022,8
+956,brioche,chicken,cheddar,tomato,BBQ,chips,lemonade,11/27/2022,1
+957,brioche,chicken,swiss,lettuce,mayo,chips,tea,8/11/2022,4
+958,pretzel,chicken,pepper jack,pickles,mustard,fries,lemonade,3/3/2022,21
+959,brioche,chicken,pepper jack,pickles,mayo,salad,lemonade,4/25/2022,18
+960,pretzel,turkey,pepper jack,lettuce,BBQ,chips,soda,8/18/2022,12
+961,brioche,chicken,swiss,lettuce,mayo,chips,soda,4/21/2022,4
+962,brioche,chicken,cheddar,lettuce,BBQ,fries,water,1/8/2022,1
+963,brioche,chicken,swiss,lettuce,mayo,chips,tea,8/4/2022,22
+964,pretzel,turkey,pepper jack,pickles,BBQ,fries,tea,11/5/2022,7
+965,pretzel,turkey,swiss,lettuce,BBQ,salad,lemonade,11/28/2022,2
+966,pretzel,chicken,pepper jack,lettuce,ketchup,salad,water,2/19/2022,12
+967,pretzel,chicken,pepper jack,pickles,ketchup,salad,water,3/17/2022,15
+968,pretzel,chicken,pepper jack,lettuce,ketchup,fries,water,1/14/2022,4
+969,pretzel,turkey,cheddar,lettuce,BBQ,salad,lemonade,3/30/2022,4
+970,pretzel,chicken,pepper jack,onion,ketchup,salad,soda,1/14/2022,22
+971,pretzel,chicken,cheddar,onion,mustard,salad,lemonade,3/6/2022,3
+972,brioche,turkey,swiss,tomato,ketchup,salad,lemonade,5/22/2022,19
+973,pretzel,turkey,cheddar,lettuce,ketchup,fries,tea,7/21/2022,6
+974,pretzel,turkey,swiss,pickles,BBQ,salad,tea,1/5/2022,7
+975,pretzel,turkey,pepper jack,tomato,BBQ,fries,lemonade,12/5/2022,8
+976,pretzel,turkey,swiss,lettuce,ketchup,fries,soda,6/28/2022,8
+977,pretzel,turkey,cheddar,onion,mayo,chips,water,5/21/2022,2
+978,pretzel,chicken,swiss,tomato,BBQ,chips,water,1/23/2022,6
+979,pretzel,chicken,swiss,tomato,ketchup,fries,water,9/15/2022,19
+980,pretzel,chicken,cheddar,tomato,mustard,fries,tea,3/19/2022,21
+981,brioche,chicken,cheddar,pickles,BBQ,chips,tea,11/1/2022,7
+982,pretzel,chicken,cheddar,lettuce,ketchup,salad,lemonade,2/5/2022,11
+983,brioche,turkey,pepper jack,tomato,mustard,chips,water,12/11/2022,1
+984,brioche,turkey,swiss,pickles,ketchup,chips,tea,3/28/2022,22
+985,brioche,chicken,cheddar,lettuce,mustard,fries,tea,11/3/2022,15
+986,brioche,turkey,pepper jack,onion,mustard,salad,soda,8/11/2022,19
+987,brioche,turkey,swiss,lettuce,ketchup,salad,lemonade,4/18/2022,7
+988,pretzel,chicken,cheddar,onion,mayo,chips,soda,5/9/2022,6
+989,brioche,turkey,swiss,pickles,mayo,salad,water,1/4/2022,3
+990,pretzel,turkey,pepper jack,pickles,mustard,chips,water,10/31/2022,10
+991,brioche,turkey,pepper jack,tomato,BBQ,salad,water,5/11/2022,9
+992,pretzel,chicken,swiss,tomato,mustard,fries,lemonade,3/17/2022,8
+993,pretzel,turkey,swiss,tomato,mustard,salad,tea,12/12/2022,3
+994,pretzel,chicken,cheddar,tomato,mayo,fries,soda,3/15/2022,6
+995,pretzel,chicken,swiss,pickles,ketchup,chips,tea,12/11/2022,10
+996,brioche,turkey,cheddar,pickles,BBQ,salad,lemonade,11/6/2022,8
+997,pretzel,turkey,swiss,lettuce,ketchup,fries,water,9/9/2022,13
+998,pretzel,turkey,pepper jack,tomato,mustard,salad,tea,1/8/2022,23
+999,brioche,chicken,swiss,onion,mustard,chips,soda,5/13/2022,19
+1000,brioche,turkey,pepper jack,tomato,mustard,salad,soda,11/11/2022,12

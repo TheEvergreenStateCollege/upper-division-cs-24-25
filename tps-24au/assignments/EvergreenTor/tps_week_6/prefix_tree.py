@@ -6,6 +6,9 @@ class Node:
     def addNode(self,letter):
         new_node = Node(self)
         self.children[letter] = new_node
+    
+    def getChild(self, char):
+        return Node(self.children.get(char))
 
     def insertChild(self, suffix):
          
@@ -31,6 +34,22 @@ class Node:
 class PrefixTree:
     def __init__(self):
         self.root = Node(None)
+
+    def lookUP(self,string):
+        curr = Node(self.root)
+        for i in range(len(string)):
+            curr = curr.getChild(string[i])
+            if curr is None:
+                return i 
+        
+        return len(string)
+    
+    def insert(self, string):
+        return self.root.insertChild(string)
+    
+    def toString(self):
+        return "PrefixTree: " + self.root.str()
+    
 
     
 
