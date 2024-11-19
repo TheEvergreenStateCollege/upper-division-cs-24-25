@@ -3,39 +3,46 @@ import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.io.InputStream;
 import java.io.IOException;
+import java.util.*;
 
 public class ReadData {
 
-    static class Person {
+    static class Crops {
 
-        int id;
-        String first_name;
-        String last_name;
-        String email;
-        double salary;
+        CropName crop_name;
+        CropType crop_type;
 
-        public person(String first_name, String last_name, String email, double salary) {
-            this.id = id;
-            this.first_name = first_name;
-            this.last_name = last_name;
-            this.email = email;
-            this.salary = salary;
+        public Crops(CropName crop_name, CropInfo crop_type) {
+            this.crop_name = crop_name;
+            this.crop_type = crop_type;
         }
     }
 
-    static class IngredientsInStock {
-        
+    static class ListData {
+
+    }
+    //changed to values of Crop Type
+    static enum CropName {
+        Apples;
+        Cucumber;
+        Squash;
+        Oranges;
+    }
+    static enum CropType {
+        Fruit;
+        Vegetable;
+        Grain;
     }
 
     public static void main(String[] args){
         
-        String csvFilePath = "../data/sandwich_data.csv";
+        String csvFilePath = "../data/Mock Crops.csv";
         //InputStream is = ReadData.class.getClassLoader().getResourceAsStream(csvFilePath);
 
         //<> are blank cause it can type inference
         //related types. one references the other.
         //Supertype is list. Subtype is ArrayList
-        List<Sandwich> orderList = new ArrayList<>();
+        List<Crops> orderList = new ArrayList<>();
     
         //try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
         try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
@@ -68,7 +75,7 @@ public class ReadData {
                 {
                     // assume formating is correct 
                     int id = Integer.parseInt(tokens[0]);
-                    BunType bun = BunType.valueOf(tokens[1]);
+                    Crop_name crop = BunType.valueOf(tokens[1]);
                     PattyType patty = PattyType.valueOf(tokens[2]);
 
                     Sandwich s = new Sandwich(bun, patty);

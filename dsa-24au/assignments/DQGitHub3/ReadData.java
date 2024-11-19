@@ -1,40 +1,52 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.io.InputStream;
+// import java.io.InputStreamReader;
+// import java.io.InputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ReadData {
 
-    static class Person {
+    static class Sandwich {
 
-        int id;
-        String first_name;
-        String last_name;
-        String email;
-        double salary;
+        BunType bottomBun;
+        BunType topBun;
+        PattyType patty;
 
-        public person(String first_name, String last_name, String email, double salary) {
-            this.id = id;
-            this.first_name = first_name;
-            this.last_name = last_name;
-            this.email = email;
-            this.salary = salary;
+        public Sandwich(BunType bun, PattyType patty) {
+            this.bottomBun = bun;
+            this.topBun = bun;
+            this.patty = patty;
         }
     }
 
     static class IngredientsInStock {
-        
+
+    }
+  
+    static enum BunType {
+        POTATO,
+        WHOLE_WHEAT,
+        BRIOCHE,
+        SESAME,
+        PRETZEL,
+    }
+
+    static enum PattyType {
+        CHICKEN,
+        VEGGIE,
+        PORK,
+        BEEF,
+        FISH,
+        TURKEY,
     }
 
     public static void main(String[] args){
         
-        String csvFilePath = "../data/sandwich_data.csv";
+        String csvFilePath = "./data.csv";
         //InputStream is = ReadData.class.getClassLoader().getResourceAsStream(csvFilePath);
 
-        //<> are blank cause it can type inference
-        //related types. one references the other.
-        //Supertype is list. Subtype is ArrayList
         List<Sandwich> orderList = new ArrayList<>();
     
         //try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
