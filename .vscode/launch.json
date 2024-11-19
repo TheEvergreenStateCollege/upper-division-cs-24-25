@@ -8,8 +8,13 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
+<<<<<<< HEAD
       "cwd": "/workspace/upper-division-cs-24-25/pdc-24au",
       "program": "/workspace/upper-division-cs-24-25/pdc-24au/build/Debug/outDebug",
+=======
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+>>>>>>> refs/remotes/origin/main
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
