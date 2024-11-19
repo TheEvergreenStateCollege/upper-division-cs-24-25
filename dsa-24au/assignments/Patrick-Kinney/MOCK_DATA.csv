@@ -1,0 +1,1001 @@
+order_id,sandwich_type,bread_type,cheese_type,toppings,sauce,side_order,drink,order_date
+1,Turkey,White,Provolone,Lettuce,Ranch,Fruit,Iced Tea,9/4/2022
+2,Turkey,White,Provolone,Pickles,Mustard,Chips,Iced Tea,5/22/2022
+3,Turkey,Wheat,Cheddar,Pickles,Mayo,Fruit,Soda,8/23/2022
+4,Veggie,Wheat,Cheddar,Pickles,Mayo,Salad,Soda,6/12/2022
+5,Veggie,Rye,Swiss,Lettuce,Ranch,Fruit,Soda,3/12/2022
+6,Turkey,White,Provolone,Onion,Mustard,Salad,Soda,3/6/2022
+7,Veggie,White,Swiss,Onion,Mayo,Salad,Iced Tea,2/27/2022
+8,Turkey,White,Provolone,Lettuce,Mayo,Salad,Soda,3/25/2022
+9,Ham,Wheat,Swiss,Tomato,Ranch,Salad,Water,3/10/2022
+10,Veggie,Rye,Provolone,Lettuce,Ranch,Chips,Water,12/15/2022
+11,Ham,Wheat,Cheddar,Pickles,Mustard,Fruit,Iced Tea,1/21/2022
+12,Ham,Wheat,Swiss,Tomato,Mustard,Fruit,Iced Tea,12/11/2022
+13,Veggie,White,Cheddar,Onion,Mayo,Fruit,Water,4/1/2022
+14,Veggie,Wheat,Cheddar,Pickles,Mayo,Chips,Iced Tea,10/1/2022
+15,Turkey,Wheat,Cheddar,Onion,Ranch,Salad,Water,12/12/2022
+16,Ham,Rye,Cheddar,Lettuce,Ranch,Salad,Iced Tea,5/26/2022
+17,Ham,White,Swiss,Pickles,Mayo,Salad,Soda,8/18/2022
+18,Turkey,White,Cheddar,Tomato,Mayo,Salad,Soda,9/17/2022
+19,Turkey,White,Swiss,Tomato,Mustard,Salad,Soda,11/22/2022
+20,Veggie,Wheat,Swiss,Onion,Mayo,Fruit,Iced Tea,7/14/2022
+21,Ham,Rye,Swiss,Tomato,Mayo,Chips,Soda,12/26/2022
+22,Turkey,Rye,Cheddar,Pickles,Ranch,Chips,Water,3/31/2022
+23,Ham,White,Provolone,Tomato,Ranch,Salad,Water,3/9/2022
+24,Ham,Rye,Provolone,Tomato,Mustard,Chips,Soda,9/17/2022
+25,Turkey,White,Swiss,Tomato,Mustard,Salad,Soda,12/23/2022
+26,Veggie,Rye,Provolone,Pickles,Mayo,Fruit,Water,10/6/2022
+27,Ham,Rye,Provolone,Tomato,Mustard,Salad,Iced Tea,1/29/2022
+28,Ham,White,Cheddar,Pickles,Mayo,Fruit,Iced Tea,3/28/2022
+29,Veggie,White,Swiss,Onion,Mayo,Fruit,Soda,8/5/2022
+30,Veggie,Rye,Provolone,Lettuce,Mayo,Chips,Soda,2/26/2022
+31,Turkey,Rye,Swiss,Pickles,Mayo,Salad,Iced Tea,10/10/2022
+32,Veggie,White,Cheddar,Lettuce,Mayo,Salad,Iced Tea,12/28/2022
+33,Veggie,Wheat,Swiss,Onion,Mustard,Chips,Iced Tea,3/25/2022
+34,Ham,White,Provolone,Onion,Mustard,Fruit,Water,5/2/2022
+35,Turkey,Wheat,Swiss,Lettuce,Ranch,Salad,Iced Tea,10/7/2022
+36,Veggie,White,Cheddar,Pickles,Mayo,Salad,Water,2/4/2022
+37,Ham,White,Cheddar,Pickles,Mustard,Fruit,Soda,8/22/2022
+38,Turkey,Rye,Cheddar,Tomato,Mayo,Chips,Iced Tea,4/5/2022
+39,Turkey,White,Swiss,Lettuce,Mayo,Chips,Water,5/27/2022
+40,Veggie,Rye,Cheddar,Pickles,Mustard,Chips,Iced Tea,5/23/2022
+41,Turkey,White,Cheddar,Onion,Mustard,Fruit,Soda,11/23/2022
+42,Turkey,Wheat,Cheddar,Lettuce,Ranch,Chips,Soda,1/10/2022
+43,Turkey,Wheat,Swiss,Lettuce,Ranch,Chips,Soda,10/20/2022
+44,Veggie,Wheat,Cheddar,Lettuce,Ranch,Salad,Water,5/7/2022
+45,Turkey,Wheat,Cheddar,Onion,Ranch,Salad,Soda,6/8/2022
+46,Veggie,White,Cheddar,Tomato,Ranch,Salad,Soda,7/27/2022
+47,Turkey,White,Cheddar,Pickles,Mustard,Fruit,Water,12/24/2022
+48,Veggie,Wheat,Swiss,Pickles,Ranch,Salad,Soda,10/24/2022
+49,Turkey,White,Cheddar,Lettuce,Mayo,Fruit,Iced Tea,9/22/2022
+50,Turkey,Rye,Provolone,Lettuce,Ranch,Fruit,Soda,4/21/2022
+51,Turkey,Rye,Swiss,Tomato,Mayo,Salad,Iced Tea,1/6/2022
+52,Ham,White,Swiss,Lettuce,Mustard,Salad,Water,9/21/2022
+53,Veggie,White,Cheddar,Lettuce,Mayo,Fruit,Iced Tea,1/10/2022
+54,Ham,Wheat,Provolone,Onion,Mustard,Chips,Water,4/29/2022
+55,Turkey,Rye,Swiss,Lettuce,Ranch,Salad,Iced Tea,7/5/2022
+56,Turkey,Rye,Provolone,Lettuce,Mayo,Chips,Water,6/23/2022
+57,Ham,Rye,Swiss,Pickles,Ranch,Chips,Iced Tea,4/20/2022
+58,Turkey,White,Provolone,Pickles,Ranch,Salad,Water,1/29/2022
+59,Ham,Rye,Cheddar,Onion,Mustard,Chips,Water,1/22/2022
+60,Veggie,White,Cheddar,Tomato,Ranch,Fruit,Water,6/9/2022
+61,Veggie,White,Cheddar,Pickles,Ranch,Salad,Iced Tea,10/31/2022
+62,Turkey,Rye,Swiss,Pickles,Ranch,Fruit,Iced Tea,6/29/2022
+63,Veggie,Wheat,Provolone,Onion,Mayo,Fruit,Soda,2/5/2022
+64,Turkey,Wheat,Provolone,Onion,Mayo,Salad,Iced Tea,10/18/2022
+65,Veggie,White,Provolone,Tomato,Ranch,Fruit,Iced Tea,10/11/2022
+66,Turkey,Rye,Provolone,Tomato,Ranch,Salad,Water,4/27/2022
+67,Ham,White,Provolone,Onion,Mustard,Fruit,Water,4/28/2022
+68,Turkey,Rye,Provolone,Tomato,Ranch,Salad,Soda,10/13/2022
+69,Veggie,Wheat,Swiss,Onion,Mustard,Salad,Water,5/21/2022
+70,Turkey,Wheat,Cheddar,Tomato,Mayo,Salad,Iced Tea,12/22/2022
+71,Ham,White,Swiss,Lettuce,Ranch,Fruit,Soda,10/4/2022
+72,Turkey,White,Swiss,Onion,Ranch,Fruit,Soda,6/23/2022
+73,Veggie,White,Cheddar,Tomato,Mayo,Salad,Water,11/19/2022
+74,Ham,Rye,Swiss,Onion,Ranch,Chips,Iced Tea,7/15/2022
+75,Veggie,Rye,Cheddar,Lettuce,Mayo,Chips,Iced Tea,2/2/2022
+76,Ham,Rye,Cheddar,Tomato,Mustard,Fruit,Water,12/30/2022
+77,Ham,Wheat,Provolone,Onion,Ranch,Chips,Soda,3/27/2022
+78,Turkey,Rye,Provolone,Pickles,Mayo,Fruit,Iced Tea,7/21/2022
+79,Ham,White,Swiss,Tomato,Mustard,Salad,Water,10/31/2022
+80,Veggie,White,Cheddar,Onion,Ranch,Salad,Iced Tea,11/8/2022
+81,Ham,Rye,Provolone,Pickles,Mustard,Salad,Soda,11/25/2022
+82,Ham,Wheat,Cheddar,Tomato,Mustard,Fruit,Iced Tea,1/2/2022
+83,Turkey,White,Provolone,Pickles,Ranch,Chips,Soda,12/22/2022
+84,Ham,White,Cheddar,Pickles,Mustard,Salad,Iced Tea,6/4/2022
+85,Ham,Wheat,Cheddar,Tomato,Mustard,Chips,Soda,1/5/2022
+86,Veggie,Wheat,Swiss,Lettuce,Ranch,Salad,Water,11/23/2022
+87,Ham,Wheat,Cheddar,Pickles,Mayo,Fruit,Water,3/8/2022
+88,Veggie,White,Swiss,Onion,Ranch,Salad,Soda,5/10/2022
+89,Turkey,Rye,Cheddar,Lettuce,Mustard,Fruit,Iced Tea,9/21/2022
+90,Ham,Wheat,Swiss,Pickles,Mustard,Chips,Soda,9/8/2022
+91,Ham,Wheat,Swiss,Tomato,Ranch,Salad,Soda,8/18/2022
+92,Veggie,White,Cheddar,Onion,Mayo,Chips,Soda,1/11/2022
+93,Turkey,White,Cheddar,Onion,Ranch,Chips,Soda,1/2/2022
+94,Veggie,White,Swiss,Tomato,Mayo,Chips,Water,5/25/2022
+95,Ham,White,Provolone,Onion,Mustard,Chips,Water,2/12/2022
+96,Ham,White,Swiss,Lettuce,Mayo,Fruit,Soda,8/8/2022
+97,Ham,White,Swiss,Tomato,Ranch,Salad,Water,2/14/2022
+98,Veggie,White,Swiss,Pickles,Ranch,Chips,Soda,3/19/2022
+99,Turkey,Rye,Provolone,Lettuce,Mustard,Salad,Water,9/19/2022
+100,Ham,Wheat,Provolone,Pickles,Mayo,Chips,Soda,4/30/2022
+101,Veggie,Wheat,Swiss,Pickles,Mustard,Salad,Water,5/21/2022
+102,Veggie,White,Provolone,Tomato,Mayo,Fruit,Iced Tea,7/10/2022
+103,Ham,White,Cheddar,Onion,Mayo,Salad,Soda,2/11/2022
+104,Ham,Rye,Provolone,Lettuce,Mayo,Chips,Iced Tea,7/13/2022
+105,Ham,Wheat,Provolone,Onion,Mayo,Salad,Soda,10/26/2022
+106,Turkey,White,Cheddar,Tomato,Mayo,Fruit,Iced Tea,8/27/2022
+107,Veggie,White,Provolone,Tomato,Mustard,Chips,Iced Tea,3/15/2022
+108,Veggie,Wheat,Cheddar,Onion,Mustard,Salad,Water,7/16/2022
+109,Ham,Wheat,Swiss,Tomato,Mayo,Fruit,Iced Tea,2/22/2022
+110,Veggie,Rye,Cheddar,Lettuce,Mayo,Salad,Iced Tea,10/2/2022
+111,Ham,Rye,Swiss,Lettuce,Mayo,Salad,Soda,12/28/2022
+112,Ham,Wheat,Provolone,Onion,Mustard,Salad,Iced Tea,9/11/2022
+113,Veggie,Rye,Swiss,Pickles,Mustard,Fruit,Water,3/12/2022
+114,Veggie,Wheat,Provolone,Tomato,Mustard,Fruit,Soda,1/9/2022
+115,Turkey,Rye,Swiss,Tomato,Ranch,Salad,Water,9/21/2022
+116,Veggie,White,Cheddar,Onion,Ranch,Chips,Water,3/3/2022
+117,Ham,White,Swiss,Pickles,Ranch,Fruit,Soda,9/27/2022
+118,Turkey,Rye,Provolone,Tomato,Mustard,Salad,Water,5/18/2022
+119,Turkey,Rye,Swiss,Lettuce,Mayo,Chips,Soda,10/24/2022
+120,Veggie,White,Swiss,Onion,Mayo,Chips,Water,6/21/2022
+121,Turkey,Wheat,Provolone,Pickles,Mustard,Chips,Soda,3/30/2022
+122,Turkey,Rye,Cheddar,Onion,Mustard,Chips,Water,11/16/2022
+123,Veggie,White,Provolone,Tomato,Mayo,Fruit,Water,2/7/2022
+124,Veggie,Rye,Swiss,Pickles,Mayo,Chips,Water,4/9/2022
+125,Ham,White,Swiss,Tomato,Mayo,Chips,Iced Tea,9/17/2022
+126,Veggie,White,Cheddar,Pickles,Ranch,Fruit,Iced Tea,8/18/2022
+127,Turkey,Rye,Provolone,Lettuce,Ranch,Chips,Iced Tea,4/14/2022
+128,Turkey,Rye,Swiss,Pickles,Mayo,Chips,Soda,9/18/2022
+129,Ham,Rye,Provolone,Onion,Mustard,Chips,Iced Tea,12/10/2022
+130,Turkey,Rye,Provolone,Onion,Mustard,Salad,Iced Tea,3/23/2022
+131,Ham,White,Swiss,Lettuce,Mayo,Salad,Water,1/5/2022
+132,Ham,Wheat,Swiss,Tomato,Mayo,Salad,Iced Tea,11/10/2022
+133,Veggie,Wheat,Swiss,Lettuce,Ranch,Salad,Iced Tea,3/5/2022
+134,Turkey,Wheat,Provolone,Tomato,Mustard,Chips,Iced Tea,4/22/2022
+135,Veggie,Wheat,Provolone,Onion,Mustard,Salad,Iced Tea,12/21/2022
+136,Ham,Rye,Provolone,Lettuce,Mustard,Salad,Water,11/29/2022
+137,Veggie,Wheat,Provolone,Onion,Mayo,Fruit,Water,11/13/2022
+138,Ham,Wheat,Swiss,Tomato,Ranch,Chips,Iced Tea,9/5/2022
+139,Veggie,White,Cheddar,Tomato,Ranch,Chips,Soda,6/27/2022
+140,Veggie,White,Provolone,Pickles,Mustard,Salad,Soda,6/2/2022
+141,Veggie,White,Provolone,Lettuce,Ranch,Fruit,Iced Tea,3/24/2022
+142,Veggie,White,Swiss,Pickles,Mustard,Fruit,Iced Tea,11/29/2022
+143,Ham,Rye,Swiss,Pickles,Mayo,Salad,Water,4/14/2022
+144,Ham,White,Cheddar,Lettuce,Ranch,Chips,Iced Tea,10/4/2022
+145,Veggie,White,Provolone,Tomato,Mayo,Chips,Iced Tea,1/4/2022
+146,Veggie,Wheat,Cheddar,Onion,Mustard,Salad,Soda,10/2/2022
+147,Veggie,White,Cheddar,Tomato,Mayo,Fruit,Soda,2/10/2022
+148,Turkey,Wheat,Swiss,Pickles,Mustard,Fruit,Iced Tea,1/15/2022
+149,Veggie,Wheat,Cheddar,Onion,Ranch,Chips,Iced Tea,1/8/2022
+150,Ham,White,Swiss,Pickles,Mustard,Fruit,Soda,7/29/2022
+151,Turkey,Rye,Provolone,Pickles,Mayo,Chips,Soda,10/8/2022
+152,Turkey,Wheat,Swiss,Pickles,Ranch,Chips,Soda,6/5/2022
+153,Veggie,Rye,Provolone,Lettuce,Mustard,Chips,Iced Tea,7/28/2022
+154,Turkey,Rye,Provolone,Pickles,Ranch,Fruit,Iced Tea,10/4/2022
+155,Turkey,Rye,Provolone,Tomato,Mayo,Fruit,Soda,8/25/2022
+156,Ham,Rye,Cheddar,Lettuce,Mayo,Salad,Iced Tea,3/4/2022
+157,Ham,White,Swiss,Tomato,Mayo,Chips,Iced Tea,11/8/2022
+158,Ham,Wheat,Swiss,Lettuce,Ranch,Chips,Soda,9/12/2022
+159,Turkey,Rye,Provolone,Pickles,Ranch,Chips,Water,9/2/2022
+160,Veggie,Wheat,Provolone,Pickles,Mustard,Salad,Iced Tea,8/31/2022
+161,Ham,Wheat,Cheddar,Tomato,Ranch,Chips,Water,2/19/2022
+162,Turkey,Rye,Swiss,Pickles,Ranch,Fruit,Water,12/28/2022
+163,Veggie,Rye,Swiss,Tomato,Ranch,Fruit,Soda,4/11/2022
+164,Turkey,Wheat,Cheddar,Onion,Ranch,Salad,Water,1/17/2022
+165,Ham,Rye,Swiss,Onion,Mustard,Fruit,Water,7/18/2022
+166,Ham,Wheat,Provolone,Tomato,Mayo,Fruit,Iced Tea,5/17/2022
+167,Veggie,Wheat,Swiss,Lettuce,Mayo,Fruit,Iced Tea,6/2/2022
+168,Turkey,Rye,Swiss,Pickles,Mustard,Chips,Water,4/21/2022
+169,Veggie,Wheat,Provolone,Tomato,Ranch,Salad,Water,4/24/2022
+170,Turkey,White,Provolone,Pickles,Mustard,Chips,Soda,6/14/2022
+171,Veggie,Wheat,Cheddar,Lettuce,Ranch,Salad,Water,6/29/2022
+172,Ham,Rye,Provolone,Lettuce,Mustard,Chips,Iced Tea,4/9/2022
+173,Ham,Rye,Swiss,Lettuce,Mustard,Salad,Iced Tea,6/15/2022
+174,Turkey,Rye,Swiss,Pickles,Mayo,Fruit,Water,5/26/2022
+175,Turkey,Rye,Swiss,Onion,Mayo,Fruit,Soda,5/29/2022
+176,Ham,Wheat,Provolone,Pickles,Mustard,Chips,Iced Tea,9/12/2022
+177,Veggie,Wheat,Cheddar,Tomato,Mustard,Salad,Soda,7/6/2022
+178,Turkey,Wheat,Swiss,Lettuce,Mustard,Chips,Soda,12/30/2022
+179,Turkey,Wheat,Provolone,Lettuce,Mustard,Salad,Iced Tea,7/10/2022
+180,Veggie,White,Cheddar,Tomato,Mayo,Fruit,Soda,7/3/2022
+181,Turkey,Wheat,Swiss,Lettuce,Ranch,Fruit,Water,8/3/2022
+182,Ham,Wheat,Cheddar,Lettuce,Mayo,Salad,Iced Tea,3/5/2022
+183,Veggie,White,Provolone,Lettuce,Mustard,Fruit,Iced Tea,1/21/2022
+184,Turkey,Rye,Provolone,Onion,Ranch,Fruit,Soda,3/31/2022
+185,Veggie,White,Swiss,Lettuce,Mustard,Fruit,Water,10/6/2022
+186,Turkey,Rye,Swiss,Lettuce,Mayo,Salad,Water,11/2/2022
+187,Ham,White,Provolone,Pickles,Mustard,Fruit,Iced Tea,3/17/2022
+188,Veggie,Rye,Provolone,Lettuce,Ranch,Chips,Water,3/1/2022
+189,Veggie,White,Cheddar,Onion,Mayo,Fruit,Soda,2/1/2022
+190,Veggie,Rye,Cheddar,Lettuce,Mayo,Chips,Iced Tea,8/28/2022
+191,Ham,Wheat,Swiss,Tomato,Mayo,Fruit,Soda,9/26/2022
+192,Veggie,Rye,Cheddar,Lettuce,Mayo,Salad,Soda,6/1/2022
+193,Turkey,Wheat,Cheddar,Tomato,Ranch,Fruit,Iced Tea,2/11/2022
+194,Ham,Rye,Cheddar,Onion,Ranch,Salad,Water,6/24/2022
+195,Turkey,White,Provolone,Lettuce,Mustard,Chips,Iced Tea,1/20/2022
+196,Veggie,Wheat,Provolone,Onion,Mustard,Fruit,Soda,8/9/2022
+197,Turkey,Wheat,Swiss,Lettuce,Mustard,Fruit,Soda,8/18/2022
+198,Ham,White,Provolone,Onion,Mayo,Salad,Water,11/26/2022
+199,Turkey,Rye,Swiss,Pickles,Ranch,Chips,Soda,9/2/2022
+200,Turkey,White,Swiss,Onion,Ranch,Chips,Soda,4/17/2022
+201,Turkey,Wheat,Provolone,Pickles,Ranch,Salad,Soda,11/1/2022
+202,Turkey,Rye,Provolone,Onion,Ranch,Salad,Soda,12/23/2022
+203,Turkey,Rye,Cheddar,Tomato,Mustard,Fruit,Water,5/17/2022
+204,Turkey,Wheat,Swiss,Lettuce,Mustard,Chips,Iced Tea,7/15/2022
+205,Ham,White,Provolone,Lettuce,Mustard,Salad,Iced Tea,4/27/2022
+206,Veggie,Rye,Cheddar,Tomato,Mustard,Chips,Water,7/8/2022
+207,Turkey,Wheat,Swiss,Pickles,Mustard,Salad,Soda,2/21/2022
+208,Ham,White,Cheddar,Pickles,Ranch,Salad,Iced Tea,5/20/2022
+209,Ham,Rye,Provolone,Pickles,Mayo,Salad,Water,12/11/2022
+210,Veggie,White,Swiss,Lettuce,Ranch,Fruit,Soda,12/3/2022
+211,Turkey,White,Swiss,Onion,Mayo,Fruit,Water,3/5/2022
+212,Turkey,Wheat,Provolone,Onion,Mustard,Chips,Iced Tea,10/6/2022
+213,Ham,Rye,Cheddar,Tomato,Mustard,Chips,Water,4/23/2022
+214,Veggie,White,Provolone,Pickles,Mayo,Salad,Water,7/27/2022
+215,Ham,Rye,Cheddar,Onion,Mayo,Chips,Soda,12/24/2022
+216,Turkey,Rye,Provolone,Tomato,Ranch,Fruit,Water,11/5/2022
+217,Veggie,White,Provolone,Lettuce,Mayo,Salad,Iced Tea,1/10/2022
+218,Ham,Wheat,Cheddar,Lettuce,Mayo,Chips,Water,1/17/2022
+219,Ham,Wheat,Cheddar,Tomato,Mustard,Chips,Iced Tea,5/16/2022
+220,Veggie,Wheat,Swiss,Onion,Mustard,Fruit,Water,3/10/2022
+221,Turkey,White,Swiss,Onion,Mustard,Fruit,Water,4/29/2022
+222,Turkey,Rye,Provolone,Tomato,Mayo,Chips,Soda,1/31/2022
+223,Turkey,White,Cheddar,Tomato,Ranch,Chips,Iced Tea,8/30/2022
+224,Turkey,Rye,Swiss,Lettuce,Ranch,Fruit,Soda,3/24/2022
+225,Turkey,Wheat,Provolone,Onion,Mustard,Fruit,Water,5/14/2022
+226,Veggie,White,Provolone,Pickles,Ranch,Salad,Soda,10/25/2022
+227,Veggie,White,Cheddar,Lettuce,Ranch,Fruit,Water,6/16/2022
+228,Veggie,Rye,Provolone,Pickles,Mustard,Salad,Iced Tea,4/5/2022
+229,Turkey,White,Cheddar,Tomato,Ranch,Salad,Iced Tea,9/15/2022
+230,Ham,Rye,Cheddar,Lettuce,Ranch,Chips,Soda,9/10/2022
+231,Veggie,Wheat,Cheddar,Pickles,Mustard,Chips,Soda,8/26/2022
+232,Veggie,White,Cheddar,Tomato,Mayo,Fruit,Water,6/28/2022
+233,Turkey,Rye,Provolone,Tomato,Mayo,Fruit,Iced Tea,9/17/2022
+234,Ham,Rye,Provolone,Pickles,Ranch,Salad,Iced Tea,11/30/2022
+235,Ham,White,Cheddar,Tomato,Mustard,Chips,Water,12/3/2022
+236,Veggie,Wheat,Provolone,Lettuce,Ranch,Chips,Water,3/27/2022
+237,Turkey,Rye,Cheddar,Onion,Ranch,Chips,Water,5/16/2022
+238,Ham,White,Provolone,Tomato,Mayo,Salad,Water,11/18/2022
+239,Turkey,White,Swiss,Pickles,Mustard,Chips,Soda,7/7/2022
+240,Veggie,Wheat,Provolone,Pickles,Mustard,Salad,Water,3/30/2022
+241,Veggie,Wheat,Provolone,Pickles,Ranch,Salad,Iced Tea,5/9/2022
+242,Turkey,White,Cheddar,Onion,Mayo,Chips,Iced Tea,7/18/2022
+243,Ham,Rye,Cheddar,Pickles,Mustard,Chips,Iced Tea,10/28/2022
+244,Ham,Wheat,Cheddar,Lettuce,Mustard,Salad,Water,10/7/2022
+245,Turkey,Rye,Cheddar,Onion,Ranch,Chips,Iced Tea,5/26/2022
+246,Turkey,Rye,Swiss,Tomato,Mustard,Salad,Soda,2/24/2022
+247,Turkey,White,Swiss,Lettuce,Ranch,Salad,Water,3/31/2022
+248,Turkey,Rye,Cheddar,Tomato,Mustard,Fruit,Soda,11/5/2022
+249,Turkey,Wheat,Cheddar,Onion,Ranch,Salad,Iced Tea,1/3/2022
+250,Turkey,Rye,Provolone,Tomato,Mustard,Chips,Soda,10/21/2022
+251,Veggie,Rye,Swiss,Onion,Ranch,Fruit,Iced Tea,3/2/2022
+252,Veggie,Rye,Cheddar,Onion,Mustard,Salad,Water,4/25/2022
+253,Turkey,Rye,Provolone,Lettuce,Mustard,Salad,Soda,2/9/2022
+254,Ham,White,Cheddar,Tomato,Ranch,Salad,Soda,9/29/2022
+255,Veggie,Rye,Cheddar,Tomato,Mustard,Salad,Iced Tea,1/13/2022
+256,Veggie,Rye,Provolone,Tomato,Mayo,Salad,Iced Tea,2/28/2022
+257,Veggie,Rye,Cheddar,Lettuce,Mustard,Fruit,Water,4/7/2022
+258,Turkey,Rye,Cheddar,Lettuce,Mayo,Chips,Iced Tea,5/22/2022
+259,Turkey,White,Cheddar,Lettuce,Ranch,Chips,Soda,10/31/2022
+260,Ham,White,Swiss,Onion,Ranch,Salad,Iced Tea,11/16/2022
+261,Turkey,Rye,Provolone,Lettuce,Mustard,Salad,Water,6/27/2022
+262,Ham,Wheat,Provolone,Pickles,Mustard,Salad,Water,11/25/2022
+263,Veggie,Wheat,Cheddar,Tomato,Mayo,Chips,Water,1/20/2022
+264,Veggie,Wheat,Provolone,Onion,Ranch,Fruit,Soda,11/29/2022
+265,Ham,Rye,Provolone,Pickles,Mustard,Chips,Water,10/16/2022
+266,Veggie,Rye,Cheddar,Tomato,Mayo,Fruit,Soda,9/21/2022
+267,Turkey,Rye,Swiss,Lettuce,Mayo,Chips,Iced Tea,10/25/2022
+268,Veggie,Rye,Swiss,Pickles,Mayo,Salad,Iced Tea,4/27/2022
+269,Ham,Wheat,Cheddar,Pickles,Mustard,Chips,Water,7/1/2022
+270,Ham,Rye,Cheddar,Pickles,Mayo,Salad,Iced Tea,1/25/2022
+271,Veggie,White,Swiss,Lettuce,Mustard,Salad,Soda,5/2/2022
+272,Ham,White,Swiss,Onion,Mayo,Salad,Iced Tea,6/27/2022
+273,Ham,Wheat,Swiss,Onion,Ranch,Salad,Soda,6/15/2022
+274,Ham,Rye,Cheddar,Onion,Ranch,Chips,Iced Tea,8/10/2022
+275,Ham,White,Cheddar,Onion,Mayo,Chips,Iced Tea,11/24/2022
+276,Ham,White,Cheddar,Lettuce,Mayo,Fruit,Iced Tea,10/18/2022
+277,Ham,Wheat,Cheddar,Tomato,Ranch,Salad,Soda,9/8/2022
+278,Turkey,Wheat,Swiss,Onion,Mayo,Fruit,Water,1/27/2022
+279,Turkey,Wheat,Cheddar,Onion,Ranch,Fruit,Soda,2/9/2022
+280,Veggie,Rye,Provolone,Onion,Ranch,Salad,Soda,8/30/2022
+281,Veggie,Rye,Cheddar,Pickles,Mayo,Fruit,Water,9/11/2022
+282,Turkey,Wheat,Provolone,Onion,Mayo,Salad,Soda,1/28/2022
+283,Ham,Rye,Cheddar,Pickles,Ranch,Chips,Water,12/11/2022
+284,Turkey,Wheat,Provolone,Onion,Ranch,Salad,Soda,9/1/2022
+285,Ham,Wheat,Swiss,Pickles,Mustard,Chips,Iced Tea,7/12/2022
+286,Turkey,Wheat,Swiss,Lettuce,Mayo,Fruit,Water,2/22/2022
+287,Veggie,Rye,Swiss,Lettuce,Mayo,Fruit,Water,5/11/2022
+288,Turkey,Rye,Swiss,Pickles,Ranch,Fruit,Soda,5/17/2022
+289,Veggie,Wheat,Swiss,Pickles,Mustard,Salad,Soda,2/16/2022
+290,Veggie,Wheat,Provolone,Pickles,Ranch,Chips,Soda,3/4/2022
+291,Ham,White,Cheddar,Tomato,Ranch,Chips,Water,2/15/2022
+292,Veggie,Rye,Provolone,Pickles,Ranch,Salad,Iced Tea,5/1/2022
+293,Ham,Rye,Cheddar,Lettuce,Mustard,Fruit,Iced Tea,11/28/2022
+294,Veggie,White,Provolone,Tomato,Mustard,Salad,Water,5/13/2022
+295,Ham,Rye,Provolone,Onion,Ranch,Salad,Iced Tea,6/20/2022
+296,Veggie,Rye,Provolone,Pickles,Ranch,Salad,Iced Tea,4/18/2022
+297,Ham,White,Provolone,Lettuce,Mayo,Fruit,Water,10/4/2022
+298,Ham,White,Cheddar,Onion,Ranch,Chips,Iced Tea,10/4/2022
+299,Turkey,Rye,Cheddar,Onion,Mustard,Chips,Soda,6/8/2022
+300,Turkey,Rye,Cheddar,Onion,Mustard,Fruit,Water,9/13/2022
+301,Turkey,Rye,Provolone,Pickles,Mayo,Fruit,Soda,8/13/2022
+302,Ham,Rye,Cheddar,Onion,Mustard,Fruit,Soda,2/1/2022
+303,Veggie,White,Provolone,Pickles,Mayo,Chips,Iced Tea,6/18/2022
+304,Veggie,Wheat,Provolone,Tomato,Mayo,Chips,Iced Tea,11/12/2022
+305,Turkey,Wheat,Swiss,Pickles,Mustard,Salad,Soda,7/5/2022
+306,Veggie,White,Provolone,Tomato,Ranch,Salad,Iced Tea,6/26/2022
+307,Ham,White,Swiss,Onion,Ranch,Chips,Iced Tea,6/15/2022
+308,Veggie,Wheat,Provolone,Onion,Ranch,Chips,Soda,3/3/2022
+309,Veggie,Rye,Swiss,Pickles,Mustard,Salad,Soda,10/24/2022
+310,Turkey,Rye,Provolone,Tomato,Ranch,Chips,Soda,8/29/2022
+311,Veggie,White,Provolone,Lettuce,Mayo,Fruit,Soda,9/13/2022
+312,Turkey,Rye,Provolone,Onion,Ranch,Salad,Soda,6/17/2022
+313,Veggie,Rye,Swiss,Tomato,Ranch,Salad,Water,7/26/2022
+314,Ham,White,Swiss,Lettuce,Ranch,Chips,Water,4/5/2022
+315,Ham,Wheat,Cheddar,Lettuce,Ranch,Salad,Iced Tea,8/7/2022
+316,Ham,Wheat,Provolone,Onion,Mayo,Salad,Iced Tea,8/30/2022
+317,Turkey,Wheat,Cheddar,Pickles,Mustard,Chips,Soda,2/2/2022
+318,Turkey,Wheat,Cheddar,Onion,Mayo,Salad,Iced Tea,7/26/2022
+319,Veggie,Wheat,Swiss,Tomato,Mayo,Fruit,Iced Tea,10/25/2022
+320,Ham,White,Provolone,Tomato,Mustard,Chips,Soda,5/19/2022
+321,Veggie,Wheat,Cheddar,Pickles,Ranch,Chips,Water,1/1/2022
+322,Ham,Rye,Cheddar,Pickles,Mustard,Salad,Soda,4/29/2022
+323,Ham,Rye,Swiss,Lettuce,Mustard,Salad,Water,10/25/2022
+324,Ham,Rye,Swiss,Onion,Mayo,Fruit,Soda,11/16/2022
+325,Turkey,White,Provolone,Onion,Ranch,Fruit,Soda,1/11/2022
+326,Ham,White,Swiss,Onion,Mustard,Chips,Soda,5/21/2022
+327,Ham,Rye,Swiss,Pickles,Mustard,Chips,Soda,11/27/2022
+328,Ham,White,Swiss,Lettuce,Mustard,Fruit,Soda,7/17/2022
+329,Veggie,Rye,Provolone,Onion,Mustard,Salad,Water,7/10/2022
+330,Ham,Rye,Swiss,Lettuce,Ranch,Fruit,Water,10/30/2022
+331,Veggie,Rye,Cheddar,Lettuce,Ranch,Fruit,Soda,12/15/2022
+332,Ham,Wheat,Cheddar,Pickles,Ranch,Fruit,Water,3/28/2022
+333,Turkey,Wheat,Swiss,Lettuce,Mayo,Fruit,Iced Tea,10/13/2022
+334,Veggie,Wheat,Swiss,Pickles,Ranch,Salad,Soda,2/27/2022
+335,Veggie,Wheat,Cheddar,Tomato,Mayo,Salad,Iced Tea,3/11/2022
+336,Ham,Rye,Swiss,Tomato,Mayo,Salad,Water,11/28/2022
+337,Turkey,Rye,Provolone,Lettuce,Ranch,Salad,Water,8/4/2022
+338,Turkey,Wheat,Swiss,Pickles,Mustard,Salad,Soda,8/3/2022
+339,Veggie,Wheat,Provolone,Tomato,Mayo,Salad,Iced Tea,11/6/2022
+340,Turkey,Rye,Provolone,Onion,Mayo,Chips,Iced Tea,9/29/2022
+341,Veggie,Rye,Cheddar,Onion,Mustard,Salad,Soda,2/2/2022
+342,Turkey,Rye,Swiss,Onion,Ranch,Salad,Water,2/16/2022
+343,Veggie,Rye,Cheddar,Pickles,Mayo,Fruit,Soda,10/9/2022
+344,Veggie,White,Provolone,Tomato,Mayo,Fruit,Iced Tea,8/2/2022
+345,Turkey,White,Swiss,Lettuce,Ranch,Chips,Water,10/9/2022
+346,Veggie,Wheat,Cheddar,Lettuce,Ranch,Salad,Water,4/13/2022
+347,Ham,Rye,Cheddar,Pickles,Mayo,Chips,Soda,8/1/2022
+348,Turkey,Wheat,Cheddar,Tomato,Mayo,Fruit,Soda,5/7/2022
+349,Veggie,White,Provolone,Lettuce,Mustard,Chips,Soda,8/20/2022
+350,Veggie,Rye,Cheddar,Pickles,Ranch,Fruit,Water,5/25/2022
+351,Ham,Wheat,Provolone,Lettuce,Mustard,Salad,Soda,9/18/2022
+352,Turkey,Rye,Cheddar,Lettuce,Mustard,Chips,Iced Tea,9/25/2022
+353,Ham,Wheat,Cheddar,Onion,Mayo,Salad,Soda,7/19/2022
+354,Turkey,Rye,Cheddar,Lettuce,Mustard,Chips,Water,4/14/2022
+355,Veggie,Rye,Swiss,Tomato,Ranch,Fruit,Water,2/26/2022
+356,Veggie,White,Swiss,Tomato,Mustard,Chips,Soda,3/15/2022
+357,Ham,White,Cheddar,Lettuce,Mayo,Salad,Water,5/21/2022
+358,Ham,Wheat,Provolone,Onion,Ranch,Chips,Soda,5/29/2022
+359,Veggie,Wheat,Swiss,Pickles,Ranch,Chips,Iced Tea,8/17/2022
+360,Veggie,Wheat,Swiss,Onion,Ranch,Chips,Water,5/4/2022
+361,Veggie,Wheat,Cheddar,Lettuce,Mustard,Salad,Soda,7/22/2022
+362,Turkey,Rye,Provolone,Lettuce,Mustard,Chips,Water,8/26/2022
+363,Veggie,Wheat,Swiss,Tomato,Ranch,Salad,Water,1/8/2022
+364,Veggie,Wheat,Provolone,Tomato,Ranch,Fruit,Iced Tea,1/3/2022
+365,Ham,Rye,Provolone,Tomato,Mustard,Salad,Iced Tea,11/26/2022
+366,Turkey,White,Cheddar,Lettuce,Mustard,Fruit,Water,3/17/2022
+367,Turkey,Wheat,Cheddar,Onion,Mayo,Salad,Iced Tea,1/15/2022
+368,Turkey,White,Swiss,Lettuce,Ranch,Chips,Water,4/13/2022
+369,Ham,White,Cheddar,Tomato,Mustard,Salad,Water,6/18/2022
+370,Veggie,Rye,Swiss,Lettuce,Mayo,Chips,Soda,2/21/2022
+371,Turkey,Rye,Swiss,Tomato,Mustard,Fruit,Water,10/24/2022
+372,Ham,Rye,Swiss,Lettuce,Mayo,Salad,Iced Tea,3/28/2022
+373,Ham,Rye,Cheddar,Lettuce,Mayo,Chips,Soda,3/23/2022
+374,Ham,Wheat,Provolone,Pickles,Mustard,Salad,Iced Tea,5/25/2022
+375,Ham,Wheat,Provolone,Pickles,Ranch,Salad,Water,11/2/2022
+376,Ham,White,Provolone,Pickles,Mayo,Chips,Iced Tea,7/15/2022
+377,Ham,White,Swiss,Onion,Mustard,Salad,Iced Tea,4/3/2022
+378,Ham,White,Cheddar,Tomato,Mustard,Salad,Water,6/14/2022
+379,Veggie,White,Provolone,Lettuce,Ranch,Salad,Soda,2/4/2022
+380,Ham,Rye,Provolone,Lettuce,Ranch,Fruit,Water,10/12/2022
+381,Ham,Wheat,Swiss,Onion,Ranch,Chips,Iced Tea,2/24/2022
+382,Turkey,White,Cheddar,Lettuce,Mustard,Chips,Iced Tea,6/15/2022
+383,Turkey,Rye,Cheddar,Onion,Mayo,Salad,Water,12/9/2022
+384,Turkey,White,Cheddar,Tomato,Mustard,Salad,Soda,1/6/2022
+385,Veggie,Rye,Swiss,Lettuce,Mayo,Fruit,Water,8/15/2022
+386,Ham,Wheat,Swiss,Onion,Ranch,Salad,Soda,7/27/2022
+387,Turkey,Rye,Provolone,Onion,Ranch,Fruit,Water,7/9/2022
+388,Turkey,Wheat,Provolone,Pickles,Mayo,Fruit,Iced Tea,2/26/2022
+389,Turkey,Rye,Cheddar,Onion,Ranch,Chips,Water,1/3/2022
+390,Turkey,White,Cheddar,Pickles,Ranch,Chips,Iced Tea,10/3/2022
+391,Turkey,Wheat,Provolone,Pickles,Ranch,Salad,Soda,9/29/2022
+392,Ham,Wheat,Swiss,Pickles,Mayo,Salad,Water,8/5/2022
+393,Ham,Wheat,Swiss,Pickles,Mayo,Fruit,Soda,3/31/2022
+394,Veggie,Wheat,Provolone,Pickles,Mustard,Chips,Iced Tea,3/12/2022
+395,Ham,White,Swiss,Pickles,Mustard,Salad,Iced Tea,11/7/2022
+396,Ham,White,Cheddar,Onion,Ranch,Salad,Soda,4/2/2022
+397,Veggie,White,Provolone,Pickles,Mayo,Fruit,Soda,1/25/2022
+398,Veggie,Wheat,Provolone,Pickles,Ranch,Chips,Soda,10/26/2022
+399,Turkey,Rye,Cheddar,Tomato,Ranch,Salad,Iced Tea,11/29/2022
+400,Turkey,Wheat,Provolone,Lettuce,Mustard,Chips,Iced Tea,10/24/2022
+401,Turkey,Rye,Cheddar,Lettuce,Ranch,Salad,Iced Tea,4/15/2022
+402,Veggie,White,Provolone,Lettuce,Ranch,Salad,Water,3/8/2022
+403,Veggie,White,Swiss,Pickles,Mayo,Fruit,Soda,4/17/2022
+404,Veggie,Rye,Swiss,Pickles,Ranch,Fruit,Iced Tea,1/3/2022
+405,Turkey,White,Cheddar,Tomato,Mustard,Chips,Iced Tea,7/16/2022
+406,Veggie,Wheat,Provolone,Tomato,Mustard,Fruit,Iced Tea,5/28/2022
+407,Veggie,Wheat,Swiss,Lettuce,Mustard,Salad,Iced Tea,11/25/2022
+408,Veggie,White,Provolone,Onion,Mayo,Salad,Soda,5/27/2022
+409,Veggie,White,Cheddar,Onion,Ranch,Fruit,Iced Tea,1/20/2022
+410,Veggie,Rye,Swiss,Pickles,Ranch,Salad,Water,9/22/2022
+411,Ham,Wheat,Swiss,Pickles,Mayo,Fruit,Soda,4/28/2022
+412,Turkey,Rye,Cheddar,Tomato,Mustard,Fruit,Water,1/11/2022
+413,Turkey,Rye,Provolone,Tomato,Ranch,Fruit,Iced Tea,6/7/2022
+414,Ham,Rye,Cheddar,Lettuce,Ranch,Salad,Soda,8/31/2022
+415,Ham,Rye,Cheddar,Lettuce,Ranch,Salad,Water,4/22/2022
+416,Turkey,White,Swiss,Onion,Ranch,Salad,Soda,12/9/2022
+417,Turkey,Rye,Swiss,Onion,Ranch,Chips,Iced Tea,10/8/2022
+418,Turkey,Wheat,Swiss,Pickles,Ranch,Salad,Water,9/6/2022
+419,Ham,Rye,Provolone,Pickles,Ranch,Chips,Water,6/24/2022
+420,Turkey,Wheat,Provolone,Lettuce,Mayo,Fruit,Iced Tea,11/8/2022
+421,Turkey,White,Provolone,Pickles,Mustard,Salad,Soda,12/23/2022
+422,Ham,Rye,Cheddar,Lettuce,Mustard,Chips,Iced Tea,4/8/2022
+423,Ham,White,Cheddar,Lettuce,Mayo,Fruit,Water,12/1/2022
+424,Ham,Wheat,Swiss,Onion,Ranch,Salad,Soda,2/18/2022
+425,Turkey,White,Cheddar,Pickles,Ranch,Fruit,Soda,4/19/2022
+426,Veggie,Wheat,Cheddar,Onion,Mayo,Chips,Soda,6/30/2022
+427,Ham,White,Provolone,Lettuce,Ranch,Salad,Water,2/19/2022
+428,Turkey,Wheat,Provolone,Tomato,Ranch,Chips,Soda,5/17/2022
+429,Turkey,White,Swiss,Onion,Ranch,Fruit,Iced Tea,4/16/2022
+430,Veggie,Wheat,Swiss,Lettuce,Mustard,Chips,Soda,9/11/2022
+431,Ham,White,Swiss,Lettuce,Mayo,Salad,Water,1/25/2022
+432,Ham,White,Swiss,Lettuce,Mustard,Fruit,Iced Tea,8/6/2022
+433,Turkey,White,Cheddar,Tomato,Mustard,Salad,Soda,12/11/2022
+434,Ham,Rye,Cheddar,Lettuce,Ranch,Fruit,Iced Tea,8/19/2022
+435,Turkey,Rye,Swiss,Tomato,Mustard,Salad,Water,11/29/2022
+436,Ham,Wheat,Provolone,Lettuce,Mayo,Fruit,Iced Tea,11/1/2022
+437,Ham,White,Provolone,Onion,Mayo,Fruit,Iced Tea,1/16/2022
+438,Turkey,White,Cheddar,Lettuce,Mayo,Salad,Soda,8/22/2022
+439,Turkey,Rye,Cheddar,Lettuce,Mustard,Chips,Soda,4/28/2022
+440,Veggie,Rye,Cheddar,Lettuce,Mayo,Fruit,Soda,8/1/2022
+441,Ham,Rye,Swiss,Lettuce,Mustard,Salad,Soda,5/25/2022
+442,Veggie,White,Cheddar,Lettuce,Mayo,Fruit,Iced Tea,9/17/2022
+443,Veggie,Rye,Cheddar,Pickles,Ranch,Salad,Soda,3/15/2022
+444,Turkey,White,Cheddar,Onion,Ranch,Chips,Water,12/14/2022
+445,Turkey,Wheat,Cheddar,Lettuce,Ranch,Fruit,Soda,11/7/2022
+446,Turkey,White,Cheddar,Tomato,Mustard,Fruit,Water,6/11/2022
+447,Veggie,White,Swiss,Tomato,Ranch,Fruit,Soda,3/4/2022
+448,Ham,Wheat,Cheddar,Lettuce,Mustard,Fruit,Soda,12/22/2022
+449,Turkey,Wheat,Cheddar,Lettuce,Mustard,Fruit,Water,4/25/2022
+450,Veggie,Rye,Cheddar,Lettuce,Mayo,Fruit,Water,5/19/2022
+451,Ham,Wheat,Provolone,Lettuce,Mustard,Chips,Water,10/28/2022
+452,Turkey,Wheat,Cheddar,Lettuce,Mustard,Fruit,Soda,4/15/2022
+453,Veggie,Wheat,Swiss,Pickles,Mustard,Fruit,Soda,12/11/2022
+454,Veggie,Wheat,Provolone,Lettuce,Mayo,Salad,Soda,4/20/2022
+455,Turkey,Wheat,Cheddar,Onion,Ranch,Fruit,Water,7/17/2022
+456,Veggie,White,Swiss,Pickles,Ranch,Chips,Soda,7/4/2022
+457,Veggie,Rye,Swiss,Tomato,Mayo,Chips,Water,11/7/2022
+458,Veggie,White,Swiss,Tomato,Mayo,Chips,Iced Tea,8/10/2022
+459,Veggie,White,Provolone,Pickles,Ranch,Chips,Water,7/31/2022
+460,Veggie,Wheat,Provolone,Pickles,Mayo,Chips,Soda,5/6/2022
+461,Ham,Wheat,Provolone,Lettuce,Mayo,Salad,Iced Tea,1/30/2022
+462,Veggie,White,Provolone,Pickles,Mustard,Chips,Water,4/18/2022
+463,Turkey,White,Provolone,Onion,Mayo,Chips,Iced Tea,8/24/2022
+464,Veggie,Wheat,Swiss,Pickles,Ranch,Chips,Soda,3/24/2022
+465,Veggie,Wheat,Provolone,Lettuce,Ranch,Salad,Water,7/18/2022
+466,Turkey,Wheat,Provolone,Lettuce,Mustard,Salad,Iced Tea,7/9/2022
+467,Veggie,Rye,Cheddar,Pickles,Ranch,Chips,Soda,4/11/2022
+468,Veggie,Wheat,Swiss,Pickles,Ranch,Fruit,Soda,6/1/2022
+469,Turkey,Wheat,Swiss,Onion,Mayo,Fruit,Iced Tea,2/1/2022
+470,Veggie,Wheat,Provolone,Tomato,Mustard,Fruit,Soda,1/25/2022
+471,Veggie,White,Cheddar,Tomato,Ranch,Fruit,Soda,6/25/2022
+472,Turkey,White,Provolone,Pickles,Mustard,Fruit,Water,1/10/2022
+473,Turkey,Wheat,Swiss,Onion,Mayo,Fruit,Iced Tea,11/25/2022
+474,Ham,Rye,Provolone,Lettuce,Mustard,Fruit,Iced Tea,8/21/2022
+475,Turkey,Wheat,Cheddar,Tomato,Ranch,Salad,Iced Tea,5/23/2022
+476,Veggie,Wheat,Swiss,Tomato,Ranch,Fruit,Iced Tea,1/18/2022
+477,Turkey,Rye,Cheddar,Onion,Ranch,Fruit,Soda,5/18/2022
+478,Ham,Rye,Swiss,Onion,Ranch,Chips,Soda,9/9/2022
+479,Turkey,White,Swiss,Pickles,Mustard,Salad,Water,8/16/2022
+480,Veggie,White,Swiss,Pickles,Ranch,Chips,Water,4/16/2022
+481,Turkey,Wheat,Swiss,Tomato,Mayo,Fruit,Iced Tea,10/10/2022
+482,Ham,Rye,Swiss,Onion,Mustard,Chips,Water,1/18/2022
+483,Turkey,Wheat,Swiss,Tomato,Ranch,Fruit,Soda,6/12/2022
+484,Ham,White,Swiss,Onion,Mustard,Fruit,Soda,6/10/2022
+485,Veggie,Wheat,Swiss,Pickles,Mayo,Chips,Soda,12/21/2022
+486,Ham,White,Cheddar,Tomato,Mayo,Salad,Water,9/26/2022
+487,Veggie,Rye,Provolone,Lettuce,Mayo,Chips,Soda,7/11/2022
+488,Veggie,White,Cheddar,Tomato,Mustard,Chips,Soda,1/8/2022
+489,Ham,Wheat,Swiss,Pickles,Ranch,Fruit,Soda,11/8/2022
+490,Ham,Wheat,Swiss,Pickles,Mayo,Fruit,Iced Tea,12/29/2022
+491,Veggie,Rye,Swiss,Onion,Mayo,Chips,Soda,9/21/2022
+492,Ham,Rye,Swiss,Pickles,Mayo,Fruit,Iced Tea,4/1/2022
+493,Turkey,Rye,Swiss,Lettuce,Mustard,Fruit,Soda,5/5/2022
+494,Ham,Wheat,Cheddar,Onion,Ranch,Salad,Water,9/30/2022
+495,Ham,Rye,Cheddar,Onion,Mayo,Chips,Soda,5/12/2022
+496,Veggie,Rye,Provolone,Lettuce,Mustard,Fruit,Soda,6/19/2022
+497,Turkey,Wheat,Swiss,Onion,Ranch,Salad,Iced Tea,2/25/2022
+498,Ham,Rye,Swiss,Tomato,Mayo,Chips,Iced Tea,2/15/2022
+499,Ham,White,Cheddar,Tomato,Mustard,Chips,Iced Tea,8/14/2022
+500,Ham,Wheat,Swiss,Lettuce,Mustard,Salad,Water,3/30/2022
+501,Turkey,Rye,Cheddar,Onion,Mustard,Salad,Water,7/10/2022
+502,Veggie,White,Provolone,Pickles,Mayo,Salad,Iced Tea,1/26/2022
+503,Veggie,White,Swiss,Lettuce,Mustard,Fruit,Iced Tea,8/14/2022
+504,Veggie,Wheat,Swiss,Pickles,Mayo,Fruit,Water,10/7/2022
+505,Ham,White,Swiss,Lettuce,Mayo,Salad,Soda,3/22/2022
+506,Turkey,Rye,Swiss,Lettuce,Mustard,Chips,Iced Tea,3/12/2022
+507,Veggie,White,Swiss,Tomato,Mustard,Fruit,Water,8/21/2022
+508,Ham,Wheat,Cheddar,Pickles,Mustard,Fruit,Iced Tea,8/7/2022
+509,Ham,Wheat,Swiss,Tomato,Mayo,Chips,Soda,11/11/2022
+510,Turkey,Rye,Cheddar,Onion,Mayo,Salad,Iced Tea,7/23/2022
+511,Ham,Wheat,Swiss,Lettuce,Ranch,Fruit,Water,3/10/2022
+512,Turkey,Wheat,Swiss,Onion,Ranch,Salad,Water,4/20/2022
+513,Turkey,Wheat,Provolone,Tomato,Mayo,Salad,Soda,11/10/2022
+514,Turkey,Wheat,Swiss,Tomato,Ranch,Chips,Soda,1/28/2022
+515,Turkey,Rye,Cheddar,Lettuce,Mayo,Fruit,Soda,8/16/2022
+516,Turkey,Wheat,Swiss,Onion,Mayo,Fruit,Water,9/10/2022
+517,Veggie,White,Swiss,Lettuce,Ranch,Fruit,Water,7/13/2022
+518,Ham,White,Swiss,Tomato,Mustard,Salad,Water,6/9/2022
+519,Turkey,Rye,Provolone,Onion,Mustard,Fruit,Soda,8/21/2022
+520,Turkey,Rye,Swiss,Pickles,Ranch,Salad,Soda,8/23/2022
+521,Ham,Wheat,Provolone,Lettuce,Mayo,Fruit,Soda,9/24/2022
+522,Veggie,Rye,Cheddar,Onion,Ranch,Chips,Water,4/4/2022
+523,Veggie,Rye,Provolone,Tomato,Mustard,Fruit,Iced Tea,5/23/2022
+524,Veggie,White,Cheddar,Tomato,Mustard,Fruit,Water,7/4/2022
+525,Veggie,Rye,Provolone,Tomato,Mustard,Fruit,Water,11/9/2022
+526,Ham,Rye,Swiss,Onion,Mustard,Salad,Water,5/2/2022
+527,Ham,White,Swiss,Lettuce,Mayo,Chips,Water,3/24/2022
+528,Veggie,Rye,Swiss,Onion,Mayo,Fruit,Soda,7/31/2022
+529,Ham,Wheat,Cheddar,Tomato,Ranch,Fruit,Iced Tea,1/14/2022
+530,Veggie,Wheat,Swiss,Onion,Mustard,Chips,Soda,9/26/2022
+531,Veggie,Wheat,Cheddar,Onion,Mayo,Fruit,Iced Tea,4/15/2022
+532,Ham,White,Cheddar,Tomato,Mayo,Salad,Soda,2/15/2022
+533,Ham,Rye,Provolone,Tomato,Mayo,Chips,Water,5/9/2022
+534,Veggie,Wheat,Cheddar,Onion,Mayo,Fruit,Water,7/15/2022
+535,Veggie,White,Cheddar,Pickles,Ranch,Salad,Iced Tea,10/5/2022
+536,Turkey,White,Provolone,Onion,Mayo,Fruit,Iced Tea,12/28/2022
+537,Ham,Rye,Swiss,Onion,Mayo,Fruit,Soda,2/25/2022
+538,Ham,White,Cheddar,Lettuce,Mustard,Salad,Iced Tea,3/6/2022
+539,Turkey,Rye,Swiss,Pickles,Mayo,Chips,Soda,11/29/2022
+540,Ham,Rye,Swiss,Lettuce,Mustard,Chips,Soda,6/4/2022
+541,Veggie,Wheat,Swiss,Lettuce,Mayo,Salad,Soda,3/17/2022
+542,Ham,White,Swiss,Onion,Mayo,Fruit,Iced Tea,10/10/2022
+543,Veggie,Wheat,Swiss,Onion,Mayo,Chips,Soda,5/29/2022
+544,Turkey,White,Provolone,Onion,Mayo,Fruit,Water,2/2/2022
+545,Turkey,Wheat,Cheddar,Pickles,Ranch,Salad,Water,8/25/2022
+546,Ham,Rye,Provolone,Pickles,Mayo,Fruit,Soda,9/4/2022
+547,Turkey,Rye,Cheddar,Pickles,Ranch,Salad,Iced Tea,2/26/2022
+548,Veggie,White,Cheddar,Lettuce,Mustard,Fruit,Water,1/29/2022
+549,Turkey,Rye,Cheddar,Onion,Mustard,Fruit,Water,7/11/2022
+550,Turkey,White,Provolone,Lettuce,Mayo,Chips,Iced Tea,12/25/2022
+551,Turkey,Rye,Swiss,Tomato,Mustard,Fruit,Soda,8/17/2022
+552,Ham,White,Cheddar,Onion,Mayo,Salad,Iced Tea,2/18/2022
+553,Veggie,Wheat,Cheddar,Tomato,Mustard,Fruit,Iced Tea,7/15/2022
+554,Ham,Wheat,Cheddar,Lettuce,Mustard,Fruit,Water,1/15/2022
+555,Ham,White,Swiss,Pickles,Ranch,Salad,Water,1/28/2022
+556,Veggie,White,Cheddar,Lettuce,Mayo,Fruit,Iced Tea,7/14/2022
+557,Turkey,White,Swiss,Tomato,Ranch,Salad,Soda,5/1/2022
+558,Veggie,White,Provolone,Tomato,Ranch,Fruit,Soda,4/6/2022
+559,Ham,Rye,Cheddar,Tomato,Mayo,Salad,Iced Tea,2/23/2022
+560,Veggie,White,Cheddar,Onion,Mayo,Salad,Water,8/7/2022
+561,Turkey,Rye,Provolone,Tomato,Ranch,Chips,Iced Tea,10/29/2022
+562,Veggie,Wheat,Cheddar,Lettuce,Mayo,Fruit,Water,12/24/2022
+563,Veggie,Wheat,Provolone,Pickles,Mustard,Salad,Water,4/10/2022
+564,Veggie,White,Cheddar,Pickles,Ranch,Fruit,Soda,11/3/2022
+565,Turkey,Wheat,Provolone,Tomato,Mustard,Fruit,Water,2/13/2022
+566,Veggie,Rye,Cheddar,Lettuce,Ranch,Chips,Water,8/20/2022
+567,Ham,White,Provolone,Pickles,Mayo,Chips,Iced Tea,6/27/2022
+568,Turkey,White,Swiss,Pickles,Ranch,Salad,Soda,3/5/2022
+569,Turkey,White,Provolone,Pickles,Ranch,Fruit,Water,10/16/2022
+570,Ham,Rye,Cheddar,Pickles,Mustard,Fruit,Soda,1/11/2022
+571,Turkey,Wheat,Cheddar,Lettuce,Mustard,Salad,Water,10/5/2022
+572,Ham,Rye,Provolone,Pickles,Mayo,Chips,Water,10/27/2022
+573,Ham,Rye,Provolone,Pickles,Mustard,Chips,Iced Tea,8/10/2022
+574,Turkey,Rye,Cheddar,Lettuce,Ranch,Fruit,Water,11/16/2022
+575,Turkey,Rye,Swiss,Onion,Mustard,Salad,Water,10/21/2022
+576,Ham,Wheat,Provolone,Onion,Mustard,Salad,Iced Tea,1/5/2022
+577,Veggie,Wheat,Swiss,Pickles,Mayo,Chips,Iced Tea,9/21/2022
+578,Ham,Wheat,Swiss,Onion,Mayo,Salad,Iced Tea,8/17/2022
+579,Ham,Rye,Provolone,Lettuce,Ranch,Chips,Soda,8/8/2022
+580,Ham,Wheat,Swiss,Lettuce,Mayo,Chips,Iced Tea,11/5/2022
+581,Veggie,Rye,Cheddar,Onion,Mayo,Fruit,Soda,3/19/2022
+582,Veggie,Wheat,Swiss,Lettuce,Mustard,Chips,Soda,5/26/2022
+583,Ham,Rye,Provolone,Tomato,Mustard,Chips,Soda,2/4/2022
+584,Veggie,White,Cheddar,Onion,Mayo,Fruit,Water,6/3/2022
+585,Veggie,Wheat,Provolone,Tomato,Mustard,Chips,Water,1/22/2022
+586,Turkey,Wheat,Provolone,Pickles,Mustard,Chips,Soda,5/30/2022
+587,Veggie,Rye,Provolone,Pickles,Ranch,Chips,Soda,9/4/2022
+588,Turkey,Rye,Cheddar,Pickles,Mayo,Salad,Water,11/16/2022
+589,Ham,Wheat,Cheddar,Tomato,Mayo,Chips,Soda,1/28/2022
+590,Veggie,Wheat,Cheddar,Tomato,Mustard,Chips,Water,6/21/2022
+591,Ham,Rye,Cheddar,Onion,Mustard,Chips,Water,2/28/2022
+592,Turkey,White,Swiss,Onion,Mustard,Chips,Soda,1/27/2022
+593,Veggie,Rye,Swiss,Tomato,Mustard,Fruit,Soda,12/15/2022
+594,Veggie,White,Swiss,Onion,Mayo,Chips,Soda,7/7/2022
+595,Turkey,White,Provolone,Tomato,Mayo,Chips,Soda,2/2/2022
+596,Ham,White,Provolone,Lettuce,Mayo,Chips,Soda,4/10/2022
+597,Veggie,Wheat,Cheddar,Onion,Mustard,Salad,Iced Tea,10/24/2022
+598,Turkey,White,Provolone,Tomato,Mayo,Salad,Water,10/28/2022
+599,Ham,Wheat,Cheddar,Onion,Mustard,Fruit,Iced Tea,5/25/2022
+600,Ham,White,Swiss,Tomato,Mustard,Chips,Water,3/21/2022
+601,Ham,Wheat,Provolone,Lettuce,Mayo,Chips,Iced Tea,12/21/2022
+602,Veggie,Wheat,Provolone,Tomato,Mayo,Salad,Iced Tea,10/24/2022
+603,Turkey,Wheat,Provolone,Tomato,Mayo,Chips,Water,6/15/2022
+604,Veggie,White,Provolone,Lettuce,Mustard,Fruit,Water,8/2/2022
+605,Turkey,Rye,Cheddar,Onion,Ranch,Fruit,Iced Tea,8/3/2022
+606,Turkey,Rye,Swiss,Lettuce,Ranch,Fruit,Iced Tea,10/17/2022
+607,Veggie,Rye,Cheddar,Pickles,Mustard,Chips,Soda,8/16/2022
+608,Ham,White,Provolone,Pickles,Mustard,Fruit,Soda,4/28/2022
+609,Veggie,Rye,Provolone,Pickles,Ranch,Chips,Soda,8/10/2022
+610,Turkey,Rye,Provolone,Pickles,Ranch,Salad,Iced Tea,7/31/2022
+611,Ham,Rye,Swiss,Lettuce,Mustard,Chips,Iced Tea,5/16/2022
+612,Turkey,Wheat,Swiss,Tomato,Ranch,Fruit,Water,8/6/2022
+613,Ham,Wheat,Cheddar,Onion,Ranch,Salad,Iced Tea,6/18/2022
+614,Veggie,White,Provolone,Onion,Mayo,Salad,Soda,6/13/2022
+615,Turkey,White,Swiss,Tomato,Mustard,Salad,Water,2/8/2022
+616,Ham,White,Provolone,Pickles,Mustard,Fruit,Water,1/4/2022
+617,Veggie,Wheat,Cheddar,Tomato,Ranch,Fruit,Water,4/16/2022
+618,Turkey,Wheat,Swiss,Lettuce,Mustard,Chips,Water,4/11/2022
+619,Turkey,White,Cheddar,Tomato,Mayo,Fruit,Iced Tea,7/13/2022
+620,Veggie,Wheat,Cheddar,Tomato,Ranch,Chips,Water,6/16/2022
+621,Ham,White,Provolone,Onion,Mayo,Salad,Water,2/28/2022
+622,Ham,Rye,Provolone,Onion,Mayo,Salad,Soda,11/16/2022
+623,Veggie,Wheat,Provolone,Pickles,Mayo,Chips,Iced Tea,9/2/2022
+624,Veggie,White,Swiss,Onion,Mustard,Chips,Iced Tea,7/2/2022
+625,Ham,Rye,Provolone,Onion,Ranch,Chips,Iced Tea,10/21/2022
+626,Turkey,Rye,Swiss,Tomato,Mayo,Chips,Water,9/22/2022
+627,Veggie,White,Provolone,Pickles,Ranch,Chips,Water,7/9/2022
+628,Ham,Rye,Provolone,Lettuce,Mustard,Salad,Soda,3/4/2022
+629,Turkey,Rye,Swiss,Onion,Ranch,Salad,Soda,6/1/2022
+630,Ham,Rye,Swiss,Tomato,Mustard,Fruit,Iced Tea,7/8/2022
+631,Turkey,Wheat,Swiss,Pickles,Ranch,Salad,Water,2/4/2022
+632,Turkey,Wheat,Provolone,Lettuce,Mustard,Salad,Soda,7/2/2022
+633,Turkey,White,Swiss,Pickles,Ranch,Salad,Soda,6/5/2022
+634,Turkey,Rye,Swiss,Lettuce,Mustard,Chips,Iced Tea,9/21/2022
+635,Veggie,Rye,Cheddar,Onion,Ranch,Salad,Water,4/4/2022
+636,Ham,Rye,Provolone,Onion,Mustard,Fruit,Iced Tea,10/19/2022
+637,Turkey,White,Cheddar,Lettuce,Mayo,Fruit,Soda,8/16/2022
+638,Veggie,Rye,Swiss,Pickles,Mayo,Chips,Iced Tea,4/25/2022
+639,Ham,White,Provolone,Pickles,Mustard,Salad,Soda,12/10/2022
+640,Veggie,Wheat,Swiss,Lettuce,Mayo,Salad,Soda,9/22/2022
+641,Veggie,Wheat,Cheddar,Tomato,Mustard,Chips,Iced Tea,6/22/2022
+642,Veggie,Rye,Provolone,Tomato,Ranch,Salad,Soda,12/20/2022
+643,Ham,Wheat,Provolone,Pickles,Ranch,Salad,Soda,6/24/2022
+644,Turkey,White,Cheddar,Tomato,Mayo,Salad,Iced Tea,7/27/2022
+645,Ham,White,Cheddar,Tomato,Mustard,Salad,Iced Tea,4/30/2022
+646,Turkey,Rye,Swiss,Onion,Ranch,Chips,Iced Tea,1/7/2022
+647,Veggie,White,Swiss,Pickles,Ranch,Fruit,Soda,7/31/2022
+648,Ham,Rye,Cheddar,Pickles,Mayo,Chips,Soda,12/11/2022
+649,Ham,Rye,Cheddar,Onion,Mustard,Chips,Soda,5/14/2022
+650,Ham,Wheat,Swiss,Tomato,Mustard,Chips,Soda,11/4/2022
+651,Ham,White,Cheddar,Onion,Ranch,Salad,Iced Tea,2/27/2022
+652,Veggie,Wheat,Provolone,Onion,Mustard,Salad,Water,3/26/2022
+653,Turkey,Wheat,Swiss,Tomato,Ranch,Fruit,Soda,10/28/2022
+654,Veggie,Rye,Cheddar,Onion,Mustard,Salad,Iced Tea,11/27/2022
+655,Turkey,Wheat,Swiss,Tomato,Mustard,Chips,Soda,6/3/2022
+656,Turkey,White,Cheddar,Tomato,Mayo,Fruit,Water,3/12/2022
+657,Ham,Wheat,Swiss,Tomato,Mayo,Chips,Soda,12/27/2022
+658,Turkey,White,Swiss,Tomato,Mayo,Fruit,Soda,12/10/2022
+659,Veggie,Wheat,Provolone,Onion,Mustard,Chips,Water,8/3/2022
+660,Veggie,White,Provolone,Onion,Mustard,Fruit,Iced Tea,6/2/2022
+661,Ham,White,Swiss,Pickles,Ranch,Fruit,Water,11/12/2022
+662,Veggie,White,Cheddar,Pickles,Mustard,Fruit,Water,3/28/2022
+663,Veggie,Wheat,Provolone,Pickles,Mayo,Salad,Iced Tea,11/7/2022
+664,Veggie,Wheat,Cheddar,Onion,Ranch,Chips,Soda,11/12/2022
+665,Ham,Rye,Provolone,Lettuce,Ranch,Salad,Iced Tea,10/20/2022
+666,Veggie,White,Swiss,Pickles,Mayo,Chips,Iced Tea,11/16/2022
+667,Turkey,Rye,Swiss,Pickles,Mayo,Fruit,Water,6/16/2022
+668,Veggie,Rye,Provolone,Lettuce,Mustard,Salad,Soda,7/23/2022
+669,Turkey,Rye,Cheddar,Lettuce,Ranch,Salad,Soda,12/19/2022
+670,Turkey,White,Cheddar,Onion,Ranch,Chips,Iced Tea,6/23/2022
+671,Veggie,Wheat,Provolone,Pickles,Mustard,Salad,Soda,2/12/2022
+672,Ham,White,Cheddar,Pickles,Mustard,Fruit,Iced Tea,5/4/2022
+673,Veggie,Wheat,Provolone,Tomato,Mayo,Fruit,Water,9/22/2022
+674,Ham,White,Swiss,Tomato,Ranch,Salad,Iced Tea,6/9/2022
+675,Turkey,Wheat,Cheddar,Pickles,Mustard,Chips,Soda,4/10/2022
+676,Ham,White,Cheddar,Pickles,Ranch,Salad,Water,12/7/2022
+677,Veggie,Rye,Cheddar,Onion,Ranch,Chips,Water,12/24/2022
+678,Veggie,Rye,Cheddar,Lettuce,Mayo,Salad,Water,3/17/2022
+679,Turkey,White,Swiss,Pickles,Mayo,Chips,Soda,4/5/2022
+680,Turkey,Rye,Swiss,Pickles,Mayo,Salad,Iced Tea,8/31/2022
+681,Ham,Wheat,Cheddar,Lettuce,Mayo,Chips,Iced Tea,12/26/2022
+682,Ham,Rye,Provolone,Lettuce,Mustard,Chips,Iced Tea,6/16/2022
+683,Veggie,Wheat,Swiss,Pickles,Ranch,Fruit,Iced Tea,6/23/2022
+684,Veggie,Wheat,Cheddar,Pickles,Mayo,Chips,Water,11/18/2022
+685,Ham,White,Cheddar,Lettuce,Mustard,Fruit,Water,4/19/2022
+686,Turkey,Wheat,Cheddar,Tomato,Mustard,Fruit,Water,9/28/2022
+687,Veggie,Rye,Cheddar,Tomato,Ranch,Salad,Iced Tea,7/18/2022
+688,Ham,White,Cheddar,Onion,Mustard,Salad,Water,9/6/2022
+689,Veggie,White,Provolone,Onion,Mayo,Salad,Soda,11/16/2022
+690,Turkey,Wheat,Swiss,Onion,Mayo,Fruit,Soda,7/4/2022
+691,Veggie,Rye,Provolone,Lettuce,Mayo,Chips,Soda,10/8/2022
+692,Ham,White,Provolone,Lettuce,Mustard,Fruit,Water,9/24/2022
+693,Veggie,Wheat,Swiss,Onion,Ranch,Fruit,Water,12/19/2022
+694,Ham,White,Cheddar,Lettuce,Ranch,Fruit,Soda,1/23/2022
+695,Veggie,Wheat,Provolone,Lettuce,Ranch,Fruit,Iced Tea,5/17/2022
+696,Ham,Rye,Swiss,Pickles,Mustard,Chips,Water,6/21/2022
+697,Ham,Wheat,Provolone,Tomato,Mayo,Salad,Iced Tea,9/28/2022
+698,Veggie,Wheat,Provolone,Lettuce,Mustard,Chips,Soda,7/21/2022
+699,Veggie,White,Cheddar,Tomato,Mustard,Chips,Soda,10/10/2022
+700,Turkey,Rye,Swiss,Tomato,Mayo,Chips,Water,12/13/2022
+701,Turkey,Rye,Provolone,Onion,Mayo,Salad,Soda,12/7/2022
+702,Veggie,White,Swiss,Pickles,Ranch,Chips,Water,2/8/2022
+703,Veggie,Wheat,Swiss,Lettuce,Mayo,Salad,Iced Tea,1/29/2022
+704,Veggie,Rye,Swiss,Lettuce,Mayo,Fruit,Soda,11/10/2022
+705,Turkey,White,Cheddar,Tomato,Mayo,Fruit,Soda,10/23/2022
+706,Turkey,Rye,Provolone,Tomato,Ranch,Salad,Iced Tea,9/16/2022
+707,Ham,Wheat,Cheddar,Tomato,Mustard,Chips,Soda,9/18/2022
+708,Veggie,White,Provolone,Lettuce,Mustard,Fruit,Iced Tea,10/10/2022
+709,Ham,White,Swiss,Pickles,Mayo,Fruit,Water,12/2/2022
+710,Veggie,Rye,Provolone,Tomato,Ranch,Chips,Iced Tea,8/29/2022
+711,Veggie,White,Swiss,Pickles,Mayo,Fruit,Water,12/3/2022
+712,Ham,Wheat,Cheddar,Tomato,Mustard,Chips,Water,7/7/2022
+713,Ham,White,Swiss,Onion,Ranch,Salad,Soda,8/16/2022
+714,Ham,Rye,Swiss,Pickles,Mustard,Salad,Water,4/24/2022
+715,Veggie,Wheat,Provolone,Pickles,Mayo,Chips,Water,11/6/2022
+716,Veggie,White,Provolone,Onion,Mayo,Chips,Soda,10/1/2022
+717,Turkey,White,Swiss,Tomato,Ranch,Chips,Water,7/2/2022
+718,Veggie,Rye,Provolone,Pickles,Mustard,Fruit,Water,4/30/2022
+719,Veggie,Wheat,Swiss,Pickles,Mustard,Salad,Water,2/18/2022
+720,Turkey,Rye,Provolone,Lettuce,Mustard,Chips,Iced Tea,7/1/2022
+721,Veggie,White,Provolone,Onion,Mustard,Chips,Water,7/12/2022
+722,Veggie,Rye,Cheddar,Lettuce,Mayo,Salad,Soda,2/25/2022
+723,Veggie,Rye,Provolone,Lettuce,Mustard,Salad,Iced Tea,7/17/2022
+724,Veggie,Wheat,Cheddar,Pickles,Ranch,Fruit,Water,8/11/2022
+725,Veggie,White,Cheddar,Pickles,Mustard,Chips,Iced Tea,7/13/2022
+726,Veggie,Rye,Swiss,Onion,Ranch,Chips,Soda,10/19/2022
+727,Ham,Wheat,Cheddar,Lettuce,Mayo,Fruit,Iced Tea,6/13/2022
+728,Turkey,Rye,Cheddar,Onion,Mayo,Fruit,Soda,7/20/2022
+729,Turkey,Rye,Cheddar,Lettuce,Mustard,Fruit,Iced Tea,4/30/2022
+730,Turkey,Wheat,Swiss,Onion,Mayo,Salad,Soda,7/3/2022
+731,Veggie,White,Swiss,Tomato,Mayo,Salad,Soda,7/27/2022
+732,Ham,White,Swiss,Onion,Mayo,Fruit,Iced Tea,3/20/2022
+733,Veggie,Wheat,Swiss,Lettuce,Mayo,Chips,Soda,2/22/2022
+734,Veggie,Rye,Provolone,Onion,Ranch,Fruit,Iced Tea,11/28/2022
+735,Veggie,Rye,Cheddar,Onion,Mustard,Salad,Soda,11/27/2022
+736,Veggie,Rye,Cheddar,Tomato,Mustard,Fruit,Water,12/19/2022
+737,Ham,White,Cheddar,Onion,Mayo,Salad,Iced Tea,10/8/2022
+738,Ham,Wheat,Cheddar,Tomato,Mustard,Fruit,Iced Tea,12/12/2022
+739,Veggie,Rye,Cheddar,Lettuce,Ranch,Chips,Iced Tea,7/13/2022
+740,Ham,Rye,Cheddar,Tomato,Mayo,Fruit,Soda,3/25/2022
+741,Veggie,Rye,Provolone,Lettuce,Ranch,Chips,Iced Tea,10/20/2022
+742,Turkey,White,Swiss,Lettuce,Mustard,Fruit,Water,12/19/2022
+743,Turkey,Wheat,Swiss,Lettuce,Ranch,Fruit,Soda,5/22/2022
+744,Ham,White,Swiss,Pickles,Mustard,Fruit,Iced Tea,3/7/2022
+745,Veggie,Wheat,Cheddar,Pickles,Mustard,Chips,Iced Tea,6/2/2022
+746,Ham,White,Swiss,Pickles,Mayo,Salad,Iced Tea,11/29/2022
+747,Turkey,White,Swiss,Tomato,Ranch,Salad,Soda,7/18/2022
+748,Turkey,Wheat,Cheddar,Pickles,Mayo,Fruit,Iced Tea,7/6/2022
+749,Ham,Rye,Swiss,Onion,Mayo,Chips,Iced Tea,5/26/2022
+750,Turkey,Rye,Swiss,Onion,Mustard,Chips,Water,1/18/2022
+751,Ham,White,Swiss,Tomato,Mustard,Fruit,Soda,12/29/2022
+752,Turkey,White,Cheddar,Pickles,Mayo,Fruit,Iced Tea,7/20/2022
+753,Turkey,Wheat,Cheddar,Tomato,Mustard,Chips,Iced Tea,6/21/2022
+754,Turkey,Wheat,Cheddar,Tomato,Mustard,Salad,Soda,9/7/2022
+755,Turkey,White,Swiss,Lettuce,Mustard,Salad,Soda,12/27/2022
+756,Veggie,Rye,Provolone,Onion,Mustard,Chips,Water,10/14/2022
+757,Ham,White,Swiss,Lettuce,Mustard,Salad,Water,11/27/2022
+758,Veggie,White,Swiss,Onion,Mustard,Salad,Soda,3/20/2022
+759,Ham,Rye,Provolone,Pickles,Mustard,Fruit,Soda,4/14/2022
+760,Turkey,Wheat,Cheddar,Lettuce,Ranch,Salad,Soda,7/22/2022
+761,Turkey,White,Provolone,Onion,Mayo,Salad,Soda,4/17/2022
+762,Ham,White,Cheddar,Tomato,Ranch,Salad,Soda,3/28/2022
+763,Turkey,Wheat,Provolone,Pickles,Ranch,Chips,Soda,1/31/2022
+764,Ham,White,Provolone,Onion,Mustard,Chips,Water,10/9/2022
+765,Ham,Rye,Provolone,Pickles,Mustard,Chips,Water,3/30/2022
+766,Turkey,Rye,Swiss,Tomato,Ranch,Fruit,Water,11/29/2022
+767,Turkey,Wheat,Provolone,Onion,Mustard,Salad,Iced Tea,3/31/2022
+768,Ham,White,Swiss,Tomato,Ranch,Chips,Iced Tea,9/16/2022
+769,Turkey,White,Swiss,Tomato,Ranch,Fruit,Water,7/22/2022
+770,Veggie,Rye,Swiss,Onion,Mayo,Chips,Iced Tea,7/29/2022
+771,Veggie,Rye,Cheddar,Lettuce,Mayo,Chips,Iced Tea,8/9/2022
+772,Veggie,Wheat,Cheddar,Onion,Mayo,Salad,Water,1/26/2022
+773,Ham,Wheat,Provolone,Tomato,Mayo,Fruit,Soda,10/22/2022
+774,Veggie,Rye,Swiss,Tomato,Mustard,Salad,Water,7/12/2022
+775,Turkey,Wheat,Provolone,Lettuce,Mayo,Chips,Soda,9/28/2022
+776,Veggie,White,Provolone,Lettuce,Ranch,Fruit,Iced Tea,7/21/2022
+777,Veggie,Rye,Swiss,Tomato,Ranch,Salad,Soda,6/8/2022
+778,Veggie,Rye,Swiss,Onion,Mayo,Fruit,Soda,9/29/2022
+779,Ham,Wheat,Provolone,Onion,Ranch,Chips,Iced Tea,11/1/2022
+780,Veggie,White,Provolone,Pickles,Ranch,Salad,Water,10/16/2022
+781,Turkey,Rye,Cheddar,Pickles,Mayo,Fruit,Iced Tea,3/2/2022
+782,Turkey,Rye,Swiss,Onion,Ranch,Salad,Water,11/14/2022
+783,Veggie,Rye,Cheddar,Tomato,Mayo,Chips,Water,7/30/2022
+784,Ham,Rye,Provolone,Pickles,Mayo,Salad,Iced Tea,9/23/2022
+785,Ham,Wheat,Swiss,Pickles,Mayo,Salad,Iced Tea,10/9/2022
+786,Ham,White,Cheddar,Onion,Mustard,Salad,Water,11/17/2022
+787,Veggie,Rye,Provolone,Pickles,Mustard,Chips,Iced Tea,10/24/2022
+788,Veggie,White,Cheddar,Pickles,Mustard,Chips,Soda,4/15/2022
+789,Ham,White,Swiss,Pickles,Mustard,Chips,Water,9/10/2022
+790,Turkey,Rye,Provolone,Pickles,Mustard,Salad,Soda,7/25/2022
+791,Turkey,Rye,Provolone,Onion,Mustard,Chips,Soda,2/14/2022
+792,Veggie,Wheat,Provolone,Lettuce,Mayo,Salad,Water,4/26/2022
+793,Ham,Wheat,Provolone,Onion,Ranch,Fruit,Soda,8/5/2022
+794,Turkey,Wheat,Provolone,Onion,Ranch,Chips,Iced Tea,8/29/2022
+795,Turkey,Rye,Cheddar,Onion,Ranch,Salad,Water,12/2/2022
+796,Turkey,Wheat,Cheddar,Lettuce,Mustard,Fruit,Water,3/22/2022
+797,Turkey,White,Cheddar,Lettuce,Ranch,Salad,Water,6/30/2022
+798,Ham,White,Cheddar,Lettuce,Mayo,Salad,Iced Tea,2/1/2022
+799,Turkey,Wheat,Provolone,Lettuce,Mustard,Salad,Iced Tea,11/2/2022
+800,Ham,Rye,Provolone,Onion,Ranch,Fruit,Water,12/16/2022
+801,Turkey,Rye,Swiss,Onion,Mustard,Fruit,Iced Tea,4/22/2022
+802,Veggie,White,Provolone,Tomato,Ranch,Salad,Water,4/27/2022
+803,Turkey,White,Cheddar,Tomato,Mayo,Salad,Soda,8/1/2022
+804,Turkey,White,Cheddar,Pickles,Ranch,Salad,Water,12/10/2022
+805,Ham,White,Provolone,Onion,Mustard,Chips,Iced Tea,12/19/2022
+806,Ham,Wheat,Swiss,Tomato,Mustard,Salad,Water,5/17/2022
+807,Turkey,Rye,Provolone,Pickles,Mustard,Chips,Iced Tea,12/29/2022
+808,Ham,White,Cheddar,Lettuce,Ranch,Salad,Soda,1/7/2022
+809,Ham,Rye,Provolone,Onion,Ranch,Chips,Water,6/27/2022
+810,Ham,Wheat,Cheddar,Onion,Mayo,Fruit,Water,8/11/2022
+811,Veggie,Rye,Provolone,Tomato,Mustard,Salad,Iced Tea,8/23/2022
+812,Veggie,Wheat,Provolone,Tomato,Mayo,Salad,Iced Tea,5/25/2022
+813,Turkey,Wheat,Swiss,Lettuce,Mustard,Chips,Iced Tea,11/6/2022
+814,Veggie,Wheat,Cheddar,Onion,Mayo,Chips,Iced Tea,7/12/2022
+815,Veggie,Wheat,Provolone,Pickles,Ranch,Salad,Soda,8/18/2022
+816,Veggie,Rye,Cheddar,Pickles,Mayo,Fruit,Soda,7/20/2022
+817,Turkey,White,Cheddar,Pickles,Ranch,Salad,Iced Tea,4/12/2022
+818,Ham,Wheat,Provolone,Pickles,Mayo,Chips,Water,6/7/2022
+819,Veggie,Rye,Provolone,Lettuce,Mayo,Chips,Water,11/3/2022
+820,Veggie,White,Cheddar,Lettuce,Mustard,Fruit,Iced Tea,7/4/2022
+821,Veggie,White,Swiss,Lettuce,Mustard,Fruit,Water,7/28/2022
+822,Turkey,Wheat,Provolone,Pickles,Mustard,Chips,Soda,9/6/2022
+823,Veggie,Wheat,Cheddar,Onion,Mayo,Salad,Iced Tea,11/4/2022
+824,Veggie,Wheat,Provolone,Tomato,Mayo,Fruit,Iced Tea,9/6/2022
+825,Veggie,Wheat,Swiss,Pickles,Mustard,Fruit,Iced Tea,8/8/2022
+826,Ham,Rye,Swiss,Onion,Ranch,Fruit,Soda,8/27/2022
+827,Veggie,Rye,Cheddar,Tomato,Mayo,Salad,Iced Tea,12/13/2022
+828,Ham,White,Swiss,Lettuce,Mayo,Fruit,Iced Tea,8/22/2022
+829,Turkey,Rye,Cheddar,Onion,Mayo,Chips,Soda,7/2/2022
+830,Veggie,White,Swiss,Tomato,Mustard,Chips,Soda,5/25/2022
+831,Veggie,Wheat,Provolone,Tomato,Mayo,Salad,Iced Tea,4/10/2022
+832,Ham,Wheat,Provolone,Onion,Mustard,Salad,Iced Tea,4/26/2022
+833,Turkey,Wheat,Cheddar,Onion,Ranch,Chips,Water,6/10/2022
+834,Turkey,Wheat,Swiss,Pickles,Ranch,Fruit,Water,9/21/2022
+835,Turkey,Wheat,Swiss,Pickles,Mustard,Fruit,Soda,7/8/2022
+836,Ham,Wheat,Cheddar,Pickles,Ranch,Chips,Iced Tea,6/1/2022
+837,Turkey,White,Provolone,Pickles,Mayo,Chips,Soda,10/19/2022
+838,Ham,Rye,Swiss,Tomato,Ranch,Chips,Soda,5/3/2022
+839,Ham,White,Provolone,Tomato,Mayo,Chips,Water,11/2/2022
+840,Veggie,Wheat,Swiss,Pickles,Ranch,Salad,Iced Tea,9/13/2022
+841,Ham,White,Provolone,Tomato,Mustard,Fruit,Iced Tea,10/1/2022
+842,Veggie,White,Cheddar,Lettuce,Mustard,Chips,Iced Tea,11/27/2022
+843,Veggie,Wheat,Cheddar,Lettuce,Ranch,Salad,Water,12/20/2022
+844,Veggie,Wheat,Cheddar,Tomato,Mustard,Salad,Water,5/8/2022
+845,Veggie,Wheat,Provolone,Pickles,Mustard,Fruit,Water,1/19/2022
+846,Veggie,White,Swiss,Onion,Ranch,Salad,Iced Tea,1/15/2022
+847,Turkey,Wheat,Swiss,Lettuce,Ranch,Chips,Soda,1/21/2022
+848,Turkey,White,Provolone,Pickles,Mayo,Chips,Water,7/16/2022
+849,Veggie,Wheat,Cheddar,Onion,Mayo,Fruit,Water,11/12/2022
+850,Turkey,Rye,Cheddar,Lettuce,Mustard,Chips,Water,6/24/2022
+851,Veggie,White,Cheddar,Tomato,Mustard,Salad,Soda,2/2/2022
+852,Turkey,Rye,Swiss,Tomato,Mayo,Salad,Soda,1/14/2022
+853,Veggie,Rye,Cheddar,Tomato,Mustard,Salad,Water,11/18/2022
+854,Veggie,Rye,Swiss,Lettuce,Mayo,Chips,Soda,12/4/2022
+855,Veggie,Rye,Provolone,Pickles,Ranch,Salad,Iced Tea,4/25/2022
+856,Ham,Rye,Swiss,Tomato,Mustard,Chips,Soda,7/28/2022
+857,Veggie,Rye,Cheddar,Onion,Ranch,Fruit,Iced Tea,3/20/2022
+858,Turkey,White,Cheddar,Lettuce,Mustard,Chips,Water,2/12/2022
+859,Turkey,Wheat,Cheddar,Onion,Mayo,Chips,Water,10/1/2022
+860,Ham,Wheat,Cheddar,Lettuce,Mustard,Fruit,Soda,9/30/2022
+861,Turkey,Rye,Provolone,Lettuce,Mustard,Salad,Soda,11/12/2022
+862,Ham,Wheat,Cheddar,Onion,Ranch,Fruit,Soda,7/16/2022
+863,Veggie,White,Provolone,Onion,Mustard,Fruit,Iced Tea,6/23/2022
+864,Ham,Wheat,Provolone,Lettuce,Mayo,Salad,Iced Tea,9/26/2022
+865,Veggie,Rye,Provolone,Onion,Mayo,Fruit,Water,11/27/2022
+866,Veggie,Wheat,Provolone,Pickles,Ranch,Fruit,Water,3/30/2022
+867,Ham,Rye,Provolone,Tomato,Mustard,Salad,Soda,4/18/2022
+868,Ham,Rye,Swiss,Pickles,Ranch,Fruit,Iced Tea,12/3/2022
+869,Ham,White,Provolone,Lettuce,Mustard,Fruit,Water,2/3/2022
+870,Veggie,White,Swiss,Pickles,Mustard,Salad,Soda,10/10/2022
+871,Ham,White,Provolone,Tomato,Mustard,Chips,Iced Tea,9/21/2022
+872,Veggie,Wheat,Cheddar,Lettuce,Mustard,Salad,Soda,8/22/2022
+873,Turkey,Rye,Swiss,Pickles,Ranch,Chips,Soda,11/23/2022
+874,Ham,White,Cheddar,Lettuce,Mustard,Salad,Iced Tea,1/1/2022
+875,Ham,White,Provolone,Tomato,Mustard,Fruit,Water,7/19/2022
+876,Turkey,Rye,Cheddar,Lettuce,Mustard,Salad,Water,10/7/2022
+877,Ham,Wheat,Swiss,Pickles,Mustard,Chips,Iced Tea,3/17/2022
+878,Turkey,White,Cheddar,Onion,Mayo,Chips,Water,10/28/2022
+879,Veggie,White,Cheddar,Tomato,Mayo,Salad,Iced Tea,10/11/2022
+880,Turkey,Rye,Provolone,Onion,Mayo,Chips,Soda,7/2/2022
+881,Turkey,White,Cheddar,Tomato,Ranch,Chips,Soda,6/29/2022
+882,Turkey,Rye,Provolone,Pickles,Ranch,Fruit,Soda,12/21/2022
+883,Veggie,Wheat,Swiss,Tomato,Mayo,Fruit,Soda,7/6/2022
+884,Ham,Rye,Provolone,Lettuce,Ranch,Chips,Water,9/7/2022
+885,Turkey,White,Cheddar,Pickles,Mustard,Fruit,Water,4/27/2022
+886,Veggie,Rye,Swiss,Pickles,Mayo,Fruit,Water,11/24/2022
+887,Turkey,Rye,Cheddar,Lettuce,Mayo,Chips,Water,8/13/2022
+888,Ham,Rye,Provolone,Onion,Mayo,Fruit,Water,2/8/2022
+889,Veggie,White,Provolone,Onion,Mayo,Fruit,Iced Tea,9/26/2022
+890,Turkey,Wheat,Swiss,Tomato,Ranch,Fruit,Water,7/6/2022
+891,Turkey,White,Provolone,Pickles,Ranch,Chips,Soda,7/13/2022
+892,Veggie,Rye,Swiss,Lettuce,Mayo,Chips,Soda,8/20/2022
+893,Veggie,Rye,Swiss,Lettuce,Mayo,Fruit,Water,5/29/2022
+894,Veggie,Rye,Swiss,Lettuce,Mayo,Salad,Soda,6/18/2022
+895,Veggie,Rye,Cheddar,Pickles,Mayo,Fruit,Water,2/11/2022
+896,Ham,White,Cheddar,Pickles,Mayo,Salad,Soda,3/23/2022
+897,Ham,Rye,Swiss,Pickles,Mayo,Fruit,Iced Tea,11/16/2022
+898,Turkey,White,Swiss,Lettuce,Mayo,Fruit,Iced Tea,9/19/2022
+899,Veggie,Wheat,Provolone,Lettuce,Mayo,Chips,Water,2/18/2022
+900,Ham,White,Provolone,Pickles,Mustard,Fruit,Water,4/28/2022
+901,Veggie,White,Swiss,Onion,Mustard,Chips,Soda,12/29/2022
+902,Ham,Rye,Provolone,Lettuce,Ranch,Salad,Water,2/26/2022
+903,Ham,Wheat,Provolone,Pickles,Mayo,Salad,Water,6/29/2022
+904,Veggie,White,Provolone,Tomato,Mayo,Fruit,Iced Tea,1/23/2022
+905,Veggie,Wheat,Provolone,Tomato,Ranch,Salad,Water,8/31/2022
+906,Ham,Wheat,Provolone,Tomato,Mayo,Fruit,Iced Tea,12/29/2022
+907,Turkey,White,Cheddar,Pickles,Ranch,Salad,Soda,9/18/2022
+908,Ham,White,Swiss,Onion,Mustard,Salad,Iced Tea,8/27/2022
+909,Turkey,Wheat,Swiss,Pickles,Mustard,Salad,Water,2/28/2022
+910,Ham,White,Provolone,Pickles,Mayo,Fruit,Water,7/31/2022
+911,Ham,Rye,Provolone,Onion,Mayo,Salad,Soda,1/29/2022
+912,Veggie,Rye,Swiss,Lettuce,Ranch,Chips,Water,7/6/2022
+913,Veggie,Rye,Provolone,Onion,Mustard,Chips,Iced Tea,12/23/2022
+914,Turkey,Rye,Cheddar,Onion,Mustard,Fruit,Water,1/24/2022
+915,Veggie,Rye,Provolone,Tomato,Ranch,Fruit,Soda,6/29/2022
+916,Veggie,White,Swiss,Pickles,Mustard,Salad,Water,1/31/2022
+917,Veggie,White,Provolone,Tomato,Mustard,Chips,Soda,10/27/2022
+918,Turkey,Rye,Cheddar,Tomato,Mayo,Salad,Iced Tea,12/25/2022
+919,Veggie,Rye,Cheddar,Onion,Mayo,Salad,Iced Tea,3/1/2022
+920,Veggie,Rye,Swiss,Tomato,Ranch,Salad,Soda,12/19/2022
+921,Veggie,White,Provolone,Onion,Ranch,Fruit,Water,4/28/2022
+922,Turkey,Rye,Cheddar,Tomato,Ranch,Salad,Iced Tea,4/17/2022
+923,Veggie,Wheat,Swiss,Lettuce,Mustard,Chips,Iced Tea,8/21/2022
+924,Turkey,Rye,Provolone,Lettuce,Mustard,Salad,Soda,12/5/2022
+925,Turkey,Wheat,Cheddar,Onion,Mustard,Fruit,Soda,11/23/2022
+926,Ham,Wheat,Provolone,Tomato,Mustard,Salad,Water,6/6/2022
+927,Veggie,White,Swiss,Onion,Ranch,Fruit,Soda,7/5/2022
+928,Turkey,White,Swiss,Lettuce,Ranch,Salad,Water,11/6/2022
+929,Turkey,Wheat,Swiss,Tomato,Ranch,Fruit,Iced Tea,10/16/2022
+930,Veggie,Rye,Cheddar,Tomato,Ranch,Fruit,Soda,9/24/2022
+931,Ham,Rye,Swiss,Tomato,Mustard,Salad,Water,1/25/2022
+932,Ham,Rye,Cheddar,Onion,Mustard,Chips,Water,10/1/2022
+933,Turkey,Wheat,Provolone,Onion,Mustard,Chips,Iced Tea,5/7/2022
+934,Veggie,Wheat,Swiss,Onion,Mustard,Chips,Soda,8/8/2022
+935,Veggie,White,Cheddar,Onion,Mayo,Chips,Water,7/27/2022
+936,Turkey,Rye,Provolone,Onion,Mustard,Salad,Water,11/26/2022
+937,Veggie,White,Provolone,Onion,Ranch,Chips,Water,4/20/2022
+938,Turkey,Wheat,Cheddar,Onion,Ranch,Salad,Water,7/19/2022
+939,Turkey,Rye,Cheddar,Tomato,Mustard,Salad,Water,12/5/2022
+940,Ham,Rye,Cheddar,Onion,Ranch,Salad,Iced Tea,7/12/2022
+941,Ham,Rye,Cheddar,Lettuce,Ranch,Chips,Soda,1/19/2022
+942,Ham,White,Cheddar,Tomato,Mustard,Fruit,Soda,5/7/2022
+943,Ham,Rye,Cheddar,Pickles,Mayo,Chips,Iced Tea,5/23/2022
+944,Ham,Rye,Swiss,Tomato,Mayo,Salad,Water,1/27/2022
+945,Ham,Wheat,Swiss,Lettuce,Mayo,Chips,Water,1/2/2022
+946,Ham,White,Cheddar,Pickles,Ranch,Chips,Soda,9/9/2022
+947,Turkey,Wheat,Swiss,Onion,Ranch,Fruit,Water,1/16/2022
+948,Ham,Rye,Provolone,Tomato,Ranch,Chips,Soda,7/6/2022
+949,Ham,White,Swiss,Lettuce,Mayo,Salad,Iced Tea,8/15/2022
+950,Ham,Rye,Provolone,Lettuce,Mayo,Chips,Soda,6/16/2022
+951,Ham,Rye,Swiss,Lettuce,Ranch,Chips,Iced Tea,10/26/2022
+952,Turkey,Wheat,Provolone,Tomato,Mayo,Fruit,Soda,1/28/2022
+953,Ham,Wheat,Provolone,Onion,Mayo,Fruit,Iced Tea,11/29/2022
+954,Veggie,White,Swiss,Pickles,Ranch,Fruit,Iced Tea,5/20/2022
+955,Veggie,Rye,Provolone,Pickles,Mayo,Chips,Water,2/20/2022
+956,Veggie,Wheat,Swiss,Lettuce,Mustard,Fruit,Soda,10/11/2022
+957,Veggie,Rye,Swiss,Onion,Mustard,Chips,Water,10/27/2022
+958,Veggie,Wheat,Swiss,Lettuce,Mayo,Fruit,Water,7/23/2022
+959,Ham,Rye,Cheddar,Lettuce,Ranch,Chips,Iced Tea,11/2/2022
+960,Ham,Rye,Swiss,Tomato,Mustard,Fruit,Iced Tea,7/5/2022
+961,Ham,Wheat,Cheddar,Onion,Mayo,Fruit,Iced Tea,7/19/2022
+962,Ham,Wheat,Provolone,Pickles,Mayo,Salad,Iced Tea,2/28/2022
+963,Turkey,Rye,Provolone,Tomato,Mayo,Salad,Iced Tea,8/1/2022
+964,Turkey,Wheat,Cheddar,Pickles,Ranch,Fruit,Water,5/10/2022
+965,Veggie,Rye,Swiss,Onion,Ranch,Salad,Soda,11/15/2022
+966,Ham,Rye,Swiss,Onion,Mayo,Chips,Water,3/11/2022
+967,Turkey,Wheat,Swiss,Pickles,Mustard,Salad,Iced Tea,9/5/2022
+968,Turkey,Rye,Cheddar,Lettuce,Ranch,Chips,Iced Tea,6/10/2022
+969,Veggie,Rye,Provolone,Pickles,Mustard,Chips,Soda,6/16/2022
+970,Ham,Rye,Swiss,Tomato,Mayo,Fruit,Soda,5/11/2022
+971,Turkey,Wheat,Cheddar,Onion,Mustard,Chips,Water,8/9/2022
+972,Turkey,White,Swiss,Pickles,Mayo,Salad,Iced Tea,1/11/2022
+973,Veggie,Wheat,Swiss,Pickles,Ranch,Salad,Iced Tea,4/1/2022
+974,Veggie,White,Swiss,Pickles,Ranch,Chips,Water,6/3/2022
+975,Turkey,White,Provolone,Onion,Ranch,Chips,Soda,11/27/2022
+976,Turkey,White,Swiss,Lettuce,Ranch,Chips,Soda,5/15/2022
+977,Veggie,Rye,Provolone,Pickles,Ranch,Fruit,Water,3/12/2022
+978,Turkey,Rye,Swiss,Lettuce,Mayo,Chips,Soda,4/22/2022
+979,Veggie,Rye,Cheddar,Onion,Mustard,Salad,Soda,1/6/2022
+980,Ham,White,Provolone,Onion,Mustard,Chips,Iced Tea,2/5/2022
+981,Veggie,Rye,Swiss,Onion,Mayo,Chips,Water,7/2/2022
+982,Turkey,White,Cheddar,Pickles,Ranch,Chips,Soda,1/25/2022
+983,Veggie,Rye,Swiss,Onion,Mayo,Fruit,Water,5/6/2022
+984,Ham,Wheat,Provolone,Lettuce,Mustard,Salad,Water,6/12/2022
+985,Turkey,Rye,Swiss,Lettuce,Ranch,Salad,Iced Tea,11/4/2022
+986,Turkey,Rye,Provolone,Onion,Mustard,Fruit,Soda,1/28/2022
+987,Veggie,Rye,Cheddar,Pickles,Mayo,Fruit,Soda,8/19/2022
+988,Ham,Rye,Cheddar,Pickles,Mayo,Fruit,Iced Tea,12/21/2022
+989,Veggie,White,Cheddar,Onion,Ranch,Salad,Soda,9/15/2022
+990,Ham,White,Cheddar,Lettuce,Mayo,Salad,Soda,4/22/2022
+991,Ham,Wheat,Provolone,Tomato,Mustard,Chips,Water,6/8/2022
+992,Turkey,White,Swiss,Lettuce,Mustard,Fruit,Water,10/13/2022
+993,Veggie,White,Provolone,Lettuce,Mustard,Chips,Iced Tea,12/26/2022
+994,Ham,Rye,Provolone,Onion,Ranch,Chips,Water,12/27/2022
+995,Turkey,Rye,Swiss,Lettuce,Mayo,Fruit,Soda,11/3/2022
+996,Turkey,White,Swiss,Tomato,Mayo,Salad,Iced Tea,2/8/2022
+997,Veggie,Wheat,Cheddar,Onion,Mayo,Fruit,Soda,9/23/2022
+998,Veggie,White,Swiss,Pickles,Ranch,Fruit,Iced Tea,8/3/2022
+999,Ham,Rye,Cheddar,Pickles,Mayo,Fruit,Water,3/28/2022
+1000,Ham,Rye,Provolone,Lettuce,Ranch,Fruit,Soda,6/9/2022
