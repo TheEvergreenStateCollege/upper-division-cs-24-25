@@ -25,13 +25,13 @@ public class ReadData {
 
     public static void main(String[] args){
         
-        String csvFilePath = "";
+        String csvFilePath = "MOCK_DATA.csv";
         //InputStream is = ReadData.class.getClassLoader().getResourceAsStream(csvFilePath);
 
         //<> are blank cause it can type inference
         //related types. one references the other.
         //Supertype is list. Subtype is ArrayList
-        List<Sandwich> orderList = new ArrayList<>();
+        List<customers> orderList = new ArrayList<>();
     
         //try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
         try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
