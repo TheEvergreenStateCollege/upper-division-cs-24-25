@@ -16,11 +16,28 @@ Full 4 credits for Core DSA
 
 Any of the above can be corrected unlimited times until end of Week 10.
 * 5 out of the 9 weekly zyBooks homeworks correct up to 80%
-* 5 out of the 9 weekly reading and handwritten homeworks correct up to 80%
-* 5 out of the 9 weekly zyBooks homeworks correct up to 80%
+* 5 out of the 9 weekly reading or synthesis homeworks correct up to 80%
 * Meet the minimum requirements of the final project above
 
+You can and are encouraged to work in a team, and to add a user interface if you need help to write 300 lines of code.
+
+You can use shared code that is written in a team or pair programming, submitted under your own github account.
+List your teammate names.
+
+As a team, write a README.md file answering the following questions:
+
+
+
+Try to re-type the code yourself when possible, especially if one of your teammates is willing
+to read it to you as a navigator while you are the driver.
+
+You may choose one of the following ways to show understanding of what some of the code does and why it solves your problem:
+* a 2 minute screenshare video talking about your code and demo'ing it, uploaded as YouTube / Vimeo unlisted.
+* writing a dev diary entry
+* an in-person code interview consisting of no more than 3 questions.
+
 Subject to minor changes.
+
 ## Week 01
 * Introduction, computational problems
 * The Sandwich shop metaphor
