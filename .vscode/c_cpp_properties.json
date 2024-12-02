@@ -1,4 +1,27 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+  "configurations": [
+    {
+      "name": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "linux-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+<<<<<<< HEAD
+=======
+=======
     "configurations": [
         {
             "name": "Mac",
@@ -16,4 +39,6 @@
         }
     ],
     "version": 4
+>>>>>>> 247a320046e09fcff94bd0a783cff493167a7fb7
+>>>>>>> refs/remotes/origin/main
 }

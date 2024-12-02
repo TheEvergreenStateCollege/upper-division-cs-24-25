@@ -23,13 +23,9 @@ public class ReadData {
         }
     }
 
-    static class IngredientsInStock {
-        
-    }
-
     public static void main(String[] args){
         
-        String csvFilePath = "../data/sandwich_data.csv";
+        String csvFilePath = "";
         //InputStream is = ReadData.class.getClassLoader().getResourceAsStream(csvFilePath);
 
         //<> are blank cause it can type inference
