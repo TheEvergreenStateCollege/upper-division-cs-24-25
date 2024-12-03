@@ -1,0 +1,335 @@
+<html>
+    <head>
+        <style>
+            .numbers {
+                width: 25%;
+                margin: 1rem;
+            }
+            .pseudo {
+                width: 25%;
+                font-size: 8px;
+                font-family:'Courier New', Courier, monospace;
+            }
+            .row {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .merge-group {
+                border: 2px solid black;
+            }
+            .increasing-group {
+                background-color: lightskyblue;
+                margin: 2px;
+            }
+            .decreasing-group {
+                background-color: lightgoldenrodyellow;
+                margin: 2px;
+            }
+            .sort-group {
+                border: 2px dashed gray;
+            }
+        </style>
+
+    </head>
+
+<body>
+<!--
+<svg id="rightArrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+-->
+<h1>
+    Bitonic Sort Demo
+</h1>
+
+
+<div id="row-00" class="increasing row">
+    <span id="numbers-00" class="numbers">
+        <span class="sort-group increasing-group">
+            <span>62</span>
+            <span>97</span>
+            <span>90</span>
+            <span>87</span>
+            <span>36</span>
+            <span>62</span>
+            <span>98</span>
+            <span>49</span>        
+        </span>
+    </span>
+    <span class="pseudo">
+        sort(array, 0, 8, increasing)
+    </span>
+</div>
+<div id="row-01" class="increasing row">
+    <span id="numbers-01" class="numbers">
+        <span class="increasing-group sort-group">
+            <span>62</span>
+            <span>97</span>
+            <span>90</span>
+            <span>87</span>
+        </span>
+        <span class="decreasing-group sort-group">
+            <span>36</span>
+            <span>62</span>
+            <span>98</span>
+            <span>49</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        sort(array, 0, 4, increasing)<br/>
+        sort(array, 4, 4, decreasing)
+    </span>
+</div>
+<div id="row-02" class="increasing row">
+    <span id="numbers-02" class="numbers">
+        <span class="increasing-group sort-group">
+            <span>62</span>
+            <span>97</span>
+        </span>
+        <span class="decreasing-group sort-group">
+            <span>90</span>
+            <span>87</span>
+        </span>
+        <span class="increasing-group sort-group">
+            <span>36</span>
+            <span>62</span>
+        </span>
+        <span class="decreasing-group sort-group">
+            <span>98</span>
+            <span>49</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        sort(array, 0, 2, increasing)<br/>
+        sort(array, 2, 2, decreasing)<br/>
+        sort(array, 4, 2, increasing)<br/>
+        sort(array, 6, 2, decreasing)
+    </span>
+</div>
+<div id="row-03" class="increasing row">
+    <span id="numbers-03" class="numbers">
+        <span class="increasing-group sort-group">
+            <span>62</span>
+        </span>
+        <span class="decreasing-group sort-group">
+            <span>97</span>
+        </span>
+        <span class="increasing-group sort-group">
+            <span>90</span>
+        </span>
+        <span class="decreasing-group sort-group">
+            <span>87</span>
+        </span>
+        <span class="increasing-group sort-group">
+            <span>36</span>
+        </span>
+        <span class="decreasing-group sort-group">
+            <span>62</span>
+        </span>
+        <span class="increasing-group sort-group">
+            <span>98</span>
+        </span>
+        <span class="decreasing-group sort-group">
+            <span>49</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        <div>
+            sort(array, 0, 1, increasing)<br/>
+            sort(array, 1, 1, decreasing)<br/>
+            sort(array, 2, 1, increasing)<br/>
+            sort(array, 3, 1, decreasing)<br/>
+            sort(array, 4, 1, increasing)<br/>
+            sort(array, 5, 1, decreasing)<br/>
+            sort(array, 6, 1, increasing)<br/>
+            sort(array, 7, 1, decreasing)    
+        </div>
+    </span>
+</div>
+<div id="row-04" class="increasing row">
+    <span id="numbers-04" class="numbers">
+        <span class="increasing-group merge-group">
+            <span>62</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>97</span>
+        </span>
+        <span class="increasing-group merge-group">
+            <span>90</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>87</span>
+        </span>
+        <span class="increasing-group merge-group">
+            <span>36</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>62</span>
+        </span>
+        <span class="increasing-group merge-group">
+            <span>98</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>49</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        merge(array, 0, 2, increasing)<br/>
+        merge(array, 2, 2, decreasing)<br/>
+        merge(array, 4, 2, increasing)<br/>
+        merge(array, 6, 2, increasing)
+    </span>
+</div>
+<div id="row-05" class="increasing row">
+    <span id="numbers-05" class="numbers">
+        <span class="increasing-group merge-group">
+            <span>62</span>
+            <span>87</span>
+            <span>90</span>
+            <span>97</span>
+        </span>
+        <span class="increasing-group merge-group">
+            <span>98</span>
+            <span>62</span>
+            <span>36</span>
+            <span>49</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        merge(array, 0, 4, increasing)<br/>
+        merge(array, 4, 4, decreasing)
+    </span>
+</div>
+<div id="row-06" class="increasing row">
+    <span id="numbers-06" class="numbers">
+        <span class="increasing-group merge-group">
+            <span>62</span>
+            <span>87</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>90</span>
+            <span>97</span>
+        </span>
+        <span class="increasing-group merge-group">
+            <span>98</span>
+            <span>62</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>49</span>
+            <span>36</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        merge(array, 0, 2, increasing)<br/>
+        merge(array, 2, 2, decreasing)<br/>
+        merge(array, 4, 2, increasing)<br/>
+        merge(array, 6, 2, decreasing)<br/>
+    </span>
+</div>
+<div id="row-07" class="increasing row">
+    <span id="numbers-07" class="numbers">
+        <span class="increasing-group merge-group">
+            <span>62</span>
+            <span>62</span>
+            <span>49</span>
+            <span>36</span>
+            <span>98</span>
+            <span>87</span>
+            <span>90</span>
+            <span>49</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        merge(array, 0, 8, increasing)
+    </span>
+</div>
+<div id="row-08" class="increasing row">
+    <span id="numbers-08" class="numbers">
+        <span class="increasing-group merge-group">
+            <span>49</span>
+            <span>36</span>
+            <span>62</span>
+            <span>62</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>98</span>
+            <span>87</span>
+            <span>90</span>
+            <span>97</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        merge(array, 0, 4, increasing)<br/>
+        merge(array, 4, 4, decreasing)
+    </span>
+</div>
+<div id="row-09" class="increasing row">
+    <span id="numbers-09" class="numbers">
+        <span class="increasing-group merge-group">
+            <span>36</span>
+            <span>49</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>62</span>
+            <span>62</span>
+        </span>
+        <span class="increasing-group merge-group">
+            <span>87</span>
+            <span>90</span>
+        </span>
+        <span class="decreasing-group merge-group">
+            <span>97</span>
+            <span>98</span>
+        </span>
+    </span>
+    <span class="pseudo">
+        merge(array, 0, 2, increasing)<br/>
+        merge(array, 2, 2, decreasing)<br/>
+        merge(array, 4, 2, increasing)<br/>
+        merge(array, 6, 2, decreasing)<br/>
+    </span>
+</div>
+
+<h3>References</h3>
+
+* <a href="https://www.tools-of-computing.com/tc/CS/Sorts/bitonic_sort.htm">Bitonic sort explanation</a>
+and implementation for both recursive and iterative approaches.
+
+<script type="text/javascript">
+    const rows = document.getElementsByClassName("row");
+    const numbers = document.getElementsByClassName("numbers");
+    let i = 0;
+    for (let i = 0; i < rows.length; i += 1) {
+        const row = rows[i];
+        const number = numbers[i];
+        number.style.visibility = "hidden";
+        row.style.border = "1px solid green";
+        const newStep = document.createElement("span");
+        newStep.textContent = `Timestep ${i}`;
+        row.appendChild(newStep);
+        const button = document.createElement("button");
+        button.textContent = "next";
+        button.addEventListener("click", (evt) => {
+            number.style.visibility = "visible";
+        })
+        row.appendChild(button);
+        console.log(row);
+    }
+
+    // const svg = document.getElementById("theSVG");
+    // const N = 10;
+
+    // for (let i = 0; i < N; i += 1) {
+    //     const newLine = document.createElement("line");
+    //     const y = i * 10;
+    //     newLine.setAttribute("x1", "0");
+    //     newLine.setAttribute("y1", y);
+    //     newLine.setAttribute("x2", "100");
+    //     newLine.setAttribute("y2", y);
+    //     newLine.setAttribute("stroke", "black");
+    //     svg.appendChild(newLine);
+    // }
+</script>
+    
+</body>
+</html>
