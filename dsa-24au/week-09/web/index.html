@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+
+        .parent {
+            width: 500px;
+            height: 700px;
+            
+        }
+        #crud-top {
+            width: 33%;
+            height: 33%;
+            background-color: lightslategray;
+            border: 1px solid black;
+            position: absolute;
+            transition: transform 1s ease; /* when does this fallback occur? */
+        }
+
+        .child {
+            width: 10px;
+            height: 10px;
+            background-color: darkolivegreen;
+            margin: 5px;
+        }
+
+        @keyframes sigmoidEase {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateY(100px);
+            }
+        }
+
+        /* Applying the custom sigmoid-like easing to the container */
+        .animating {
+            animation: sigmoidEase 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <button id="create">
+            Create
+        </button>
+        <input id="create-id" type="text" placeholder="id">
+        <input id="create-value" type="text" placeholder="value">
+        </input>
+    </fieldset>
+    <fieldset>
+        <button id="read">
+            Read
+        </button>
+        <input id="read-id" type="text" placeholder="id">
+        <input id="read-value" type="text" placeholder="value">
+        </input>
+    </fieldset>
+    <fieldset>
+        <button id="update">
+            Update
+        </button>
+        <input id="update-id" type="text" placeholder="id">
+        <input id="update-value" type="text" placeholder="value">
+        </input>
+    </fieldset>
+    <fieldset>
+        <button id="delete">
+            Delete
+        </button>
+        <input id="delete-id" type="text" placeholder="id">
+        </input>
+    </fieldset>
+
+<div class="parent">
+    <div id="crud-top">
+
+    </div>    
+</div>
+
+<script type="text/javascript">
+
+    const addMe = document.getElementById("create");
+    addMe.addEventListener("click", (evt) => {
+        const childIdElt = document.getElementById("create-id");
+        const childId = childIdElt.value;
+        const childValueElt = document.getElementById("create-value");
+        const childValue = childValueElt.value;
+        console.log(`Child ID ${childId}`);
+        container.addChild(childId, childValue);
+    });
+
+    const readButton = document.getElementById("read");
+    readButton.addEventListener("click", (evt) => {
+        const childIdElt = document.getElementById("read-id");
+        const childId = childIdElt.value;
+        console.log(`Child ID ${childId}`);
+        const childValue = container.readChild(childId);
+        const readValue = document.getElementById("read-value");
+        readValue.innerHTML = childValue;
+    });
+
+    const updateButton = document.getElementById("update");
+    updateButton.addEventListener("click", (evt) => {
+        const childIdElt = document.getElementById("update-id");
+        const childId = childIdElt.value;
+        console.log(`Child ID ${childId}`);
+        const childValueElt = document.getElementById("update-value");
+        const childValue = childValueElt.value;
+        container.updateChild(childId, childValue);
+        childValue.innerHTML = childValue;
+    });
+
+    const deleteButton = document.getElementById("delete");
+    deleteButton.addEventListener("click", (evt) => {
+        const childIdElt = document.getElementById("delete-id");
+        const childId = childIdElt.value;
+        console.log(`Child ID ${childId}`);
+        container.deleteChild(childId);
+    });
+
+    class CRUDContainer {
+
+        constructor(weight) {
+            this.weight = weight;
+            this.element = document.getElementById('crud-top');
+            this.childMap = {};
+            this.updatePosition();
+        }
+
+        addChild(childId, childValue) {
+            const newChild = document.createElement("div");
+            newChild.className = "child";
+            newChild.textContent = `${childId}:${childValue}`;
+            this.element.appendChild(newChild);
+            this.childMap[childId] = newChild;
+            this.updateWeight(this.weight + 1);
+        }
+
+        readChild(childId) {
+            const childNode = this.childMap[childId];
+            if (childNode) {
+                return childNode.innerHTML;
+            }
+        }
+
+        updateChild(childId, childValue) {
+            const childNode = this.childMap[childId];
+            if (!childNode) {
+                return;
+            }
+            childNode.innerHTML = `${childId}:${childValue}`;
+        }
+
+        deleteChild(childId) {
+            if (childId in this.childMap) {
+                this.element.removeChild(this.childMap[childId]);
+                this.updateWeight(this.weight - 1);
+            }
+        }
+
+        updateWeight(newWeight) {
+            this.weight = newWeight; // Update the weight 
+            this.updatePosition();
+        }
+
+        updatePosition() {
+            // Remove animating class to reset the animation
+            this.element.classList?.remove('animating');
+
+            // Force reflow (to reset animation) before adding class back
+            void this.element.offstWidth;
+
+            this.element.classList.add('animating');
+
+            const yPosition = this.weight * 10;
+            this.element.style.animation = `sigmoidEase 2s ease-in-out`;
+            this.element.style.transform = `translateY(${yPosition}px)`;
+        }
+    }
+
+    const container = new CRUDContainer(5);
+
+</script>
+
+</body>
+
+</html>
