@@ -17,7 +17,7 @@ def mergesort(lst):
     last = mergesort(lst[mid:])
     return merge(first, last)
 
-sample = [12, 63, -8, 15, 82, -10]
+lst = [12, 63, -8, 15, 82, -10]
 
 # MPI starts here
 comm = MPI.COMM_WORLD
@@ -29,16 +29,17 @@ rank = comm.Get_rank()
 if rank == 0:
     data = []
     # get the size of each chunk
-    count = len(sample) // size
+    count = len(lst) // size
     # fill the chunks with data
+    stop = 0
     for i in range(size):
         start = i * count
         stop = (i+1) * count
-        # last chunk holds remainder
-        if i == size-1:
-            stop = len(sample)
         # append a chunk for each process
-        data.append(sample[start:stop])
+        data.append(lst[start:stop])
+    # distribute remainder
+    while stop < len(lst):
+        data[len(lst) % size].append(lst.pop())
 else:
     data = None
 
