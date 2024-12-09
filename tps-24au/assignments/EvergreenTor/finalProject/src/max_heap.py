@@ -10,7 +10,7 @@ class MaxHeap:
         i = len(self.heap) - 1 
         parent = (i - 1) // 2
 
-        while i > 0 and self.heap[i] > self.heap[parent]:
+        while i > 0 and self.heap[i]['goals_scored'] > self.heap[parent]['goals_scored']:
             self.heap[i], self.heap[parent] = self.heap[parent], self.heap[i]
             i = parent
             parent = (i - 1) // 2
@@ -21,6 +21,24 @@ class MaxHeap:
             return None
         else:
             return self.heap[0]
+        
+    def pop(self):
+        
+        last_leaf = self.heap.pop()
+        old_max = self.heap[0]
+        hole = 0
+        child = 0
+
+        while hole * 2 <= len(self.heap):
+            child = hole * 2
+            if child != len(self.heap) and (child + 1) > child:
+                child += 1
+            if len(self.heap) < 0:
+                hole = child
+            else:
+                break
+            
+            
 
     def heapify(self):
         n = len(self.heap)
@@ -34,12 +52,12 @@ class MaxHeap:
         left = 2 * i + 1
         right = 2 * i + 2
 
-        # Check if left child exists and has more goals than the current node
-        if left < n and self.heap[left]['goals'] > self.heap[largest]['goals']:
+        # Check if left child exists and has more goals_scored than the current node
+        if left < n and self.heap[left]['goals_scored'] > self.heap[largest]['goals_scored']:
             largest = left
 
-        # Check if right child exists and has more goals than the current largest node
-        if right < n and self.heap[right]['goals'] > self.heap[largest]['goals']:
+        # Check if right child exists and has more goals_scored than the current largest node
+        if right < n and self.heap[right]['goals_scored'] > self.heap[largest]['goals_scored']:
             largest = right
 
         # If the largest is not the current node, swap and continue sifting down
