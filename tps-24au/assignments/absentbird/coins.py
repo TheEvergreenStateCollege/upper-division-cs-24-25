@@ -1,11 +1,12 @@
 import pdb
+import sys
 
-coins = [25, 10, 5, 4, 1]
+coins = [25, 10, 5, 1]
 
-def makeChange(c):
-    pdb.set_trace()
+def makeChange(total):
+    #pdb.set_trace()
     change = []
-    remaining = c
+    remaining = total
     while remaining > 0:
         for d in coins:
             if d <= remaining:
@@ -14,4 +15,11 @@ def makeChange(c):
                 break
     return change
 
-print(makeChange(49))
+val = 0
+if len(sys.argv) > 1:
+    val = int(sys.argv[1])
+else:
+    print("Enter value:")
+    val = int(input())
+
+print(makeChange(val))
