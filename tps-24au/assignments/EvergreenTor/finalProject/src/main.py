@@ -1,10 +1,14 @@
-from maxHeap import MaxHeap
+from max_heap import MaxHeap
 
 heap = MaxHeap()
 
-player1 = {'name': 'Johnathan Joestar', 'goals_scored': 4}
 
-heap.push(player1)
+
+heap.push(4)
+heap.push(34)
+heap.push(12)
+heap.push(50)
+
 
 if __name__ == "__main__":
-    print(player1)
+    print(heap.heap)

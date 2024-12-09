@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <float.h>
 #include <ctype.h>
+#include <unistd.h>
 #include <math.h>
 #include <omp.h>
 // for compiling on lab mac
@@ -22,9 +24,10 @@
  * made by Shawn with the assistance of Austin and Andersen
 **/
 
-int groups = 4; // number of clusters, max 26
-int size = 10; // number of points
-int rarity = 5; // ratio of blanks spaces to points
+// global variables with defaults
+int groups = 4;   // number of clusters
+int size = 10;    // number of points
+int rarity = 5;   // ratio of blanks spaces to points
 int aligning = 1; // track centroid convergence
 
 typedef struct point {
@@ -36,36 +39,53 @@ typedef struct cluster {
   point *centroid;
   double xsum, ysum;
   int count;
-  char mark;
 } cluster;
+
+typedef struct maxindex {
+  double distance;
+  int index;
+} maxindex;
 
 double distance(point *p1, point *p2) {
   return pow(p2->x - p1->x, 2) + pow(p2->y - p1->y, 2) * 1.0;
 }
 
-void init_points(point **points) {
+void init_random_points(point **points) {
   for (int i=0; i < size; i++) {
     point *ptr = (point*)malloc(sizeof(point));
     // set points to random coordinates
+    ptr->cluster = 0;
     ptr->x = rand() % (size * rarity);
     ptr->y = rand() % (size * rarity);
-    ptr->cluster = 0;
     points[i] = ptr;
   }
 }
 
-void init_clusters(point **points, cluster **clusters) {
-  // make an array of the alphabet to label groupings with
-  char marks[26];
-  char m = 'a';
-  for (int i=0; i < 26; i++) {
-    marks[i] = m;
-    m++;
+void init_from_csv(char *csvfile, point **points) {
+  FILE* fp  = fopen(csvfile, "r");
+  if (fp == NULL) { 
+    printf("Error opening %s", csvfile); 
+    return;
+  } 
+  char line[256];
+  fgets(line, sizeof(line), fp); // skip header
+  for (int i=0; i < size; i++) {
+    point *ptr = (point*)malloc(sizeof(point));
+    // set points to random coordinates
+    ptr->cluster = 0;
+    double x, y;
+    fscanf(fp, "%lf,%lf", &x, &y);
+    ptr->x = x;
+    ptr->y = y;
+    points[i] = ptr;
   }
+  fclose(fp);
+}
+
+void init_clusters(point **points, cluster **clusters) {
   // initialize clusters
   for (int i=0; i < groups; i++) { 
     cluster *cls = (cluster*)malloc(sizeof(cluster));
-    cls->mark = marks[i];
     cls->centroid = (point*)malloc(sizeof(point));
     cls->centroid->x = 0;
     cls->centroid->y = 0;
@@ -78,9 +98,11 @@ void init_clusters(point **points, cluster **clusters) {
   clusters[0]->centroid->x = points[p]->x;
   clusters[0]->centroid->y = points[p]->y;
   for (int i=1; i < groups; i++) {
-    int maxi = 0;
-    double farthest = 0;
-    #pragma omp parallel for shared(i, maxi, farthest)
+    maxindex maxi;
+    maxi.distance = 0;
+    maxi.index = 0;
+    #pragma omp declare reduction(maximo : maxindex : omp_out = omp_in.distance > omp_out.distance ? omp_in : omp_out)
+    #pragma omp parallel for reduction(maximo:maxi)
     for (int j=0; j < size; j++) {
       double d = DBL_MAX;
       // measure distance to every already aligned centroid
@@ -91,21 +113,14 @@ void init_clusters(point **points, cluster **clusters) {
         }
       }
       // align centroid to the point farthest from other centroids
-      if (d > farthest) {
-        #pragma omp atomic write
-        maxi = j;
-        #pragma omp atomic write
-        farthest = d;
+      if (d > maxi.distance) {
+        maxi.distance = d;
+        maxi.index = j;
       }
     }
-    clusters[i]->centroid->x = points[maxi]->x;
-    clusters[i]->centroid->y = points[maxi]->y;
+    clusters[i]->centroid->x = points[maxi.index]->x;
+    clusters[i]->centroid->y = points[maxi.index]->y;
   }
-  /* uncomment to print cluster starting coordinates
-  for (int i=0; i < groups; i++) {
-    printf("Cluster %c: %d,%d\n", toupper(clusters[i]->mark), (int)clusters[i]->centroid->x, (int)clusters[i]->centroid->y);
-  }
-  */
 }
 
 void assign_and_sum(point **points, cluster **clusters) {
@@ -130,7 +145,7 @@ void assign_and_sum(point **points, cluster **clusters) {
     }
   }
   // loop over each point
-  #pragma omp parallel for private(i, j) shared(sums)
+  #pragma omp parallel for private(j) shared(sums)
   for (i=0; i < size; i++) { 
     // set dist to current distance to centroid
     double dist = distance(clusters[points[i]->cluster]->centroid, points[i]);
@@ -152,7 +167,7 @@ void assign_and_sum(point **points, cluster **clusters) {
     double ysum = 0;
     int count = 0;
     // reduce pointers in the sums array for this cluster
-    #pragma omp parallel for private(j) shared(i) reduction(+:xsum, ysum, count)
+    #pragma omp parallel for reduction(+:xsum, ysum, count)
     for (j=0; j < size; j++) {
       // skip null pointers
       if (sums[i][j] == NULL) {
@@ -187,7 +202,30 @@ void assign_and_sum(point **points, cluster **clusters) {
   free(previous);
 }
 
-void print_points(point **points, cluster **clusters) {
+// print csv of all clusters
+void print_clusters(cluster **clusters) {
+  printf("id,count,x,y\n");
+  for (int i=0; i < groups; i++) {
+    printf("%d,%d,%.5f,%.5f\n", i, clusters[i]->count, clusters[i]->centroid->x, clusters[i]->centroid->y);
+  }
+}
+
+// print csv of all points
+void print_points(point **points) {
+  printf("cluster,x,y\n");
+  for (int i=0; i < size; i++) {
+    printf("%d,%.5f,%.5f\n", points[i]->cluster, points[i]->x, points[i]->y);
+  }
+}
+
+void print_grid(point **points, cluster **clusters) {
+  // make an array of the alphabet to label groupings with
+  char marks[26];
+  char m = 'a';
+  for (int i=0; i < 26; i++) {
+    marks[i] = m;
+    m++;
+  }
   char **locs = (char**)malloc(size * rarity * sizeof(char*));
   for (int i=0; i < size * rarity; i++) {
     locs[i] = (char*)malloc(size * rarity * sizeof(char));
@@ -199,7 +237,7 @@ void print_points(point **points, cluster **clusters) {
     int x = (int)points[i]->x;
     int y = (int)points[i]->y;
     // label points with their cluster's letter
-    locs[y][x] = clusters[points[i]->cluster]->mark;
+    locs[y][x] = marks[points[i]->cluster];
   }
   for (int i=0; i < groups; i++) {
     int x = (int)clusters[i]->centroid->x;
@@ -209,7 +247,7 @@ void print_points(point **points, cluster **clusters) {
       locs[y][x] = i + '0';
     } else {
       // label centroids with uppercase cluster letter
-      locs[y][x] = toupper(clusters[i]->mark);
+      locs[y][x] = toupper(marks[i]);
     }
   }
   // start printing at end of y axis and beginning of x axis, top down left to right
@@ -220,7 +258,7 @@ void print_points(point **points, cluster **clusters) {
       // use a '+' to show when a centroid overlaps a point
       if (isdigit(symbol)) {
         int c = symbol - '0';
-        symbol = toupper(clusters[c]->mark);
+        symbol = toupper(marks[c]);
         overlap = '+';
       }
       printf("%c%c", symbol, overlap);
@@ -235,6 +273,7 @@ void print_points(point **points, cluster **clusters) {
 
 int main(int argc, char **argv) {
   // set groups, size, and rarity from commandline arguments if provided
+  char *csvfile = "";
   if (argc > 2) {
     groups = atoi(argv[1]);
     if (groups < 1 || groups > 26) {
@@ -242,22 +281,41 @@ int main(int argc, char **argv) {
       return 1;
     }
     size = atoi(argv[2]);
-    if (size < groups) {
-      printf("Number of points must be greater than the number of clusters");
-      return 1;
-    }
-    if (argc > 3) {
-      rarity = atoi(argv[3]);
-      if (rarity < 1) {
-        printf("Rarity must be a number greater than zero.");
+    if (size > 0) {
+      if (size < groups) {
+        printf("Number of points must be greater than the number of clusters");
         return 1;
+      }
+      if (argc > 3) {
+        rarity = atoi(argv[3]);
+        if (rarity < 1) {
+          printf("Rarity must be a number greater than zero.");
+          return 1;
+        }
+      }
+    } else {
+      // check if it's a valid file
+      if (access(argv[2], F_OK) == 0) {
+        FILE* fp  = fopen(argv[2], "r");
+        if (fp == NULL) { 
+          printf("Error opening %s", argv[2]); 
+          return 1;
+        } 
+        csvfile = argv[2];
+        size = 0;
+        // count lines
+        char line[256];
+        while (fgets(line, sizeof(line), fp)) { 
+          size++;
+        }
+        fclose(fp);
       }
     }
   } else if (argc > 1) {
     printf("Usage: %s clusters points [rarity]\n", argv[0]);
     printf("clusters: number of groupings, number between 1-26\n");
-    printf("points: number of randomly positioned points to cluster\n");
-    printf("rarity: number of empty spaces generated for each point (default 5)\n");
+    printf("points: name of input csv file or number of randomly positioned points to generate\n");
+    printf("rarity: number of empty spaces generated for each random point (default 5)\n");
     return 1;
   }
 
@@ -267,10 +325,14 @@ int main(int argc, char **argv) {
   cluster **cluster_array;
   point_array = (point**)malloc(size * sizeof(point*));
   cluster_array = (cluster**)malloc(groups * sizeof(cluster*));
-  init_points(point_array);
+  if (strlen(csvfile)) {
+    init_from_csv(csvfile, point_array);
+  } else {
+    init_random_points(point_array);
+  }
   init_clusters(point_array, cluster_array);
   /* uncomment to print initial alignment
-  print_points(point_array, cluster_array);
+  print_grid(point_array, cluster_array);
   printf("---\n");
   */
 
@@ -278,13 +340,19 @@ int main(int argc, char **argv) {
   while (aligning) {
     assign_and_sum(point_array, cluster_array);
     /* uncomment to print each iteration.
-    print_points(point_array, cluster_array);
+    print_grid(point_array, cluster_array);
     printf("---\n");
     */
   }
 
   // print final alignment
-  print_points(point_array, cluster_array);
+  if (strlen(csvfile)) {
+    print_clusters(cluster_array);
+    printf("---\n");
+    print_points(point_array);
+  } else {
+    print_grid(point_array, cluster_array);
+  }
 
   return 0;
 }
