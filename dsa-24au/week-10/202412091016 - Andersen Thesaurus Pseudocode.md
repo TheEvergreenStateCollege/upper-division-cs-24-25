@@ -26,14 +26,14 @@ class Thesaurus {
 
 list<String> getSynonyms(String term)
     int hash = hashFunc(term)
-    if hashFetch(hash) = null
+    if hashArray[hash] = null
         return []
     else 
         return hashFetch(hash).synonyms
 
 list<String getAntonyms(String term)
     int hash = hashFunc(term)
-    if hashFetch(hash) = null
+    if hashArray[hash] = null
         return []
     else 
         return hashFetch(hash).antonyms
@@ -46,16 +46,16 @@ void addTerm(String term, list<String> initSynonyms, list<String> initAntonyms)
     newEntry.antonyms = initAntonyms
     
     for string i in synonyms
-        if hashFetch(hashfunc(i)).synonyms.contains(term)
+        if hashArray[hashfunc(i)].synonyms.contains(term)
             cont
         else
-            hashFetch(hashfunc(i)).synonyms.append(term)
+            hashArray[hashfunc(i)].synonyms.append(term)
     
     for string i in antonyms
-        if hashFetch(hashfunc(i)).antonyms.contains(term)
+        if hashArray[hashfunc(i)].antonyms.contains(term)
             cont
         else
-            hashFetch(hashfunc(i)).antonyms.append(term)
+            hashArray[hashfunc(i)].antonyms.append(term)
     
     hashArray[hash] = newEntry
     
