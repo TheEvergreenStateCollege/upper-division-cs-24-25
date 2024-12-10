@@ -1,24 +1,17 @@
-/*
+# DSA Game 10 (work-in-progress)
 
-9 Questions, and what notes to take for them. You choose 5 of them, the rest are bonus.
+Write your name on the quiz.
+Solve three of the following nine questions to complete this game; all other questions will count as bonus.
+## Part I
+A Thesaurus Abstract Data Type (ADT) lets you associate with an word (a string *term* ) with a collection of other distinct words with similar meanings (*synonyms*) and a collection of other distinct words with opposite meanings (*antonyms*). The order of the synonyms and antonyms doesn't matter.
 
-    write pseudocode for thesaurus problem from last time, you can use any data structure we've learned. Give T(n) and S(n), assume maximum number of synonyms and antonyms is O(log n)
-        insert new term with synonyms and antonyms
-        getSynonyms for a term
-        getAntonyms for a term
-    fill in two missing methods in Java code for BST zyBooks lab solution, (you'll need to write your own pseudocode tonight)
-    fill in two missing methods in Java code for the Death First Search solution, based on pseudocode we write today
-    fill in two missing methods in Java code for the hash maps zyBooks lab solution, based on pseudocode we write today
+Synonyms and antonyms are *symmetric*. If "concise" is a synonym of "short", then "short" should also be a synonym of "concise". They are not transitive (you don't need to propagate "concise" to also be a synonym of all of its synonyms as well, to the third degree).
 
-*/
+Use `n` as the existing number of terms in the thesaurus. Each one is guaranteed to only have `log n` synonyms and `log n` antonyms when being added.
 
-class Thesaurus {
+### Question 1
+Write pseudocode for
 
-    List<WordNode> terms;
-
-    public Thesaurus() {
-        terms = new ArrayList<>();
-    }
-    
-
-}
+```
+void addTerm(String term, List<String> synonyms, List<String> antonyms)
+```
