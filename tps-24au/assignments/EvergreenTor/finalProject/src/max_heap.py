@@ -3,7 +3,7 @@ class MaxHeap:
         self.heap = []
 
     def size(self):
-        return self.heap
+        return len(self.heap)
     
     def push(self,value):
         self.heap.append(value)
