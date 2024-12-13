@@ -10,6 +10,24 @@ you can
     - barcode scanning will need to be implimented in the future
 - search for a specific crop and see who is working on it and for how long and see how much effort is requiered to be put into it with its overall time spent
 
+### Tech Stack
+The raw data is stored in an SQL database. We use an API written in Go to retrieve JSON, which is then processed by Python into actionable information. The Python script uses a CLI interface to receive guidance for the user.
+
+### Challenges
+- Mockaroo provides inconsistencies and irrational data, even beyond what you could expect from the average user (which is impressive).
+- Human parallelism was a challenge, we ended up working mostly in serial.
+- Service availability was not fully implemented. We had to curl the JSON and send it back and forth.
+
+### Accomplishments
+- Everything prettymuch works.
+- Huge number of lines of code.
+- Thousands of data records (most of it nonsense)
+
+### What We Learned
+- Programming is hard.
+- Python is fun, but can be messy.
+- Mockaroo becomes tricky with many tables.
+
 ### Ideas of what would be implimented in a future project
 Once the database is actually collecting real data these scripts can be used to see the time spent on the farm. Ideally the script would be changed to send data to a website front end for admins to look at and manage the information in a far more readable way than just command line output. 
 
