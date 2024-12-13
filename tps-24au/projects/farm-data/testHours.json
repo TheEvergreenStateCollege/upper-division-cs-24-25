@@ -1,0 +1,204 @@
+[
+    {
+      "ID": 1,
+      "CreatedAt": "0001-01-01T00:00:00Z",
+      "UpdatedAt": "0001-01-01T00:00:00Z",
+      "DeletedAt": null,
+      "start": "2024-01-28T22:01:02Z",
+      "duration": 7.0956,
+      "worker": {
+        "ID": 18,
+        "CreatedAt": "0001-01-01T00:00:00Z",
+        "UpdatedAt": "0001-01-01T00:00:00Z",
+        "DeletedAt": null,
+        "name": "Pavel Van Velden",
+        "barcode": "251925962919",
+        "position": "irrigation"
+      },
+      "worker_id": 18,
+      "process": {
+        "ID": 233,
+        "CreatedAt": "0001-01-01T00:00:00Z",
+        "UpdatedAt": "0001-01-01T00:00:00Z",
+        "DeletedAt": null,
+        "unit": "",
+        "qty": 4,
+        "weight": 49.9,
+        "cull": 11.91,
+        "student_use": 3.14,
+        "value_added": 18.15,
+        "harvest": {
+          "ID": 457,
+          "CreatedAt": "0001-01-01T00:00:00Z",
+          "UpdatedAt": "0001-01-01T00:00:00Z",
+          "DeletedAt": null,
+          "weight": 98.58,
+          "bin": "952977526407",
+          "crop": {
+            "ID": 4,
+            "CreatedAt": "0001-01-01T00:00:00Z",
+            "UpdatedAt": "0001-01-01T00:00:00Z",
+            "DeletedAt": null,
+            "name": "potatoes",
+            "season": "Winter"
+          },
+          "crop_id": 4
+        },
+        "harvest_id": 457,
+        "product": {
+          "ID": 19,
+          "CreatedAt": "0001-01-01T00:00:00Z",
+          "UpdatedAt": "0001-01-01T00:00:00Z",
+          "DeletedAt": null,
+          "name": "spinach",
+          "type": "vegetable",
+          "unit": "gallons",
+          "price": 36,
+          "quantity": 7460,
+          "weight": 4,
+          "length": 4,
+          "width": 9,
+          "height": 5
+        },
+        "product_id": 19
+      },
+      "process_id": 233
+    },
+    {
+      "ID": 2,
+      "CreatedAt": "0001-01-01T00:00:00Z",
+      "UpdatedAt": "0001-01-01T00:00:00Z",
+      "DeletedAt": null,
+      "start": "2024-02-10T03:17:17Z",
+      "duration": 7.0161,
+      "worker": {
+        "ID": 29,
+        "CreatedAt": "0001-01-01T00:00:00Z",
+        "UpdatedAt": "0001-01-01T00:00:00Z",
+        "DeletedAt": null,
+        "name": "Ginny Gambie",
+        "barcode": "607560606134",
+        "position": "irrigation"
+      },
+      "worker_id": 29,
+      "process": {
+        "ID": 374,
+        "CreatedAt": "0001-01-01T00:00:00Z",
+        "UpdatedAt": "0001-01-01T00:00:00Z",
+        "DeletedAt": null,
+        "unit": "",
+        "qty": 14,
+        "weight": 80,
+        "cull": 16.01,
+        "student_use": 10.34,
+        "value_added": 13.92,
+        "harvest": {
+          "ID": 905,
+          "CreatedAt": "0001-01-01T00:00:00Z",
+          "UpdatedAt": "0001-01-01T00:00:00Z",
+          "DeletedAt": null,
+          "weight": 26.3,
+          "bin": "262233522271",
+          "crop": {
+            "ID": 4,
+            "CreatedAt": "0001-01-01T00:00:00Z",
+            "UpdatedAt": "0001-01-01T00:00:00Z",
+            "DeletedAt": null,
+            "name": "potatoes",
+            "season": "Winter"
+          },
+          "crop_id": 4
+        },
+        "harvest_id": 905,
+        "product": {
+          "ID": 18,
+          "CreatedAt": "0001-01-01T00:00:00Z",
+          "UpdatedAt": "0001-01-01T00:00:00Z",
+          "DeletedAt": null,
+          "name": "pears",
+          "type": "meat",
+          "unit": "baskets",
+          "price": 468,
+          "quantity": 35,
+          "weight": 10,
+          "length": 3,
+          "width": 2,
+          "height": 2
+        },
+        "product_id": 18
+      },
+      "process_id": 374
+    },
+    {
+      "ID": 3,
+      "CreatedAt": "0001-01-01T00:00:00Z",
+      "UpdatedAt": "0001-01-01T00:00:00Z",
+      "DeletedAt": null,
+      "start": "2024-11-01T06:34:22Z",
+      "duration": 3.2566,
+      "worker": {
+        "ID": 20,
+        "CreatedAt": "0001-01-01T00:00:00Z",
+        "UpdatedAt": "0001-01-01T00:00:00Z",
+        "DeletedAt": null,
+        "name": "Alida McIlwraith",
+        "barcode": "634754076433",
+        "position": "harvesting"
+      },
+      "worker_id": 20,
+      "harvest": {
+        "ID": 245,
+        "CreatedAt": "0001-01-01T00:00:00Z",
+        "UpdatedAt": "0001-01-01T00:00:00Z",
+        "DeletedAt": null,
+        "weight": 24.89,
+        "bin": "922974928623",
+        "crop": {
+          "ID": 1,
+          "CreatedAt": "0001-01-01T00:00:00Z",
+          "UpdatedAt": "0001-01-01T00:00:00Z",
+          "DeletedAt": null,
+          "name": "honey",
+          "season": "Fall"
+        },
+        "crop_id": 1
+      },
+      "harvest_id": 245
+    },
+    {
+        "ID": 3,
+        "CreatedAt": "0001-01-01T00:00:00Z",
+        "UpdatedAt": "0001-01-01T00:00:00Z",
+        "DeletedAt": null,
+        "start": "2024-11-01T06:34:22Z",
+        "duration": 3.2566,
+        "worker": {
+          "ID": 20,
+          "CreatedAt": "0001-01-01T00:00:00Z",
+          "UpdatedAt": "0001-01-01T00:00:00Z",
+          "DeletedAt": null,
+          "name": "Alida McIlwraith",
+          "barcode": "634754076433",
+          "position": "harvesting"
+        },
+        "worker_id": 20,
+        "harvest": {
+          "ID": 245,
+          "CreatedAt": "0001-01-01T00:00:00Z",
+          "UpdatedAt": "0001-01-01T00:00:00Z",
+          "DeletedAt": null,
+          "weight": 24.89,
+          "bin": "922974928623",
+          "crop": {
+            "ID": 1,
+            "CreatedAt": "0001-01-01T00:00:00Z",
+            "UpdatedAt": "0001-01-01T00:00:00Z",
+            "DeletedAt": null,
+            "name": "honey",
+            "season": "Fall"
+          },
+          "crop_id": 1
+        },
+        "harvest_id": 245
+    }
+]
