@@ -3,6 +3,8 @@ Script that read through hours.json to print the number of hours each crop has b
 
 to run type `python3 hoursData.py` then follow the commands printed to the terminal
 
+Main project repo can be found here: https://github.com/absentbird/TESC-Farm
+
 ### What to expect
 you can
 - see person and what they are clocked in as doing
