@@ -12,3 +12,9 @@ you can
 
 ### Ideas of what would be implimented in a future project
 Once the database is actually collecting real data these scripts can be used to see the time spent on the farm. Ideally the script would be changed to send data to a website front end for admins to look at and manage the information in a far more readable way than just command line output. 
+
+## Diagrams
+
+![Database diagram](Data-Diagram.pdf)
+
+![Server diagram](Server-Diagram.pdf)
