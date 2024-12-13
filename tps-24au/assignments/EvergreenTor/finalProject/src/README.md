@@ -45,9 +45,13 @@ This Project was built using the python programming language. We were going to b
 ```
 
 # Challenges 
+A challennge for us was errors. Without using ChatGPT or having a professor, figuring out our bugs was hard. Also just programming in general was hard. I knew my ideas but putting them in code was the hard part. We also was busy, especially in Duck's case when he still do his final project for SE back then.
 
 # Accomplishments we are Proud of
+Getting a working project done on time. Duck also develop a main.py version that now can comply to any version of python, because the switch statement in python is a new thing
 
 # What We learned
+We leanred how to use CSVs in python, to build our own max heap, and pythons match case which is a switch statement from other languages. 
 
 # What's Next for the Project
+Not sure if we will continue the project, but some good ideas are using a modlue to make the interface look better, make a website from this and a GUI (same thing)
