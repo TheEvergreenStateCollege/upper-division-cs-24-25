@@ -15,6 +15,6 @@ Once the database is actually collecting real data these scripts can be used to 
 
 ## Diagrams
 
-![Database diagram](Data-Diagram.pdf)
+![Database diagram](Data-Diagram.png)
 
-![Server diagram](Server-Diagram.pdf)
+![Server diagram](Server-Diagram.png)
