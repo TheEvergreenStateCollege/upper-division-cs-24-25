@@ -1,47 +1,95 @@
+import java.util.*;
+
 public class LongestRepeatingSubstring {
 
-    class Candidate {
+    public static String longestRepeatingSubstring(String s) {
+        int n = s.length();
+        if (n == 0) return "";
 
-        int startIndex; // where this candidate starts in original string
-        int endIndex;   // where this candidate ends in original string
-        String original;
-        int current;
+        // Step 1: Build suffix array
+        int[] suffixArray = buildSuffixArray(s);
+        
+        // Step 2: Build LCP array
+        int[] lcp = buildLCP(s, suffixArray);
+        
+        // Step 3: Find the maximum LCP and its corresponding substring
+        int maxLCP = 0;  // Track the maximum LCP value
+        int index = -1;  // Track the suffix array index corresponding to maxLCP
 
-        public Candidate(String original, int startIndex, int endIndex) {
-            this.original = original;
-            this.startIndex = startIndex;
-            this.endIndex = endIndex;
-            this.current = 0;
+        for (int i = 1; i < lcp.length; i++) {
+            if (lcp[i] > maxLCP) {
+                maxLCP = lcp[i];
+                index = i;
+            } else if (lcp[i] == maxLCP) {
+                // Resolve ties lexicographically
+                String current = s.substring(suffixArray[i], suffixArray[i] + lcp[i]);
+                String best = s.substring(suffixArray[index], suffixArray[index] + lcp[index]);
+                if (current.compareTo(best) < 0) {
+                    index = i;
+                }
+            }
         }
 
-        // Match the current character
-        public boolean match(String singleChar) {
+        // If no repeated substring is found, return empty string
+        if (maxLCP == 0) return "";
 
-        }
+        // Extract and return the longest repeated substring
+        return s.substring(suffixArray[index], suffixArray[index] + maxLCP);
     }
 
-    public static String longestRepeatingSubstring(String s) {
-        // By default, return empty substring,
-        // need to improve this
-
-        String candidate = new Candidate();
-
-        for (int i = 0; i < s.length(); s += 1) {
-            String current = s.substring(i,i+1);
-            if (candidate.equals("")) {
-                // if empty candidate, any current character is our best answer so far
-                candidate = new Candidate(s, i, i+1);
-            } else if (current.equals(candidate.substring(i,i+1)) {
-                // current character matches first of our candidate,
-                // we could be starting again
-            }
-            if (s.substring(i,i+1) 
+    // Function to build the suffix array of a string
+    private static int[] buildSuffixArray(String s) {
+        int n = s.length();
+        Integer[] suffixes = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            suffixes[i] = i;
         }
-        return "";
+
+        Arrays.sort(suffixes, (a, b) -> s.substring(a).compareTo(s.substring(b)));
+
+        int[] suffixArray = new int[n];
+        for (int i = 0; i < n; i++) {
+            suffixArray[i] = suffixes[i];
+        }
+        return suffixArray;
+    }
+
+    // Function to build the LCP (Longest Common Prefix) array
+    private static int[] buildLCP(String s, int[] suffixArray) {
+        int n = s.length();
+        int[] rank = new int[n];
+        int[] lcp = new int[n - 1];
+
+        // Build rank array: rank[i] is the rank of the suffix starting at index i
+        for (int i = 0; i < n; i++) {
+            rank[suffixArray[i]] = i;
+        }
+
+        int h = 0;
+        for (int i = 0; i < n; i++) {
+            if (rank[i] > 0) {
+                int j = suffixArray[rank[i] - 1];
+                while (i + h < n && j + h < n && s.charAt(i + h) == s.charAt(j + h)) {
+                    h++;
+                }
+                lcp[rank[i] - 1] = h;
+                if (h > 0) {
+                    h--;
+                }
+            }
+        }
+        return lcp;
     }
 
     public static void main(String[] args) {
-        String result = longestRepeatingSubstring("aabcabc");
-        assert(result.equals("abc"));
+        // Read input string from command-line arguments
+        if (args.length == 0) {
+            System.out.println("Error: Please provide an input string.");
+            return;
+        }
+
+        String s = args[0];
+        String result = longestRepeatingSubstring(s);
+        System.out.println(result); // Output the longest repeating substring
     }
 }
