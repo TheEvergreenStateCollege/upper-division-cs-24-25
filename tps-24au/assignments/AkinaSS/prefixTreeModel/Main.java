@@ -1,8 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         PrefixTree pt = new PrefixTree();
-        String input = "banana";
+        Scanner sc = new Scanner(System.in);
+        String input = "";
+        while (sc.hasNextLine()) {
+            input = sc.next();
+        }
+        // String input = "banana";
 
         for (int i = 0; i < input.length(); i++) {
             pt.lookupAndInsert(input.substring(i));
