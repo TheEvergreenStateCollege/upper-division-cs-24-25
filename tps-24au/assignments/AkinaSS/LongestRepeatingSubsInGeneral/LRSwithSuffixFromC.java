@@ -1,3 +1,4 @@
+package LongestRepeatingSubsInGeneral;
 import java.util.*;
 
 public class LRSwithSuffixFromC {

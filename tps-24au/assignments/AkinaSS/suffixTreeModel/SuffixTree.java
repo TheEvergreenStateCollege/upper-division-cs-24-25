@@ -1,4 +1,4 @@
-package suffixAndPrefixTreeModel;
+
 
 // Java Program to Implement Suffix Tree
 /** Class Suffix Tree **/
