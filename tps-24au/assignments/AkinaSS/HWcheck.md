@@ -21,3 +21,15 @@ Bringing this to Kattis, obviously, shows no positive sign as well.
 ![alt text](image-3.png)
 
 I felt like at this point, it should be working but for some reason it doesn't. It could be different outputs expected but still in general I still need to solve the no-output problem that has been happens on both this and the suffix tree code as well. I might not do as much as I can to finish this assignment but I felt like there's a way to fix this.
+
+Update: I'm going to put here a picture of the output that I got from the code from geeksforgeeks.
+![alt text](image-4.png)
+
+Update 2: I just find out today that for some unknown reason, the geeksforgeeks code (SuffixTree.c) is hard-coding the maxHeight and substringStartIndex in getLongestRepeatingSubstring which makes the code always print out an empty string.
+![alt text](image-5.png)
+
+I suspect that it has something to do with either the template or they want to do it recursively to found out the answer. I have fixed it in a temporary way but not sure if it's the right way to do it.
+
+The fix for this currently is I've add in a few extra line of code to revert the hardcoding and use the text value. It turns out that C doesn't have hashmap, dictionary or anything like that so I have to use a simple array to store the key and value. There's some other package that I can use to do this but I want to test to see if I can still do it with the original compiler. I've been thinking about this for a while now and it doesn't work so I don't really have high hopes for this.
+
+I think I'm going to step down for now with this implementation, I just can't think of anything to do with it, the code is not complete but the idea is there. The proposed fix here is iterate the strings and its' suffixes through the tree and record everytime it went through a node. If it's going in the first time, add the character value in the array, if it's going in as a repeated of what it's already have in the array, increase the counter for that value. Take the highest counter as a result and append it as a number of substring needs to print the longest repeating substring. That's all I can think of for now.
