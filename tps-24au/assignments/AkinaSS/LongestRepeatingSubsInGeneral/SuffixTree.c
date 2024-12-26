@@ -28,7 +28,7 @@ struct SuffixTreeNode {
   
 typedef struct SuffixTreeNode Node;
   
-char text[100]; //Input string
+char text[1000]; //Input string
 Node *root = NULL; //Pointer to root node
   
 /*lastNewNode will point to newly created internal node,
@@ -297,6 +297,7 @@ for non-leaf edges will be -1*/
 void buildSuffixTree()
 {
     size = strlen(text);
+    printf("String: %s\n", text);
     int i;
     rootEnd = (int*) malloc(sizeof(int));
     *rootEnd = - 1;
@@ -342,11 +343,23 @@ int* substringStartIndex)
  
 void getLongestRepeatedSubstring()
 {
-    int maxHeight = 0;
-    int substringStartIndex = 0;
-    doTraversal(root, 0, &maxHeight, &substringStartIndex);
-//    printf("maxHeight %d, substringStartIndex %d\n", maxHeight,
-//           substringStartIndex);
+    int maxHeight = strlen(text);
+    int substringStartIndex;
+    int counter;
+    char dict[100];
+
+    for (int i=0; i<maxHeight; i++) {
+        substringStartIndex = i + 1;
+        doTraversal(root, 0, &maxHeight, &substringStartIndex);
+
+        if (strchr(dict, text[i]) == NULL) {
+            dict[counter] = text[i];
+        }
+ 
+    }
+
+    // doTraversal(root, 0, &maxHeight, &substringStartIndex);
+    
     printf("Longest Repeated Substring in %s is: ", text);
     int k;
     for (k=0; k<maxHeight; k++)
@@ -407,9 +420,13 @@ int main(int argc, char *argv[])
     // //Free the dynamically allocated memory
     // freeSuffixTreeByPostOrder(root);
 
-    char str[1000];
-    while (fgets(str, 1000, stdin)) { //Or scanf
-        printf("%s", &str);
+    // char str[1000];
+    while (fgets(text, 1000, stdin)) { //Or scanf
+        //printf("%s", text);
+        buildSuffixTree();
+        getLongestRepeatedSubstring();
+        //Free the dynamically allocated memory
+        freeSuffixTreeByPostOrder(root);
     }
  
     return 0;
