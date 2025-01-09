@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "4cddd6449ed3f7a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "57f03dd05d0a090b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "349ad4e187f69381",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dof-25wi/Resources.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Resources"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bff39f8a79a99be6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff2e155014a27cf4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae69c046b015a32e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "da1f74048f163bfa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7baf638922437e95",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "17d29dc944ac5d45",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8ff575e6fe76b7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51527fa5e237a5d7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "dof-25wi/Resources.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Resources"
+            }
+          },
+          {
+            "id": "a3811dab6a7858bb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "dof-25wi/Resources.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Resources"
+            }
+          },
+          {
+            "id": "caacf79295708cb7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c43aed9ad5148431",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "dof-25wi/Resources.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Resources"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "349ad4e187f69381",
+  "lastOpenFiles": [
+    "dof-25wi/Syllabus.md",
+    "dof-25wi/Resources.md",
+    "dof-25wi/Where.md"
+  ]
+}
