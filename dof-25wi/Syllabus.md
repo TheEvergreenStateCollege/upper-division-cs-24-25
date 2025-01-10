@@ -106,14 +106,14 @@ Final project presentation.
 Complete the assignments above to document your learning and building.
 Participate in class.
 
-Engineering students will receive upper division Computer Science credit with a name similar to
+Engineering students will receive *up to* upper division Computer Science credit with a name similar to
 ```
 *4 Data Engineering for Farming
 ```
 
-Farming students will receive upper division credit with a name similar to
+Farming students will receive *up to* their registered upper division credit with a name similar to
 ```
-*4 Data Engineering for Farming
+*4 Data Management for Farming
 ```
 
 All students will be evaluated by both Paul and Melissa with a description of their achievements 
