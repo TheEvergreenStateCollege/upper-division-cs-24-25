@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tic Tac Toe Engine {% block title %}{% endblock %}</title>
+    <link
+      id="favicon"
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename=favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename=stylesheets/style.css) }}"
+    />
+    <script src="{{ url_for('static', filename=scripts/script.js) }}"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>TicTacToe</h1>
+    </header>
+    <main id="main">{% block content %} {% endblock %}</main>
+    <footer id="footer"></footer>
+  </body>
+</html>
