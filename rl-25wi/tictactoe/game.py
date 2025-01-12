@@ -8,6 +8,7 @@ def home():
 
 @app.route("/new_game")
 def new_game():
+    return
 
 @app.route("/<game>")
 def show_board():
@@ -15,3 +16,4 @@ def show_board():
 
 @app.route("/<game>/<move>")
 def make_move():
+    return
