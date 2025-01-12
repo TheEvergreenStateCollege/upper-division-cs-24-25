@@ -100,3 +100,7 @@ def make_move(game, move):
     if result < 0:
         return "Invalid Move", 403
     return redirect(url_for("show_board", game=game))
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
