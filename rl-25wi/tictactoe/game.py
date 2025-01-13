@@ -6,13 +6,15 @@ import json
 
 app = Flask(__name__)
 
-
 class Match:
     def __init__(self, uidp1):
         self.uidp1 = uidp1
         self.uidp2 = ""
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.toMove = uidp1
+    
+    def currentTurn(self):
+        return 10 - self.board.count(0)
 
     def addPlayer(self, uidp2):
         if self.uidp2 == "":
@@ -67,7 +69,6 @@ class Match:
 
 matches = {}
 
-
 def newMatchID():
     characters = string.ascii_letters + string.digits
     while True:
@@ -77,16 +78,13 @@ def newMatchID():
         else:
             return id
 
-
 @app.route("/")
 def home():
     return render_template("home.html")
 
-
 @app.route("/new_game")
 def new_game():
     matchID = newMatchID()
-    print(matchID)
     uid = request.cookies.get("uid")
     resp = make_response()
     if not uid:
@@ -96,15 +94,20 @@ def new_game():
     resp.headers["location"] = url_for("show_board", game=matchID)
     return resp, 302
 
-
 @app.route("/<game>")
 def show_board(game):
-    match = matches[game]
-    print(match.toJSON())
+    m = matches[game]
     if request.is_json:
-        return jsonify(match.board), 200
-    return render_template("board.html", match=match.board, win=match.checkWin())
-
+        return jsonify(m.board), 200
+    side = ""
+    if request.cookies.get("uid") == m.uidp1:
+        side = "X"
+    elif request.cookies.get("uid") == m.uidp2:
+        side = "O"
+    tomove = "O"
+    if m.uidp1 == m.toMove:
+        tomove = "X"
+    return render_template("board.html", match=m.board, win=m.checkWin(), turn=m.currentTurn(), side=side, tomove=tomove)
 
 @app.route("/<game>/<move>")
 def make_move(game, move):
@@ -116,7 +119,6 @@ def make_move(game, move):
         resp.set_cookie("uid", uid)
         match.addPlayer(uid)
     if uid != match.uidp1 and match.uidp2 == "":
-        print(uid)
         if match.addPlayer(uid) != 0:
             return "Already two players", 403
     result = match.submitTurn(uid, move)
@@ -124,7 +126,6 @@ def make_move(game, move):
         return "Invalid Move", 403
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
-
 
 if __name__ == "__main__":
     app.run(debug=True)

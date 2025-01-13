@@ -1,10 +1,18 @@
 {% extends "base.html" %} 
-{% block title %}| turn: {gameturn} {% endblock %} 
+{% block title %}| turn: {{ turn }} {% endblock %} 
 {% macro xo(value) %}
 {% if value==0 %}_{% elif value==1 %}X{% else %}O{% endif %} 
 {% endmacro %}
 {% block content %} 
-{% if win == -1 %}<H1>Stalemate!</H1>{% elif win == 1 %}<H1>X Wins</H1>{%elif win == 2 %}<H2>O Wins</H2>{% endif %}
+  {% if win == -1 %}
+    <h2>Stalemate!</h2>
+  {% elif win == 1 %}
+    <h2>X Wins!</h2>
+  {%elif win == 2 %}
+    <h2>O Wins!</h2>
+  {% else %}
+    <h3>{{ tomove }}'s Turn</h3>
+  {% endif %}
 <table id="gameboard">
   <tr>
     <td><button id="0" onclick="window.location.href=window.location.href+'/0'">{{xo(match.0)}}</button></td>
@@ -22,6 +30,35 @@
     <td><button id="8" onclick="window.location.href=window.location.href+'/8'">{{xo(match.8)}}</button></td>
   </tr>
 </table>
+{% if side %}
+<h3>Playing as {{ side }}</h3>
+{% endif %}
+<script>
+// Check for new moves every second
+const interval = setInterval(() => {
+  fetch(window.location.href, {
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  }).then(response => {
+    response.json().then(state => {
+      const previous = '[' + {{ match }} + ']';
+      if (JSON.stringify(state) != previous) {
+        location.reload();
+      };
+    });
+  });
+}, 1000);
+// Timeout after ten minutes
+setTimeout(() => {
+  clearInterval(interval);
+}, 600000);
+// Stop refreshing after game ends
+if ({{ win }} != 0) {
+  clearInterval(interval);
+}
+</script>
 {% endblock %}
 
 
