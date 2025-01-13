@@ -1,2 +1,27 @@
-{% extends "base.html" %} {block title %}| turn: {gameturn} {% endblock %} {%
-block content %} {% endblock %}
+{% extends "base.html" %} 
+{% block title %}| turn: {gameturn} {% endblock %} 
+{% macro xo(value) %}
+{% if value==0 %}_{% elif value==1 %}X{% else %}O{% endif %} 
+{% endmacro %}
+{% block content %} 
+{% if win == -1 %}<H1>Stalemate!</H1>{% elif win == 1 %}<H1>X Wins</H1>{%elif win == 2 %}<H2>O Wins</H2>{% endif %}
+<table id="gameboard">
+  <tr>
+    <td><button id="0" onclick="window.location.href=window.location.href+'/0'">{{xo(match.0)}}</button></td>
+    <td><button id="1" onclick="window.location.href=window.location.href+'/1'">{{xo(match.1)}}</button></td>
+    <td><button id="2" onclick="window.location.href=window.location.href+'/2'">{{xo(match.2)}}</button></td>
+  </tr>
+  <tr>
+    <td><button id="3" onclick="window.location.href=window.location.href+'/3'">{{xo(match.3)}}</button></td>
+    <td><button id="4" onclick="window.location.href=window.location.href+'/4'">{{xo(match.4)}}</button></td>
+    <td><button id="5" onclick="window.location.href=window.location.href+'/5'">{{xo(match.5)}}</button></td>
+  </tr>
+  <tr>
+    <td><button id="6" onclick="window.location.href=window.location.href+'/6'">{{xo(match.6)}}</button></td>
+    <td><button id="7" onclick="window.location.href=window.location.href+'/7'">{{xo(match.7)}}</button></td>
+    <td><button id="8" onclick="window.location.href=window.location.href+'/8'">{{xo(match.8)}}</button></td>
+  </tr>
+</table>
+{% endblock %}
+
+

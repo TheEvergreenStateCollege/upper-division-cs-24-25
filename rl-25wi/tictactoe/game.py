@@ -1,9 +1,10 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, url_for, make_response, request, jsonify
 import random
 import string
+import secrets
+import json
 
 app = Flask(__name__)
-app.secret_key = ""
 
 
 class Match:
@@ -16,6 +17,8 @@ class Match:
     def addPlayer(self, uidp2):
         if self.uidp2 == "":
             self.uidp2 = uidp2
+            if self.toMove != self.uidp1:
+                self.toMove = self.uidp2
             return 0  # Added player 2
         else:
             return -1  # Already a player 2
@@ -47,7 +50,8 @@ class Match:
         return 0
 
     def submitTurn(self, uid, move):
-        if uid != self.toMove or self.board[move]:
+        move = int(move)
+        if uid != self.toMove or self.board[move] or self.checkWin():
             return -1
         if self.toMove == self.uidp1:
             self.board[move] = 1
@@ -57,13 +61,16 @@ class Match:
             self.toMove = self.uidp1
         return 0
 
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
 
 matches = {}
 
 
 def newMatchID():
     characters = string.ascii_letters + string.digits
-    while ():
+    while True:
         id = "".join(random.choice(characters) for _ in range(5))
         if id in matches:
             continue
@@ -79,27 +86,44 @@ def home():
 @app.route("/new_game")
 def new_game():
     matchID = newMatchID()
-    player1 = 0
-    matches[matchID] = Match(player1)
-    return redirect(url_for("show_board", game=matchID))
+    print(matchID)
+    uid = request.cookies.get("uid")
+    resp = make_response()
+    if not uid:
+        uid = secrets.token_hex(32)
+        resp.set_cookie("uid", uid)
+    matches[matchID] = Match(uid)
+    resp.headers["location"] = url_for("show_board", game=matchID)
+    return resp, 302
 
 
 @app.route("/<game>")
-def show_board():
-    return render_template("board.html")
+def show_board(game):
+    match = matches[game]
+    print(match.toJSON())
+    if request.is_json:
+        return jsonify(match.board), 200
+    return render_template("board.html", match=match.board, win=match.checkWin())
 
 
 @app.route("/<game>/<move>")
 def make_move(game, move):
-    player = 0
+    uid = request.cookies.get("uid")
+    resp = make_response()
     match = matches[game]
-    if player != match.uidp1:
-        if match.addPlayer(player):
+    if uid == "":
+        uid = secrets.token_hex(32)
+        resp.set_cookie("uid", uid)
+        match.addPlayer(uid)
+    if uid != match.uidp1 and match.uidp2 == "":
+        print(uid)
+        if match.addPlayer(uid) != 0:
             return "Already two players", 403
-    result = match.submitTurn(player, move)
+    result = match.submitTurn(uid, move)
     if result < 0:
         return "Invalid Move", 403
-    return redirect(url_for("show_board", game=game))
+    resp.headers["location"] = url_for("show_board", game=game)
+    return resp, 302
 
 
 if __name__ == "__main__":
