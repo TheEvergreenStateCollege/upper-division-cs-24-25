@@ -68,6 +68,7 @@ class Match:
 
 
 matches = {}
+yearsec = 31536000
 
 def newMatchID():
     characters = string.ascii_letters + string.digits
@@ -91,7 +92,7 @@ def new_game():
     resp = make_response()
     if not uid:
         uid = secrets.token_hex(32)
-        resp.set_cookie("uid", uid)
+        resp.set_cookie("uid", uid, max_age=yearsec)
     matches[matchID] = Match(uid)
     if request.is_json:
         resp.headers["Content-Type"] = "application/json"
@@ -127,8 +128,10 @@ def make_move(game, move):
     m = matches[game]
     if uid == "":
         uid = secrets.token_hex(32)
-        resp.set_cookie("uid", uid)
+        resp.set_cookie("uid", uid, max_age=yearsec)
         m.addPlayer(uid)
+    else:
+        resp.set_cookie("uid", uid, max_age=yearsec)
     if uid != m.uidp1 and m.uidp2 == "":
         if m.addPlayer(uid) != 0:
             return "Already two players", 403
