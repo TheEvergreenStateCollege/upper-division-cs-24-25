@@ -7,6 +7,7 @@
 <button id="{{ index }}" onclick="window.location.href=window.location.href+'/{{ index }}'" {% if tomove != side %}disabled{% endif %}>{{ xo(match[index]) }}</button>
 {% endmacro %}
 {% block content %} 
+  <p>Game ID: {{ gameid }}</p>
   {% if win == -1 %}
     <h2>Stalemate!</h2>
   {% elif win == 1 %}

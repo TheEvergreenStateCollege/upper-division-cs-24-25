@@ -96,6 +96,8 @@ def new_game():
 
 @app.route("/<game>")
 def show_board(game):
+    if game not in matches:
+        return "Game not found.", 404
     m = matches[game]
     if request.is_json:
         return jsonify(m.board), 200
@@ -107,7 +109,7 @@ def show_board(game):
     tomove = 2
     if m.uidp1 == m.toMove:
         tomove = 1
-    return render_template("board.html", match=m.board, win=m.checkWin(), turn=m.currentTurn(), side=side, tomove=tomove)
+    return render_template("board.html", match=m.board, win=m.checkWin(), turn=m.currentTurn(), side=side, tomove=tomove, gameid=game)
 
 @app.route("/<game>/<move>")
 def make_move(game, move):
