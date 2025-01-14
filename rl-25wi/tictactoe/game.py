@@ -3,8 +3,10 @@ import random
 import string
 import secrets
 import json
+import redis
 
 app = Flask(__name__)
+rc = redis.Redis()
 
 class Match:
     def __init__(self, uidp1):
@@ -80,6 +82,8 @@ def newMatchID():
 
 @app.route("/")
 def home():
+    if request.is_json:
+        return '{message: "Welcome! Go to /new_game to create a new game, or go to /<gameid> to join one."}', 200
     return render_template("home.html")
 
 @app.route("/new_game")
@@ -91,6 +95,8 @@ def new_game():
         uid = secrets.token_hex(32)
         resp.set_cookie("uid", uid)
     matches[matchID] = Match(uid)
+    if request.is_json:
+        resp.headers["Content-Type"] = "application/json"
     resp.headers["location"] = url_for("show_board", game=matchID)
     return resp, 302
 
@@ -106,10 +112,13 @@ def show_board(game):
         side = 1
     elif request.cookies.get("uid") == m.uidp2 or m.uidp2 == "":
         side = 2
+    win = m.checkWin()
     tomove = 2
     if m.uidp1 == m.toMove:
         tomove = 1
-    return render_template("board.html", match=m.board, win=m.checkWin(), turn=m.currentTurn(), side=side, tomove=tomove, gameid=game)
+    if win:
+        tomove = 0
+    return render_template("board.html", match=m.board, win=win, turn=m.currentTurn(), side=side, tomove=tomove, gameid=game)
 
 @app.route("/<game>/<move>")
 def make_move(game, move):
@@ -126,6 +135,8 @@ def make_move(game, move):
     result = m.submitTurn(uid, move)
     if result < 0:
         return "Invalid Move", 403
+    if request.is_json:
+        resp.headers["Content-Type"] = "application/json"
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
 
@@ -143,6 +154,8 @@ def rematch(game):
             r.addPlayer(m.uidp1)
         matches[game] = r
     resp = make_response()
+    if request.is_json:
+        resp.headers["Content-Type"] = "application/json"
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
 

@@ -7,16 +7,21 @@
 <button id="{{ index }}" onclick="window.location.href=window.location.href+'/{{ index }}'" {% if tomove != side %}disabled{% endif %}>{{ xo(match[index]) }}</button>
 {% endmacro %}
 {% block content %} 
-  <p>Game ID: {{ gameid }}</p>
-  {% if win == -1 %}
-    <h2>Stalemate!</h2>
-  {% elif win == 1 %}
-    <h2>X Wins!</h2>
-  {%elif win == 2 %}
-    <h2>O Wins!</h2>
-  {% else %}
-    <h3>{{ xo(tomove) }}'s Turn</h3>
-  {% endif %}
+<p class="gameid">
+  Game ID: {{ gameid }}
+  <button onclick="navigator.clipboard.writeText(window.location.href)">
+    Copy Match Link
+  </button>
+</p>
+{% if win == -1 %}
+  <h2>Stalemate!</h2>
+{% elif win == 1 %}
+  <h2>X Wins!</h2>
+{%elif win == 2 %}
+  <h2>O Wins!</h2>
+{% else %}
+  <h3>{{ xo(tomove) }}'s Turn</h3>
+{% endif %}
 <table id="gameboard">
   <tr>
     <td>{{xobutton(0)}}</td>
@@ -37,6 +42,8 @@
 {% if win and side %}
   {% if win == side %}
     <h3>You Won!</h3>
+  {% else %}
+    <br>
   {% endif %}
   <button id="rematch" onclick="window.location.href=window.location.href+'/rematch'">Rematch</button>
 {% else %}

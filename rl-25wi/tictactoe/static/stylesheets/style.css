@@ -1,15 +1,32 @@
 body {
   font-family: sans-serif;
   text-align: center;
+  font-size: 20px;
 }
 
 h1 {
   text-align: center;
 }
 
+h1 a {
+  color: #000;
+}
+
 button {
-  font-size: 24px;
+  font-size: 22px;
   padding: 4px 8px 4px 8px;
+}
+
+.gameid {
+  font-size: 18px;
+}
+
+.gameid button {
+  font-size: 16px;
+}
+
+#joingame {
+  margin-top: 6px;
 }
 
 #gameboard {
