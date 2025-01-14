@@ -135,6 +135,10 @@ def rematch(game):
         return "Not a Player", 403
     if m.checkWin():
         matches[game] = Match(uid)
+        if uid == m.uidp1:
+            matches[game].addPlayer(m.uidp1)
+        else:
+            matches[game].addPlayer(m.uidp2)
     resp = make_response()
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
