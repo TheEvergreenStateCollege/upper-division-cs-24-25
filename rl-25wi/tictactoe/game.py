@@ -3,10 +3,8 @@ import random
 import string
 import secrets
 import json
-import redis
 
 app = Flask(__name__)
-rc = redis.Redis()
 
 class Match:
     def __init__(self, uidp1):
