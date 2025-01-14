@@ -83,7 +83,7 @@ def newMatchID():
 @app.route("/")
 def home():
     if request.is_json:
-        return '{message: "Welcome! Go to /new_game to create a new game, or go to /<gameid> to join one."}', 200
+        return '{"message": "Welcome! Go to /new_game to create a new game, and go to /<gameid> to join one."}', 200
     return render_template("home.html")
 
 @app.route("/new_game")
@@ -97,6 +97,8 @@ def new_game():
     matches[matchID] = Match(uid)
     if request.is_json:
         resp.headers["Content-Type"] = "application/json"
+        resp.set_data('{"gameid": "'matchID'"}')
+        return resp, 200
     resp.headers["location"] = url_for("show_board", game=matchID)
     return resp, 302
 
@@ -137,6 +139,8 @@ def make_move(game, move):
         return "Invalid Move", 403
     if request.is_json:
         resp.headers["Content-Type"] = "application/json"
+        resp.set_data('{"result": "success"}')
+        return resp, 200
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
 
@@ -156,6 +160,8 @@ def rematch(game):
     resp = make_response()
     if request.is_json:
         resp.headers["Content-Type"] = "application/json"
+        resp.set_data('{"result": "success"}')
+        return resp, 200
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
 
