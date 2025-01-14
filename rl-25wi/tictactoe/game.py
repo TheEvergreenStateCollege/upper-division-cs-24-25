@@ -99,14 +99,14 @@ def show_board(game):
     m = matches[game]
     if request.is_json:
         return jsonify(m.board), 200
-    side = ""
+    side = 0
     if request.cookies.get("uid") == m.uidp1:
-        side = "X"
+        side = 1
     elif request.cookies.get("uid") == m.uidp2:
-        side = "O"
-    tomove = "O"
+        side = 2
+    tomove = 2
     if m.uidp1 == m.toMove:
-        tomove = "X"
+        tomove = 1
     return render_template("board.html", match=m.board, win=m.checkWin(), turn=m.currentTurn(), side=side, tomove=tomove)
 
 @app.route("/<game>/<move>")

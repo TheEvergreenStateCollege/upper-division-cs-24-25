@@ -14,7 +14,7 @@
   {%elif win == 2 %}
     <h2>O Wins!</h2>
   {% else %}
-    <h3>{{ tomove }}'s Turn</h3>
+    <h3>{{ xo(tomove) }}'s Turn</h3>
   {% endif %}
 <table id="gameboard">
   <tr>
@@ -23,20 +23,27 @@
     <td>{{xobutton(2)}}</td>
   </tr>
   <tr>
-    <td><button id="3" onclick="window.location.href=window.location.href+'/3'">{{xo(match.3)}}</button></td>
-    <td><button id="4" onclick="window.location.href=window.location.href+'/4'">{{xo(match.4)}}</button></td>
-    <td><button id="5" onclick="window.location.href=window.location.href+'/5'">{{xo(match.5)}}</button></td>
+    <td>{{xobutton(3)}}</td>
+    <td>{{xobutton(4)}}</td>
+    <td>{{xobutton(5)}}</td>
   </tr>
   <tr>
-    <td><button id="6" onclick="window.location.href=window.location.href+'/6'">{{xo(match.6)}}</button></td>
-    <td><button id="7" onclick="window.location.href=window.location.href+'/7'">{{xo(match.7)}}</button></td>
-    <td><button id="8" onclick="window.location.href=window.location.href+'/8'">{{xo(match.8)}}</button></td>
+    <td>{{xobutton(6)}}</td>
+    <td>{{xobutton(7)}}</td>
+    <td>{{xobutton(8)}}</td>
   </tr>
 </table>
-{% if side %}
-<h3>Playing as {{ side }}</h3>
+{% if win and side %}
+  {% if win == side %}
+    <h3>You Won!</h3>
+  {% endif %}
+  <button id="rematch" onclick="window.location.href=window.location.href+'/rematch'">Rematch</button>
 {% else %}
-<h4>Spectating</h4>
+  {% if side %}
+    <h3>Playing as {{ xo(side) }}</h3>
+  {% else %}
+    <h4>Spectating</h4>
+  {% endif %}
 {% endif %}
 <script>
 // Check for new moves every second
