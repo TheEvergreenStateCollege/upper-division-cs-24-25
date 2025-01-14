@@ -97,7 +97,7 @@ def new_game():
     matches[matchID] = Match(uid)
     if request.is_json:
         resp.headers["Content-Type"] = "application/json"
-        resp.set_data('{"gameid": "'matchID'"}')
+        resp.set_data('{"gameid": "' + matchID + '"}')
         return resp, 200
     resp.headers["location"] = url_for("show_board", game=matchID)
     return resp, 302
