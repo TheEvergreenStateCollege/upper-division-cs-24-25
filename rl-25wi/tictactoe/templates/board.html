@@ -1,7 +1,10 @@
 {% extends "base.html" %} 
 {% block title %}| turn: {{ turn }} {% endblock %} 
 {% macro xo(value) %}
-{% if value==0 %}_{% elif value==1 %}X{% else %}O{% endif %} 
+{% if value==0 %}_{% elif value==1 %}X{% else %}O{% endif %}
+{% endmacro %}
+{% macro xobutton(index) %}
+<button id="{{ index }}" onclick="window.location.href=window.location.href+'/{{ index }}'" {% if tomove != side %}disabled{% endif %}>{{ xo(match[index]) }}</button>
 {% endmacro %}
 {% block content %} 
   {% if win == -1 %}
@@ -15,9 +18,9 @@
   {% endif %}
 <table id="gameboard">
   <tr>
-    <td><button id="0" onclick="window.location.href=window.location.href+'/0'">{{xo(match.0)}}</button></td>
-    <td><button id="1" onclick="window.location.href=window.location.href+'/1'">{{xo(match.1)}}</button></td>
-    <td><button id="2" onclick="window.location.href=window.location.href+'/2'">{{xo(match.2)}}</button></td>
+    <td>{{xobutton(0)}}</td>
+    <td>{{xobutton(1)}}</td>
+    <td>{{xobutton(2)}}</td>
   </tr>
   <tr>
     <td><button id="3" onclick="window.location.href=window.location.href+'/3'">{{xo(match.3)}}</button></td>
@@ -32,6 +35,8 @@
 </table>
 {% if side %}
 <h3>Playing as {{ side }}</h3>
+{% else %}
+<h4>Spectating</h4>
 {% endif %}
 <script>
 // Check for new moves every second

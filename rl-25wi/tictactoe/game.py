@@ -113,17 +113,29 @@ def show_board(game):
 def make_move(game, move):
     uid = request.cookies.get("uid")
     resp = make_response()
-    match = matches[game]
+    m = matches[game]
     if uid == "":
         uid = secrets.token_hex(32)
         resp.set_cookie("uid", uid)
-        match.addPlayer(uid)
-    if uid != match.uidp1 and match.uidp2 == "":
-        if match.addPlayer(uid) != 0:
+        m.addPlayer(uid)
+    if uid != m.uidp1 and m.uidp2 == "":
+        if m.addPlayer(uid) != 0:
             return "Already two players", 403
-    result = match.submitTurn(uid, move)
+    result = m.submitTurn(uid, move)
     if result < 0:
         return "Invalid Move", 403
+    resp.headers["location"] = url_for("show_board", game=game)
+    return resp, 302
+
+@app.route("/<game>/rematch")
+def rematch(game):
+    m = matches[game]
+    uid = request.cookies.get("uid")
+    if uid != m.uidp1 and uid != m.uidp2:
+        return "Not a Player", 403
+    if m.checkWin():
+        matches[game] = Match(uid)
+    resp = make_response()
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
 
