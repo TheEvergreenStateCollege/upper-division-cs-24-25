@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}{% endblock %} {% block content %}
+<button id="newgame" onclick="window.location.href='/new_game'">
+New Game
+</button>
+<br/><br/><br/>
+<label for="gameid">Game ID:</label>
+<input type="text" id="gameid" name="gameid" size=6 /><br/>
+<button id="joingame" onclick="window.location.href=document.getElementById('gameid').value">
+Join Game
+</button>
+{% endblock %}
