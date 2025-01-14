@@ -102,7 +102,7 @@ def show_board(game):
     side = 0
     if request.cookies.get("uid") == m.uidp1:
         side = 1
-    elif request.cookies.get("uid") == m.uidp2:
+    elif request.cookies.get("uid") == m.uidp2 or m.uidp2 == "":
         side = 2
     tomove = 2
     if m.uidp1 == m.toMove:
