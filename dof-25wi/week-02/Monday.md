@@ -47,4 +47,5 @@ You can sign your name or not.
 >     * Richard? idk
 > * What piece should we automate first, so that our next activity one role can be replaced with a Raspberry Pi?
 >     * Getting readings from the scales.
-> — Shawn Bird
+
+— Shawn Bird
