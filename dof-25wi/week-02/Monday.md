@@ -38,3 +38,13 @@ Answer some or all of these questions:
 * What piece should we automate first, so that our next activity one role can be replaced with a Raspberry Pi?
 
 You can sign your name or not.
+
+> * Was this a realistic activity? Why or why not?
+>     * I think so. It isn't a perfect replica, but it helped us get a handle on the work flow.
+> * What would you change about it to make it more effective and realistic?
+>     * Maybe set up some tables and pantomime the actions ourselves.
+> * Who should we, or would you like to invite, on campus for our next mock-through on a future Monday?
+>     * Richard? idk
+> * What piece should we automate first, so that our next activity one role can be replaced with a Raspberry Pi?
+>     * Getting readings from the scales.
+> — Shawn Bird
