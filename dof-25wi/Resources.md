@@ -19,3 +19,8 @@ These describe the state of our project at beginning of Winter 2025.
 
 [Aquaponics Greenhouse at Open Source Ecology]()
 
+### Programming, Golang Tutorial, REST APIs
+
+Still looking for best tutorial for learning Golang and APIs from scratch.
+
+[Eli Bendersky's Golang and REST tutorial](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/)
