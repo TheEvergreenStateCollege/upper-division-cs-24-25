@@ -13,7 +13,7 @@ What does a facilitator do?
 
 Dani is facilitating.
 
-* 1:00pm Open discussion, task grooming
-* 1:30pm Paul Electronics Activity: extending internet access over powerlines
+* 1:00pm Open discussion, individual contracts, Canvas graded discussion
+* 1:30pm 
 * 2:00pm Break
 * 2:30pm [Open for an activity]
