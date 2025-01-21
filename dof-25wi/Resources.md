@@ -21,6 +21,21 @@ These describe the state of our project at beginning of Winter 2025.
 
 ### Programming, Golang Tutorial, REST APIs
 
-Still looking for best tutorial for learning Golang and APIs from scratch.
+Paul is evaluating 
+[Joe Calhoun's playlist for learning Go for Web and API development from scratch](https://www.youtube.com/playlist?list=PLVEltXlEeWgkKucovAMCih4T0hQITxRX3)
+
+This appears suitable for farm students who want to learn some programming, and understand some of the technical
+details for running the [Golang API from absentbird's repo]().
+
+If you have more time to learn web programming from the beginning, consider
+these courses from Evergreen's PaCE Web Design certificate program that are offered every year.
+
+* https://www.evergreen.edu/catalog/offering/web-design-i-42792
+* https://www.evergreen.edu/catalog/offering/web-design-ii-42791
+
+A more advanced, non-video tutorial. Paul is evaluating this for people who already know how to program,
+especially writing an API in another language besides Go. This is definitely not for beginners but may
+be suitable for existing computer science students.
 
 [Eli Bendersky's Golang and REST tutorial](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/)
+
