@@ -21,7 +21,6 @@ How do we order parts? Can we still add parts?
 * Tuesday 1/14
   * facilitated by Austin
   * (1 hour) activity led by Sean on how to use the golang API
-  * (30 minute) activity led by Dani on ??
 
 * Thursday 1/16
 
@@ -31,11 +30,16 @@ Internet access, wireless routers or over powerlines
 
 * Monday 1/20
 * Tuesday 1/21   
-* Thursday 1/23
+* [Week 03 Thursday 1/23](week-03/Thursday.md)
 
 ## Week 04
 
-Parts planning; where to store securely; how to check out; release forms
+Parts planning; where to store securely; how to check out; release forms.
+Tracking
+
+Drafting; how to draw 2D representations in CAD using sketchup.
+
+(You may choose to use Fusion 360, FreeCad, OpenSCAD, or similar if you know them) 
 
 * Monday 1/27
 * Tuesday 1/28   
@@ -43,7 +47,7 @@ Parts planning; where to store securely; how to check out; release forms
 
 ## Week 05
 
-Estimated arrival of parts, sorting and cataloguing.
+Discuss 
 
 * Monday 2/3
 * Tuesday 2/4   
@@ -51,11 +55,15 @@ Estimated arrival of parts, sorting and cataloguing.
 
 ## Week 06
 
+Field trip to Ocean Greens, debrief
+
 * Monday 2/10
 * Tuesday 2/11   
 * Thursday 2/13
 
 ## Week 07
+
+Estimated arrival of parts, sorting and cataloguing.
 
 * Monday 2/17
 * Tuesday 2/18   
@@ -76,6 +84,7 @@ Estimated arrival of parts, sorting and cataloguing.
 ## Week 10
 
 Final project presentation.
+Request time in computer club.
 
 * Monday 3/10
 * Tuesday 3/11   
