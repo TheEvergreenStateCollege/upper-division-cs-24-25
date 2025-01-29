@@ -21,7 +21,6 @@ How do we order parts? Can we still add parts?
 * Tuesday 1/14
   * facilitated by Austin
   * (1 hour) activity led by Sean on how to use the golang API
-  * (30 minute) activity led by Dani on ??
 
 * Thursday 1/16
 
@@ -31,52 +30,73 @@ Internet access, wireless routers or over powerlines
 
 * Monday 1/20
 * Tuesday 1/21   
-* Thursday 1/23
+* [Week 03 Thursday 1/23](week-03/Thursday.md)
 
 ## Week 04
 
-Parts planning; where to store securely; how to check out; release forms
+Parts planning; where to store securely; how to check out; release forms.
+Tracking
 
-* Monday 1/27
-* Tuesday 1/28   
-* Thursday 1/30
+Drafting; how to draw 2D representations in CAD using sketchup.
+
+(You may choose to use Fusion 360, FreeCad, OpenSCAD, or similar if you know them) 
+
+[First Draft of Final report]()
+
+* [Monday 1/27](week-04/Monday.md)
+  * Potluck, user
+  * Paul will lead a 1 hour activity on
+    * Kanban with GitHub Issues / Projects
+    * Clover API sandbox for updating inventory  
+* [Tuesday 1/28](week-04/Tuesday.md)
+  * Will teach a 30 minute activity on 3D CAD design or 3D printing
+* [Thursday 1/30](week-04/Thursday.md)
+  * Daniel Kerry, background in glass arts and also building Voron 3D printers
 
 ## Week 05
 
-Estimated arrival of parts, sorting and cataloguing.
-
-* Monday 2/3
-* Tuesday 2/4   
-* Thursday 2/6
+* [Monday 2/3](week-05/Monday.md)
+* [Tuesday 2/4](week-05/Tuesday.md)   
+* [Thursday 2/6](week-05/Thursday.md)
 
 ## Week 06
 
-* Monday 2/10
-* Tuesday 2/11   
-* Thursday 2/13
+Field trip to Ocean Greens, debrief
+
+* [Monday 2/10](week-06/Monday.md)
+* [Tuesday 2/11](week-06/Tuesday.md)  
+* [Thursday 2/13](week-06/Thursday.md)
 
 ## Week 07
 
-* Monday 2/17
-* Tuesday 2/18   
-* Thursday 2/20
+Estimated arrival of parts, sorting and cataloguing.
+
+Maintenance.
+
+Ask computer club for time to present projects in Week 10.
+
+* [Monday 2/17](week-07/Monday.md)
+* [Tuesday 2/18](week-07/Tuesday.md)   
+* [Thursday 2/20](week-07/Thursday.md)
 
 ## Week 08
 
-* Monday 2/24
-* Tuesday 2/25   
-* Thursday 2/27
+* [Monday 2/24](week-08/Monday.md)
+* [Tuesday 2/25](week-08/Tuesday.md)   
+* [Thursday 2/27](week-08/Thursday.md)
 
 ## Week 09
 
-* Monday 3/3
-* Tuesday 3/4   
-* Thursday 3/6
+* [Monday 3/3](week-09/Monday.md)
+* [Tuesday 3/4](week-09/Tuesday.md)   
+* [Thursday 3/6](week-09/Thursday.md)
+  * Dani leads 30 minute activity on data analytics or dashboard
 
 ## Week 10
 
 Final project presentation.
+Request time in computer club.
 
-* Monday 3/10
-* Tuesday 3/11   
-* Thursday 3/13
+* [Monday 3/10](week-10/Monday.md)
+* [Tuesday 3/11](week-10/Tuesday.md)   
+* [Thursday 3/13](week-10/Thursday.md)

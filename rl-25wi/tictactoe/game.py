@@ -1,10 +1,12 @@
-from flask import Flask, render_template, url_for, make_response, request, jsonify
+from flask import Flask, render_template, url_for, make_response, request, jsonify, g
 import random
 import string
 import secrets
 import json
+import sqlite3
 
 app = Flask(__name__)
+
 
 class Match:
     def __init__(self, uidp1):
@@ -12,7 +14,7 @@ class Match:
         self.uidp2 = ""
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.toMove = uidp1
-    
+
     def currentTurn(self):
         return 10 - self.board.count(0)
 
@@ -70,6 +72,30 @@ class Match:
 matches = {}
 yearsec = 31536000
 
+DATABASE = "./database.db"
+
+
+def get_db():
+    db = getattr(g, "_database", None)
+    if db is None:
+        db = g._database = sqlite3.connect(DATABASE)
+    return db
+
+
+@app.teardown_appcontext
+def close_connection(exception):
+    db = getattr(g, "_database", None)
+    if db is not None:
+        db.close()
+
+
+def query_db(query, args=(), one=False):
+    cur = get_db().execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+
+
 def newMatchID():
     characters = string.ascii_letters + string.digits
     while True:
@@ -79,11 +105,16 @@ def newMatchID():
         else:
             return id
 
+
 @app.route("/")
 def home():
     if request.is_json:
-        return '{"message": "Welcome! Go to /new_game to create a new game, and go to /<gameid> to join one."}', 200
+        return (
+            '{"message": "Welcome! Go to /new_game to create a new game, and go to /<gameid> to join one."}',
+            200,
+        )
     return render_template("home.html")
+
 
 @app.route("/new_game")
 def new_game():
@@ -94,12 +125,26 @@ def new_game():
         uid = secrets.token_hex(32)
         resp.set_cookie("uid", uid, max_age=yearsec)
     matches[matchID] = Match(uid)
+    # Store the new match into the database with player 2 empty
+    db = get_db()
+    cur = db.cursor()
+    cur.execute(
+        "INSERT INTO matches (player1, player2, matchID) VALUES (?, ?, ?)",
+        (uid, "", matchID),
+    )
+    cur.execute(
+        "INSERT INTO boards (index0, index1, index2, index3, index4, index5, index6, index7, index8, match) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (0, 0, 0, 0, 0, 0, 0, 0, 0, cur.lastrowid),
+    )
+    db.commit()
     if request.is_json:
         resp.headers["Content-Type"] = "application/json"
         resp.set_data('{"gameid": "' + matchID + '"}')
         return resp, 200
+
     resp.headers["location"] = url_for("show_board", game=matchID)
     return resp, 302
+
 
 @app.route("/<game>")
 def show_board(game):
@@ -119,7 +164,16 @@ def show_board(game):
         tomove = 1
     if win:
         tomove = 0
-    return render_template("board.html", match=m.board, win=win, turn=m.currentTurn(), side=side, tomove=tomove, gameid=game)
+    return render_template(
+        "board.html",
+        match=m.board,
+        win=win,
+        turn=m.currentTurn(),
+        side=side,
+        tomove=tomove,
+        gameid=game,
+    )
+
 
 @app.route("/<game>/<move>")
 def make_move(game, move):
@@ -131,6 +185,7 @@ def make_move(game, move):
         resp.set_cookie("uid", uid, max_age=yearsec)
         m.addPlayer(uid)
     else:
+        uid = ""
         resp.set_cookie("uid", uid, max_age=yearsec)
     if uid != m.uidp1 and m.uidp2 == "":
         if m.addPlayer(uid) != 0:
@@ -144,6 +199,7 @@ def make_move(game, move):
         return resp, 200
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
+
 
 @app.route("/<game>/rematch")
 def rematch(game):
@@ -165,6 +221,7 @@ def rematch(game):
         return resp, 200
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
+
 
 if __name__ == "__main__":
     app.run(debug=True)
