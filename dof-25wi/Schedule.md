@@ -99,6 +99,8 @@ Ask computer club for time to present projects in Week 10.
 
 ## Week 09
 
+March 1st deadline for summer financial aid.
+
 * [Monday 3/3](week-09/Monday.md)
 * [Tuesday 3/4](week-09/Tuesday.md)   
 * [Thursday 3/6](week-09/Thursday.md)
