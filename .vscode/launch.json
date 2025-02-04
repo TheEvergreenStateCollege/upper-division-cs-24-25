@@ -1,22 +1,18 @@
 {
-<<<<<<< HEAD
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug",
-            "program": "${workspaceFolder}/<executable file>",
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        }
-    ]
-=======
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+    {
+      "type": "cppdbg",
+      "request": "launch",
+      "name": "Debug",
+      "program": "${workspaceFolder}/<executable file>",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "lldb"
+    }, 
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -24,13 +20,10 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-<<<<<<< HEAD
       "cwd": "/workspace/upper-division-cs-24-25/pdc-24au",
       "program": "/workspace/upper-division-cs-24-25/pdc-24au/build/Debug/outDebug",
-=======
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
->>>>>>> refs/remotes/origin/main
+      //"cwd": ".",
+      //"program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
@@ -42,5 +35,4 @@
       ]
     }
   ]
->>>>>>> d699c8b4482071eab13f493ecae0c937fabf734b
 }
