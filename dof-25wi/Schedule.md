@@ -56,6 +56,8 @@ Discuss some security considerations about current hardware purchases.
 
 Did Marshal Urist talk happen, hosted by Jedidiah Haney ?
 
+Data mode
+
 * [Monday 2/3](week-05/Monday.md)
 * [Tuesday 2/4](week-05/Tuesday.md)   
 * [Thursday 2/6](week-05/Thursday.md)
@@ -67,7 +69,9 @@ Planning, learning goals for Ocean Greens field trip.
 Organic Farm site visit hosted by Ben Hunsdorfer and Principles of Farming (POF) program.
 
 * [Monday 2/10](week-06/Monday.md)
-* [Tuesday 2/11](week-06/Tuesday.md)  
+  * Tentative reschedule Marshall Urist hosted by Jed Haney, on modeling farm labor and system design.
+* [Tuesday 2/11](week-06/Tuesday.md)
+  * Both Trevor Speller and Antonio Alfonso are free, meet as SOS group to understand handware purchase considerations.
 * [Thursday 2/13](week-06/Thursday.md)
 
 ## Week 07
