@@ -1,61 +1,37 @@
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/main
->>>>>>> d699c8b4482071eab13f493ecae0c937fabf734b
   "configurations": [
     {
       "name": "linux-gcc-x64",
       "includePath": [
         "${workspaceFolder}/**"
       ],
-<<<<<<< HEAD
       "defines": [],
-      "macFrameworkPath": [
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-      ],
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
-      "intelliSenseMode": "linux-gcc-x64"
-    }
-  ],
-  "version": 4
-=======
+      // "macFrameworkPath": [  //There's no equivalent for Linux, idk how's that even here
+      //   "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+      // ],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",
       "cppStandard": "${default}",
       "intelliSenseMode": "linux-gcc-x64",
       "compilerArgs": [
+        //"-m32" and "-Wall" is one of the parameter for it, enabled as you see fit
         ""
       ]
+    },
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [],
+      "macFrameworkPath": [
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+      ],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-clang-arm64"
     }
   ],
   "version": 4
-<<<<<<< HEAD
-=======
-=======
-    "configurations": [
-        {
-            "name": "Mac",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [],
-            "macFrameworkPath": [
-                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-            ],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "macos-clang-arm64"
-        }
-    ],
-    "version": 4
->>>>>>> 247a320046e09fcff94bd0a783cff493167a7fb7
->>>>>>> refs/remotes/origin/main
->>>>>>> d699c8b4482071eab13f493ecae0c937fabf734b
 }
