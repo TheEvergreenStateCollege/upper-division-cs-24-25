@@ -45,9 +45,6 @@ Drafting; how to draw 2D representations in CAD using sketchup.
 
 * [Monday 1/27](week-04/Monday.md)
   * Potluck, user
-  * Paul will lead a 1 hour activity on
-    * Kanban with GitHub Issues / Projects
-    * Clover API sandbox for updating inventory  
 * [Tuesday 1/28](week-04/Tuesday.md)
   * Will teach a 30 minute activity on 3D CAD design or 3D printing
 * [Thursday 1/30](week-04/Thursday.md)
@@ -55,23 +52,38 @@ Drafting; how to draw 2D representations in CAD using sketchup.
 
 ## Week 05
 
+Discuss some security considerations about current hardware purchases.
+
+Did Marshal Urist talk happen, hosted by Jedidiah Haney ?
+
+Data mode
+
 * [Monday 2/3](week-05/Monday.md)
 * [Tuesday 2/4](week-05/Tuesday.md)   
 * [Thursday 2/6](week-05/Thursday.md)
 
 ## Week 06
 
-Field trip to Ocean Greens, debrief
+Planning, learning goals for Ocean Greens field trip.
+
+Organic Farm site visit hosted by Ben Hunsdorfer and Principles of Farming (POF) program.
 
 * [Monday 2/10](week-06/Monday.md)
-* [Tuesday 2/11](week-06/Tuesday.md)  
+  * Tentative reschedule Marshall Urist hosted by Jed Haney, on modeling farm labor and system design.
+* [Tuesday 2/11](week-06/Tuesday.md)
+  * Both Trevor Speller and Antonio Alfonso are free, meet as SOS group to understand handware purchase considerations.
 * [Thursday 2/13](week-06/Thursday.md)
 
 ## Week 07
 
+Field trip to Ocean Greens automated greenhouse.
+
 Estimated arrival of parts, sorting and cataloguing.
 
-Maintenance.
+Maintenance: give what we've built or plan to build, what are likely failure modes and how to work around them?
+* Failure doesn't have to mean dangerous situations like shorting power-to-ground and blowing out circuit breakers, although it can.
+* Failure could be governance risk: what happens if one quarter, there are no students interested in continuing an SOS?
+* Failure could be documentation risk: what happens when no one remembers how a particular part or subsystem works?
 
 Ask computer club for time to present projects in Week 10.
 
@@ -86,6 +98,8 @@ Ask computer club for time to present projects in Week 10.
 * [Thursday 2/27](week-08/Thursday.md)
 
 ## Week 09
+
+March 1st deadline for summer financial aid.
 
 * [Monday 3/3](week-09/Monday.md)
 * [Tuesday 3/4](week-09/Tuesday.md)   
