@@ -72,8 +72,10 @@ Organic Farm site visit hosted by Ben Hunsdorfer and Principles of Farming (POF)
 
 * [Monday 2/10](week-06/Monday.md)
 * [Tuesday 2/11](week-06/Tuesday.md)
+  * Daniel Kerry graciously agrees to facilitate.
   * Both Trevor Speller and Antonio Alfonso are free, meet as SOS group to understand handware purchase considerations.
 * [Thursday 2/13](week-06/Thursday.md)
+  * Dawon graciously agrees to facilitate. 
 
 ## Week 07
 
