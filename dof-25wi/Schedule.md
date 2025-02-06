@@ -75,7 +75,10 @@ Organic Farm site visit hosted by Ben Hunsdorfer and Principles of Farming (POF)
   * Daniel Kerry graciously agrees to facilitate.
   * Both Trevor Speller and Antonio Alfonso are free, meet as SOS group to understand handware purchase considerations.
 * [Thursday 2/13](week-06/Thursday.md)
-  * Dawon graciously agrees to facilitate. 
+  * Dawon graciously agrees to facilitate.
+  * 2-4pm first of two charettes for Steve Scheurell's Edible Campus  program, SEM II B 1107
+    * We'll walk down together
+    * Those we have to leave at 3pm (our normal class time) can leave then.
 
 ## Week 07
 
