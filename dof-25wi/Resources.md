@@ -39,3 +39,10 @@ be suitable for existing computer science students.
 
 [Eli Bendersky's Golang and REST tutorial](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/)
 
+### Drones
+
+Skydio 2+: One possible affordable American-made drone for agriculatural tracking, photogrammetry.
+
+For reference, "affordable" means about $1700
+
+https://www.ebay.com/itm/316188889000
