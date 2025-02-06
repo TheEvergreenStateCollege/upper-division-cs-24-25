@@ -61,6 +61,8 @@ Data mode
 * [Monday 2/3](week-05/Monday.md)
 * [Tuesday 2/4](week-05/Tuesday.md)   
 * [Thursday 2/6](week-05/Thursday.md)
+  * New scale design
+  * Facilitated by Ocean Greens
 
 ## Week 06
 
