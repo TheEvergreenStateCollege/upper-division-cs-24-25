@@ -1,14 +1,14 @@
 import random
+from tabulate import tabulate
 
 card_list = [1,2,3,4,5,6,7,8,9,10,10,10,10]
 def draw_card():
-    return card_list[random.randint(0,12)]
+    return random.choice(card_list)
 
 class Hand:
     def __init__(self):
         self.score = 0
         self.turn = 0
-        self.hits = 0
         self.usable_ace = False
         self.playing = True
         self.bust = False
@@ -20,7 +20,7 @@ class Hand:
         else:
             self.score += card
         if self.score > 21:
-            if self.usable_ace:
+            if self.usable_ace and self.score < 32:
                 self.score -= 10
                 self.usable_ace = False
             else:
@@ -28,8 +28,8 @@ class Hand:
                 self.playing = False
         self.turn += 1
     def stick(self):
-       self.turn += 1
        self.playing = False
+       self.turn += 1
 
 class Dealer:
     def __init__(self):
@@ -44,9 +44,9 @@ class Dealer:
 
 class Agent:
     def __init__(self):
-        self.new_episode()
         self.episodes = []
         self.states = {}
+        self.new_episode()
     def new_episode(self):
         self.episode = []
         self.hand = Hand()
@@ -55,20 +55,24 @@ class Agent:
         self.dealer = Dealer()
         while self.hand.score < 12:
             self.hand.hit()
-        state = self.State(self.hand, self.dealer.show)
+        state = self.State(self.hand.score, self.dealer.show, self.hand.usable_ace)
         self.episode.append(state)
+        if state.state_id() not in self.states:
+            self.states[state.state_id()] = state
+        else:
+            self.states[state.state_id()].visited += 1
     def play_hand(self):
         while self.hand.playing:
-            state = self.State(self.hand, self.dealer.show)
+            if self.hand.score < 20:
+                self.hand.hit()
+            else:
+                self.hand.stick()
+            state = self.State(self.hand.score, self.dealer.show, self.hand.usable_ace)
             if state.state_id() not in self.states:
                 self.states[state.state_id()] = state
             else:
                 self.states[state.state_id()].visited += 1
             self.episode.append(self.states[state.state_id()])
-            if self.hand.score < 20:
-                self.hand.hit()
-            else:
-                self.hand.stick()
         self.end_episode()
     def end_episode(self):
         # 0 = Draw, -1 = Lose, 1 = Win
@@ -86,18 +90,20 @@ class Agent:
         self.episodes.append(self.episode)
         self.new_episode()
     class State:
-        def __init__(self, hand, upcard):
-            self.hand = hand
+        def __init__(self, score, upcard, ace):
+            self.score = score
+            self.usable_ace = ace
             self.upcard = upcard
             self.visited = 1
             self.estimate = 0.0
         def state_id(self):
-            return (self.hand.score, self.upcard, self.hand.usable_ace)
-        def __str__(self):
-            return "Hand: " + str(self.hand.score) + " |  Upcard: " + str(self.upcard) + " | Usable Ace: " + str(self.hand.usable_ace) + " | Estimate: " + str(round(self.estimate, 2)) + " | Visited: " + str(self.visited)
+            return (self.score, self.upcard, self.usable_ace)
 
 agent = Agent()
 while len(agent.episodes) < 1000:
     agent.play_hand()
+vals = []
 for s in agent.states.values():
-    print(s)
+    vals.append([s.score, s.upcard, s.usable_ace, round(s.estimate, 2), s.visited])
+vals.sort(key=lambda x: (x[0], x[1]))
+print(tabulate(vals, headers=['Hand', 'Upcard', 'Ace', 'Estimate', 'Visited']))
