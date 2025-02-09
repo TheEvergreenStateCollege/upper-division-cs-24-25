@@ -61,6 +61,8 @@ Data mode
 * [Monday 2/3](week-05/Monday.md)
 * [Tuesday 2/4](week-05/Tuesday.md)   
 * [Thursday 2/6](week-05/Thursday.md)
+  * New scale design
+  * Facilitated by Ocean Greens
 
 ## Week 06
 
@@ -69,14 +71,16 @@ Planning, learning goals for Ocean Greens field trip.
 Organic Farm site visit hosted by Ben Hunsdorfer and Principles of Farming (POF) program.
 
 * [Monday 2/10](week-06/Monday.md)
-  * Tentative reschedule Marshall Urist hosted by Jed Haney, on modeling farm labor and system design.
 * [Tuesday 2/11](week-06/Tuesday.md)
+  * Daniel Kerry graciously agrees to facilitate.
   * Both Trevor Speller and Antonio Alfonso are free, meet as SOS group to understand handware purchase considerations.
 * [Thursday 2/13](week-06/Thursday.md)
+  * Dawon graciously agrees to facilitate.
+  * 2-4pm [Charette for Steve Scheurell's Edible Campus  program](https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25/blob/main/dof-25wi/Edible-Campus-Charettes.md), SEM II B 1107
+    * We'll walk down together
+    * Those we have to leave at 3pm (our normal class time) can leave then.
 
 ## Week 07
-
-Field trip to Ocean Greens automated greenhouse.
 
 Estimated arrival of parts, sorting and cataloguing.
 
@@ -87,13 +91,17 @@ Maintenance: give what we've built or plan to build, what are likely failure mod
 
 Ask computer club for time to present projects in Week 10.
 
-* [Monday 2/17](week-07/Monday.md)
+* Monday 2/17
+  * In-person Potluck cancelled, President's Day Holiday
 * [Tuesday 2/18](week-07/Tuesday.md)   
 * [Thursday 2/20](week-07/Thursday.md)
 
 ## Week 08
 
 * [Monday 2/24](week-08/Monday.md)
+  * In-person Potluck cancelled.
+  * Field trip to Ocean Greens automated greenhouse, need to finalize vans rental
+  * Invite POF students, Ben Hunsdorfer, farm manager and staff
 * [Tuesday 2/25](week-08/Tuesday.md)   
 * [Thursday 2/27](week-08/Thursday.md)
 
@@ -102,6 +110,9 @@ Ask computer club for time to present projects in Week 10.
 March 1st deadline for summer financial aid.
 
 * [Monday 3/3](week-09/Monday.md)
+  * This the next potluck 
+  * Tentative reschedule Marshall Urist hosted by Jed Haney, on modeling farm labor and system design.
+
 * [Tuesday 3/4](week-09/Tuesday.md)   
 * [Thursday 3/6](week-09/Thursday.md)
   * Dani leads 30 minute activity on data analytics or dashboard
