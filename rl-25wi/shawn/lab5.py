@@ -20,7 +20,7 @@ from tabulate import tabulate # For pretty printing of policy
 ## 1. build the environment
 ## 2. build a simple agent
 ## 3. collect data
-## Work in groups and make sure  include the names of the members in your group
+## Work in groups and make sure to include the names of the members in your group
 
 # Create a list of possible card draws, a 10 for each face card
 card_list = [1,2,3,4,5,6,7,8,9,10,10,10,10]
