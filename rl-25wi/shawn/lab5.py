@@ -38,12 +38,15 @@ class Hand:
         self.bust = False
     def hit(self):
         card = draw_card()
+        # Handle aces
         if card == 1 and self.score < 11:
             self.score += 11
             self.usable_ace = True
         else:
             self.score += card
+        # Handle busts
         if self.score > 21:
+            # Use an ace to prevent busting when possible
             if self.usable_ace and self.score < 32:
                 self.score -= 10
                 self.usable_ace = False
@@ -82,16 +85,19 @@ class Agent:
         self.hand.hit()
         self.hand.hit()
         self.dealer = Dealer()
+        # It's always better to hit with a score below 12, so it's done automatically
         while self.hand.score < 12:
             self.hand.hit()
+        # Update starting state in policy and add it to the episode
         state = self.State(self.hand.score, self.dealer.show, self.hand.usable_ace)
-        self.episode.append(state)
         if state.state_id() not in self.states:
             self.states[state.state_id()] = state
         else:
             self.states[state.state_id()].visited += 1
+        self.episode.append(state)
     def play_hand(self):
         # By default the agent will hit until reaching a score of 20 or greater
+        # More complex agent behaviour should go here
         while self.hand.playing:
             if self.hand.score < 20:
                 self.hand.hit()
