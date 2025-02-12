@@ -73,9 +73,9 @@ Organic Farm site visit hosted by Ben Hunsdorfer and Principles of Farming (POF)
 * [Monday 2/10](week-06/Monday.md)
 * [Tuesday 2/11](week-06/Tuesday.md)
   * Daniel Kerry graciously agrees to facilitate.
-  * Both Trevor Speller and Antonio Alfonso are free, meet as SOS group to understand handware purchase considerations.
 * [Thursday 2/13](week-06/Thursday.md)
-  * Dawon graciously agrees to facilitate.
+  * Dawson graciously agrees to facilitate.
+  * 1-2pm Meeting to discuss the student project for Farm automation. Specifically to discuss the implmentations for network connectivity, support from OIT, and other input from IT Subject Matter Experts.
   * 2-4pm [Charette for Steve Scheurell's Edible Campus  program](https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25/blob/main/dof-25wi/Edible-Campus-Charettes.md), SEM II B 1107
     * We'll walk down together
     * Those we have to leave at 3pm (our normal class time) can leave then.
