@@ -1,7 +1,7 @@
 #!/bin/python3
-import sys # For reading cli arguments
-import random # For drawing cards
-from tabulate import tabulate # For pretty printing of policy
+import sys  # For reading cli arguments
+import random  # For drawing cards
+from tabulate import tabulate  # For pretty printing of policy
 
 # Group:
 # Shawn Bird
@@ -11,10 +11,10 @@ from tabulate import tabulate # For pretty printing of policy
 
 ## RL Lab 5
 ## Goals: understand Monte Carlo simulation, in particular Blackjack
-## Task: program the simulation in Python, where the agent and the 
+## Task: program the simulation in Python, where the agent and the
 ## environment are distinct. The agent estimates the value of a state
 ## by averaging the returns using first visit.
-## A state is the sum of values in a hand plus the value of the 
+## A state is the sum of values in a hand plus the value of the
 ## dealer's card showing plus whether there is a usable ace.
 ## There are about 200 states.
 ## 1. build the environment
@@ -23,9 +23,12 @@ from tabulate import tabulate # For pretty printing of policy
 ## Work in groups and make sure to include the names of the members in your group
 
 # Create a list of possible card draws, a 10 for each face card
-card_list = [1,2,3,4,5,6,7,8,9,10,10,10,10]
+card_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+
+
 def draw_card():
     return random.choice(card_list)
+
 
 # Hands hold the state relative to the player. Agents will have a hand and so will the dealer
 # The hit() and stick() methods allow the hand to be played
@@ -36,6 +39,7 @@ class Hand:
         self.usable_ace = False
         self.playing = True
         self.bust = False
+
     def hit(self):
         card = draw_card()
         # Handle aces
@@ -54,9 +58,11 @@ class Hand:
                 self.bust = True
                 self.playing = False
         self.turn += 1
+
     def stick(self):
-       self.playing = False
-       self.turn += 1
+        self.playing = False
+        self.turn += 1
+
 
 # Dealer class to hold dealer behavior
 # By default the dealer will hit until they have a score of 17 or more
@@ -71,12 +77,14 @@ class Dealer:
         else:
             self.hand.stick()
 
+
 # Class to hold the agent, including episodes and states
 class Agent:
     def __init__(self):
         self.episodes = []
         self.states = {}
         self.new_episode()
+
     # Episodes are used to segment hands
     # new_episode() resets the hand and hits until a score of 12 or more
     def new_episode(self):
@@ -95,14 +103,11 @@ class Agent:
         else:
             self.states[state.state_id()].visited += 1
         self.episode.append(state)
+
     def play_hand(self):
         # By default the agent will hit until reaching a score of 20 or greater
         # More complex agent behaviour should go here
         while self.hand.playing:
-            if self.hand.score < 20:
-                self.hand.hit()
-            else:
-                self.hand.stick()
             # Add to the visited counter for each state reached, starts at 1
             state = self.State(self.hand.score, self.dealer.show, self.hand.usable_ace)
             if state.state_id() not in self.states:
@@ -111,6 +116,7 @@ class Agent:
                 self.states[state.state_id()].visited += 1
             self.episode.append(self.states[state.state_id()])
         self.end_episode()
+
     def end_episode(self):
         # Calculate the reward
         # 0 = Draw, -1 = Lose, 1 = Win
@@ -134,19 +140,38 @@ class Agent:
         self.episodes.append(self.episode)
         # Start the next episode and draw a fresh hand
         self.new_episode()
-    # Class to hold the states used for calculating the policy
+
+        # Class to hold the states used for calculating the policy
+
     class State:
         def __init__(self, score, upcard, ace):
             self.score = score
             self.usable_ace = ace
             self.upcard = upcard
             self.visited = 1
+            # 1=hit 0=stick
+            self.actions = [self.Action(0), self.Action(1)]
             self.estimate = 0.0
             self.outcome = 0
+
+        class Action:
+            def __init__(self, action):
+                self.action = action
+                self.xValue = 0
+                self.taken = 0
+                self.pi = 0.5
+
         def state_id(self):
             return (self.score, self.upcard, self.usable_ace)
 
-hands = 100 # Default value
+        def chooseAction(self):
+            index = 0
+            if random.random() > self.actions[0].pi:
+                index = 1
+            return index
+
+
+hands = 100  # Default value
 # Check first argument for custom number of hands
 if len(sys.argv) > 1 and sys.argv[1].isdigit():
     hands = int(sys.argv[1])
@@ -157,7 +182,7 @@ agent = Agent()
 while len(agent.episodes) < hands:
     agent.play_hand()
 
-vals = [] # To store the policy as a two dimensional array
+vals = []  # To store the policy as a two dimensional array
 # Load each state into vals
 for s in agent.states.values():
     vals.append([s.score, s.upcard, s.usable_ace, round(s.estimate, 2), s.visited])
@@ -165,8 +190,8 @@ for s in agent.states.values():
 # Sort by ending score first, then by upcard
 vals.sort(key=lambda x: (x[0], x[1]))
 # Print the tabulated data with headers
-print(tabulate(vals, headers=['Hand', 'Upcard', 'Ace', 'Estimate', 'Visited']))
-print() # Blank line for spacing
+print(tabulate(vals, headers=["Hand", "Upcard", "Ace", "Estimate", "Visited"]))
+print()  # Blank line for spacing
 
 # Count up the total wins, losses and draws then print them
 wins = 0
