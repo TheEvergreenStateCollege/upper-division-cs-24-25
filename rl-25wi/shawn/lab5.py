@@ -8,6 +8,7 @@ from tabulate import tabulate  # For pretty printing of policy
 # Austin Strayer
 # Hayden Edge
 # Dawson White
+# Andersen Ander
 
 ## RL Lab 5
 ## Goals: understand Monte Carlo simulation, in particular Blackjack
@@ -21,6 +22,9 @@ from tabulate import tabulate  # For pretty printing of policy
 ## 2. build a simple agent
 ## 3. collect data
 ## Work in groups and make sure to include the names of the members in your group
+
+# Chance of a random action
+epsilon = 0.1
 
 # Create a list of possible card draws, a 10 for each face card
 card_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -109,6 +113,13 @@ class Agent:
         # More complex agent behaviour should go here
         while self.hand.playing:
             # Add to the visited counter for each state reached, starts at 1
+            state = self.episode[-1]
+            action = state.chooseAction()
+            if action.action == 1:
+                self.hand.hit()
+            else:
+                self.hand.stick()
+            action.taken += 1
             state = self.State(self.hand.score, self.dealer.show, self.hand.usable_ace)
             if state.state_id() not in self.states:
                 self.states[state.state_id()] = state
@@ -133,10 +144,21 @@ class Agent:
         self.episode[-1].outcome = reward
         # All other conditions result in a draw
         # Add the reward to the average for each state in the episode
-        for i in range(len(self.episode) - 1, -1, -1):
+        act = 0
+        if self.hand.bust:
+            act = 1
+        state = self.episode[-1]
+        ot = state.actions[act].xValue * (state.actions[act].taken - 1)
+        state.actions[act].xValue = (ot + reward) / state.actions[act].taken
+        ot = state.estimate * (state.visited - 1)
+        state.estimate = (ot + reward) / state.visited
+        act = 1
+        for i in range(len(self.episode) - 2, -1, -1):
             state = self.episode[i]
             ot = state.estimate * (state.visited - 1)
             state.estimate = (ot + reward) / state.visited
+            ot = state.actions[act].xValue * (state.actions[act].taken - 1)
+            state.actions[act].xValue = (ot + reward) / state.actions[act].taken
         self.episodes.append(self.episode)
         # Start the next episode and draw a fresh hand
         self.new_episode()
@@ -158,17 +180,22 @@ class Agent:
             def __init__(self, action):
                 self.action = action
                 self.xValue = 0
-                self.taken = 0
+                self.taken = 1
                 self.pi = 0.5
 
         def state_id(self):
             return (self.score, self.upcard, self.usable_ace)
 
         def chooseAction(self):
-            index = 0
-            if random.random() > self.actions[0].pi:
-                index = 1
-            return index
+            if random.random() < epsilon:
+                return random.choice(self.actions)
+            else:
+                if self.actions[0].xValue > self.actions[1].xValue:
+                    return self.actions[0]
+                elif self.actions[1].xValue > self.actions[0].xValue:
+                    return self.actions[1]
+                else:
+                    return random.choice(self.actions)
 
 
 hands = 100  # Default value
@@ -185,12 +212,12 @@ while len(agent.episodes) < hands:
 vals = []  # To store the policy as a two dimensional array
 # Load each state into vals
 for s in agent.states.values():
-    vals.append([s.score, s.upcard, s.usable_ace, round(s.estimate, 2), s.visited])
+    vals.append([s.score, s.upcard, s.usable_ace, round(s.estimate, 2), s.actions[1].xValue, s.actions[0].xValue, s.visited])
 
 # Sort by ending score first, then by upcard
 vals.sort(key=lambda x: (x[0], x[1]))
 # Print the tabulated data with headers
-print(tabulate(vals, headers=["Hand", "Upcard", "Ace", "Estimate", "Visited"]))
+print(tabulate(vals, headers=["Hand", "Upcard", "Ace", "Estimate", "Hit Est.", "Stick Est.", "Visited"]))
 print()  # Blank line for spacing
 
 # Count up the total wins, losses and draws then print them
