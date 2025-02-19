@@ -76,25 +76,25 @@ Organic Farm site visit hosted by Ben Hunsdorfer and Principles of Farming (POF)
 * [Thursday 2/13](week-06/Thursday.md)
   * Dawson graciously agrees to facilitate.
   * 1-2pm Meeting to discuss the student project for Farm automation. Specifically to discuss the implmentations for network connectivity, support from OIT, and other input from IT Subject Matter Experts.
-  * 2-4pm [Charette for Steve Scheurell's Edible Campus  program](https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25/blob/main/dof-25wi/Edible-Campus-Charettes.md), SEM II B 1107
-    * We'll walk down together
-    * Those we have to leave at 3pm (our normal class time) can leave then.
 
 ## Week 07
 
-Estimated arrival of parts, sorting and cataloguing.
+See Paul for suggestions about your presentations and scheduling a time.
+
+Work on maintenance / governance plan for IT department.
 
 Maintenance: give what we've built or plan to build, what are likely failure modes and how to work around them?
 * Failure doesn't have to mean dangerous situations like shorting power-to-ground and blowing out circuit breakers, although it can.
 * Failure could be governance risk: what happens if one quarter, there are no students interested in continuing an SOS?
 * Failure could be documentation risk: what happens when no one remembers how a particular part or subsystem works?
 
-Ask computer club for time to present projects in Week 10.
-
 * Monday 2/17
   * In-person Potluck cancelled, President's Day Holiday
 * [Tuesday 2/18](week-07/Tuesday.md)   
 * [Thursday 2/20](week-07/Thursday.md)
+  * 2-4pm [Charette for Steve Scheurell's Edible Campus  program](https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25/blob/main/dof-25wi/Edible-Campus-Charettes.md), SEM II B 1107
+    * We'll walk down together
+    * Those we have to leave at 3pm (our normal class time) can leave then.
 
 ## Week 08
 
@@ -106,6 +106,8 @@ Ask computer club for time to present projects in Week 10.
 * [Thursday 2/27](week-08/Thursday.md)
 
 ## Week 09
+
+Estimated arrival of parts, sorting and cataloguing.
 
 March 1st deadline for summer financial aid.
 
