@@ -2,22 +2,22 @@
 
 Monday, February 24th
 
-* We still need a second van driver, leaving early to arrive back on campus at 3:30pm.
-* Will and Daniel volunteer to be drivers, need to take 15 min canvas course.
+Who:
 
-* Bring your driver's license to Motor Pool. Paul and Daniel will go after class.
-  
-(Paul will be the backup driver).
+SOS students, POF students, staff, and faculty are welcome!
 
-Day before: drivers can pick up keys on Friday (2/21).
+Drivers:
+* Austin Strayer, normal return to campus (by 5pm)
+* Daniel Kerry, Paul backup, early return to campus (by 3:30pm)
 
-Pack:
+## To Pack:
 
 * a Bag lunch
 * Cold weather clothing
 * (phone) camera for pictures, with Ocean Green's permission
 
-* 9:00am Meet in Parking Lot C, Drive to Longview, WA
+## Schedule
+* 9:00am Meet in Parking Lot C, exchange phone numbers, share address, drive to Longview, WA
 * 11:00am Arrive at Oceans Greens, tour.
 * 12:00pm In teams, draw system diagram and data flow diagrams for how you think Ocean Greens works.
   * include an API server, dashboard, a router gateway / firewall.
@@ -25,6 +25,14 @@ Pack:
 * 1:30pm Discuss system diagram and data flow. Early crew drives back to Olympia.
 * 3:30pm Late crew drives back to Olympia.
 * 5:00pm Return vans to motor pool with full tank, refill with gas cards in driver side visor.
+
+## Driver Prep
+
+* Bring your driver's license to Motor Pool with release forms.
+* [Pass the 15 minute canvas course](https://www.evergreen.edu/offices-services/motor-pool/becoming-driver)
+* Pick up keys the day before (Friday, 2/21) because motor van pool is not open at 9am.
+
+## Contact
 
 In case of getting lost, call
 
