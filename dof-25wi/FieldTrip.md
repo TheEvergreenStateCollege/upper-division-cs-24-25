@@ -5,11 +5,17 @@ Monday, February 24th
 * We still need a second van driver, leaving early to arrive back on campus at 3:30pm.
 * Will and Daniel volunteer to be drivers, need to take 15 min canvas course.
 
-* Bring your driver's license to Motor Pool. Paul will go after class.
+* Bring your driver's license to Motor Pool. Paul and Daniel will go after class.
   
-(Paul will be the backup driver)
+(Paul will be the backup driver).
 
-Day before: drivers have to pick up keys on Friday (2/21)
+Day before: drivers can pick up keys on Friday (2/21).
+
+Pack:
+
+* a Bag lunch
+* Cold weather clothing
+* (phone) camera for pictures, with Ocean Green's permission
 
 * 9:00am Meet in Parking Lot C, Drive to Longview, WA
 * 11:00am Arrive at Oceans Greens, tour.
