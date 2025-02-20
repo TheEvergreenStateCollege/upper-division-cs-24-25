@@ -43,8 +43,14 @@ Drivers:
 * Pick up keys the day before (Friday, 2/21) because motor van pool is not open at 9am.
 * 2x 8-passenger vans, E-plates (Evergreen vehicles, not state motorpool)
 
+Roadside assistance is available 24 hours via our contracted Fleet Roadside Service.  The number will be in the key packet or glove box packet inside the vehicle.
+
+Use the WEX Fleet Fuel card to pay for the Fleet Roadside Services.
+
 ## Contact
 
 In case of getting lost, call
 
 Paul 253-235-9025
+
+
