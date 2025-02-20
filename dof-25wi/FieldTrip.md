@@ -26,11 +26,22 @@ Drivers:
 * 3:30pm Late crew drives back to Olympia.
 * 5:00pm Return vans to motor pool with full tank, refill with gas cards in driver side visor.
 
+## Attendance
+
+* (+6) Ben Hunsdorfer and 5-6 POF students
+* (+3) Melissa, Paul, Trisha
+* (+8) SOS students
+  * Dani, Shawn, Austin, Daniel, Dawson, Hayden, Griffin, Will
+* (+1) Guests (Evergreen students): Peniel
+
+18, need 2x 12-passenger van
+
 ## Driver Prep
 
 * Bring your driver's license to Motor Pool with release forms.
 * [Pass the 15 minute canvas course](https://www.evergreen.edu/offices-services/motor-pool/becoming-driver)
 * Pick up keys the day before (Friday, 2/21) because motor van pool is not open at 9am.
+* 2x 8-passenger vans, E-plates (Evergreen vehicles, not state motorpool)
 
 ## Contact
 
