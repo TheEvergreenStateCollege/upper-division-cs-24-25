@@ -11,8 +11,8 @@ def get_estimate(reward=0, actions=[0], discount=0.9):
     return estimate
 
 # Starting Inputs:
-reward = 1 # Reward from current state
-actions = [-1, 2, 5, 10] # Policy evaluation of actions
+reward = 1 # Reward from the current state
+actions = [-1, 2, 5, 10] # Policy evaluation of potential actions
 discount = 0.9 # Falloff over distance
 
 estimate = get_estimate(reward, actions, discount)
