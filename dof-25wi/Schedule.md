@@ -102,7 +102,8 @@ Maintenance: give what we've built or plan to build, what are likely failure mod
   * In-person Potluck cancelled.
   * Field trip to Ocean Greens automated greenhouse, need to finalize vans rental
   * Invite POF students, Ben Hunsdorfer, farm manager and staff
-* [Tuesday 2/25](week-08/Tuesday.md)   
+* [Tuesday 2/25](week-08/Tuesday.md)
+  * Will Wiencken, how to change LED on PCC sign
 * [Thursday 2/27](week-08/Thursday.md)
 
 ## Week 09
