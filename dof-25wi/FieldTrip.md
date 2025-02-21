@@ -10,11 +10,13 @@ Drivers:
 * Austin Strayer, normal return to campus (by 5pm)
 * Daniel Kerry, Paul backup, early return to campus (by 3:30pm)
 
-## To Pack:
+## To Pack / Prepare That Morning:
 
 * a Bag lunch
 * Cold weather clothing
 * (phone) camera for pictures, with Ocean Green's permission
+* [Sign release form](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://sites.evergreen.edu/ltc/wp-content/uploads/sites/440/2022/03/Academic-Field-Trip-Waiver.10-2015-Copy.doc&ved=2ahUKEwiI67jv-NWLAxXOFjQIHbr_FoUQFnoECBUQAQ&usg=AOvVaw3_pr88KuedK-wVTdd5uYnU)
+  * Paper forms and pen will be available that morning, just read and bring your info in advance.
 
 ## Schedule
 * 9:00am Meet in Parking Lot C, exchange phone numbers, share address, drive to Longview, WA
