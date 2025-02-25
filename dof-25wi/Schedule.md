@@ -118,7 +118,7 @@ March 1st deadline for summer financial aid.
   * This the next potluck
   * Leif leads a 30 minute activity on composter
   * Paul leads a 30 minute activity on lifting a hexapod robot leg
-  * Tentative reschedule Marshall Urist hosted by Jed Haney, on modeling farm labor and system design.
+  * Tentative reschedule Marshall Urist hosted by Jed Haney, on wash station, timelines, overall integration of our hardware
 
 * [Tuesday 3/4](week-09/Tuesday.md)
   * Will work with a facilitator
