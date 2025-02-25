@@ -125,7 +125,7 @@ March 1st deadline for summer financial aid.
   * Hayden leads a 30 minute activity on any of the following: gORM, authentication considerations, representing seeds in data
 * [Thursday 3/6](week-09/Thursday.md)
   * Will work with a facilitator
-  * Dani leads 30 minute activity on data analytics or dashboard
+  * Dani speaks for 30 minutes, leads 30m activity on data analytics or dashboard (1 hour)
 
 ## Week 10
 
