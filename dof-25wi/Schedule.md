@@ -92,19 +92,20 @@ Maintenance: give what we've built or plan to build, what are likely failure mod
   * In-person Potluck cancelled, President's Day Holiday
 * [Tuesday 2/18](week-07/Tuesday.md)   
 * [Thursday 2/20](week-07/Thursday.md)
-  * 2-4pm [Charette for Steve Scheurell's Edible Campus  program](https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25/blob/main/dof-25wi/Edible-Campus-Charettes.md), SEM II B 1107
-    * We'll walk down together
-    * Those we have to leave at 3pm (our normal class time) can leave then.
 
 ## Week 08
 
 * [Monday 2/24](week-08/Monday.md)
-  * In-person Potluck cancelled.
-  * Field trip to Ocean Greens automated greenhouse, need to finalize vans rental
+  * Instead of potluck, Field trip to Ocean Greens automated greenhouse, need to finalize vans rental
   * Invite POF students, Ben Hunsdorfer, farm manager and staff
 * [Tuesday 2/25](week-08/Tuesday.md)
-  * Will Wiencken, how to change LED on PCC sign
+  * Discussion (Paul will facilitate)
+  * 1:30pm Will Wiencken, how to change LED on PCC sign
+  * 2:05pm Work on writing 
 * [Thursday 2/27](week-08/Thursday.md)
+  * 2-4pm [Charette for Steve Scheurell's Edible Campus  program](https://github.com/TheEvergreenStateCollege/upper-division-cs-24-25/blob/main/dof-25wi/Edible-Campus-Charettes.md), SEM II B 1107
+    * We'll walk down together
+    * Those we have to leave at 3pm (our normal class time) can leave then.
 
 ## Week 09
 
@@ -113,18 +114,25 @@ Estimated arrival of parts, sorting and cataloguing.
 March 1st deadline for summer financial aid.
 
 * [Monday 3/3](week-09/Monday.md)
-  * This the next potluck 
+  * Will work with a facilitator 
+  * This the next potluck
+  * Leif leads a 30 minute activity on composter
+  * Paul leads a 30 minute activity on lifting a hexapod robot leg
   * Tentative reschedule Marshall Urist hosted by Jed Haney, on modeling farm labor and system design.
 
-* [Tuesday 3/4](week-09/Tuesday.md)   
+* [Tuesday 3/4](week-09/Tuesday.md)
+  * Will work with a facilitator
+  * Hayden leads a 30 minute activity on any of the following: gORM, authentication considerations, representing seeds in data
 * [Thursday 3/6](week-09/Thursday.md)
+  * Will work with a facilitator
   * Dani leads 30 minute activity on data analytics or dashboard
 
 ## Week 10
 
 Final project presentation.
-Request time in computer club.
 
 * [Monday 3/10](week-10/Monday.md)
-* [Tuesday 3/11](week-10/Tuesday.md)   
+* [Tuesday 3/11](week-10/Tuesday.md)
+  * Jed leads a 30 minute activity on management units, or CSA business
 * [Thursday 3/13](week-10/Thursday.md)
+  * Final Team Presentations in Zoom Breakout Rooms
