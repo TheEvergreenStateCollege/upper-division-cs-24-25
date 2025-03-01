@@ -37,6 +37,7 @@ class Agent:
         self.estimate = [0 for _ in range(k)]
         self.count = [0 for _ in range(k)]
         self.epsilon = temp
+        self.accuracy = []
     # Integrate a new reward into the lists
     def process(self, i, r):
         p = self.estimate[i]
@@ -59,14 +60,13 @@ class Agent:
         self.process(index, reward)
     # Run a series of steps
     def trial(self, count):
-        self.accurracy = []
         optimal = max(bandits, key=lambda x: x.mean)
         for _ in range(count):
             a.step()
             ratio = max(a.estimate) / optimal.mean
             if ratio > 1:
                 ratio = 2 - ratio
-            self.accurracy.append(ratio)
+            self.accuracy.append(ratio)
 
 # Single 1k step trial as demonstration
 print("1000 step trial:")
