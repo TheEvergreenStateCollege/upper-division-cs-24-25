@@ -2,12 +2,12 @@
 def get_estimate(reward=0, actions=[0], discount=0.9):
     # Start estimate with current reward
     estimate = reward
+    # Probability of taking any action (if chosen randomly)
+    probability = 1.0 / len(actions)
     # Loop over all potential actions
     for action in actions:
-        # Probability of taking the action (if chosen randomly)
-        probability = 1.0 / len(states) # Dependent on policy
         # Add proportional value to the estimate
-        estimate += action * discount * probability
+        estimate += action * probability * discount
     return estimate
 
 # Starting Inputs:
