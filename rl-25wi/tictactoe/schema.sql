@@ -17,11 +17,11 @@ CREATE TABLE boards (
 
 DROP TABLE IF EXISTS matches;
 
-CREATE TABLE matches(
+CREATE TABLE matches (
   id TEXT PRIMARY KEY,
   created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   player1 TEXT NOT NULL,
-  player2 TEXT NOT NULL,
+  player2 TEXT NOT NULL
 );
 
 DROP TABLE IF EXISTS policy;
@@ -47,5 +47,3 @@ CREATE TABLE policy (
   count7 INTEGER DEFAULT 0,
   count8 INTEGER DEFAULT 0
 );
-
-CREATE UNIQUE INDEX state_idx ON policy(state);
