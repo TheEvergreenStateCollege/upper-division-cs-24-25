@@ -53,6 +53,7 @@ class Match:
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.toMove = self.uidp1
         self.agent = Agent(self)
+        self.boardID = 0
         
     def currentTurn(self):
         return 10 - self.board.count(0)
@@ -60,7 +61,7 @@ class Match:
     def boardState(self):
         return int(''.join(str(num) for num in self.board))
 
-    def newMatch():
+    def newMatch(self):
         characters = string.ascii_letters + string.digits
         matchID = "".join(random.choice(characters) for _ in range(5))
         while matchID in matches:
@@ -71,13 +72,14 @@ class Match:
         db.commit()
         return matchID
 
-    def newBoard(matchID):
+    def newBoard(self, matchID):
         cur = db.cursor()
         cur.execute("INSERT INTO boards (match) VALUES (?)", matchID)
         self.boardID = cur.lastrowid
         db.commit()
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.toMove = self.uidp1
+        self.agent = Agent(self)
         if self.toMove == AIUID:
             self.submitTurn(AIUID, self.agent.nextMove())
 
