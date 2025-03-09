@@ -1,10 +1,14 @@
 {% extends "base.html" %} {% block title %}{% endblock %} {% block content %}
-<button id="newgame" onclick="window.location.href='/new_game'">
-New Game
+<button class="newgame" onclick="window.location.href='/new_game'">
+Two Player
 </button>
 <br/><br/>
-<button id="newbotgame" onclick="window.location.href='/new_game'">
-Challenge Bot
+<button class="newgame" onclick="window.location.href='/new_bot_game'">
+Single Player
+</button>
+<br/><br/>
+<button class="newgame" onclick="window.location.href='/new_share_game'">
+Single Device
 </button>
 <br/><br/><br/>
 <label for="gameid">Game ID:</label>
