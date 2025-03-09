@@ -265,7 +265,7 @@ def new_game():
     resp = make_response()
     if not uid:
         uid = secrets.token_hex(32)
-        resp.set_cookie("uid", uid, max_age=MAXAGE)
+        resp.set_cookie("uid", value=uid, max_age=MAXAGE)
     m = Match(uid)
     matchID = m.newMatch()
     m.newBoard(matchID)
@@ -310,12 +310,12 @@ def make_move(game, move):
     uid = request.cookies.get("uid")
     resp = make_response()
     m = matches[game]
-    if uid == "":
+    if uid is None:
         uid = secrets.token_hex(32)
-        resp.set_cookie("uid", uid, max_age=MAXAGE)
+        resp.set_cookie("uid", value=uid, max_age=MAXAGE)
         m.addPlayer(uid)
     else:
-        resp.set_cookie("uid", uid, max_age=MAXAGE)
+        resp.set_cookie("uid", value=uid, max_age=MAXAGE)
     if uid != m.uidp1 and m.uidp2 == "":
         if m.addPlayer(uid):
             return "Already two players", 403
