@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, make_response, request, jsonify
+from flask import Flask, render_template, url_for, make_response, request, jsonify, g
 import random
 import string
 import secrets
@@ -10,39 +10,52 @@ import sqlite3
 DATABASE = "data.db" # relative path
 MAXAGE = 31536000 # for cookie, one year
 EPSILON = 0.1 # Rate of random moves
-GAMMA = 0.9 # Discount over distance from reward
 AIUID = "WOPR" # WarGames reference
 
 
 ### Initial Setup ###
 app = Flask(__name__)
-db = sqlite3.connect(DATABASE)
-# Collect matches from DB
-matches = {}
-cur = db.cursor()
-query = "SELECT m.id, m.player1, m.player2, "
-query += "b.id, b.index0, b.index1, b.index2, "
-query += "b.index3, b.index4, b.index5, b.index6, "
-query += "b.index7, b.index8, FROM boards AS b "
-query += "JOIN matches AS m ON b.match=m.id "
-query += "ORDER BY b.created"
-cur.execute(query)
-rows = cur.fetchall()
-for row in rows:
-    m = Match(row[2])
-    m.boardID = row[3]
-    m.uidp1 = row[1]
-    m.board = [
-        row[4], row[5], row[6],
-        row[7], row[8], row[9],
-        row[10], row[11], row[12]
-    ]
-    matches[row[0]] = m
+
+
+### Database Functions ###
+def getDB():
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = g._database = sqlite3.connect(DATABASE)
+    return db
 
 @app.teardown_appcontext
-def close_db(exception):
+def close_connection(exception):
+    db = getattr(g, '_database', None)
     if db is not None:
-        db.close()
+        db.close() 
+
+def load_matches():
+    matches = {}
+    rows = []
+    with app.app_context():
+        cur = getDB().cursor()
+        query = "SELECT m.id, m.player1, m.player2, "
+        query += "b.id, b.index0, b.index1, b.index2, "
+        query += "b.index3, b.index4, b.index5, b.index6, "
+        query += "b.index7, b.index8 FROM boards AS b "
+        query += "JOIN matches AS m ON b.match=m.id "
+        query += "ORDER BY b.created"
+        cur.execute(query)
+        rows = cur.fetchall()
+    for row in rows:
+        m = Match(row[2])
+        m.boardID = row[3]
+        m.uidp1 = row[1]
+        m.board = [
+            row[4], row[5], row[6],
+            row[7], row[8], row[9],
+            row[10], row[11], row[12]
+        ]
+        if m.toMove() == AIUID:
+            m.submitTurn(AIUID, m.agent.nextMove())
+        matches[row[0]] = m
+    return matches
 
 
 ### Game Logic ###
@@ -51,10 +64,14 @@ class Match:
         self.uidp1 = AIUID
         self.uidp2 = uidp2
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.toMove = self.uidp1
         self.agent = Agent(self)
         self.boardID = 0
         
+    def toMove(self):
+        if self.board.count(1) > self.board.count(2):
+            return self.uidp2
+        return self.uidp1
+
     def currentTurn(self):
         return 10 - self.board.count(0)
 
@@ -66,28 +83,29 @@ class Match:
         matchID = "".join(random.choice(characters) for _ in range(5))
         while matchID in matches:
             matchID = "".join(random.choice(characters) for _ in range(5))
-        cur = db.cursor()
-        query = "INSERT INTO matches (id, player1, player2) VALUES (?, ?, ?)"
-        cur.execute(query, (matchID, self.uidp1, self.uidp2))
-        db.commit()
+        with app.app_context():
+            db = getDB()
+            cur = db.cursor()
+            query = "INSERT INTO matches (id, player1, player2) VALUES (?, ?, ?)"
+            cur.execute(query, (matchID, self.uidp1, self.uidp2))
+            db.commit()
         return matchID
 
     def newBoard(self, matchID):
-        cur = db.cursor()
-        cur.execute("INSERT INTO boards (match) VALUES (?)", matchID)
-        self.boardID = cur.lastrowid
-        db.commit()
+        with app.app_context():
+            db = getDB()
+            cur = db.cursor()
+            cur.execute("INSERT INTO boards (match) VALUES (?)", (matchID,))
+            self.boardID = cur.lastrowid
+            db.commit()
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.toMove = self.uidp1
         self.agent = Agent(self)
-        if self.toMove == AIUID:
+        if self.toMove() == AIUID:
             self.submitTurn(AIUID, self.agent.nextMove())
 
     def addPlayer(self, uidp2):
         if self.uidp2 == "":
             self.uidp2 = uidp2
-            if self.toMove != self.uidp1:
-                self.toMove = self.uidp2
             return 0  # Added player 2
         else:
             return -1  # Already a player 2
@@ -120,25 +138,24 @@ class Match:
 
     def submitTurn(self, uid, move):
         move = int(move)
-        if uid != self.toMove or self.board[move] or self.checkWin():
+        if uid != self.toMove() or self.board[move] or self.checkWin():
             return -1
-        if self.toMove == self.uidp1:
+        if self.toMove() == self.uidp1:
             self.board[move] = 1
-            self.toMove = self.uidp2
         else:
             self.board[move] = 2
-            self.toMove = self.uidp1
-        cur = db.cursor()
-        query = "UPDATE boards SET "
-        query += "index" + str(move) + " = ? "
-        query += "WHERE id = ?"
-        cur.exec(query, (self.board[move], self.boardID))
-        db.commit()
-        if self.toMove = AIUID:
-            if self.checkWin():
-                self.agent.updatePolicy()
-            else:
-                self.submitTurn(AIUID, self.agent.nextMove())
+        with app.app_context():
+            db = getDB()
+            cur = db.cursor()
+            query = "UPDATE boards SET "
+            query += "index" + str(move) + " = ? "
+            query += "WHERE id = ?"
+            cur.execute(query, (self.board[move], self.boardID))
+            db.commit()
+        if self.checkWin():
+            self.agent.updatePolicy()
+        if self.toMove() == AIUID:
+            self.submitTurn(AIUID, self.agent.nextMove())
         return 0
 
     def toJSON(self):
@@ -149,15 +166,18 @@ class Match:
 class Agent:
     def __init__(self, game):
         self.symmetries = [
+            [0, 1, 2, 3, 4, 5, 6, 7, 8],
             [6, 3, 0, 7, 4, 1, 8, 5, 2],
             [8, 7, 6, 5, 4, 3, 2, 1, 0],
-            [2, 5, 8, 1, 5, 7, 0, 3, 6]
+            [2, 5, 8, 1, 4, 7, 0, 3, 6]
         ]
         self.game = game
         self.policy = {}
-        cur = db.cursor()
-        cur.execute("SELECT * FROM policy")
-        rows = cur.fetchall()
+        rows = []
+        with app.app_context():
+            cur = getDB().cursor()
+            cur.execute("SELECT * FROM policy")
+            rows = cur.fetchall()
         for row in rows:
             self.policy[row[0]] = {
                 'values': [
@@ -177,7 +197,7 @@ class Agent:
         inputstate = self.game.boardState()
         s = f"{inputstate:09d}"
         orients = [int(s)]
-        for orientation in self.symmetries:
+        for orientation in self.symmetries[1:]:
             sid = ''
             for position in orientation:
                 sid += s[position]
@@ -186,40 +206,47 @@ class Agent:
         orientation = orients.index(sid)
         options = [i for i, x in enumerate(self.game.board) if x == 0]
         move = options[0]
-        if random.random() < EPSILON:
+        if random.random() < EPSILON or sid not in self.policy:
             move = random.choice(options)
         else:
-            pvals = self.policy[sid].values
-            move = max(range(len(pvals)), key=pvals.__getitem__)
-        self.episode.append((sid, move))
-        if orientation > 0:
-            move = self.symmetries[orientation-1][move]
+            pvals = []
+            for i in range(len(self.game.board)):
+                j = self.symmetries[orientation].index(i)
+                if i not in options:
+                    pvals.append(float("-inf"))
+                    continue
+                pvals.append(self.policy[sid]['values'][j])
+            move = random.choice([i for i, x in enumerate(pvals) if x == max(pvals)])
+        self.episode.append((sid, self.symmetries[orientation].index(move)))
         return move
 
     def updatePolicy(self):
-        result = game.checkWin()
-        reward = 0
+        result = self.game.checkWin()
+        reward = 0.0
         if result == 1:
-            reward = 1
+            reward = 1.0
         elif result == 2:
-            reward = -1
-        # scale = GAMMA
-        cur = db.cursor()
-        for turn in reversed(self.episode):
-            p = self.policy[turn[0]]
-            ratio = 1 / p.counts[turn[1]]
-            error = reward - p.values[turn[1]]
-            # value = scale * ratio * error
-            value = ratio * error
-            vf = "val" + str(turn[1])
-            cf = "count" + str(turn[1])
-            query = "UPDATE policy SET "
-            query += vf + " = " + vf + " + ?, "
-            query += cf + " = " + cf + " + 1 "
-            query += "WHERE id = ?"
-            cur.exec(query, (value, turn[0]))
-            # scale *= GAMMA
-        db.commit()
+            reward = -1.0
+        with app.app_context():
+            db = getDB()
+            cur = db.cursor()
+            for turn in reversed(self.episode):
+                vf = "value" + str(turn[1])
+                cf = "count" + str(turn[1])
+                query = "INSERT OR IGNORE INTO policy (id) VALUES (?)"
+                cur.execute(query, (turn[0],))
+                value = reward
+                if turn[0] in self.policy:
+                    p = self.policy[turn[0]]
+                    ratio = 1.0 / max(1, p['counts'][turn[1]])
+                    error = reward - p['values'][turn[1]]
+                    value = ratio * error
+                query = "UPDATE policy SET "
+                query += vf + " = " + vf + " + ?, "
+                query += cf + " = " + cf + " + 1 "
+                query += "WHERE id = ?"
+                cur.execute(query, (value, turn[0]))
+            db.commit()
 
 
 ### Routes ###
@@ -264,7 +291,7 @@ def show_board(game):
         side = 2
     win = m.checkWin()
     tomove = 2
-    if m.uidp1 == m.toMove:
+    if m.uidp1 == m.toMove():
         tomove = 1
     if win:
         tomove = 0
@@ -294,10 +321,12 @@ def make_move(game, move):
             return "Already two players", 403
     result = m.submitTurn(uid, move)
     if result < 0:
-        return "Invalid Move", 403
+        result = "invalid move"
+    else:
+        result = "success"
     if request.is_json:
         resp.headers["Content-Type"] = "application/json"
-        resp.set_data('{"result": "success"}')
+        resp.set_data('{"result": "' + result + '"}')
         return resp, 200
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
@@ -318,5 +347,8 @@ def rematch(game):
     resp.headers["location"] = url_for("show_board", game=game)
     return resp, 302
 
+
+### Run App ###
+matches = load_matches()
 if __name__ == "__main__":
     app.run(debug=True)
