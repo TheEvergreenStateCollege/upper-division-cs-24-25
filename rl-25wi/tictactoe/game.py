@@ -44,15 +44,16 @@ def load_matches():
         cur.execute(query)
         rows = cur.fetchall()
     for row in rows:
-        m = Match(row[2])
+        m = Match(row[1], row[2])
         m.boardID = row[3]
-        m.uidp1 = row[1]
         m.board = [
             row[4], row[5], row[6],
             row[7], row[8], row[9],
             row[10], row[11], row[12]
         ]
-        if m.toMove() == AIUID:
+        if m.uidp1 == AIUID or m.uidp2 == AIUID:
+            m.agent = Agent(m)
+        if m.agent and m.toMove() == AIUID:
             m.submitTurn(AIUID, m.agent.nextMove())
         matches[row[0]] = m
     return matches
@@ -60,11 +61,11 @@ def load_matches():
 
 ### Game Logic ###
 class Match:
-    def __init__(self, uidp2):
-        self.uidp1 = AIUID
+    def __init__(self, uidp1, uidp2=''):
+        self.uidp1 = uidp1
         self.uidp2 = uidp2
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.agent = Agent(self)
+        self.agent = None
         self.boardID = 0
         
     def toMove(self):
@@ -79,6 +80,8 @@ class Match:
         return int(''.join(str(num) for num in self.board))
 
     def newMatch(self):
+        if self.uidp1 == AIUID or self.uidp2 == AIUID:
+            self.agent = Agent(self)
         characters = string.ascii_letters + string.digits
         matchID = "".join(random.choice(characters) for _ in range(5))
         while matchID in matches:
@@ -99,9 +102,10 @@ class Match:
             self.boardID = cur.lastrowid
             db.commit()
         self.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.agent = Agent(self)
-        if self.toMove() == AIUID:
-            self.submitTurn(AIUID, self.agent.nextMove())
+        if self.agent:
+            self.agent = Agent(self)
+            if self.toMove() == AIUID:
+                self.submitTurn(AIUID, self.agent.nextMove())
 
     def addPlayer(self, uidp2):
         if self.uidp2 == "":
@@ -140,10 +144,16 @@ class Match:
         move = int(move)
         if uid != self.toMove() or self.board[move] or self.checkWin():
             return -1
-        if self.toMove() == self.uidp1:
-            self.board[move] = 1
+        if self.uidp1 == self.uidp2:
+            if self.board.count(1) > self.board.count(2):
+                self.board[move] = 2
+            else:
+                self.board[move] = 1
         else:
-            self.board[move] = 2
+            if self.toMove() == self.uidp1:
+                self.board[move] = 1
+            else:
+                self.board[move] = 2
         with app.app_context():
             db = getDB()
             cur = db.cursor()
@@ -152,10 +162,12 @@ class Match:
             query += "WHERE id = ?"
             cur.execute(query, (self.board[move], self.boardID))
             db.commit()
-        if self.checkWin():
-            self.agent.updatePolicy()
-        if self.toMove() == AIUID:
-            self.submitTurn(AIUID, self.agent.nextMove())
+        if self.agent:
+            if self.checkWin():
+                self.agent.updatePolicy()
+                return 0
+            if self.toMove() == AIUID:
+                self.submitTurn(AIUID, self.agent.nextMove())
         return 0
 
     def toJSON(self):
@@ -277,6 +289,42 @@ def new_game():
     resp.headers["location"] = url_for("show_board", game=matchID)
     return resp, 302
 
+@app.route("/new_bot_game")
+def new_bot_game():
+    uid = request.cookies.get("uid")
+    resp = make_response()
+    if not uid:
+        uid = secrets.token_hex(32)
+        resp.set_cookie("uid", value=uid, max_age=MAXAGE)
+    m = Match(AIUID, uid)
+    matchID = m.newMatch()
+    m.newBoard(matchID)
+    matches[matchID] = m
+    if request.is_json:
+        resp.headers["Content-Type"] = "application/json"
+        resp.set_data('{"gameid": "' + matchID + '"}')
+        return resp, 200
+    resp.headers["location"] = url_for("show_board", game=matchID)
+    return resp, 302
+
+@app.route("/new_share_game")
+def new_share_game():
+    uid = request.cookies.get("uid")
+    resp = make_response()
+    if not uid:
+        uid = secrets.token_hex(32)
+        resp.set_cookie("uid", value=uid, max_age=MAXAGE)
+    m = Match(uid, uid)
+    matchID = m.newMatch()
+    m.newBoard(matchID)
+    matches[matchID] = m
+    if request.is_json:
+        resp.headers["Content-Type"] = "application/json"
+        resp.set_data('{"gameid": "' + matchID + '"}')
+        return resp, 200
+    resp.headers["location"] = url_for("show_board", game=matchID)
+    return resp, 302
+
 @app.route("/<game>")
 def show_board(game):
     if game not in matches:
@@ -295,6 +343,13 @@ def show_board(game):
         tomove = 1
     if win:
         tomove = 0
+    if m.uidp1 == m.uidp2:
+        if m.board.count(1) > m.board.count(2):
+            side = 2
+            tomove = 2
+        else:
+            side = 1
+            tomove = 1
     return render_template(
         "board.html",
         match=m.board,
