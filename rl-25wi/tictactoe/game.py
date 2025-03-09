@@ -343,13 +343,17 @@ def show_board(game):
         tomove = 1
     if win:
         tomove = 0
+    gamemode = "versus"
     if m.uidp1 == m.uidp2:
+        gamemode = "share"
         if m.board.count(1) > m.board.count(2):
             side = 2
             tomove = 2
         else:
             side = 1
             tomove = 1
+    if m.uidp1 == AIUID or m.uidp2 == AIUID:
+        gamemode = "bot"
     return render_template(
         "board.html",
         match=m.board,
@@ -358,6 +362,7 @@ def show_board(game):
         side=side,
         tomove=tomove,
         gameid=game,
+        mode=gamemode,
     )
 
 @app.route("/<game>/<move>")

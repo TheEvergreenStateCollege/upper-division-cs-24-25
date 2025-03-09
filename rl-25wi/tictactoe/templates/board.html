@@ -7,12 +7,18 @@
 <button id="{{ index }}" onclick="window.location.href=window.location.href+'/{{ index }}'" {% if tomove != side %}disabled{% endif %}>{{ xo(match[index]) }}</button>
 {% endmacro %}
 {% block content %} 
+{% if mode == "versus" %}
 <p class="gameid">
-  Game ID: {{ gameid }}
+  Game ID: <code>{{ gameid }}</code>
   <button onclick="navigator.clipboard.writeText(window.location.href)">
     Copy Match Link
   </button>
 </p>
+{% elif mode == "share" %}
+<p>Take turns on the same screen</p>
+{% else %}
+<p>Human VS Machine</p>
+{% endif %}
 {% if win == -1 %}
   <h2>Stalemate!</h2>
 {% elif win == 1 %}
