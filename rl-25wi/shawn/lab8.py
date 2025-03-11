@@ -95,9 +95,9 @@ def modelAction(state, action):
 def runMaze(state):
     episode = []
     while env.getReward(state.x, state.y) <= 0:
-        if len(model) > depth:
+        if len(model) > modeling:
             modelState = state
-            for _ in range(depth):
+            for _ in range(modeling):
                 randState, randAction = random.choice(list(model.keys()))
                 modelState = modelAction(randState, randAction)
         action = chooseAction(state)
@@ -136,7 +136,7 @@ def drawGrid(env, state, action=None):
 exploration = 0.1
 stepsize = 0.1
 discount = 0.95
-depth = 5
+modeling = 5
 env = Environment(width=11, height=8)
 
 # Set walls around perimeter
@@ -172,12 +172,13 @@ model = {}  # k = state tuple, v = [reward, next state tuple]
 actions = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 
 episodes = []
-for _ in range(20):
+while True:
     episode = runMaze(start)
     episodes.append(episode)
+    if len(episode) == 14:
+        break
 
 for step in episodes[-1]:
     drawGrid(env, step[0], step[1])
 print(len(episodes[-1]), "moves")
-
-#print(policy)
+print(len(episodes), "episodes")
