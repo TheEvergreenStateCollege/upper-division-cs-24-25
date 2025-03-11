@@ -55,44 +55,51 @@ class State:
 
 
 def chooseAction(state):
-    # Return a random action if epsilon triggers
-    if random.random() < epsilon or astuple(state) not in policy:
+    # Return a random action if exploration triggers
+    if random.random() < exploration or astuple(state) not in policy:
         return random.choice(list(actions.values()))
     # Return the highest valued action from the policy estimate
-    action, estimate = max(policy[astuple(state)], key=lambda x: x[1])
+    highest = max(policy[astuple(state)], key=lambda x: x[1])[1]
+    action, estimate = random.choice([x for x in policy[astuple(state)] if x[1] == highest])
     if estimate <= 0:
         return random.choice(list(actions.values()))
     return action
 
+def estimateValue(stateTup, action, newStateTup, reward):
+    if stateTup not in policy:
+        policy[stateTup] = []
+    try:
+        index = [a[0] for a in policy[stateTup]].index(action)
+    except ValueError:
+        index = len(policy[stateTup])
+        policy[stateTup].append((action, reward))
+    estimate = policy[stateTup][index][1]
+    try:
+        outcome = max(policy[newStateTup], key=lambda x: x[1])[1]
+    except KeyError:
+        outcome = 0
+    estimate += stepsize * (reward + discount * outcome - estimate)
+    policy[stateTup][index] = (action, estimate)
 
 def takeAction(state, action):
     newState, reward = env.resolveAction(state, action)
-    if astuple(state) not in policy:
-        policy[astuple(state)] = []
-    try:
-        index = [a[0] for a in policy[astuple(state)]].index(action)
-    except ValueError:
-        index = len(policy[astuple(state)])
-        policy[astuple(state)].append((action, reward))
-    estimate = policy[astuple(state)][index][1]
-    # TODO fix this
-    try:
-        outcome = max(policy[astuple(newState)], key=lambda x: x[1])[1]
-    except KeyError:
-        outcome = 0
-    estimate += alpha * (reward + gamma * outcome - estimate)
-    policy[astuple(state)][index] = (action, estimate)
-    modelkey = (astuple(state), action)
-    modelval = (reward, astuple(newState))
-    if modelkey not in model:
-        model[modelkey] = [modelval]
-    elif modelval not in model[modelkey]:
-        model[modelkey].append(modelval)
+    estimateValue(astuple(state), action, astuple(newState), reward)
+    model[(astuple(state), action)] = (astuple(newState), reward)
+    return newState
+
+def modelAction(state, action):
+    newState, reward = model[(state, action)]
+    estimateValue(state, action, newState, reward)
     return newState
 
 def runMaze(state):
     episode = []
-    while env.getReward(state.x, state.y) == 0:
+    while env.getReward(state.x, state.y) <= 0:
+        if len(model) > depth:
+            modelState = state
+            for _ in range(depth):
+                randState, randAction = random.choice(list(model.keys()))
+                modelState = modelAction(randState, randAction)
         action = chooseAction(state)
         episode.append((state, action))
         state = takeAction(state, action)
@@ -125,10 +132,12 @@ def drawGrid(env, state, action=None):
             line = ''
     print(line)
 
-epsilon = 0.1
-alpha = 1
-gamma = 0.9
-env = Environment(11,8)
+# Set initial variables
+exploration = 0.1
+stepsize = 0.1
+discount = 0.95
+depth = 5
+env = Environment(width=11, height=8)
 
 # Set walls around perimeter
 for i, reward in enumerate(env.grid):
