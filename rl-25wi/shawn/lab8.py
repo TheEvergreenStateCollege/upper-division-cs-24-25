@@ -61,7 +61,8 @@ def chooseAction(state):
 
 
 def takeAction(state, action):
-    newState = env.resolveAction(state, action)
+    newState, reward = env.resolveAction(state, action)
+    # process reward
     return newState
 
 
