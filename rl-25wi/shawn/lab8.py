@@ -19,6 +19,8 @@ from dataclasses import dataclass, astuple
 ##    states that have been already visited.
 ## Work in groups and make sure  include the names of the members in your group
 
+# Use negative infinity to represent a wall tile
+WALL = float('-inf')
 
 class Environment:
     def __init__(self, width=12, height=12):
@@ -40,7 +42,7 @@ class Environment:
         newState = State(state.x + action[0], state.y + action[1])
         reward = self.getReward(newState.x, newState.y)
         # Hitting a wall
-        if reward == float("-inf"):
+        if reward == WALL:
             return (state, 0)
         return (newState, reward)
 
@@ -63,7 +65,9 @@ def takeAction(state, action):
     return newState
 
 
-env = Environment()
+env = Environment(11,8)
+
+# Set walls around perimeter
 for i, reward in enumerate(env.grid):
     mod = i % env.width
     if (
@@ -72,10 +76,36 @@ for i, reward in enumerate(env.grid):
         or i < env.width - 1
         or i > env.width * (env.height - 1)
     ):
-        env.grid[i] = float("-inf")
+        env.grid[i] = WALL
 
-print(env.grid)
+# Add inner walls
+env.setReward(3,2, WALL)
+env.setReward(3,3, WALL)
+env.setReward(3,4, WALL)
+env.setReward(6,5, WALL)
+env.setReward(8,1, WALL)
+env.setReward(8,2, WALL)
+env.setReward(8,3, WALL)
+
+# Place goal
+env.setReward(9,1, 5)
+
+line = ''
+for i, s in enumerate(env.grid):
+    if s == WALL:
+        line += 'X'
+    elif s > 0:
+        line += 'G'
+    else:
+        line += ' '
+    line += ' '
+    if (i + 1) % env.width == 0:
+        print(line)
+        line = ''
+print(line)
+
 # example: policy[astuple(state)] = [(actions["up"], estimate)]
 policy = {}  # k = state, v = [action, estimate]
 actions = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 episodes = []
+start = State(1, 3)
