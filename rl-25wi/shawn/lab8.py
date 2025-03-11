@@ -5,6 +5,7 @@ import random
 # Group:
 # Shawn Bird
 # Austin Strayer
+# Hayden Edge
 
 ## Goals: understand Dyna-Q and planning
 ## Task: program the Dyna-maze (P.164)  in Python, where the model and the
@@ -58,9 +59,11 @@ def chooseAction(state):
     # Return a random action if exploration triggers
     if random.random() < exploration or astuple(state) not in policy:
         return random.choice(list(actions.values()))
-    # Return the highest valued action from the policy estimate
+    # Find the highest valued action from the policy estimates for state
     highest = max(policy[astuple(state)], key=lambda x: x[1])[1]
+    # Select randomly in case of a tie
     action, estimate = random.choice([x for x in policy[astuple(state)] if x[1] == highest])
+    # Choose randomly from all actions if no good estimate found
     if estimate <= 0:
         return random.choice(list(actions.values()))
     return action
@@ -68,21 +71,25 @@ def chooseAction(state):
 def estimateValue(stateTup, action, newStateTup, reward):
     if stateTup not in policy:
         policy[stateTup] = []
+    # Get index of action from policy
     try:
         index = [a[0] for a in policy[stateTup]].index(action)
     except ValueError:
         index = len(policy[stateTup])
         policy[stateTup].append((action, reward))
     estimate = policy[stateTup][index][1]
+    # Get the highest estimate from the next state
     try:
         outcome = max(policy[newStateTup], key=lambda x: x[1])[1]
     except KeyError:
         outcome = 0
+    # Use Tabular Q Learning to update the policy estimate
     estimate += stepsize * (reward + discount * outcome - estimate)
     policy[stateTup][index] = (action, estimate)
 
 def takeAction(state, action):
     newState, reward = env.resolveAction(state, action)
+    # Record the action if it results in a state change
     if newState is not state:
         estimateValue(astuple(state), action, astuple(newState), reward)
         model[(astuple(state), action)] = (astuple(newState), reward)
@@ -96,14 +103,13 @@ def modelAction(state, action):
 def runMaze(state):
     episode = []
     while env.getReward(state.x, state.y) <= 0:
-        if len(model) > modeling:
-            modelState = state
-            for _ in range(modeling):
-                randState, randAction = random.choice(list(model.keys()))
-                modelState = modelAction(randState, randAction)
         action = chooseAction(state)
         episode.append((state, action))
         state = takeAction(state, action)
+        modelState = state
+        for _ in range(modeling):
+            randState, randAction = random.choice(list(model.keys()))
+            modelState = modelAction(randState, randAction)
     return episode
 
 def drawGrid(env, state, action=None):
@@ -167,18 +173,22 @@ env.setReward(9,1, 1)
 start = State(1, 3)
 drawGrid(env, start)
 
-# example: policy[astuple(state)] = [(actions["up"], estimate)]
-policy = {}  # k = state tuple, v = [action, estimate]
-model = {}  # k = state tuple, v = [reward, next state tuple]
+# Example: policy[astuple(state)] = [(actions["up"], estimate)]
+policy = {}  # k = state tuple, v = [(action, estimate)]
+model = {}  # k = (state tuple, action), v = (next state tuple, reward)
+# Actions: "name": (x change, y change)
 actions = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 
+# Run maze until optimal
+optimal = 14 # Minimum moves from start to reward
 episodes = []
 while True:
     episode = runMaze(start)
     episodes.append(episode)
-    if len(episode) == 14:
+    if len(episode) <= optimal:
         break
 
+# Print last run along with stats
 for step in episodes[-1]:
     drawGrid(env, step[0], step[1])
 print(len(episodes[-1]), "moves")
