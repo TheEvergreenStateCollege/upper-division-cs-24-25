@@ -65,10 +65,23 @@ def chooseAction(state):
 
 def takeAction(state, action):
     newState, reward = env.resolveAction(state, action)
-    #if astuple(state) not in policy:
-        #policy[astuple(state)] = []
-    #if action not in policy[astuple(state)]:
-        #policy[astuple(state)].append((action, reward))
+    if astuple(state) not in policy:
+        policy[astuple(state)] = []
+    try
+        index = [a[0] for a in policy[astuple(state)]].index(action)
+    except ValueError:
+        index = len(policy[astuple(state)])
+        policy[astuple(state)].append((action, reward))
+    estimate = policy[astuple(state)][index][1]
+    # TODO fix this
+    estimate += alpha * (reward + gamma * max(policy[astuple(newState)], key=lambda x: x[1])[1] - estimate)
+    policy[astuple(state)][index][1] = estimate
+    modelkey = (astuple(state), action)
+    modelval = (reward, astuple(newState))
+    if modelkey not in model:
+        model[modelkey] = [modelval]
+    elif modelval not in model[modelkey]:
+        model[modelkey].append(modelval)
     return newState
 
 def runMaze(state):
@@ -98,6 +111,8 @@ def drawGrid(env, state):
     print(line)
 
 epsilon = 0.1
+alpha = 1
+gamma = 0.9
 env = Environment(11,8)
 
 # Set walls around perimeter
@@ -129,8 +144,8 @@ drawGrid(env, start)
 
 # example: policy[astuple(state)] = [(actions["up"], estimate)]
 policy = {}  # k = state tuple, v = [action, estimate]
+model = {}  # k = state tuple, v = [reward, next state tuple]
 actions = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
-
 
 episodes = []
 for _ in range(1):
