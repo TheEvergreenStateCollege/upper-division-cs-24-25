@@ -60,22 +60,27 @@ def chooseAction(state):
         return random.choice(list(actions.values()))
     # Return the highest valued action from the policy estimate
     action, _ = max(policy[astuple(state)], key=lambda x: x[1])
-    return action
+    #return action
+    return random.choice(list(actions.values()))
 
 
 def takeAction(state, action):
     newState, reward = env.resolveAction(state, action)
     if astuple(state) not in policy:
         policy[astuple(state)] = []
-    try
+    try:
         index = [a[0] for a in policy[astuple(state)]].index(action)
     except ValueError:
         index = len(policy[astuple(state)])
         policy[astuple(state)].append((action, reward))
     estimate = policy[astuple(state)][index][1]
     # TODO fix this
-    estimate += alpha * (reward + gamma * max(policy[astuple(newState)], key=lambda x: x[1])[1] - estimate)
-    policy[astuple(state)][index][1] = estimate
+    try:
+        outcome = max(policy[astuple(newState)], key=lambda x: x[1])[1]
+    except KeyError:
+        outcome = 0
+    estimate += alpha * (reward + gamma * outcome - estimate)
+    policy[astuple(state)][index] = (action, estimate)
     modelkey = (astuple(state), action)
     modelval = (reward, astuple(newState))
     if modelkey not in model:
