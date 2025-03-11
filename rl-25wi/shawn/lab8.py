@@ -59,9 +59,10 @@ def chooseAction(state):
     if random.random() < epsilon or astuple(state) not in policy:
         return random.choice(list(actions.values()))
     # Return the highest valued action from the policy estimate
-    action, _ = max(policy[astuple(state)], key=lambda x: x[1])
-    #return action
-    return random.choice(list(actions.values()))
+    action, estimate = max(policy[astuple(state)], key=lambda x: x[1])
+    if estimate <= 0:
+        return random.choice(list(actions.values()))
+    return action
 
 
 def takeAction(state, action):
@@ -153,7 +154,7 @@ model = {}  # k = state tuple, v = [reward, next state tuple]
 actions = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 
 episodes = []
-for _ in range(1):
+for _ in range(10):
     episode = runMaze(start)
     episodes.append(episode)
     print(len(episode), "moves")
