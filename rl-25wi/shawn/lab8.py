@@ -1,5 +1,6 @@
 #!/bin/python3
 from dataclasses import dataclass, astuple
+import random
 
 # Group:
 # Shawn Bird
@@ -28,7 +29,7 @@ class Environment:
         self.height = height
         self.grid = [0.0 for _ in range(width * height)]
 
-    # Index 1d array as 2d coords
+    # Index 1d array as 2d coordinates
     def getIndex(self, x, y) -> int:
         return self.width * y + x
 
@@ -54,18 +55,49 @@ class State:
 
 
 def chooseAction(state):
-    # Return the highest valued action from the policy eval
+    # Return a random action if epsilon triggers
+    if random.random() < epsilon or astuple(state) not in policy:
+        return random.choice(list(actions.values()))
+    # Return the highest valued action from the policy estimate
     action, _ = max(policy[astuple(state)], key=lambda x: x[1])
-    # random.choice(list(actions.values()))
     return action
 
 
 def takeAction(state, action):
     newState, reward = env.resolveAction(state, action)
-    # process reward
+    #if astuple(state) not in policy:
+        #policy[astuple(state)] = []
+    #if action not in policy[astuple(state)]:
+        #policy[astuple(state)].append((action, reward))
     return newState
 
+def runMaze(state):
+    episode = []
+    while env.getReward(state.x, state.y) == 0:
+        action = chooseAction(state)
+        episode.append((state, action))
+        state = takeAction(state, action)
+        drawGrid(env, state)
+    return episode
 
+def drawGrid(env, state):
+    line = ''
+    for i, s in enumerate(env.grid):
+        if s == WALL:
+            line += 'X'
+        elif i == env.getIndex(state.x, state.y):
+            line += 'S'
+        elif s > 0:
+            line += 'G'
+        else:
+            line += ' '
+        line += ' '
+        if (i + 1) % env.width == 0:
+            print(line)
+            line = ''
+    print(line)
+
+epsilon = 0.1
 env = Environment(11,8)
 
 # Set walls around perimeter
@@ -89,24 +121,21 @@ env.setReward(8,2, WALL)
 env.setReward(8,3, WALL)
 
 # Place goal
-env.setReward(9,1, 5)
+env.setReward(9,1, 1)
 
-line = ''
-for i, s in enumerate(env.grid):
-    if s == WALL:
-        line += 'X'
-    elif s > 0:
-        line += 'G'
-    else:
-        line += ' '
-    line += ' '
-    if (i + 1) % env.width == 0:
-        print(line)
-        line = ''
-print(line)
+# Set starting position and draw grid
+start = State(1, 3)
+drawGrid(env, start)
 
 # example: policy[astuple(state)] = [(actions["up"], estimate)]
-policy = {}  # k = state, v = [action, estimate]
+policy = {}  # k = state tuple, v = [action, estimate]
 actions = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
+
+
 episodes = []
-start = State(1, 3)
+for _ in range(1):
+    episode = runMaze(start)
+    episodes.append(episode)
+    print(len(episode), "moves")
+
+#print(policy)
