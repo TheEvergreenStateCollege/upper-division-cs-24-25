@@ -96,16 +96,25 @@ def runMaze(state):
         action = chooseAction(state)
         episode.append((state, action))
         state = takeAction(state, action)
-        drawGrid(env, state)
     return episode
 
-def drawGrid(env, state):
+def drawGrid(env, state, action=None):
     line = ''
+    char = 'S'
+    if action:
+        if action is actions["left"]:
+            char = "←"
+        elif action is actions["right"]:
+            char = "→"
+        elif action is actions["up"]:
+            char = "↑"
+        elif action is actions["down"]:
+            char = "↓"
     for i, s in enumerate(env.grid):
         if s == WALL:
             line += 'X'
         elif i == env.getIndex(state.x, state.y):
-            line += 'S'
+            line += char
         elif s > 0:
             line += 'G'
         else:
@@ -154,9 +163,12 @@ model = {}  # k = state tuple, v = [reward, next state tuple]
 actions = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 
 episodes = []
-for _ in range(10):
+for _ in range(20):
     episode = runMaze(start)
     episodes.append(episode)
-    print(len(episode), "moves")
+
+for step in episodes[-1]:
+    drawGrid(env, step[0], step[1])
+print(len(episodes[-1]), "moves")
 
 #print(policy)
