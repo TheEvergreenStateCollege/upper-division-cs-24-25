@@ -83,8 +83,9 @@ def estimateValue(stateTup, action, newStateTup, reward):
 
 def takeAction(state, action):
     newState, reward = env.resolveAction(state, action)
-    estimateValue(astuple(state), action, astuple(newState), reward)
-    model[(astuple(state), action)] = (astuple(newState), reward)
+    if newState is not state:
+        estimateValue(astuple(state), action, astuple(newState), reward)
+        model[(astuple(state), action)] = (astuple(newState), reward)
     return newState
 
 def modelAction(state, action):
