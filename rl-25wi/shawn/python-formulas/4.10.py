@@ -1,23 +1,13 @@
-# Figure 3.14
-Found on page 59
-
-![Figure 3.14](3.14.png)
-
-This formula shows the Bellman Equation, used to evaluate the policy of a position based on the actions that can be taken, weighted by the probability of taking each action.
-
-## Python Implementation
-
-```python
 # Bellman Equation Function
 def get_estimate(reward=0, actions=[0], discount=0.9):
     # Start estimate with current reward
     estimate = reward
-    # Probability of taking each action (if chosen randomly)
+    # Probability of taking any action (if chosen randomly)
     probability = 1.0 / len(actions)
     # Loop over all potential actions
     for action in actions:
         # Add proportional value to the estimate
-        estimate += action * discount * probability
+        estimate += action * probability * discount
     return estimate
 
 # Starting Inputs:
@@ -27,12 +17,3 @@ discount = 0.9 # Falloff over distance
 
 estimate = get_estimate(reward, actions, discount)
 print(estimate)
-```
-
-Result when executed:
-
-```
-4.6
-```
-
-The result shows the average reward of all potential actions if the action is chosen at random.
