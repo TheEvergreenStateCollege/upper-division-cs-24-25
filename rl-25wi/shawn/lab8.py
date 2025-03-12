@@ -1,5 +1,5 @@
 #!/bin/python3
-from dataclasses import dataclass, astuple
+from collections import namedtuple
 import random
 
 # Group:
@@ -49,20 +49,16 @@ class Environment:
         return (newState, reward)
 
 
-@dataclass
-class State:
-    x: int
-    y: int
-
+State = namedtuple("State", ["x", "y"])
 
 def chooseAction(state):
     # Return a random action if exploration triggers
-    if random.random() < exploration or astuple(state) not in policy:
+    if random.random() < exploration or state not in policy:
         return random.choice(list(actions.values()))
     # Find the highest valued action from the policy estimates for state
-    highest = max(policy[astuple(state)], key=lambda x: x[1])[1]
+    highest = max(policy[state], key=lambda x: x[1])[1]
     # Select randomly in case of a tie
-    action, estimate = random.choice([x for x in policy[astuple(state)] if x[1] == highest])
+    action, estimate = random.choice([x for x in policy[state] if x[1] == highest])
     # Choose randomly from all actions if no good estimate found
     if estimate <= 0:
         return random.choice(list(actions.values()))
@@ -91,8 +87,8 @@ def takeAction(state, action):
     newState, reward = env.resolveAction(state, action)
     # Record the action if it results in a state change
     if newState is not state:
-        estimateValue(astuple(state), action, astuple(newState), reward)
-        model[(astuple(state), action)] = (astuple(newState), reward)
+        estimateValue(state, action, newState, reward)
+        model[state, action] = (newState, reward)
     return newState
 
 def modelAction(state, action):
