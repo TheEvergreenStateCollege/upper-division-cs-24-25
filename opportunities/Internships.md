@@ -15,6 +15,7 @@ the process (finding opportunities, resume preparation, interview preparation).
 Please email him (autocomplete in your Evergreen outlook account) for questions or [schedule a time to meet](https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2Fd73452274ea64fd7a9e62cad623b893a%40evergreen.edu%3Fanonymous%26ep%3Dplink&data=05%7C02%7CPaul.Pham%40evergreen.edu%7Caafbb0d5a6314d641ba308dcff632dd4%7C22adcff7c06f49a68f2050711c40ddaa%7C0%7C0%7C638666048663875191%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=7itFvZmhGKuIZzrR51pK2TUIMmzlo6TovUOtgPZOZUw%3D&reserved=0).
 
 * [Live Updating Internship Spreadsheet](https://evergreen0-my.sharepoint.com/:x:/g/personal/luis_apolaya_torres_evergreen_edu/EcARCzILp61MhhBi44ekkggBMbLDZYwj-eFK8WD-wy48pg?e=4gQpcs&CID=d215b316-4b8a-9cdc-735d-8014742311e7&clickParams=eyJYLUFwcE5hbWUiOiJNaWNyb3NvZnQgT3V0bG9vayBXZWIgQXBwIiwiWC1BcHBWZXJzaW9uIjoiMjAyNDEwMjUwMDMuMzQiLCJPUyI6Ik1hYyBPUyBYIHVuZGVmaW5lZCJ9)
+* [Tacoma Power Utilities Internship](https://www.governmentjobs.com/careers/tacoma/jobs/4853706-0/power-resource-modeling-engineering-intern)
 * [Will Lapenta Internship at NOAA](https://vlab.noaa.gov/web/lapenta-internship-program/home) (focused on marine science and metereology, but computer science students have done it as well):
 * [Software Development Internship at ESRI](https://app.ripplematch.com/v2/public/job/ef1945dc/details?from_page=tracking_link&tl=b96b5944)
 
