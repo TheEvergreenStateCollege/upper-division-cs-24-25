@@ -86,6 +86,7 @@ We "cube it up" by multiplying it by itself three times to get it
 to scale faster to give us some interesting times. Try running it for
 a few values of `x`.
 
+```
 >>> timed_count(10)
 Elapsed 0.5855722427368164
 >>> timed_count(100)
