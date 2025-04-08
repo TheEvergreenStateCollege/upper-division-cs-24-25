@@ -1,3 +1,6 @@
+from pyspark.sql.types import *
+from graphframes import *
+
 def create_transport_graph():
     node_fields = [
         StructField("id", StringType(), True),
