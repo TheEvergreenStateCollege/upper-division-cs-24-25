@@ -61,6 +61,6 @@ RUN ssh-keyscan github.com
 RUN apt update
 RUN apt install -y mpich
 
-RUN pip3 install mpi4py
+RUN pip3 install pyspark graphframes
 
 WORKDIR "${HOME}"
