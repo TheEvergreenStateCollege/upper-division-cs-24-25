@@ -9,4 +9,7 @@ def shortest_path(g, origin, destination, column="cost"):
         return (spark.createDataFrame(sc.emptyRDD(), g.vertices.schema)
             .withColumn("path", F.array()))
 
+from transport_graph import create_transport_graph
+
+g = create_transport_graph()
 shortest_path(g, "Amsterdam", "Colchester", cost)

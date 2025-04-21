@@ -44,11 +44,13 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir ~/scripts
 COPY ./scripts/dl-graalvm.sh /root/scripts/dl-graalvm.sh
+COPY ./scripts/dl-spark.sh /root/scripts/dl-spark.sh
 # COPY ./scripts/.shrc /root/.shrc
 
 
 # Download the right GraalVM for the given architecture
 RUN . /root/scripts/dl-graalvm.sh
+RUN . /root/scripts/dl-spark.sh
 
 # Add these back later if we need cross-language support
 # RUN . /root/.shrc; gu install nodejs
@@ -62,5 +64,6 @@ RUN apt update
 RUN apt install -y mpich
 
 RUN pip3 install pyspark graphframes
+
 
 WORKDIR "${HOME}"

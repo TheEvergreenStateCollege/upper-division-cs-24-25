@@ -6,6 +6,7 @@ spark = SparkSession \
     .builder \
     .appName("Python Spark SQL basic example") \
     .config("spark.some.config.option", "some-value") \
+    .config("spark.jars.packages", "graphframes:graphframes:0.6.0") \
     .getOrCreate()
 
 def create_transport_graph():
