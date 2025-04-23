@@ -2,7 +2,11 @@
 
 # Debug mode to see all the file downloading and extracting
 set -x
-wget // need to copy and paste this externall
-zcat spark-3.5.5-bin-hadoop3.tgz | tar xvf -
-mv spark-3.5.5 /opt/spark-3.5.5-bin-hadoop
-# bin/spark-shell --packages graphframes:graphframes:0.8.4-spark3.5-s_2.12
+URL=https://dlcdn.apache.org/spark/spark-3.5.5
+FILE=spark-3.5.5-bin-hadoop3.tgz
+
+mkdir ~/Downloads; cd ~/Downloads
+wget "$URL/$FILE"
+zcat $FILE | tar xf -
+rm $FILE
+mv spark-3.5.5-bin-hadoop3 /opt

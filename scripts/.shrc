@@ -1,5 +1,6 @@
 #!/bin/bash
 
 # Add any startup directives here to fix up the path
-export PATH=/opt/graalvm-community-openjdk-17.0.9+9.1/bin:/workspace/upper-division-cs/scripts:${PATH}
+export PATH=/opt/graalvm-community-openjdk-17.0.9+9.1/bin:/workspace/upper-division-cs-24-25/scripts:${PATH}
+export PATH=/opt/spark-3.5.5-bin-hadoop3/bin:/workspace/upper-division-cs-24-25/scripts:${PATH}
 export PATH=/home/gitpod/.local/bin:${PATH}
