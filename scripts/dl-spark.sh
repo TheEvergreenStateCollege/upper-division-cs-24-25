@@ -4,9 +4,16 @@
 set -x
 URL=https://dlcdn.apache.org/spark/spark-3.5.5
 FILE=spark-3.5.5-bin-hadoop3.tgz
+BASEDIR=spark-3.5.5-bin-hadoop3
 
-mkdir ~/Downloads; cd ~/Downloads
+mkdir ~/Downloads
+cd ~/Downloads
 wget "$URL/$FILE"
-zcat $FILE | tar xf -
+gzcat $FILE | tar xf -
 rm $FILE
-mv spark-3.5.5-bin-hadoop3 /opt
+mv $BASEDIR /opt
+
+# Add spark-shell to path (and also spark-submit)
+#./scripts/.shrc
+
+/opt/$BASEDIR/bin/spark-shell --packages graphframes:graphframes:0.8.4-spark3.5-s_2.12
