@@ -1,5 +1,15 @@
 # Full-Time Positions and Resources
 
+## Little Creek Casino
+
+### IT Manager
+
+https://recruiting.paylocity.com/Recruiting/Jobs/Details/3057413
+
+### IT Supervisor
+
+https://recruiting.paylocity.com/Recruiting/Jobs/Details/3086179
+
 ## WA State
 
 ### WA State Department of Transporation
