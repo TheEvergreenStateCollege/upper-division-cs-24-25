@@ -16,4 +16,4 @@ mv $BASEDIR /opt
 # Add spark-shell to path (and also spark-submit)
 #./scripts/.shrc
 
-/opt/$BASEDIR/bin/spark-shell --packages graphframes:graphframes:0.8.4-spark3.5-s_2.12
+# /opt/$BASEDIR/bin/spark-shell --packages graphframes:graphframes:0.8.4-spark3.5-s_2.12
